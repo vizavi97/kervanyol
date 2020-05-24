@@ -1,6 +1,1370 @@
-<% var data = {
-  title: "MAIN_PAGE",
-}; %>
-<%= _.template(require('./../includes/header.html').default)(data) %>
+<% var data = {title: "MAIN_PAGE",}; %><%= _.template(require('./../includes/header.html').default)(data) %><%= _.template(require('./../includes/top-slider.html').default)(data) %>
+
+<main class="content">
+	<div class="container">
+		<div class="content-container">
+			<div class="banners">
+				<div class="banners-top">
+					<ul class="banners-top-items row">
+						<li class="col-6">
+							<div class="banners-top-item yellow">
+								<div class="banners-top-item-top">
+									<div class="banners-top-item-img">
+										<img src="img/export-import-img.png" alt="exp-imp"/>
+									</div>
+									<div class="banners-top-item-text">
+										<h5>Экспорт/Импорт</h5>
+										<p>Многолетний опыт поставок из любой точки мира</p>
+									</div>
+								</div>
+								<div class="banners-top-item-btn">
+									<a href="javascript:" class="btn btn-kervan btn-arr">
+										<span>Перейти</span>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="col-6">
+							<div class="banners-top-item green">
+								<div class="banners-top-item-top">
+									<div class="banners-top-item-img">
+										<img src="img/agricultural.png" alt="agricultural"/>
+									</div>
+									<div class="banners-top-item-text">
+										<h5>Сельхозпродукция</h5>
+										<p>Более 100 000 товаров агро-сельхоз продукции</p>
+									</div>
+								</div>
+								<div class="banners-top-item-btn">
+									<a href="javascript:" class="btn btn-kervan btn-arr">
+										<span>Перейти</span>
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="banners-middle">
+					<div class="banners-middle-img">
+						<img src="img/loyality-card.png" alt="img"/>
+					</div>
+					<div class="banners-middle-discount">
+						<h1>5%</h1>
+					</div>
+					<div class="banners-middle-info">
+						<h5>к любой скидке</h5>
+						<a href="javascript:">Наша карта лояльности в приложении <span>скачай прямо сейчас</span>
+						</a>
+					</div>
+				</div>
+				<div class="banners-bottom">
+					<div class="banners-bottom-sides row">
+						<div class="col-5">
+							<ul class="banners-bottom-left-items">
+								<li class="banners-bottom-left-item top" style="background: url('img/Iphone.png') no-repeat left;
+										   background-color: #bce7f0;
+										   background-size: contain;
+										   background-position: 20px 20px;
+											">
+									<div class="banners-bottom-left-item-text">
+										<h4>Iphone 11 pro max</h4>
+										<h3>-50%</h3>
+									</div>
+									<div class="banners-bottom-left-item-btn">
+										<a href="javascript:">
+											<img src="img/icon_basket.png" alt="basket"/>
+											<span>Купить</span>
+										</a>
+									</div>
+								</li>
+								<li class="banners-bottom-left-item bottom" style="background: url('img/card-girl.png') no-repeat right;
+										   background-color: #dec8f3;
+										   background-size: contain;
+											">
+									<div class="banners-bottom-left-item-text">
+										<h4>Коллекция <br/> весна-лето от Zara</h4>
+										<p>Новая коллекция</p>
+									</div>
+									<div class="banners-bottom-left-item-btn">
+										<a href="javascript:">
+											<span>Купить</span>
+											<img src="img/right-arr-black.png" alt="basket"/>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-7">
+							<ul class="banners-bottom-right-items row">
+								<li class="col-6">
+									<div class="banners-bottom-right-item" style="background: url('img/mainPage_baner_1.png') no-repeat top;background-size:cover;">
+										<a href="javascript:">
+											<div class="banners-bottom-right-item-headline">
+												<h2>Мебель для вас</h2>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li class="col-6">
+									<div class="banners-bottom-right-item" style="background: url('img/mainPage_baner_2.png') no-repeat top;background-size:cover;">
+										<a href="javascript:">
+											<div class="banners-bottom-right-item-headline">
+												<h2>Бытовая техника</h2>
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="recent-products">
+				<div class="recent-products-headline">
+					<h4>Недавние</h4>
+				</div>
+				<div class="recent-products-container">
+					<ul class="recent-products-items owl-carousel owl-theme">
+						<li class="recent-products-item new sale">
+							<div class="recent-products-item-img">
+								<img src="img/products-item-1.png" alt="product-1"/>
+							</div>
+							<div class="recent-products-item-name">
+								<a href="javascript:">Air Jordan XXXIV</a>
+							</div>
+							<div class="recent-products-item-brand">
+								<a href="javascript:">Nike</a>
+							</div>
+							<div class="recent-products-item-rating">
+								<div class="star-rating__stars">
+									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+									<div class="star-rating__focus"></div>
+								</div>
+							</div>
+							<div class="recent-products-item-cost">
+								<span>180$</span>
+							</div>
+							<div class="recent-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="recent-products-item sale">
+							<div class="recent-products-item-img">
+								<img src="./img/products-item-1.png" alt="product-1"/>
+							</div>
+							<div class="recent-products-item-name">
+								<a href="javascript:">Air Jordan XXXIV</a>
+							</div>
+							<div class="recent-products-item-brand">
+								<a href="javascript:">Nike</a>
+							</div>
+							<div class="recent-products-item-rating">
+								<div class="star-rating__stars">
+									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+									<div class="star-rating__focus"></div>
+								</div>
+							</div>
+							<div class="recent-products-item-cost">
+								<span>180$</span>
+							</div>
+							<div class="recent-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="recent-products-item">
+							<div class="recent-products-item-img">
+								<img src="./img/products-item-2.png" alt="product-1"/>
+							</div>
+							<div class="recent-products-item-name">
+								<a href="javascript:">Оливковое масло для тела (...</a>
+							</div>
+							<div class="recent-products-item-brand">
+								<a href="javascript:">Procter and campbell</a>
+							</div>
+							<div class="recent-products-item-rating">
+								<div class="star-rating__stars">
+									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+									<div class="star-rating__focus"></div>
+								</div>
+							</div>
+							<div class="recent-products-item-cost">
+								<span>5$</span> <span class="inactive-price">25$</span>
+							</div>
+							<div class="recent-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="recent-products-item new sale">
+							<div class="recent-products-item-img">
+								<img src="./img/products-item-3.png" alt="product-1"/>
+							</div>
+							<div class="recent-products-item-name">
+								<a href="javascript:">Nike Air Force 1 React</a>
+							</div>
+							<div class="recent-products-item-brand">
+								<a href="javascript:">Nike</a>
+							</div>
+							<div class="recent-products-item-rating">
+								<div class="star-rating__stars">
+									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+									<div class="star-rating__focus"></div>
+								</div>
+							</div>
+							<div class="recent-products-item-cost">
+								<span>120$</span> <span class="inactive-price">150$</span>
+							</div>
+							<div class="recent-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="recent-products-item">
+							<div class="recent-products-item-img">
+								<img src="./img/products-item-3.png" alt="product-1"/>
+							</div>
+							<div class="recent-products-item-name">
+								<a href="javascript:">Nike Air Force 1 React</a>
+							</div>
+							<div class="recent-products-item-brand">
+								<a href="javascript:">Nike</a>
+							</div>
+							<div class="recent-products-item-rating">
+								<div class="star-rating__stars">
+									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+									<div class="star-rating__focus"></div>
+								</div>
+							</div>
+							<div class="recent-products-item-cost">
+								<span>120$</span> <span class="inactive-price">150$</span>
+							</div>
+							<div class="recent-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="recent-products-item new sale">
+							<div class="recent-products-item-img">
+								<img src="./img/products-item-1.png" alt="product-1"/>
+							</div>
+							<div class="recent-products-item-name">
+								<a href="javascript:">Air Jordan XXXIV</a>
+							</div>
+							<div class="recent-products-item-brand">
+								<a href="javascript:">Nike</a>
+							</div>
+							<div class="recent-products-item-rating">
+								<div class="star-rating__stars">
+									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+									<div class="star-rating__focus"></div>
+								</div>
+							</div>
+							<div class="recent-products-item-cost">
+								<span>180$</span>
+							</div>
+							<div class="recent-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="recent-products-item sale">
+							<div class="recent-products-item-img">
+								<img src="./img/products-item-1.png" alt="product-1"/>
+							</div>
+							<div class="recent-products-item-name">
+								<a href="javascript:">Air Jordan XXXIV</a>
+							</div>
+							<div class="recent-products-item-brand">
+								<a href="javascript:">Nike</a>
+							</div>
+							<div class="recent-products-item-rating">
+								<div class="star-rating__stars">
+									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+									<div class="star-rating__focus"></div>
+								</div>
+							</div>
+							<div class="recent-products-item-cost">
+								<span>180$</span>
+							</div>
+							<div class="recent-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="recent-products-item">
+							<div class="recent-products-item-img">
+								<img src="./img/products-item-2.png" alt="product-1"/>
+							</div>
+							<div class="recent-products-item-name">
+								<a href="javascript:">Оливковое масло для тела (...</a>
+							</div>
+							<div class="recent-products-item-brand">
+								<a href="javascript:">Procter and campbell</a>
+							</div>
+							<div class="recent-products-item-rating">
+								<div class="star-rating__stars">
+									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+									<div class="star-rating__focus"></div>
+								</div>
+							</div>
+							<div class="recent-products-item-cost">
+								<span>5$</span> <span class="inactive-price">25$</span>
+							</div>
+							<div class="recent-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="recent-products-item new sale">
+							<div class="recent-products-item-img">
+								<img src="./img/products-item-3.png" alt="product-1"/>
+							</div>
+							<div class="recent-products-item-name">
+								<a href="javascript:">Nike Air Force 1 React</a>
+							</div>
+							<div class="recent-products-item-brand">
+								<a href="javascript:">Nike</a>
+							</div>
+							<div class="recent-products-item-rating">
+								<div class="star-rating__stars">
+									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+									<div class="star-rating__focus"></div>
+								</div>
+							</div>
+							<div class="recent-products-item-cost">
+								<span>120$</span> <span class="inactive-price">150$</span>
+							</div>
+							<div class="recent-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="recent-products-item">
+							<div class="recent-products-item-img">
+								<img src="./img/products-item-3.png" alt="product-1"/>
+							</div>
+							<div class="recent-products-item-name">
+								<a href="javascript:">Nike Air Force 1 React</a>
+							</div>
+							<div class="recent-products-item-brand">
+								<a href="javascript:">Nike</a>
+							</div>
+							<div class="recent-products-item-rating">
+								<div class="star-rating__stars">
+									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+									<div class="star-rating__focus"></div>
+								</div>
+							</div>
+							<div class="recent-products-item-cost">
+								<span>120$</span> <span class="inactive-price">150$</span>
+							</div>
+							<div class="recent-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="faq">
+				<h2>faq</h2>
+				<ul class="faq-list row">
+					<li class="faq-item col-4">
+						<div class="faq-item-img">
+							<img src="./img/faq_1.png" alt="faq_1"/>
+						</div>
+						<div class="faq-item-headline">
+							<h6>Желания должны сбываться</h6>
+						</div>
+						<div class="faq-item-text">
+							<p>Даже за минуту до Нового года</p>
+						</div>
+					</li>
+					<li class="faq-item col-4">
+						<div class="faq-item-img">
+							<img src="./img/faq_2.png" alt="faq_2"/>
+						</div>
+						<div class="faq-item-headline">
+							<h6>Аутлет в центре Москвы</h6>
+						</div>
+						<div class="faq-item-text">
+							<p>Здесь, на площади в 1000 кв. метров, вас ждут 500 любимых марок с самыми большими
+								скидками.
+							</p>
+						</div>
+					</li>
+					<li class="faq-item col-4">
+						<div class="faq-item-img">
+							<img src="./img/faq_3.png" alt="faq_3"/>
+						</div>
+						<div class="faq-item-headline">
+							<h6>Ювелирные изделия James st</h6>
+						</div>
+						<div class="faq-item-text">
+							<p>Даже за минуту до Нового года
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="getApp">
+				<div class="getApp-img col-6">
+					<img src="./img/download-app.png" alt="download-app"/>
+				</div>
+				<div class="getApp-text col-6">
+					<h3>Скачать <br/>
+						приложение</h3>
+					<p>Покупать вещи никогда не было так легко,<br/>
+						как с мобильным приложением</p>
+					<a href="javascript:" class="btn btn-kervan longer">Скачать</a>
+				</div>
+			</div>
+			<div class="popular-products">
+				<div class="popular-products-headline">
+					<h4>Недавние</h4>
+					<ul class="categories"></ul>
+				</div>
+				<div class="popular-products-container">
+					<ul class="popular-products-categories owl-carousel owl-theme">
+						<li class="popular-products-category">
+							<div class="popular-products-banner">
+								<img src="img/popular-products-banner.png" alt="img"/>
+							</div>
+							<ul class="popular-products-items">
+								<li class="popular-products-item new sale">
+									<div class="popular-products-item-img">
+										<img src="img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-2.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Оливковое масло для тела (...</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Procter and campbell</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>5$</span> <span class="inactive-price">25$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item new sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-3.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Nike Air Force 1 React</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>120$</span> <span class="inactive-price">150$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-3.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Nike Air Force 1 React</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>120$</span> <span class="inactive-price">150$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item new sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-2.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Оливковое масло для тела (...</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Procter and campbell</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>5$</span> <span class="inactive-price">25$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="popular-products-category">
+							<ul class="popular-products-items">
+								<li class="popular-products-item new sale">
+									<div class="popular-products-item-img">
+										<img src="img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-2.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Оливковое масло для тела (...</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Procter and campbell</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>5$</span> <span class="inactive-price">25$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item new sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-3.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Nike Air Force 1 React</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>120$</span> <span class="inactive-price">150$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-3.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Nike Air Force 1 React</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>120$</span> <span class="inactive-price">150$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item new sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-2.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Оливковое масло для тела (...</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Procter and campbell</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>5$</span> <span class="inactive-price">25$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="popular-products-category">
+							<ul class="popular-products-items">
+								<li class="popular-products-item new sale">
+									<div class="popular-products-item-img">
+										<img src="img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-2.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Оливковое масло для тела (...</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Procter and campbell</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>5$</span> <span class="inactive-price">25$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item new sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-3.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Nike Air Force 1 React</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>120$</span> <span class="inactive-price">150$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-3.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Nike Air Force 1 React</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>120$</span> <span class="inactive-price">150$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item new sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item sale">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-1.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Air Jordan XXXIV</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Nike</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>180$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+								<li class="popular-products-item">
+									<div class="popular-products-item-img">
+										<img src="./img/products-item-2.png" alt="product-1"/>
+									</div>
+									<div class="popular-products-item-name">
+										<a href="javascript:">Оливковое масло для тела (...</a>
+									</div>
+									<div class="popular-products-item-brand">
+										<a href="javascript:">Procter and campbell</a>
+									</div>
+									<div class="popular-products-item-rating">
+										<div class="star-rating__stars">
+											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
+											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
+											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
+											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
+											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
+											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+											<div class="star-rating__focus"></div>
+										</div>
+									</div>
+									<div class="popular-products-item-cost">
+										<span>5$</span> <span class="inactive-price">25$</span>
+									</div>
+									<div class="popular-products-item-period">
+								<span>
+									96 days 11:35:18
+								</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
