@@ -55,6 +55,31 @@ h2 {
       background-size: cover;
     }
   }
+  &.without-bg {
+    border: 1px solid #ff6f55;
+    background: transparent;
+    color: #ff6f55;
+    &:hover {
+      color: #ff6f55;
+      border: 1px solid inherit;
+    }
+    &-arr {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-right: 3rem;
+      &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        right: 1.5rem;
+        width: 9px;
+        height: 14px;
+        background: url("../img/right-arr-red.png") no-repeat right;
+        background-size: cover;
+      }
+    }
+  }
   &.longer {
     padding: .5rem 4rem;
   }
@@ -64,7 +89,6 @@ h2 {
   margin: .75rem 0;
   background: #e2e2e2;
   height: 1px;
-
 }
 //STARS
 .star-rating__stars {

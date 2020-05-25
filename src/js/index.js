@@ -1,6 +1,8 @@
 import $ from "jquery";
 import bootstrap from "bootstrap";
-import 'owl.carousel2/dist/owl.carousel'
+import 'owl.carousel2/dist/owl.carousel';
+
+import categories from '../json/categories'
 
 const bgSwitcher = document.getElementById('bg-switcher');
 
@@ -71,3 +73,13 @@ $('.popular-products-categories').owlCarousel({
     }
   }
 });
+const popularProductsWrapper = document.getElementById('popularProductsWrapper');
+if (popularProductsWrapper) {
+  const popularProductsDots = popularProductsWrapper.querySelector('.owl-dots');
+  document.addEventListener('DOMContentLoaded', () => {
+    popularProductsDots.innerHTML = categories.map((elem,index) =>
+      `<div class="owl-dot${index == 0 ? ' active' : ''}">${elem.name}</div>`
+    ).join('')
+  })
+}
+
