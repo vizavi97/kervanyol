@@ -90,6 +90,13 @@ h2 {
   background: #e2e2e2;
   height: 1px;
 }
+.favourite-btn {
+  font-size: 20px;
+  color: black;
+  &.active {
+    color: #ff6f55;
+  }
+}
 //STARS
 .star-rating__stars {
   position: relative;

@@ -6,7 +6,7 @@ body {
   width: 100%;
 
   &.layout {
-    background: url("../img/layouts/1.png") no-repeat top;
+    background: url("../img/layouts/product.png") no-repeat top;
     height: 5000px;
     //background-size: 1600px;
     background-size: 1570px;
@@ -122,6 +122,20 @@ header {
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
       }
     }
+  }
+}
+//STARS
+.stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.star {
+  color: #c2c2c2;
+  font-size: 16px;
+  padding-right: 3px;
+  &.active {
+    color: #ffc107;
   }
 }
 //END-LANGUAGE_PANEL
@@ -512,6 +526,7 @@ footer {
 
 //STATIC-TOP-BANNER
 .static-slider {
+  padding-top: 1rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -521,6 +536,14 @@ footer {
     position: absolute;
     left: 0;
     right: 0;
+    color: #000000;
+    text-transform: none;
+    font-family: "Montserrat";
+    font-size: 46px;
+    font-weight: 700;
+  }
+  img {
+    min-height: 200px;
   }
 }
 
@@ -534,10 +557,10 @@ footer {
     padding-right: 24px;
     position: relative;
     a {
-      color: #bccbd9;
-      font-family: "SF Pro Display";
+      color: #7d8b9d;
+      font-family: "Montserrat";
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 500;
     }
     &.active {
       a {

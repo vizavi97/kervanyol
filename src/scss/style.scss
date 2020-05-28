@@ -3,13 +3,18 @@
 @import "smart-grid";
 @import '~owl.carousel2/dist/assets/owl.carousel.css';
 @import "~font-awesome/scss/font-awesome";
+@import "~drift-zoom/dist/drift-basic.css";
+@import "~swiper/css/swiper.min.css";
 @import "variables";
+@import "zoomple.css";
 @import "fonts";
 //LAYOUT
 @import "layout";
 //PAGES
 @import "./pages/main_page";
 @import "./pages/categories";
+@import "./pages/catalog";
+@import "./pages/product";
 
 
 

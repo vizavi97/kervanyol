@@ -1,21 +1,25 @@
 .categories {
-  padding-top: 1.5rem;
+  padding: 1.5rem 0 8rem;
   &-elements {
-    @include col();
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include row-flex();
   }
   &-element {
+    @include col();
     @include size(2.4);
     min-height: 200px;
-    border: 1px solid #cad1df;
     background-color: #fff;
     box-shadow: 0 16px 50px #E9EEF780;
     border-radius: 5px;
     margin-bottom: 1.5rem;
+    transition: all .3s ease-in;
+    &:hover {
+      box-shadow: 0 0 15px 2px rgba(0, 0, 0, .15);
+      * {
+         text-decoration: none;
+       }
+    }
     &-inner {
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;

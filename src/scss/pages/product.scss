@@ -1,0 +1,124 @@
+.product {
+  &-sides {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 2rem;
+    @include row-flex();
+  }
+
+  &-main {
+    @include col();
+    @include size(9);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: white;
+    padding-top: 1rem;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    &-info {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      text-align: left;
+      padding-left: 1rem;
+      &-headline {
+        color: #000711;
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+      }
+      & > div {
+        display: flex;
+        flex-direction: column;
+      }
+      &-prop {
+        & > h6 {
+          color: #000711;
+          font-family: "Montserrat";
+          font-size: 12px;
+          font-weight: 700;
+        }
+        & > ul {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+      &-cost {
+
+      }
+    }
+  }
+  &.content {
+    margin-top: 1rem;
+    background: #f9fafc;
+    .content-container {
+      padding-top:  1rem;
+    }
+  }
+  &-slider {
+    width: 400px;
+    &-container {
+      width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 0;
+    }
+    &-top {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      &-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      &-slide {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #333;
+      }
+    }
+    &-thumbs {
+      padding-top: .5rem;
+      &-wrapper {
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+      }
+      &-slide {
+        width: 50px!important;
+        padding: 1px;
+        margin-right: 10px;
+        border: 1px solid #dfe3eb;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+    }
+  }
+}
+.drift-zoom-pane.drift-inline {
+  width: 200px;
+  height: 125px;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 2px rgba(0, 0, 0, .5);
+  border: 2px solid rgba(154, 154, 154, 0.81);
+}

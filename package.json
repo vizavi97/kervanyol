@@ -11,10 +11,16 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "drift-zoom": "^1.4.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
+    "jquery.magnify": "^1.5.1",
+    "js-image-zoom": "^0.7.0",
+    "lightslider": "^1.1.6",
     "owl.carousel2": "^2.2.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "slick-slider": "^1.8.2",
+    "swiper": "^5.4.1"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",

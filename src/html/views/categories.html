@@ -1,4 +1,4 @@
-<% var data = {title: "CATEGORIES_PAGE",}; %>
+<% var data = {title: "CATEGORIES_PAGE",banner: 'Все категории'}; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <%= _.template(require('./../includes/static-top-banner.html').default)(data) %>
 <main class="content">
@@ -187,6 +187,4 @@
 		</div>
 	</div>
 </main>
-
-
 <%= _.template(require('./../includes/footer.html').default)(data) %>
