@@ -135,3 +135,23 @@ var productSliderTop = new Swiper('.product-slider-top', {
     swiper: productSliderThumbs
   }
 });
+
+//COUNTER PRODUCT_PAGE
+
+document.addEventListener('DOMContentLoaded', () => {
+  let counter = document.getElementById('counterSum');
+  let counterValue = Number(counter.value);
+  const counterInc = document.getElementById('counter-inc');
+  const counterDecr = document.getElementById('counter-decr');
+  counterInc.addEventListener('click', () => {
+    counterValue++;
+    counter.value = counterValue;
+  });
+  counterDecr.addEventListener('click', () => {
+    counterValue--;
+    counter.value = counterValue;
+  });
+  console.log(counterValue);
+});
+
+
