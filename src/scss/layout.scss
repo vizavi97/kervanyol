@@ -372,6 +372,8 @@ header {
           height: 5px;
           background: rgba(0, 96, 210, 0.8);
           border-radius: 50%;
+          opacity: 0;
+          animation: pulse 2s infinite;
         }
       }
 
