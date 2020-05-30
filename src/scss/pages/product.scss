@@ -72,7 +72,8 @@
             flex-wrap: wrap;
           }
           li {
-            padding-right: 1rem;
+            padding-right: 0.5rem;
+            padding-bottom: .75rem;
             a {
               padding: 5px 1rem;
               border: 1px solid #dfe3eb;
@@ -92,7 +93,7 @@
           }
         }
         &.count {
-          padding-top: 20px;
+          padding-top: 10px;
           & .product-card-info-prop-counter {
             display: flex;
             flex-direction: row;
@@ -254,7 +255,7 @@
   }
   &-tabs {
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 3rem;
     .nav-link {
       color: #000000;
       font-family: "Montserrat";
@@ -264,6 +265,7 @@
       &.active {
         font-weight: 700;
         color: #ff6f55;
+        background: transparent;
 
       }
       &:first-of-type {
@@ -303,7 +305,7 @@
     }
   }
   &-slider {
-    width: 400px;
+    width: 380px;
 
     &-container {
       width: 100%;
