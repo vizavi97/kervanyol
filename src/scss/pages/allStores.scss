@@ -1,6 +1,7 @@
 .allStores {
+  padding-bottom: rem(120);
   &.content {
-    margin-top: 1rem;
+    margin-top: rem(24);
     background: #f9fafc;
 
     .content-container {
@@ -34,7 +35,7 @@
     display: block;
     text-decoration: none;
     background-color: #fff;
-    box-shadow: 0 16px 50px #E9EEF780;
+    box-shadow: 0 rem(16) rem(50) #E9EEF780;
     border-radius: 5px;
     margin: rem(12) 0;
     transition: all .3s ease-in;
@@ -45,7 +46,7 @@
     &-block{
       display: flex;
       align-items: center;
-      padding-bottom: rem(12);
+      padding-bottom: rem(6);
       &-info{
         h5 {
           color: #000000;
@@ -63,14 +64,13 @@
         }
         &-rating {
           display: flex;
-          padding-bottom: 5px;
 
           .star {
             font-size: 13px;
           }
 
           &-orders{
-            padding-left: .5rem;
+            padding-left: rem(5);
             span{
               font-family: "Montserrat";
               font-size: rem(12);
@@ -81,5 +81,27 @@
         }
       }
     }
+    &-items{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 rem(-3);
+    }
+    &-item{
+      width: calc(50% - 6px);
+      margin: rem(3);
+      max-height: rem(105);
+      min-height: rem(105);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F2F2F2;
+      border-radius: rem(5);
+      overflow: hidden;
+    }
+  }
+
+  .catalog-container-pageNavigation{
+    padding-top: rem(20);
   }
 }
