@@ -1,5 +1,10 @@
 //COLORS
 
+//Methods
+$browser-context: 16;
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
 
 //CLASSES
 h2 {
