@@ -6,6 +6,13 @@ $browser-context: 16;
   @return #{$pixels/$context}rem;
 }
 
+//BOOTSTRAP CUSTOM GRID CONTAINER
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1170px;
+  }
+}
 //CLASSES
 h2 {
   color: #000000;
