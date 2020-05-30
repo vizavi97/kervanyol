@@ -38,6 +38,7 @@ jspm_packages/
 dist/
 docs/
 img/
+.idea/
 
 # Typescript v1 declaration files
 typings/

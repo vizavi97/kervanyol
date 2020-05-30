@@ -154,4 +154,10 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log(counterValue);
 });
 
+function example(number,number2) {
+  const calculator = number + number2;
+  return calculator
+}
+
+console.log(example((2,5)));
 
