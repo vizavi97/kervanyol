@@ -1,0 +1,107 @@
+<% var data = {title: "PRODUCT_PAGE",}; %><%= _.template(require('./../includes/header.html').default)(data) %>
+<main class="content allStores">
+    <div class="container">
+        <div class="content-container">
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs-items">
+                    <li class="breadcrumbs-item active">
+                        <a href="javascript:">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a href="javascript:">
+                            Все категории
+                        </a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a href="javascript:">
+                            Верхняя одежда
+                        </a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a href="javascript:">
+                            Головные уборы спецназначения
+                        </a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a href="javascript:">
+                            Air Jordan XXXIV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="allStores-headline">
+                <h3>Все магазины</h3>
+                <p>3460 магазинов</p>
+            </div>
+            <div class="allStores-items">
+                <div class="allStores-item">
+                    <a class="allStores-card" href="javascript:">
+                        <div class="allStores-card-block">
+                            <img src="img/allStores/stores-1.png" alt="stores-1.png">
+                            <div class="allStores-card-block-info">
+                                <h5>General Mobile</h5>
+                                <p>Всё для стиля и комфорта</p>
+                                <div class="store-card-info-rating">
+                                    <ul class="stars">
+                                        <li class="star active">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star active">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star active">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star active">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star active">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="store-card-info-rating-orders">
+                                        <span>4.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-container-item-img">
+                            <img src="./img/catalog/item-1.png" alt="product-1">
+                        </div>
+                    </a>
+                </div>
+                <div class="catalog-container-pageNavigation">
+                    <ul class="catalog-container-pageNavigation-items">
+                        <li class="catalog-container-pageNavigation-item active">
+                            <a href="javascript:">1</a>
+                        </li>
+                        <li class="catalog-container-pageNavigation-item">
+                            <a href="javascript:">2</a>
+                        </li>
+                        <li class="catalog-container-pageNavigation-item">
+                            <a href="javascript:">3</a>
+                        </li>
+                        <li class="catalog-container-pageNavigation-item">
+                            <a href="javascript:">4</a>
+                        </li>
+                        <li class="catalog-container-pageNavigation-item">
+                            <a href="javascript:">5</a>
+                        </li>
+                        <li class="catalog-container-pageNavigation-item">
+                            <a href="javascript:">...</a>
+                        </li>
+                        <li class="catalog-container-pageNavigation-item">
+                            <a href="javascript:">10</a>
+                        </li>
+                        <li class="catalog-container-pageNavigation-item">
+                            <a href="javascript:"><i class="fas fa-angle-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

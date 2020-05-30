@@ -1,0 +1,85 @@
+.allStores {
+  &.content {
+    margin-top: 1rem;
+    background: #f9fafc;
+
+    .content-container {
+      padding-top: 1rem;
+    }
+  }
+  &-headline{
+    padding: rem(24) 0 rem(6);
+    h3{
+      font-family: "Montserrat";
+      font-size: rem(24);
+      font-weight: 600;
+      margin-bottom: rem(5);
+    }
+    p{
+      font-family: "Montserrat";
+      font-size: rem(12);
+      font-weight: 400;
+      letter-spacing: 0.01px;
+      margin: 0;
+    }
+  }
+  &-items{
+    @include row-flex();
+  }
+  &-item{
+    @include col();
+    @include size(3);
+  }
+  &-card{
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0 16px 50px #E9EEF780;
+    border-radius: 5px;
+    margin: rem(12) 0;
+    transition: all .3s ease-in;
+    padding: rem(22) rem(14) rem(13);
+    &:hover, &:focus{
+      text-decoration: none;
+    }
+    &-block{
+      display: flex;
+      align-items: center;
+      padding-bottom: rem(12);
+      &-info{
+        h5 {
+          color: #000000;
+          font-family: "Montserrat";
+          font-size: rem(16);
+          font-weight: 700;
+          margin-bottom: rem(3);
+        }
+        p{
+          font-family: "Montserrat";
+          font-size: rem(10);
+          font-weight: 400;
+          color: #9EA6B0;
+          margin: 0;
+        }
+        &-rating {
+          display: flex;
+          padding-bottom: 5px;
+
+          .star {
+            font-size: 13px;
+          }
+
+          &-orders{
+            padding-left: .5rem;
+            span{
+              font-family: "Montserrat";
+              font-size: rem(12);
+              font-weight: 700;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
