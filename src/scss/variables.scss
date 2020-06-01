@@ -112,15 +112,16 @@ h2 {
 //STARS
 .star-rating__stars {
   position: relative;
-  background: url("../img/star-review.png");
-  height: 18px;
-  width: 90px;
-  background-size: 18px 18px;
+  background: url("../img/star-not-checked.png");
+  height: 15px;
+  width: 80px;
+  background-size: 16px 15px;
+
 }
 .star-rating__label {
   position: absolute;
   height: 100%;
-  background-size: 20px 20px;
+  background-size: 16px 15px!important;
   cursor: pointer;
 }
 .star-rating__input {
@@ -153,10 +154,10 @@ h2 {
 .star-rating__input:checked + .star-rating__label,
 .star-rating__input:focus + .star-rating__label,
 .star-rating__label:hover {
-  background: url("../img/star-review-checked.png");
+  background: url("../img/star-checked.png");
 }
 .star-rating__label:hover ~ .star-rating__label {
-  background: url("../img/star-review.png");
+  background: url("../img/star-not-checked.png");
 }
 .star-rating__input:focus ~ .star-rating__focus {
   position: absolute;

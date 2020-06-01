@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: flex-start;
     background-color: white;
-    padding: 1rem 1rem 5rem;
+    padding: 1rem 1rem 3rem;
   }
   &-store {
     @include col();
@@ -520,6 +520,248 @@
         }
       }
     }
+    &-reviews {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding-top: 1.75rem;
+      &-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      &-rating {
+        &-mark {
+          padding-top: 1rem;
+          h1 {
+            color: #000000;
+            font-family: "Montserrat";
+            font-size: 60px;
+            font-weight: 600;
+            letter-spacing: 0.06px;
+            margin-bottom: 0;
+          }
+        }
+        &-comments {
+          padding-top: .25rem;
+          span {
+            color: #b9b9b9;
+            font-family: "Montserrat";
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.01px;
+            padding-left: .5rem;
+          }
+        }
+      }
+      &-marks {
+        padding-left: 4.5rem;
+        padding-top: 1.5rem;
+      }
+      &-mark {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: rem(6);
+        .star {
+          font-size: 13px;
+        }
+        span {
+          color: #000000;
+          font-family: "Montserrat";
+          font-size: 12px;
+          font-weight: 400;
+          padding-left: 5px;
+          padding-right: 20px;
+        }
+        &-range {
+          width: 142px;
+          height: 2px;
+          background-color: #dbdbdb;
+          div {
+            height: 100%;
+            background-color: #fbb03b;
+          }
+        }
+      }
+      &-comments {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-top: 3.5rem;
+        &-count {
+          h6 {
+            color: #000000;
+            font-family: "Montserrat";
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0;
+          }
+        }
+        &-items {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+        }
+        &-item {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 2rem 0;
+          border-bottom: 1px solid #e1e6ee;
+          &:last-of-type {
+            border-bottom: none;
+          }
+          &-img {
+            display: flex;
+            justify-content: center;
+            padding-right: 1.5rem;
+            min-width: 70px;
+            img {
+              width: 40px!important;
+              border-radius: 50%;
+            }
+          }
+          &-content {
+            display: flex;
+            flex-direction: column;
+            &-info {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+            }
+            &-text {
+              padding-top: .5rem;
+              p {
+                color: #9ea6b0;
+                font-family: "Montserrat";
+                font-size: .75rem;
+                font-weight: 400;
+                line-height: 22px;
+                margin-bottom: 0;
+              }
+            }
+          }
+          &-name {
+            h6 {
+              color: #000000;
+              font-family: "Montserrat";
+              font-size: rem(15);
+              font-weight: 600;
+              margin: 0;
+            }
+          }
+          &-stars {
+            padding-left: 1.25rem;
+            padding-right: 1.5rem;
+            .star {
+              font-size: rem(15);
+            }
+          }
+          &-date {
+            padding-right: 1.5rem;
+            span {
+              color: #b9b9b9;
+              font-family: "Montserrat";
+              font-size: .75rem;
+              font-weight: 400;
+            }
+          }
+          &-review {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #dfe3eb;
+            span {
+              padding: .25rem 1.125rem;
+              color: #636363;
+              font-family: "Montserrat";
+              font-size: 12px;
+              font-weight: 600;
+              letter-spacing: 0.01px;
+            }
+          }
+
+        }
+        &-form {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 2rem 0;
+          border-bottom: 1px solid #e1e6ee;
+          &-img {
+            display: flex;
+            justify-content: center;
+            padding-right: 1.5rem;
+            min-width: 70px;
+            img {
+              width: 40px!important;
+              border-radius: 50%;
+            }
+          }
+          &-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            h6 {
+              color: #000000;
+              font-family: "Montserrat";
+              font-size: rem(15);
+              font-weight: 600;
+              margin-bottom: 0;
+            }
+          }
+          &-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+          }
+          &-stars {
+            padding-left: 2rem;
+          }
+          &-textarea {
+            padding-top: .5rem;
+            textarea {
+              width: 100%;
+              border: 1px solid #DFE3EB;
+              text-align: left;
+              resize: none;
+              padding: .75rem 1rem;
+              font-size: .75rem;
+              color: #7D8B9D;
+              border-radius: 5px;
+              &:focus {
+                border-color: #ff6f55;
+              }
+            }
+          }
+          &-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            .refresh-btn {
+              margin-right: 1.5rem;
+              button {
+                background: transparent;
+                color: #BCCBD9;
+                font-family: "Montserrat";
+              }
+            }
+            .submit-btn {
+              button {
+                padding: .5rem 1.5rem;
+              }
+            }
+          }
+        }
+
+      }
+    }
   }
   &.content {
     margin-top: 1rem;
@@ -764,6 +1006,7 @@
       }
     }
   }
+
 }
 
 .drift-zoom-pane.drift-inline {
