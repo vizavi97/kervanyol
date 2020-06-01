@@ -74,6 +74,19 @@ $('.popular-products-categories').owlCarousel({
     }
   }
 });
+$('.exim-call-content-left').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplay: false,
+  navText: [" ", " "],
+  autoplayTimeout: 10000,
+  responsive: {
+    0: {
+      items: 1,
+    }
+  }
+});
 const popularProductsWrapper = document.getElementById('popularProductsWrapper');
 if (popularProductsWrapper) {
   const popularProductsDots = popularProductsWrapper.querySelector('.owl-dots');
