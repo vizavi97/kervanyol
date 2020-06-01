@@ -115,7 +115,7 @@ let paneContainer = document.querySelector('.product-slider-container');
 new Drift(demoTrigger, {
   paneContainer: paneContainer,
   inlinePane: true,
-  zoomFactor: 1.8,
+  zoomFactor: 2,
 });
 new Drift(demoCollection, {
   paneContainer: paneContainer,
@@ -153,11 +153,4 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   console.log(counterValue);
 });
-
-function example(number,number2) {
-  const calculator = number + number2;
-  return calculator
-}
-
-console.log(example((2,5)));
 
