@@ -6,7 +6,7 @@ body {
   width: 100%;
 
   &.layout {
-    background: url("../img/layouts/product-2.png") no-repeat top;
+    background: url("../img/layouts/data-filling.png") no-repeat top;
     height: 5000px;
     background-size: 1600px;
     position: relative;
@@ -402,6 +402,9 @@ header {
     display: flex;
     flex-direction: column;
     padding-top: 58px;
+  }
+  &.grey {
+    background-color: #f9fafc;
   }
 }
 //END-CONTENT

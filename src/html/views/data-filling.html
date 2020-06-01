@@ -1,0 +1,172 @@
+<% var data = {title: "PRODUCT_PAGE",}; %><%= _.template(require('./../includes/header.html').default)(data) %>
+<main class="content grey">
+	<div class="container">
+		<div class="content-container pt-4">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs-items">
+					<li class="breadcrumbs-item active">
+						<a href="javascript:">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Импорт и Экспорт
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Оформление заявки
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="dataFilling">
+				<div class="dataFilling-headline">
+					<h3>Заполните данные</h3>
+				</div>
+				<div class="dataFilling-container">
+					<div class="dataFilling-name">
+						<label for="filling-name">
+							<span>Название огранизации</span>
+							<input type="text" name="name" id="filling-name" placeholder="__"/>
+						</label>
+					</div>
+					<div class="dataFilling-count">
+						<label for="filling-textarea">
+							<span>Минимальное кол-во заказа</span>
+							<textarea name="filling-textarea"
+							          placeholder="От 500руб"
+							          id="filling-textarea"></textarea>
+						</label>
+					</div>
+					<div class="dataFilling-certificate">
+						<h4>Требуемые сертификаты</h4>
+						<label for="filling-file-drop">
+							<img src="img/data-falling/plus.png" alt="plus"/>
+							<span>Загрузить</span>
+							<input type="file" id="filling-file-drop"/>
+						</label>
+						<p>Максимальный размер фото  110x110</p>
+					</div>
+					<div class="dataFilling-website">
+						<div class="dataFilling-website-inputs">
+							<label for="filling-website">
+								<span>Web-сайт</span>
+								<input type="text" name="name" id="filling-website" placeholder="__"/>
+							</label>
+							<label for="filling-ogrn">
+								<span>ОГРН</span>
+								<input type="text" name="name" id="filling-ogrn" placeholder="__"/>
+							</label>
+						</div>
+						<div class="dataFilling-website-checkboxes">
+							<input type="checkbox" id="filling-ogrn-checkboxes"/>
+							<label for="filling-ogrn-checkboxes">
+								<span>Ввести ОГРНИП</span>
+							</label>
+						</div>
+					</div>
+					<div class="dataFilling-organization">
+						<div class="dataFilling-organization-inputs">
+							<label for="filling-organization-position">
+								<span>Должось руководителя</span>
+								<input type="text" name="name" id="filling-organization-position" placeholder="__"/>
+							</label>
+							<label for="filling-organization-name">
+								<span>Руководитель организации</span>
+								<input type="text" name="name" id="filling-organization-name" placeholder="__"/>
+							</label>
+						</div>
+						<div class="dataFilling-organization-inputs">
+							<label for="filling-organization-region">
+								<span>Регион</span>
+								<input type="text" name="name" id="filling-organization-region" placeholder="__"/>
+							</label>
+							<label for="filling-organization-uniting">
+								<span>Принаддежность к отраслевым союзам</span>
+								<input type="text" name="name" id="filling-organization-uniting" placeholder="__"/>
+							</label>
+						</div>
+						<div class="dataFilling-website-checkboxes">
+							<input type="checkbox" id="filling-small-bussines-checkboxes"/>
+							<label for="filling-small-bussines-checkboxes">
+								<span>Субьект малого или среднего придпринимптельства</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="dataFilling-container">
+					<h5>Контакты организации</h5>
+					<div class="dataFilling-location">
+						<div class="dataFilling-location-inputs">
+							<label for="filling-location-position">
+								<span>Населный пункт</span>
+								<input type="text" name="name" id="filling-location-position" placeholder="__"/>
+							</label>
+							<label for="filling-location-address">
+								<span>Адрес</span>
+								<input type="text" name="name" id="filling-location-address" placeholder="__"/>
+							</label>
+						</div>
+						<div class="dataFilling-location-inputs">
+							<label for="filling-location-index">
+								<span>Индекс</span>
+								<input type="text" name="name" id="filling-location-index" placeholder="__"/>
+							</label>
+							<label for="filling-location-phone">
+								<span>Телефон организации</span>
+								<input type="text" name="name" id="filling-location-phone" placeholder="__"/>
+							</label>
+						</div>
+						<div class="dataFilling-location-inputs">
+							<label for="filling-location-fax">
+								<span>Факс</span>
+								<input type="text" name="name" id="filling-location-fax" placeholder="__"/>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="dataFilling-container">
+					<h5>Контакты организации</h5>
+					<div class="dataFilling-location">
+						<div class="dataFilling-location-inputs">
+							<label for="filling-location-surname">
+								<span>Фамилия</span>
+								<input type="text" name="name" id="filling-location-surname" placeholder="__"/>
+							</label>
+							<label for="filling-location-name">
+								<span>Имя</span>
+								<input type="text" name="name" id="filling-location-name" placeholder="__"/>
+							</label>
+						</div>
+						<div class="dataFilling-location-inputs">
+							<label for="filling-location-fatherName">
+								<span>Отчество</span>
+								<input type="text" name="name" id="filling-location-fatherName" placeholder="__"/>
+							</label>
+							<label for="filling-position">
+								<span>Должность</span>
+								<input type="text" name="name" id="filling-position" placeholder="__"/>
+							</label>
+						</div>
+						<div class="dataFilling-location-inputs">
+							<label for="filling-fax">
+								<span>Факс</span>
+								<input type="text" name="name" id="filling-fax" placeholder="__"/>
+							</label>
+							<label for="filling-location-mail">
+								<span>Емаил</span>
+								<input type="text" name="name" id="filling-location-mail" placeholder="__"/>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="dataFilling-button">
+					<button type="submit" class="btn-kervan">Продолжить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

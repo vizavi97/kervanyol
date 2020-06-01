@@ -1,0 +1,275 @@
+.dataFilling {
+  font-family: "Montserrat";
+  padding: 1.5rem 0;
+  textarea,input[type='text'] {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+    text-indent: 1.5rem;
+    border: 1px solid #dfe3eb;
+    background-color: #ffffff;
+    resize: none;
+    &:focus {
+      border-color: #ff6f55;
+    }
+  }
+  input[type='checkbox'] {
+    display: none;
+  }
+  &-headline {
+    h3 {
+
+      color: #000000;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+  }
+  &-container {
+    box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
+    background-color: #ffffff;
+    padding: 2.625rem 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+  &-name label {
+    display: flex;
+    flex-direction: column;
+    padding-top: .25rem;
+    span {
+      color: #000000;
+      font-size: .75rem;
+      font-weight: 500;
+      padding-bottom: .5rem;
+    }
+    input {
+      width: 518px;
+      height: 43px;
+      border-radius: 500rem;
+    }
+  }
+  &-count label {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    textarea {
+      height: 106px;
+      border-radius: 1rem;
+      padding-top: .5rem;
+    }
+    span {
+      color: #000000;
+      font-size: .75rem;
+      font-weight: 500;
+      padding-bottom: .5rem;
+    }
+  }
+  &-certificate {
+    padding-top: rem(14);
+    h4 {
+      color: #000000;
+      font-size: rem(14);
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+    input[type="file"] {
+      display: none;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 194px;
+      height: 253px;
+      border: 1px solid #dfe3eb;
+      background-color: #fbfbfb;
+      border-radius: 1rem;
+    }
+    span {
+      color: #68d20b;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.28px;
+      text-decoration: underline;
+    }
+    p {
+      color: #9ea6b0;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+  &-website {
+    &-inputs {
+      display: flex;
+      flex-direction: row;
+      label{
+        display: flex;
+        flex-direction: column;
+        &:first-of-type {
+          padding-right: 2rem;
+        }
+        input {
+          width: 518px;
+          height: 43px;
+          border: 1px solid #dfe3eb;
+          background-color: #ffffff;
+          border-radius: 500rem;
+        }
+        span {
+          color: #000000;
+          font-size: .75rem;
+          font-weight: 500;
+          padding-bottom: .5rem;
+        }
+      }
+    }
+    &-checkboxes {
+      padding-top: .5rem;
+      label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+        &:before {
+          position: absolute;
+          content: "";
+          left: 0;
+          width: 18px;
+          height: 18px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          font-family: "FontAwesome";
+          box-shadow: 0 3px 20px rgba(255, 111, 85, 0.3);
+          border: 1px solid #ff6f55;
+          background-color: #ffffff;
+          font-size: .75rem;
+          color: #ff6f55;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        span {
+          color: #000000;
+          font-size: .75rem;
+          font-weight: 500;
+          padding-left: 2rem;
+        }
+      }
+      input[type="checkbox"]:checked + label:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &-organization {
+    padding-top: .75rem;
+    &-inputs {
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      label{
+        display: flex;
+        flex-direction: column;
+        &:first-of-type {
+          padding-right: 2rem;
+        }
+        input {
+          width: 518px;
+          height: 43px;
+          border: 1px solid #dfe3eb;
+          background-color: #ffffff;
+          border-radius: 500rem;
+        }
+        span {
+          color: #000000;
+          font-size: .75rem;
+          font-weight: 500;
+          padding-bottom: .5rem;
+        }
+      }
+    }
+    &-checkboxes {
+      padding-top: .5rem;
+      label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+        &:before {
+          position: absolute;
+          content: "";
+          left: 0;
+          width: 18px;
+          height: 18px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          font-family: "FontAwesome";
+          box-shadow: 0 3px 20px rgba(255, 111, 85, 0.3);
+          border: 1px solid #ff6f55;
+          background-color: #ffffff;
+          font-size: .75rem;
+          color: #ff6f55;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        span {
+          color: #000000;
+          font-size: .75rem;
+          font-weight: 500;
+          padding-left: 2rem;
+        }
+      }
+      input[type="checkbox"]:checked + label:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &-location {
+    padding-top: .75rem;
+    &-inputs {
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: row;
+
+      label {
+        display: flex;
+        flex-direction: column;
+
+        &:first-of-type {
+          padding-right: 2rem;
+        }
+
+        input {
+          width: 518px;
+          height: 43px;
+          border: 1px solid #dfe3eb;
+          background-color: #ffffff;
+          border-radius: 500rem;
+        }
+
+        span {
+          color: #000000;
+          font-size: .75rem;
+          font-weight: 500;
+          padding-bottom: .5rem;
+        }
+      }
+    }
+  }
+  &-button {
+    button {
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: rem(10) rem(40);
+    }
+  }
+}
+
+body.layout {
+  background-position-y: 62px;
+}
