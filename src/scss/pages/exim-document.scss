@@ -197,6 +197,18 @@
     }
   }
   &-catalog{
-
+    input[type=checkbox]{
+      display: none;
+      &:checked+label span{
+        color: black;
+      }
+    }
+    .companies-nav-categories{
+      label{
+        &:before, &:after{
+          content: none;
+        }
+      }
+    }
   }
 }
