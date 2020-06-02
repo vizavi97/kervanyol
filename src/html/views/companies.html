@@ -1,6 +1,6 @@
 <% var data = {title: "Список компаний",};
 %>
-<%= _.template(require('./../includes/header.html').default)(data) %>
+<%= _.template(require('./../includes/headerExim.html').default)(data) %>
 <main class="content grey">
 	<div class="container">
 		<div class="content-container pt-4">
@@ -26,6 +26,44 @@
 			<div class="companies">
 				<div class="companies-banner">
 					<%= _.template(require('./../includes/banner-discount.html').default)(data) %>
+				</div>
+				<div class="companies-headline">
+					<h4>Список компаний</h4>
+				</div>
+				<div class="companies-container">
+					<div class="companies-filter">
+						<div class="companies-filter-nav">
+							<div class="companies-filter-nav-headline">
+								<h5>категории</h5>
+							</div>
+							<div class="companies-filter-nav-categories">
+								<input type="checkbox" id="selected-catalog-categories" checked/>
+								<label for="selected-catalog-categories">
+									<img src="img/catalog/catalog-category-mini.png" alt="img"/>
+									<span>Смежные категории</span>
+								</label>
+								<ul class="companies-filter-nav-categories-items">
+									<li class="companies-filter-nav-categories-item">
+										<a href="javascript:">
+											<span>Классические туфли</span> <strong>15520</strong>
+										</a>
+									</li>
+									<li class="companies-filter-nav-categories-item">
+										<a href="javascript:">
+											<span>Ботинки</span> <strong>15520</strong>
+										</a>
+									</li>
+									<li class="companies-filter-nav-categories-item">
+										<a href="javascript:">
+											<span>Кеды</span> <strong>15520</strong>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-container">
+					</div>
 				</div>
 			</div>
 		</div>

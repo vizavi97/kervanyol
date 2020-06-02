@@ -139,10 +139,10 @@ header {
     }
 
     &-category {
-      border-radius: rem(24);
-      padding: rem(10) rem(40);
+      border-radius: 1.5rem;
+      padding: .625rem 2rem;
       transition: all .3s ease-in;
-      margin: 0 0.5rem;
+      margin: 0 .25rem;
 
       &:hover {
         box-shadow: 0 0 1px 1px #ff6f55;
