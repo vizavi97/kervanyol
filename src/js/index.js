@@ -98,6 +98,14 @@ if (popularProductsWrapper) {
 }
 
 
+
+
+
+
+
+
+
+
 // CATALOG-TOGGLER
 document.addEventListener('DOMContentLoaded', () => {
   const cubeToggler = document.querySelector('.catalog-container-toggler-cube');
@@ -121,49 +129,73 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-let demoTrigger = document.querySelector('.swiper-slide-active').querySelector('img');
-let demoCollection = document.querySelector('.product-slider-thumbs-slide-img');
-let paneContainer = document.querySelector('.product-slider-container');
 
-new Drift(demoTrigger, {
-  paneContainer: paneContainer,
-  inlinePane: true,
-  zoomFactor: 2,
-});
-new Drift(demoCollection, {
-  paneContainer: paneContainer,
-  inlinePane: false,
-});
+const demoWrapper = document.getElementsByClassName('product-slider');
 
-var productSliderThumbs = new Swiper('.product-slider-thumbs', {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-});
-var productSliderTop = new Swiper('.product-slider-top', {
-  spaceBetween: 10,
-  thumbs: {
-    swiper: productSliderThumbs
-  }
-});
+if (demoWrapper.length > 0) {
+  let demoTrigger = document.querySelector('.swiper-slide-active').querySelector('img');
+  let demoCollection = document.querySelector('.product-slider-thumbs-slide-img');
+  let paneContainer = document.querySelector('.product-slider-container');
+  new Drift(demoTrigger, {
+    paneContainer: paneContainer,
+    inlinePane: true,
+    zoomFactor: 2,
+  });
+  new Drift(demoCollection, {
+    paneContainer: paneContainer,
+    inlinePane: false,
+  });
 
+  var productSliderThumbs = new Swiper('.product-slider-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var productSliderTop = new Swiper('.product-slider-top', {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: productSliderThumbs
+    }
+  });
+
+}
 //COUNTER PRODUCT_PAGE
 
 document.addEventListener('DOMContentLoaded', () => {
   let counter = document.getElementById('counterSum');
-  let counterValue = Number(counter.value);
-  const counterInc = document.getElementById('counter-inc');
-  const counterDecr = document.getElementById('counter-decr');
-  counterInc.addEventListener('click', () => {
-    counterValue++;
-    counter.value = counterValue;
-  });
-  counterDecr.addEventListener('click', () => {
-    counterValue--;
-    counter.value = counterValue;
-  });
-  console.log(counterValue);
+  if (counter) {
+    let counterValue = Number(counter.value);
+    const counterInc = document.getElementById('counter-inc');
+    const counterDecr = document.getElementById('counter-decr');
+    counterInc.addEventListener('click', () => {
+      counterValue++;
+      counter.value = counterValue;
+    });
+    counterDecr.addEventListener('click', () => {
+      counterValue--;
+      counter.value = counterValue;
+    });
+  }
 });
+
+
+
+//JQUERY Companies Filter-nav toggler
+
+$(document).on('click','.companies-nav-categories-item',function(){
+    $('.companies-nav-categories-item > a').removeClass('active');
+    $(this).find('a').addClass('active');
+});
+
+//JQUERY Companies Filter-nav toggler
+//
+// $(document).on('click','.companies-elements-type',function(){
+//   $('.companies-elements-type').removeClass('active');
+//   $(this).addClass('active');
+// });
+//
+
+
 
