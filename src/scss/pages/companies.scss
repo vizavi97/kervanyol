@@ -168,22 +168,109 @@
     }
   &-elements {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
     padding-left: 15px;
     &-headline {
+      width: 100%;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid #f0f1f2;
     }
-    &-types {
-
-    }
-    &-types {
+    &-type {
       color: #000000;
-      font-family: "Montserrat";
       font-size: 16px;
       font-weight: 400;
+      text-decoration: none;
+      margin-right: 2.625rem;
+      &.active {
+        color: #ff6f55;
+        font-weight: 700;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &-search {
+      form {
+        display: flex;
+        flex-direction: row;
+        width: 256px;
+        height: 50px;
+        border: 1px solid #ebebeb;
+        background-color: #ffffff;
+        border-radius: 2rem;
+        overflow: hidden;
+        input {
+          border: 0;
+          height: 100%;
+          width: 100%;
+          text-indent: 1rem;
+          color: #bebebe;
+          font-size: 1;
+          font-weight: 400;
+        }
+        button {
+          width: 72px;
+          height: 48px;
+          border: 1px solid #ff6f55;
+          background: transparent;
+          border-radius: 2rem;
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+    }
+    &-items {
+      width: 100%;
+      @include row-flex();
+      padding-top: 1.5rem;
+    }
+    &-item {
+      @include size(4);
+      @include col();
+      box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
+      background-color: #ffffff;
+      padding: rem(21) rem(14);
+      margin-bottom: 1.5rem;
+      span {
+        color: #9ea6b0;
+        font-size: rem(10);
+        font-weight: 400;
+      }
+      &-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e1e6ee;
+      }
+      &-img {
+        width: 68px;
+        height: 55px;
+        img {
+          border-radius: 5px;
+        }
+      }
+      &-description {
+        display: flex;
+        flex-direction: column;
+        padding-left: .5rem;
+
+        h5 {
+          color: #000000;
+          font-size: 1rem;
+          font-weight: 700;
+          margin-bottom: 0;
+        }
+      }
+      &-info {
+        padding-top: .5rem;
+      }
     }
   }
 

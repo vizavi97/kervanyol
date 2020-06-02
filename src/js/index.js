@@ -190,12 +190,12 @@ $(document).on('click','.companies-nav-categories-item',function(){
 });
 
 //JQUERY Companies Filter-nav toggler
-//
-// $(document).on('click','.companies-elements-type',function(){
-//   $('.companies-elements-type').removeClass('active');
-//   $(this).addClass('active');
-// });
-//
+
+$(document).on('click','.companies-elements-type',function(){
+  $('.companies-elements-type').removeClass('active');
+  $(this).addClass('active');
+});
+
 
 
 
