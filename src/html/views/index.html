@@ -1,4 +1,6 @@
-<% var data = {title: "MAIN_PAGE",}; %><%= _.template(require('./../includes/header.html').default)(data) %><%= _.template(require('./../includes/top-slider.html').default)(data) %>
+<% var data = {title: "MAIN_PAGE"}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<%= _.template(require('./../includes/top-slider.html').default)(data) %>
 
 <main class="content">
 	<div class="container">
@@ -44,19 +46,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="banners-middle">
-					<div class="banners-middle-img">
-						<img src="img/loyality-card.png" alt="img"/>
-					</div>
-					<div class="banners-middle-discount">
-						<h1>5%</h1>
-					</div>
-					<div class="banners-middle-info">
-						<h5>к любой скидке</h5>
-						<a href="javascript:">Наша карта лояльности в приложении <span>скачай прямо сейчас</span>
-						</a>
-					</div>
-				</div>
+				<%= _.template(require('./../includes/banner-discount.html').default)(data) %>
 				<div class="banners-bottom">
 					<div class="banners-bottom-sides row">
 						<div class="col-5">
