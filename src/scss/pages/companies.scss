@@ -1,0 +1,33 @@
+.companies {
+
+  &-banner {
+
+    font-family: "Montserrat";
+    & > div {
+      background-color: #bce7f0;
+    }
+    h1 {
+
+      color: #3c4348;
+      font-size: rem(100);
+      font-weight: 700;
+    }
+    h5 {
+
+      color: #3c4348;
+      font-size: rem(40);
+      font-weight: 700;
+    }
+    a {
+
+      font-size: 20px;
+      color: #5f6f7b;
+      font-weight: 500;
+      span {
+        font-weight: 700;
+        color: #385164;
+      }
+    }
+  }
+
+}

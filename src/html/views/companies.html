@@ -1,0 +1,34 @@
+<% var data = {title: "Список компаний",};
+%>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main class="content grey">
+	<div class="container">
+		<div class="content-container pt-4">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs-items">
+					<li class="breadcrumbs-item active">
+						<a href="javascript:">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Импорт и Экспорт
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Оформление заявки
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="companies">
+				<div class="companies-banner">
+					<%= _.template(require('./../includes/banner-discount.html').default)(data) %>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
