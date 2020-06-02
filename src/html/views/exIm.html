@@ -1,4 +1,4 @@
-<% var data = {title: "ExIm",banner: 'Все категории'}; %>
+<% var data = {title: "ExIm"}; %>
 <%= _.template(require('./../includes/headerExIm.html').default)(data) %>
 <main class="content exim">
     <div class="exim-static-slider">
@@ -52,11 +52,11 @@
         </div>
         <div class="exim-btn-rows">
             <div class="exim-btn-items">
-                <a href="javascript:">&darr;</a>
+                <a href="#exim-export">&darr;</a>
                 <p>прокрутить вниз</p>
             </div>
         </div>
-        <div class="exim-export">
+        <div class="exim-export" id="exim-export">
             <div class="exim-export-header">
                 <h2>Экспортёрам</h2>
                 <p>Пришли за 1 месяц и неделю. Сшиты хорошо, запаха нету.</p>
