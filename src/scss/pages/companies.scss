@@ -1,5 +1,5 @@
 .companies {
-
+  font-family: "Montserrat";
   &-banner {
     font-family: "Montserrat";
 
@@ -35,46 +35,47 @@
       }
     }
   }
+  &-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
   &-headline {
     padding-top: 1rem;
-    h5 {
+    h4 {
       color: #000000;
-      font-family: "Montserrat";
-      font-size: rem(22);
+      font-size: 1.375rem;
       font-weight: 700;
     }
   }
-  &-filter {
-    min-width: 272px;
-    width: 272px;
-    box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
-    background-color: #ffffff;
-    border-radius: 15px;
-    input[type='checkbox'] {
-      display: none;
-    }
-    &-nav {
-      width: 100%;
+  &-nav {
+      min-width: 272px;
+      width: 272px;
+      box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
+      background-color: #ffffff;
+      border-radius: 15px;
       display: flex;
       flex-direction: column;
       text-align: left;
-
+      padding-bottom: rem(22);
+      input[type='checkbox'] {
+        display: none;
+      }
       &-headline {
         background-color: #d1efb6;
-        padding: .75rem 1.5rem;
+        padding: 0.75rem 1.5rem 0.25rem;
         border-top-right-radius: 15px;
         h5 {
-          color: #ffffff;
+          color: #000000;
           font-size: 16px;
           font-weight: 700;
-          margin-bottom: 0;
         }
       }
-
       &-categories {
-        padding: 1rem;
+        padding: 1.5rem 1rem 0rem 1.5rem;
         user-select: none;
-
         label {
           width: 100%;
           display: flex;
@@ -87,86 +88,103 @@
             position: absolute;
             display: block;
             content: '';
-            right: .5rem;
+            right: .125rem;
             width: 14px;
-            height: 9px;
+            height: 2px;
             transition: all .2s ease;
-            background: url("../../img/arr-down-red.png") no-repeat right;
+            background-color: black;
+            border-radius: 5rem;
+          }
+          &:before {
+            position: absolute;
+            display: block;
+            content: '';
+            right: .5rem;
+            height: 14px;
+            width: 2px;
+            border-radius: 5rem;
+            transition: all .2s ease;
+            background-color: black;
           }
 
           span {
-            color: #ff6f55;
-            font-size: 14px;
+            color: #000000;
+            font-family: "Montserrat";
+            font-size: 16px;
             font-weight: 700;
-            padding-left: .625rem;
           }
         }
-
-        input[type='checkbox']:checked + label:after {
-          transform: rotate(180deg);
+        input[type='checkbox']:checked + label {
+          span {
+            color: #ff6f55;
+            font-size: 16px;
+            font-weight: 700;
+          }
         }
-
+        input[type='checkbox']:checked + label:after {
+          transform: rotate(45deg);
+          background-color: #ff6f55;
+        }
+        input[type='checkbox']:checked + label:before {
+          transform: rotate(45deg);
+          background-color: #ff6f55;
+        }
         input[type='checkbox']:checked + label + &-items {
           display: block;
         }
-
         &-items {
           display: none;
-          padding-top: .625rem;
+          border-left: 1px solid #e9eef7;
         }
-
         &-item {
           display: flex;
-
+          padding-bottom: .25rem;
+          &:last-of-type {
+            padding-bottom: 0;
+          }
           a {
             width: 100%;
-            padding-left: 2rem;
-
+            padding-left: 1rem;
+            text-decoration: none;
+            &.active {
+              position: relative;
+              &:before {
+                position: absolute;
+                content: '';
+                left: -.125rem;
+                background: #ff6f55;
+                height: 100%;
+                width: 2px;
+              }
+            }
             span {
               color: #000000;
               font-size: 12px;
-              font-weight: 500;
-            }
-
-            strong {
-              color: rgba(0, 0, 0, .6);
-              font-size: 10px;
-              font-weight: 500;
-              padding-left: 5px;
-            }
-          }
-
-          &.headline {
-            a {
-              color: #000000;
-              font-size: 12px;
-              font-weight: 600;
-              padding-left: 20px;
-            }
-          }
-
-          &.prev-categories {
-            a {
-              display: flex;
-              align-items: center;
-              position: relative;
-              color: #000000;
-              font-size: 12px;
-              font-weight: 500;
-              padding-left: 0;
-
-              &:before {
-                display: block;
-                content: '';
-                padding-right: 1rem;
-                width: 6px;
-                height: 11px;
-                background: url("../../img/catalog/arr-left-black.png") no-repeat left;
-              }
+              font-weight: 400;
             }
           }
         }
       }
     }
+  &-elements {
+    display: flex;
+    flex-grow: 1;
+    padding-left: 15px;
+    &-headline {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-types {
+
+    }
+    &-types {
+      color: #000000;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-weight: 400;
+    }
   }
+
 }
