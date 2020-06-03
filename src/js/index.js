@@ -196,6 +196,17 @@ $(document).on('click','.companies-elements-type',function(){
   $(this).addClass('active');
 });
 
+//Js Btn Copy ExIm-products
+$(document).ready(function () {
+    $('#exim-btn-copy').click(function() {
+	    let $temp = $("<input>");
+	    $("body").append($temp);
+	    $temp.val($('#text').text()).select();
+	    document.execCommand("copy");
+	    $temp.remove();
+	});
+});
+
 
 
 
