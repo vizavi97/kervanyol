@@ -173,7 +173,7 @@
 
 										</label>
 									</div>
-									<button type="submit" class="btn-kervan">
+									<button type="button" class="btn-kervan" data-toggle="modal" data-target="#exampleModalCenter">
 										Продолжить
 									</button>
 								</form>
@@ -212,6 +212,43 @@
 		</div>
 	</div>
 </main>
+
+<section class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered container" role="document">
+		<div class="modal-content cabinet-modal">
+
+			<div class="cabinet-modal-img">
+				<img src="img/cabinet/operator.png" alt="icon"/>
+			</div>
+			<div class="cabinet-modal-info">
+				<div class="cabinet-modal-info-headline">
+					<h6>Процесс заполнения формы завершен!</h6>
+				</div>
+				<div class="cabinet-modal-info-warning">
+					<div class="cabinet-modal-info-warning-img">
+						<img src="img/cabinet/success.png" alt=""/>
+					</div>
+					<div class="cabinet-modal-info-warning-text">
+						<p><strong>Статус: "Успешно"</strong></p>
+					</div>
+					<div class="cabinet-modal-info-warning-close">
+						<a href="javascript:" onclick="this.parentElement.parentElement.remove()">&times;
+						</a>
+					</div>
+				</div>
+				<div class="cabinet-modal-info-text">
+					<p>Ваши данные переданы на обработку нашим сотрудникам. Это займёт некоторое время.</p>
+					<p>По окончанию процесса рассмотрения, на указанный Вами номер телефона придёт <strong>СМС-оповещение.</strong>
+					</p>
+					<b>Благодарим Вас за содействие!</b>
+				</div>
+				<div class="cabinet-modal-info-button">
+					<a href="javascript:" class="btn btn-kervan">Продолжить</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <script>
   function readURL(input) {
     let rel = Number(input.getAttribute('rel'));

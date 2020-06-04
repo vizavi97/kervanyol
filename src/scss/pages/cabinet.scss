@@ -219,9 +219,9 @@
             -webkit-appearance: none;
             appearance: none;
             background-image: url("../../img/arrow-down.png");
-            background-repeat: no-repeat,repeat;
+            background-repeat: no-repeat, repeat;
             padding: .5rem 3rem .5rem 1rem;
-            background-position: right 1rem top 50%,0 0;
+            background-position: right 1rem top 50%, 0 0;
             cursor: pointer;
           }
         }
@@ -299,25 +299,31 @@
               font-size: 2rem;
               color: #ff8d1c;
               text-decoration: none;
+
               &:hover {
-                color:  #ff6f55;
+                color: #ff6f55;
               }
             }
           }
         }
+
         &-inputs {
           display: flex;
           flex-direction: row;
           padding-bottom: 1.5rem;
+
           label {
             flex: 1;
             padding: 0 .5rem;
+
             &:first-of-type {
               margin-left: 0;
             }
+
             &:last-of-type {
               margin-right: 0;
             }
+
             padding-bottom: 7px;
           }
         }
@@ -426,4 +432,92 @@
     }
   }
 
+  &-modal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    padding: rem(42) 2rem;
+    box-shadow: 0 0 20px 3px rgba(23, 24, 25, .1);
+    border-radius: .5rem;
+    &-img {
+      min-width: 50%;
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      flex-grow: 1;
+      padding-left: 1.8125rem;
+
+      &-warning {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: rem(10) 1.5rem;
+        margin: 1rem 0;
+        background-color: #e5f7e7;
+
+        &-text {
+          flex: 1;
+        }
+
+        p {
+          color: #00b419;
+          font-size: .75rem;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        &-close {
+          user-select: none;
+          cursor: pointer;
+
+          a {
+            font-weight: 300;
+            color: #00b419;
+            font-size: 2rem;
+            text-decoration: none;
+          }
+        }
+      }
+      &-headline, &-text, &-button {
+        padding: 0 1.5rem;
+      }
+      &-headline {
+        h6 {
+          color: #000000;
+          font-size: 1rem;
+          font-weight: 600;
+          margin-bottom: .5rem;
+        }
+      }
+      &-text {
+        p {
+          font-size: 11px;
+          color: #7d8b9d;
+          font-weight: 400;
+          strong {
+            font-weight: 500;
+            color: #000000;
+          }
+        }
+        b {
+          color: #000000;
+          font-size: rem(12);
+          font-weight: 500;
+        }
+      }
+      &-button {
+        padding-top: 1rem;
+        a {
+          color: #ffffff;
+          font-size: rem(13);
+          font-weight: 700;
+          padding: .625rem 2.625rem;
+        }
+      }
+    }
+  }
 }
