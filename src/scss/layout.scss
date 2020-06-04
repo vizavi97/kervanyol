@@ -1,6 +1,7 @@
-html{
+html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "SF Pro Display";
   color: #000711;
@@ -63,10 +64,11 @@ header {
     text-decoration: none;
     padding-left: rem(10);
 
-    &:hover{
+    &:hover {
       color: black;
       text-decoration: none;
-      P{
+
+      P {
         text-decoration: none;
       }
     }
@@ -106,7 +108,8 @@ header {
     &-info {
       padding-left: rem(10);
       color: #000711;
-      &:hover{
+
+      &:hover {
         text-decoration: none;
       }
 
@@ -297,6 +300,7 @@ header {
     flex-direction: column;
   }
 
+
   //NAV-TOP
   &-top {
     display: flex;
@@ -430,6 +434,10 @@ header {
       display: flex;
       flex-direction: row;
       align-items: center;
+      flex-wrap: wrap;
+      @include lg-block() {
+        justify-content: center;
+      }
     }
 
     &-category {
@@ -546,6 +554,23 @@ header {
           color: rgba(0, 96, 210, 0.8);
         }
       }
+    }
+  }
+  @include md-block() {
+    &-top {
+      flex-wrap: wrap;
+    }
+    &-logo {
+      width: 50%;
+    }
+    &-search {
+      width: 100%;
+      order: 1;
+      padding: rem(15) 0 0;
+    }
+    &-elements{
+      width: 50%;
+      justify-content: flex-end;
     }
   }
 }
@@ -684,6 +709,15 @@ footer {
       font-size: 16px;
       font-weight: 400;
       margin-bottom: 0;
+    }
+  }
+  @include md-block(){
+    &-nav{
+      flex-wrap: wrap;
+      padding-bottom: rem(20);
+    }
+    &-app{
+      margin: auto;
     }
   }
 }

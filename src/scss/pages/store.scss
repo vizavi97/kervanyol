@@ -27,8 +27,6 @@
   &-card {
     display: flex;
     align-items: center;
-    @include col();
-    @include size(3);
 
     img {
       width: 114px;
@@ -100,6 +98,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
       }
 
       &-category {
@@ -290,14 +289,11 @@
   &-links {
     display: flex;
     justify-content: center;
-    padding-top: rem(23);
-    @include md-block() {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
 
     &-block {
       display: flex;
-      padding: 0 rem(4.5);
+      padding: rem(23) rem(4.5) 0;
 
       a {
         padding: rem(6) rem(24);

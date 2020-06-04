@@ -9,3 +9,47 @@
     opacity: 0;
   }
 }
+
+@keyframes parachute {
+  0%   {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 0;
+  }
+  10%  {
+    transform: rotate(-25deg) translateY(15px);
+    opacity: .5;
+  }
+  20%  {
+    transform: rotate(-45deg) translateY(30px);
+    opacity: 1;
+  }
+  30%  {
+    transform: rotate(-25deg) translateY(45px);
+  }
+  40% {
+    transform: rotate(0deg) translateY(60px);
+  }
+  50%   {
+    transform: rotate(25deg) translateY(75px);
+  }
+  60%  {
+    transform: rotate(45deg) translateY(90px);
+    opacity: 0.75;
+  }
+  70%  {
+    transform: rotate(25deg) translateY(105px);
+    opacity: 0.5;
+  }
+  80%  {
+    transform: rotate(0deg) translateY(120px);
+    opacity: 0.3;
+  }
+  90%  {
+    transform: rotate(0deg) translateY(135px);
+    opacity: 0.15;
+  }
+  100% {
+    transform: rotate(0deg) translateY(150px);
+    opacity: 0;
+  }
+}

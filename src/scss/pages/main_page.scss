@@ -71,6 +71,14 @@
       border: 4px solid #ff6f55;
     }
   }
+
+  @include xs-block() {
+    &-image {
+      img {
+        height: 300px;
+      }
+    }
+  }
 }
 
 .banners {
@@ -302,6 +310,118 @@
       }
     }
   }
+
+  @include lg-block() {
+    &-middle {
+      padding: rem(10);
+      justify-content: space-evenly;
+    }
+  }
+  @include md-block() {
+    &-middle {
+      &-discount {
+        h1 {
+          font-size: 90px;
+        }
+      }
+
+      &-info {
+        h5 {
+          font-size: 30px;
+        }
+
+        a {
+          font-size: 15px;
+          display: block;
+          position: relative;
+
+          &:before {
+            content: none;
+          }
+
+          &:after {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          span {
+            display: block;
+            padding: 0;
+          }
+        }
+      }
+    }
+    &-bottom {
+      &-left {
+        &-items {
+          padding-bottom: rem(30);
+        }
+      }
+    }
+  }
+  @include xs-block() {
+    &-top {
+      &-item {
+        &-top {
+          flex-wrap: wrap;
+        }
+
+        &-img {
+          max-height: rem(86);
+          height: 100%;
+          padding-bottom: rem(15);
+        }
+      }
+    }
+    &-middle {
+      align-items: center;
+      &-img{
+        max-width: rem(100);
+      }
+      &-discount {
+        h1 {
+          font-size: 50px;
+        }
+      }
+
+      &-info {
+        h5 {
+          font-size: 20px;
+        }
+
+        a {
+          font-size: 13px;
+          display: block;
+          position: relative;
+
+          &:before {
+            content: none;
+          }
+
+          &:after {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          span {
+            display: block;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.owl-stage {
+  display: flex;
+}
+
+.owl-item {
+  flex-basis: auto;
+  flex-shrink: 0;
 }
 
 .recent-products {
@@ -461,6 +581,35 @@
         color: #ffffff;
         font-size: 14px;
         font-weight: 400;
+      }
+    }
+  }
+
+  @include lg-block() {
+    &-item {
+      height: 100%;
+
+      &-brand {
+        display: block;
+        margin-top: auto;
+      }
+    }
+  }
+  @include md-block() {
+    &-item {
+      &-img {
+        max-height: 176px;
+        height: 100%;
+
+        img {
+          max-height: 100%;
+          object-fit: none;
+          height: 100%;
+        }
+      }
+
+      &-brand {
+        margin-top: auto;
       }
     }
   }
@@ -748,6 +897,68 @@
       }
     }
   }
+
+  @include lg-block() {
+    .owl-dots {
+      left: 10%;
+    }
+    &-item {
+      &-img {
+        max-height: 176px;
+        height: 100%;
+
+        img {
+          max-height: 100%;
+          object-fit: none;
+          height: 100%;
+        }
+      }
+
+      &-brand {
+        margin-top: auto;
+      }
+    }
+  }
+  @include md-block() {
+    &-category {
+      padding: 1rem 0;
+    }
+    &-headline {
+      &-container {
+        background-color: transparent;
+      }
+    }
+    .owl-dots {
+      left: 20px;
+      justify-content: start;
+    }
+    &-banner {
+      display: none;
+    }
+    &-stores {
+      h2 {
+        padding-bottom: 0;
+      }
+    }
+  }
+  @include xs-block() {
+    margin-top: 6rem;
+    &-headline{
+      display: none;
+    }
+    &-categories{
+      .owl-nav{
+        top: -4.5rem;
+      }
+      .owl-dots{
+        left: 0;
+        justify-content: flex-end;
+      }
+    }
+    &-item{
+      width: 33.3333%;
+    }
+  }
 }
 
 .popular-stores {
@@ -910,6 +1121,13 @@
       }
     }
   }
+
+  @include md-block() {
+    padding: rem(30) 0;
+    &-item {
+      padding-bottom: rem(30);
+    }
+  }
 }
 
 .subscribe {
@@ -986,5 +1204,25 @@
 
   button {
     padding: .5rem 2rem;
+  }
+
+  @include lg-block() {
+    &-container {
+      padding: 2rem 1rem;
+    }
+    &-info {
+      padding-left: 0;
+    }
+  }
+  @include md-block() {
+    &-container {
+      display: block;
+    }
+    &-info {
+      padding-bottom: rem(20);
+    }
+    &-info, &-form {
+      width: 100%;
+    }
   }
 }
