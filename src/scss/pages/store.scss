@@ -217,7 +217,7 @@
     &-item{
       @include col();
       @include size(2);
-      padding: rem(6) 0;
+      padding: rem(6);
       a{
         display: flex;
         align-items: center;
@@ -226,12 +226,13 @@
         color: #000000;
         text-decoration: none;
         min-height: rem(90);
-        max-height: rem(90);
         height: 100%;
+        word-break: break-word;
         p{
           font-size: 14px;
           font-weight: 400;
           margin: 0;
+          margin-left: rem(4);
         }
       }
     }
