@@ -1,10 +1,220 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<% var data = {title: "Личный кабинет: Данные",};%><%= _.template(require('./../includes/headerExim.html').default)(data) %>
+<main class="content grey">
+	<div class="container">
+		<div class="content-container pt-4">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs-items">
+					<li class="breadcrumbs-item active">
+						<a href="javascript:">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Документация
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="cabinet">
+				<div class="cabinet-nav">
+					<div class="cabinet-nav-headline">
+						<h5>Личный кабинет</h5>
+					</div>
+					<ul class="cabinet-nav-items">
+						<li class="cabinet-nav-item">
+							<a href="javascript:" class="active">
+								<img src="img/cabinet/conversetion.svg" alt="icon"/>
+								<span>Основные данные </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:" class="disabled">
+								<img src="img/cabinet/manuscript.svg" alt="icon"/>
+								<span>История покупок</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/transaction.svg" alt="icon"/>
+								<span>История транзакций</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/list.svg" alt="icon"/>
+								<span>Список обязательных документов </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/notification.svg" alt="icon"/>
+								<span>Уведомления</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/like.svg" alt="icon"/>
+								<span>Понравившееся</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/news.svg" alt="icon"/>
+								<span>Новости</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/checklist.svg" alt="icon"/>
+								<span>Ассортимент</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/deal.svg" alt="icon"/>
+								<span>Иностранные партнеры</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/building.svg" alt="icon"/>
+								<span>Импортёры-компании РУз</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/term.svg" alt="icon"/>
+								<span>Условия и правила </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/feedback.svg" alt="icon"/>
+								<span>Отзывы обо мне</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/help.svg" alt="icon"/>
+								<span>Центр поддержки</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/lock.svg" alt="icon"/>
+								<span>Безопасность</span>
+							</a>
+						</li>
+					</ul>
+					<div class="cabinet-nav-logout">
+						<a href="javascript:">
+							<img src="img/cabinet/logout.svg" alt="icon"/>
+							<span>Выйти</span>
+						</a>
+					</div>
+				</div>
+				<div class="cabinet-container sticker">
+					<div class="cabinet-data">
+						<div class="cabinet-data-container">
+							<div class="cabinet-data-headline">
+								<h6>Общие данные</h6>
+							</div>
+							<ul class="cabinet-data-info">
+								<li>
+									<p>Название копании:</p>
+									<p><strong>ООО "Рус Экспорт Вэй"</strong></p>
+								</li>
+								<li>
+									<p>ОГРН:</p>
+									<p><strong>4243592889</strong></p>
+								</li>
+								<li>
+									<p>Страна:</p>
+									<p><strong>Узбекистан</strong></p>
+								</li>
+								<li>
+									<p>Генералный деректор:</p>
+									<p><strong>Иванов Иван Иванович</strong></p>
+								</li>
+							</ul>
+							<div class="cabinet-data-text">
+								<h6>Описание</h6>
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+									tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+									eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+									takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+									consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+									dolore magna aliquyam erat.
+								</p>
+							</div>
+						</div>
+						<div class="cabinet-data-container">
+							<div class="cabinet-data-headline">
+								<h6>Контакты</h6>
+							</div>
+							<ul class="cabinet-data-info">
+								<li>
+									<p>Индекс:</p>
+									<p><strong>5778231</strong></p>
+								</li>
+								<li>
+									<p>Адрес:</p>
+									<p><strong>Москва, ул, Новикузнецкая 24 стр, 4а, N 15</strong></p>
+								</li>
+								<li>
+									<p>Телефон/Факс:</p>
+									<p><strong>71 800-80-80; 71 700-70-70</strong></p>
+								</li>
+								<li>
+									<p>Электронная почта:</p>
+									<p><strong>exampleinfo@gmail.com</strong></p>
+								</li>
+								<li>
+									<p>Web-сайт</p>
+									<p><strong>www.example.com</strong></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="cabinet-sticker">
+						<div class="cabinet-sticker-company">
+							<div class="cabinet-sticker-company-header">
+								<div class="cabinet-sticker-company-img">
+									<img src="img/companies/pepsi.png" alt="">
+								</div>
+								<div class="cabinet-sticker-company-description">
+									<h5>OOO Bonaqua</h5>
+									<span>
+											Производство газированной
+											воды</span>
+								</div>
+							</div>
+							<div class="cabinet-sticker-company-info">
+								<div class="cabinet-sticker-company-info-address">
+									<span>Москва, ул, Новикузнецкая 24 стр, 4а, N 15</span>
+								</div>
+								<div class="cabinet-sticker-company-info-numbers">
+									<a href="tel:+99871 800-80-80">
+										<span>71 800-80-80</span>
+									</a>
+									<a href="tel:+99871 700-70-70">
+										<span>71 700-70-70</span>
+									</a>
+								</div>
+								<div class="cabinet-sticker-company-info-site">
+									<a href="https://www.example.com">
+										<span>www.example.com</span>
+									</a>
+								</div>
+							</div>
+							<div class="cabinet-sticker-company-replace">
+								<a href="javascript:">замена</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main><%= _.template(require('./../includes/footer.html').default)(data) %>

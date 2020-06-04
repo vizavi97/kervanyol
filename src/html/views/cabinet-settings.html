@@ -1,0 +1,281 @@
+<% var data = {title: "Личный кабинет: Настройки",};%><%= _.template(require('./../includes/headerExim.html').default)(data) %>
+<main class="content grey">
+	<div class="container">
+		<div class="content-container pt-4">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs-items">
+					<li class="breadcrumbs-item active">
+						<a href="javascript:">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Документация
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="cabinet">
+				<div class="cabinet-nav">
+					<div class="cabinet-nav-headline">
+						<h5>Личный кабинет</h5>
+					</div>
+					<ul class="cabinet-nav-items">
+						<li class="cabinet-nav-item">
+							<a href="javascript:" class="active">
+								<img src="img/cabinet/conversetion.svg" alt="icon"/>
+								<span>Основные данные </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:" class="disabled">
+								<img src="img/cabinet/manuscript.svg" alt="icon"/>
+								<span>История покупок</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/transaction.svg" alt="icon"/>
+								<span>История транзакций</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/list.svg" alt="icon"/>
+								<span>Список обязательных документов </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/notification.svg" alt="icon"/>
+								<span>Уведомления</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/like.svg" alt="icon"/>
+								<span>Понравившееся</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/news.svg" alt="icon"/>
+								<span>Новости</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/checklist.svg" alt="icon"/>
+								<span>Ассортимент</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/deal.svg" alt="icon"/>
+								<span>Иностранные партнеры</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/building.svg" alt="icon"/>
+								<span>Импортёры-компании РУз</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/term.svg" alt="icon"/>
+								<span>Условия и правила </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/feedback.svg" alt="icon"/>
+								<span>Отзывы обо мне</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/help.svg" alt="icon"/>
+								<span>Центр поддержки</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/lock.svg" alt="icon"/>
+								<span>Безопасность</span>
+							</a>
+						</li>
+					</ul>
+					<div class="cabinet-nav-logout">
+						<a href="javascript:">
+							<img src="img/cabinet/logout.svg" alt="icon"/>
+							<span>Выйти</span>
+						</a>
+					</div>
+				</div>
+				<div class="cabinet-container sticker">
+					<div class="cabinet-data">
+						<div class="tab-content">
+							<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<div class="cabinet-data-container">
+									<div class="cabinet-data-headline">
+										<h6>Общие данные</h6>
+									</div>
+									<div class="cabinet-data-inputs">
+										<label for="company-name">
+											<span>Название организации</span>
+											<input type="text" name="name" id="company-name" placeholder="Название организации" disabled>
+										</label>
+									</div>
+									<div class="cabinet-data-inputs">
+										<label for="company-name">
+											<span>Минимальное кол-во заказа</span>
+											<input type="text" name="name" id="company-name" placeholder="5000 шт" disabled>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+								<div class="cabinet-data-container">
+									<div class="cabinet-data-headline">
+										<h6>Общие данные</h6>
+									</div>
+									<div class="cabinet-data-inputs">
+										<label for="company-name">
+											<span>Название организации</span>
+											<input type="text" name="name" id="company-name" placeholder="Название организации" disabled>
+										</label>
+									</div>
+									<div class="cabinet-data-inputs">
+										<label for="company-name">
+											<span>Минимальное кол-во заказа</span>
+											<input type="text" name="name" id="company-name" placeholder="5000 шт" disabled>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+								<div class="cabinet-data-container">
+									<div class="cabinet-data-headline">
+										<h6>Общие данные</h6>
+									</div>
+									<div class="cabinet-data-inputs">
+										<label for="company-name">
+											<span>Название организации</span>
+											<input type="text" name="name" id="company-name" placeholder="Название организации" disabled>
+										</label>
+									</div>
+									<div class="cabinet-data-inputs">
+										<label for="company-name">
+											<span>Минимальное кол-во заказа</span>
+											<input type="text" name="name" id="company-name" placeholder="5000 шт" disabled>
+										</label>
+									</div>
+								</div>
+
+							</div>
+							<div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+								<div class="cabinet-data-container">
+									<div class="cabinet-data-headline">
+										<h6>Общие данные</h6>
+									</div>
+									<div class="cabinet-data-inputs">
+										<label for="company-name">
+											<span>Название организации</span>
+											<input type="text" name="name" id="company-name" placeholder="Название организации" disabled>
+										</label>
+									</div>
+									<div class="cabinet-data-inputs">
+										<label for="company-name">
+											<span>Минимальное кол-во заказа</span>
+											<input type="text" name="name" id="company-name" placeholder="5000 шт" disabled>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="last" role="tabpanel" aria-labelledby="last-tab">
+								<div class="cabinet-data-container">
+									<h1>last</h1>
+									<div class="cabinet-data-headline">
+										<h6>Общие данные</h6>
+									</div>
+									<div class="cabinet-data-inputs">
+										<label for="company-name">
+											<span>Название организации</span>
+											<input type="text" name="name" id="company-name" placeholder="Название организации" disabled>
+										</label>
+									</div>
+									<div class="cabinet-data-inputs">
+										<label for="company-name">
+											<span>Минимальное кол-во заказа</span>
+											<input type="text" name="name" id="company-name" placeholder="5000 шт" disabled>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="cabinet-sticker">
+						<div class="cabinet-sticker-company">
+							<div class="cabinet-sticker-company-header">
+								<div class="cabinet-sticker-company-img">
+									<img src="img/companies/pepsi.png" alt="">
+								</div>
+								<div class="cabinet-sticker-company-description">
+									<h5>OOO Bonaqua</h5>
+									<span>
+											Производство газированной
+											воды</span>
+								</div>
+							</div>
+							<div class="cabinet-sticker-company-info">
+								<div class="cabinet-sticker-company-info-address">
+									<span>Москва, ул, Новикузнецкая 24 стр, 4а, N 15</span>
+								</div>
+								<div class="cabinet-sticker-company-info-numbers">
+									<a href="tel:+99871 800-80-80">
+										<span>71 800-80-80</span>
+									</a>
+									<a href="tel:+99871 700-70-70">
+										<span>71 700-70-70</span>
+									</a>
+								</div>
+								<div class="cabinet-sticker-company-info-site">
+									<a href="https://www.example.com">
+										<span>www.example.com</span>
+									</a>
+								</div>
+							</div>
+							<div class="cabinet-sticker-company-replace">
+								<a href="javascript:">замена</a>
+							</div>
+						</div>
+						<div class="cabinet-settings-tabs">
+							<ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Заполнить</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Требуемые сертификаты</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Основные данные</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Информация об адресе</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link" id="last-tab" data-toggle="tab" href="#last" role="tab" aria-controls="last" aria-selected="false">Контакты организации</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main><%= _.template(require('./../includes/footer.html').default)(data) %>
