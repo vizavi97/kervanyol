@@ -32,7 +32,7 @@
         position: absolute;
         background-image: url("../img/register-2.png");
         top: 55px;
-        right: 74px;
+        right: 0;
         width: 70px;
         height: 93px;
         animation: one 4s infinite linear;
@@ -96,49 +96,7 @@
     }
   }
 }
-@keyframes one {
-  0%   {
-    transform: rotate(0deg) translateY(0px);
-    opacity: 0;
-  }
-  10%  {
-    transform: rotate(-25deg) translateY(15px);
-    opacity: .5;
-  }
-  20%  {
-    transform: rotate(-45deg) translateY(30px);
-    opacity: 1;
-  }
-  30%  {
-    transform: rotate(-25deg) translateY(45px);
-  }
-  40% {
-    transform: rotate(0deg) translateY(60px);
-  }
-  50%   {
-    transform: rotate(25deg) translateY(75px);
-  }
-  60%  {
-    transform: rotate(45deg) translateY(90px);
-    opacity: 0.75;
-  }
-  70%  {
-    transform: rotate(25deg) translateY(105px);
-    opacity: 0.5;
-  }
-  80%  {
-    transform: rotate(0deg) translateY(120px);
-    opacity: 0.3;
-  }
-  90%  {
-    transform: rotate(0deg) translateY(135px);
-    opacity: 0.15;
-  }
-  100% {
-    transform: rotate(0deg) translateY(150px);
-    opacity: 0;
-  }
-}
+
 .tab-register {
   &-social {
     padding-top: rem(30);
@@ -174,7 +132,6 @@
     padding: 0 rem(12);
 
     a {
-      box-shadow: 0 16px 50px #e9eef7;
       background-color: #ffffff;
       padding: rem(13);
       display: flex;
@@ -185,7 +142,11 @@
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.24px;
-
+      box-shadow: 0 16px 50px #e9eef7;
+      &:hover{
+        box-shadow: none;
+        text-decoration: none;
+      }
       img {
         padding-right: rem(10);
       }
@@ -256,9 +217,19 @@
     }
 
     &-password {
-      input {
-        height: 32px;
-        font-size: rem(30);
+      position: relative;
+      a{
+        position: absolute;
+        bottom: 3px;
+        right: 20px;
+        color: black;
+      }
+      .view{
+        i{
+          &:before{
+            content: "\f070";
+          }
+        }
       }
     }
 
@@ -320,9 +291,16 @@
     }
 
     &-checkbox {
+      display: flex;
+      align-items: center;
+      label{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .custom-control-label:after,
       .custom-control-label:before {
-        top: 0;
+        top: auto;
       }
 
       .custom-control-input:focus:not(:checked) ~ .custom-control-label:before {
@@ -341,7 +319,6 @@
           position: absolute;
           content: "";
           left: rem(-19.5);
-          top: rem(5);
           width: rem(7);
           height: rem(7);
           background-color: #000000;
@@ -425,5 +402,49 @@
     p{
       margin: 0;
     }
+  }
+}
+
+@keyframes one {
+  0%   {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 0;
+  }
+  10%  {
+    transform: rotate(-25deg) translateY(15px);
+    opacity: .5;
+  }
+  20%  {
+    transform: rotate(-45deg) translateY(30px);
+    opacity: 1;
+  }
+  30%  {
+    transform: rotate(-25deg) translateY(45px);
+  }
+  40% {
+    transform: rotate(0deg) translateY(60px);
+  }
+  50%   {
+    transform: rotate(25deg) translateY(75px);
+  }
+  60%  {
+    transform: rotate(45deg) translateY(90px);
+    opacity: 0.75;
+  }
+  70%  {
+    transform: rotate(25deg) translateY(105px);
+    opacity: 0.5;
+  }
+  80%  {
+    transform: rotate(0deg) translateY(120px);
+    opacity: 0.3;
+  }
+  90%  {
+    transform: rotate(0deg) translateY(135px);
+    opacity: 0.15;
+  }
+  100% {
+    transform: rotate(0deg) translateY(150px);
+    opacity: 0;
   }
 }

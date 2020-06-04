@@ -125,12 +125,12 @@
                                                 <div class="col-md-6 mb-4">
                                                     <label for="validationDefault01">Фамилия</label>
                                                     <input type="text" class="form-control" id="validationDefault01"
-                                                           required>
+                                                           name="quantity" required>
                                                 </div>
                                                 <div class="col-md-6 mb-4">
                                                     <label for="validationDefault02">Имя</label>
                                                     <input type="text" class="form-control" id="validationDefault02"
-                                                           required>
+                                                           name="quantity" required>
                                                 </div>
                                             </div>
                                             <div class="form-row">
@@ -143,14 +143,19 @@
                                             </div>
                                             <div class="form-row tab-register-form-password">
                                                 <div class="col-md-6 mb-4">
-                                                    <label for="validationDefault04">Создайте пароль</label>
-                                                    <input type="password" class="form-control" id="validationDefault04"
+                                                    <label for="password-input">Создайте пароль</label>
+                                                    <input type="password" class="form-control password-input"
+                                                           id="password-input"
                                                            required>
                                                 </div>
                                                 <div class="col-md-6 mb-4">
                                                     <label for="validationDefault05">Повторите пароль</label>
-                                                    <input type="password" class="form-control" id="validationDefault05"
+                                                    <input type="password" class="form-control password-input"
+                                                           id="validationDefault05"
                                                            required>
+                                                    <a href="javascript:" class="password-control">
+                                                        <i class="far fa-eye"></i>
+                                                    </a>
                                                 </div>
                                             </div>
                                             <button class="btn tab-register-form-btn mt-2" type="submit">
