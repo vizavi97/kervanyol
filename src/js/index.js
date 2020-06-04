@@ -96,16 +96,6 @@ if (popularProductsWrapper) {
     ).join('')
   })
 }
-
-
-
-
-
-
-
-
-
-
 // CATALOG-TOGGLER
 document.addEventListener('DOMContentLoaded', () => {
   const cubeToggler = document.querySelector('.catalog-container-toggler-cube');
@@ -195,7 +185,5 @@ $(document).on('click','.companies-elements-type',function(){
   $('.companies-elements-type').removeClass('active');
   $(this).addClass('active');
 });
-
-
 
 

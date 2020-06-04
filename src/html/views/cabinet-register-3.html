@@ -1,0 +1,272 @@
+<% var data = {title: "Личный кабинет: Регистрация компании",};%><%= _.template(require('./../includes/headerExim.html').default)(data) %>
+<main class="content grey">
+	<div class="container">
+		<div class="content-container pt-4">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs-items">
+					<li class="breadcrumbs-item active">
+						<a href="javascript:">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Документация
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="cabinet">
+				<div class="cabinet-nav">
+					<div class="cabinet-nav-headline">
+						<h5>Личный кабинет</h5>
+					</div>
+					<ul class="cabinet-nav-items">
+						<li class="cabinet-nav-item">
+							<a href="javascript:" class="active">
+								<img src="img/cabinet/conversetion.svg" alt="icon"/>
+								<span>Основные данные </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:" class="disabled">
+								<img src="img/cabinet/manuscript.svg" alt="icon"/>
+								<span>История покупок</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/transaction.svg" alt="icon"/>
+								<span>История транзакций</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/list.svg" alt="icon"/>
+								<span>Список обязательных документов </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/notification.svg" alt="icon"/>
+								<span>Уведомления</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/like.svg" alt="icon"/>
+								<span>Понравившееся</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/news.svg" alt="icon"/>
+								<span>Новости</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/checklist.svg" alt="icon"/>
+								<span>Ассортимент</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/deal.svg" alt="icon"/>
+								<span>Иностранные партнеры</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/building.svg" alt="icon"/>
+								<span>Импортёры-компании РУз</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/term.svg" alt="icon"/>
+								<span>Условия и правила </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/feedback.svg" alt="icon"/>
+								<span>Отзывы обо мне</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/help.svg" alt="icon"/>
+								<span>Центр поддержки</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/lock.svg" alt="icon"/>
+								<span>Безопасность</span>
+							</a>
+						</li>
+					</ul>
+					<div class="cabinet-nav-logout">
+						<a href="javascript:">
+							<img src="img/cabinet/logout.svg" alt="icon"/>
+							<span>Выйти</span>
+						</a>
+					</div>
+				</div>
+				<div class="cabinet-container">
+					<div class="cabinet-register">
+						<div class="cabinet-register-container">
+							<div class="cabinet-register-container-headline">
+								<h5>Регистрация компании</h5>
+							</div>
+							<div class="cabinet-register-container-text">
+								<p>Для возможности пользования нашими услугами Вам необходимо зарегистрироваться,
+									заполнив электронные формы в данном разделе.
+								</p>
+							</div>
+							<div class="cabinet-register-container-warning">
+								<div class="cabinet-register-container-warning-img">
+									<img src="img/cabinet/warning.png" alt=""/>
+								</div>
+								<div class="cabinet-register-container-warning-text">
+									<p><strong>Важно!</strong></p>
+									<p>Все пункты должны быть заполнены поэтапно для возможности получения дальнейшего
+										доступа.
+									</p>
+								</div>
+								<div class="cabinet-register-container-warning-close">
+									<a href="javascript:" onclick="this.parentElement.parentElement.remove()">&times;
+									</a>
+								</div>
+							</div>
+							<div class="cabinet-register-container-form">
+								<h6>Контакты организации</h6>
+								<form action="cabinet-register-4.html">
+									<div class="cabinet-register-container-form-inputs">
+										<label for="Web-site">
+											<span>Название организации</span>
+											<input type="text" name="name" id="Web-site" placeholder="Web-сайт"/>
+										</label>
+										<label for="ogpn">
+											<span>Минимальное кол-во заказа</span>
+											<input type="text" name="name" id="ogpn" placeholder="www.kervanyol.uz"/>
+										</label>
+									</div>
+									<div class="cabinet-register-container-form-inputs">
+										<label for="boss">
+											<span>Должость руководителя</span>
+											<select name="boss" id="boss">
+												<option value="www.kervanyol.uz" selected>www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+
+											</select>
+										</label>
+										<label for="ogpn">
+											<span>Руководитель организации</span>
+											<input type="text" name="name" id="ogpn" placeholder="www.kervanyol.uz"/>
+										</label>
+									</div>
+									<div class="cabinet-register-container-form-inputs">
+										<label for="boss">
+											<span>Регион</span>
+											<select name="boss" id="boss">
+												<option value="www.kervanyol.uz" selected>www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+
+											</select>
+										</label>
+										<label for="boss">
+											<span>Телефон организации</span>
+											<select name="boss" id="boss">
+												<option value="www.kervanyol.uz" selected>www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+
+											</select>
+										</label>
+									</div>
+									<button type="submit" class="btn-kervan">
+										Продолжить
+									</button>
+								</form>
+							</div>
+						</div>
+						<div class="cabinet-register-stages">
+							<div class="cabinet-register-stages-headline">
+								<h5>Этапы заполнения</h5>
+							</div>
+							<ul class="cabinet-register-stages-items">
+								<li class="cabinet-register-stages-item done">
+									<h6>Что Вы ищете?</h6>
+									<p>Укажите сведения о желаемом товаре</p>
+								</li>
+								<li class="cabinet-register-stages-item done">
+									<h6>Требуемые сертификаты</h6>
+									<p>Загрузка документации на сайт</p>
+								</li>
+								<li class="cabinet-register-stages-item done">
+									<h6>Основные данные</h6>
+									<p>Укажите персональные сведения</p>
+								</li>
+								<li class="cabinet-register-stages-item">
+									<h6>Информация об адресе</h6>
+									<p>Укажите адрес Вашей организации</p>
+								</li>
+								<li class="cabinet-register-stages-item">
+									<h6>Контакты организации</h6>
+									<p>Укажите контактные данные</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<script>
+  function readURL(input) {
+    let rel = Number(input.getAttribute('rel'));
+    if (input.files && input.files[0]) {
+      let reader = new FileReader();
+      reader.onload = function (e) {
+        input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
+        input.previousElementSibling.innerHTML = ' ';
+        input.nextElementSibling.classList.remove('hidden');
+      };
+      reader.readAsDataURL(input.files[0]);
+      document.getElementsByClassName('')
+    }
+    rel++;
+    if (!input.parentElement.parentElement.nextElementSibling) {
+      let collection = document.getElementById('formWrapper');
+      let htmlSection = `
+			<li class="cabinet-register-container-form-addFile-item">
+			 <label>
+			   <div class="addFile-inner">
+			       <img src="img/data-falling/plus.png" alt="plus">
+			       <span>Загрузить</span>
+			   </div>
+			   <input type="file"
+			    onchange="readURL(this)"
+			     rel="${rel}"
+			     name='img[${rel}]'>
+			   <em class="hidden">замена изображения</em>
+			 </label>
+			 <a href="javascript:" class="remove-container" onclick="this.parentElement.remove()">&times;</a>
+			</li>`;
+      collection.insertAdjacentHTML("beforeend", htmlSection);
+    }
+  }
+</script>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
