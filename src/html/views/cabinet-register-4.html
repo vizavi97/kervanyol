@@ -145,53 +145,32 @@
 								<form action="cabinet-register-4.html">
 									<div class="cabinet-register-container-form-inputs">
 										<label for="Web-site">
-											<span>Название организации</span>
+											<span>Населённый пункт</span>
 											<input type="text" name="name" id="Web-site" placeholder="Web-сайт"/>
 										</label>
 										<label for="ogpn">
-											<span>Минимальное кол-во заказа</span>
+											<span>Адрес</span>
 											<input type="text" name="name" id="ogpn" placeholder="www.kervanyol.uz"/>
-										</label>
 									</div>
 									<div class="cabinet-register-container-form-inputs">
 										<label for="boss">
-											<span>Должость руководителя</span>
-											<select name="boss" id="boss">
-												<option value="www.kervanyol.uz" selected>www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-
-											</select>
+											<span>Индекс</span>
+											<input type="text" name="name" id="boss" placeholder="1000201"/>
 										</label>
 										<label for="ogpn">
-											<span>Руководитель организации</span>
-											<input type="text" name="name" id="ogpn" placeholder="www.kervanyol.uz"/>
+											<span>Телефон организации</span>
+											<input type="text" name="client-phone" id="ogpn" placeholder="+998(__)___-__-__"/>
 										</label>
 									</div>
 									<div class="cabinet-register-container-form-inputs">
-										<label for="boss">
-											<span>Регион</span>
-											<select name="boss" id="boss">
-												<option value="www.kervanyol.uz" selected>www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-
-											</select>
+										<label for="fax">
+											<span>Факс</span>
+											<input type="text" name="client-fax" id="fax" placeholder="+998(__)___-__-__"/>
 										</label>
-										<label for="boss">
-											<span>Телефон организации</span>
-											<select name="boss" id="boss">
-												<option value="www.kervanyol.uz" selected>www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+										<label for="email">
+											<span>Электронная почта</span>
+											<input type="email" name="email" id="email" placeholder="example@gmail.com"/>
 
-											</select>
 										</label>
 									</div>
 									<button type="submit" class="btn-kervan">
@@ -217,7 +196,7 @@
 									<h6>Основные данные</h6>
 									<p>Укажите персональные сведения</p>
 								</li>
-								<li class="cabinet-register-stages-item">
+								<li class="cabinet-register-stages-item done">
 									<h6>Информация об адресе</h6>
 									<p>Укажите адрес Вашей организации</p>
 								</li>
@@ -248,7 +227,7 @@
     }
     rel++;
     if (!input.parentElement.parentElement.nextElementSibling) {
-      const collection = document.getElementById('formWrapper');
+      let collection = document.getElementById('formWrapper');
       let htmlSection = `
 			<li class="cabinet-register-container-form-addFile-item">
 			 <label>

@@ -194,7 +194,7 @@
           }
 
           input {
-            width: 287px;
+            max-width: 287px;
             height: 31px;
             border: 1px solid #d3d9de;
             background-color: #ffffff;
@@ -206,7 +206,7 @@
           }
 
           select {
-            width: 287px;
+            max-width: 287px;
             height: 31px;
             border: 1px solid #d3d9de;
             background-color: #ffffff;
@@ -298,6 +298,10 @@
               top: -.25rem;
               font-size: 2rem;
               color: #ff8d1c;
+              text-decoration: none;
+              &:hover {
+                color:  #ff6f55;
+              }
             }
           }
         }

@@ -3,6 +3,8 @@ import 'bootstrap'
 import 'owl.carousel2/dist/owl.carousel'
 import Drift from "drift-zoom/src/js/Drift";
 import Swiper from "swiper";
+import './inputPhone';
+import './app';
 import categories from '../json/categories'
 
 const bgSwitcher = document.getElementById('bg-switcher');
@@ -196,5 +198,10 @@ $(document).ready(function () {
 	    $temp.remove();
 	});
 });
+
+
+//FORM inputs MASK
+$("[name='client-phone']").mask("+998 (zz) zzz-zz-zz");
+$("[name='client-fax']").mask("+998 (zz) zzz-zz-zz");
 
 
