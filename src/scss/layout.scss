@@ -720,6 +720,16 @@ footer {
       margin: auto;
     }
   }
+  @include sm-block(){
+    &-app{
+      margin: 0;
+    }
+  }
+  @include xs-block(){
+    &-app{
+      padding-top: rem(15);
+    }
+  }
 }
 
 //STATIC-TOP-BANNER
@@ -791,6 +801,13 @@ footer {
       a {
         pointer-events: none;
       }
+    }
+  }
+  @include md-block(){
+    width: 100%;
+    overflow-x: scroll;
+    &-items{
+      min-width: rem(900);
     }
   }
 }

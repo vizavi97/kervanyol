@@ -35,5 +35,8 @@
       text-decoration: none;
       font-family: "Montserrat";
     }
+    @include size-md(3);
+    @include size-sm(4);
+    @include size-xs(6);
   }
 }
