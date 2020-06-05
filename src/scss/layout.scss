@@ -812,16 +812,23 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  h2 {
-    position: absolute;
+  &-inner {
     left: 0;
     right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
     color: #000000;
     text-transform: none;
     font-family: "Montserrat";
     font-size: 46px;
     font-weight: 700;
+  }
+  p {
+    color: black;
   }
 
   img {
