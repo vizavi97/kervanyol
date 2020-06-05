@@ -66,12 +66,19 @@
 
     &-rows {
       @include row-flex();
-      padding: rem(32) 0;
+      padding: rem(24) 0;
     }
 
     &-items {
       @include col();
       @include size(4);
+      @include size-sm(6);
+      @include size-xs(12);
+      padding: rem(7.5) 0;
+
+      &-last {
+        @include size-sm(12);
+      }
     }
 
     &-item {
@@ -175,6 +182,7 @@
       &-left, &-right {
         @include col();
         @include size(6);
+        @include size-sm(12);
       }
 
       &-left {
@@ -237,7 +245,7 @@
 
     &-bottom {
       @include row-flex();
-      padding: rem(20) 0 rem(36);
+      padding: rem(20) 0;
 
       &-items {
         @include col();
@@ -249,11 +257,13 @@
         padding: rem(24) rem(42);
         background-color: white;
         display: flex;
+        flex-wrap: wrap;
       }
 
       &-left {
         @include col();
         @include size(9);
+        @include size-xs(12);
 
         h2 {
           font: rem(24) "Montserrat";
@@ -270,6 +280,7 @@
       &-right {
         @include col();
         @include size(3);
+        @include size-xs(12);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -278,9 +289,11 @@
       &-item {
         @include col();
         @include size(3);
+        @include size-xs(6);
         background-color: white;
         text-align: center;
         padding: rem(16);
+        margin-bottom: rem(16);
 
         h3 {
           font: rem(40) "Montserrat";
@@ -326,6 +339,7 @@
       &-left, &-right {
         @include col();
         @include size(6);
+        @include size-xs(12);
       }
 
       &-right {
@@ -400,11 +414,13 @@
         padding: rem(24) rem(42);
         background-color: white;
         display: flex;
+        flex-wrap: wrap;
       }
 
       &-left {
         @include col();
         @include size(9);
+        @include size-xs(12);
 
         h2 {
           font: rem(24) "Montserrat";
@@ -421,6 +437,7 @@
       &-right {
         @include col();
         @include size(3);
+        @include size-xs(12);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -429,6 +446,7 @@
       &-item {
         @include col();
         @include size(3);
+        @include size-xs(6);
         padding: rem(30) 0;
 
         &-img {
@@ -474,6 +492,7 @@
       &-left, &-right {
         @include col();
         @include size(6);
+        @include size-xs(12);
       }
 
       &-left {
@@ -547,6 +566,7 @@
       &-left, &-right {
         @include col();
         @include size(6);
+        @include size-xs(12);
       }
 
       &-left {
@@ -643,14 +663,17 @@
   &-questions {
     &-card {
       padding-bottom: rem(110);
+
       &-header {
         padding: rem(20) rem(42) 0;
         background-color: white;
         border: none;
         margin: 0 !important;
+
         &.collapsed {
           background-color: #f9fafc;
-          hr{
+
+          hr {
             border: rem(1) solid #DFE3EB;
           }
         }
@@ -668,12 +691,14 @@
             margin: 0;
           }
         }
-        hr{
+
+        hr {
           margin: rem(20) 0 0;
           border: none;
         }
       }
-      &-body{
+
+      &-body {
         padding: 0 rem(66) rem(32);
       }
     }
@@ -716,7 +741,8 @@
     justify-content: center;
     color: white;
     border-radius: rem(24);
-    &:hover{
+
+    &:hover {
       text-decoration: underline;
     }
   }
@@ -793,5 +819,63 @@
 
   .back-green-light {
     background-color: #d1efb6;
+  }
+
+  @include md-block() {
+    &-static {
+      &-slider {
+        &-block {
+          width: 100%;
+
+          h1 {
+            font-size: rem(32);
+          }
+        }
+      }
+    }
+  }
+  @include sm-block() {
+    &-static {
+      &-slider {
+        &-banner {
+          img {
+            height: 300px;
+          }
+        }
+      }
+    }
+    &-call {
+      &-content {
+        &-left {
+          .owl-nav {
+            padding: 0 rem(5);
+          }
+        }
+      }
+    }
+  }
+  @include xs-block() {
+    &-call {
+      &-content {
+        &-left {
+          .owl-nav {
+            padding: 0 rem(42);
+          }
+        }
+      }
+    }
+    &-export {
+      &-content {
+        &-left {
+        }
+      }
+    }
+    &-import {
+      &-content {
+        &-left {
+          order: 1;
+        }
+      }
+    }
   }
 }

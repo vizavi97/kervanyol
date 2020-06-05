@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "SF Pro Display";
   color: #000711;
@@ -131,6 +127,35 @@ header {
       }
     }
   }
+
+  @include md-block() {
+    &-back {
+      p {
+        margin-right: 0;
+      }
+    }
+    &-other {
+      margin: 0;
+      justify-content: space-around;
+      width: 44%;
+
+      a {
+        padding: 0;
+      }
+    }
+    &-call {
+      padding: 0;
+    }
+  }
+  @include xs-block(){
+    flex-wrap: wrap;
+    &-back{}
+    &-other{
+      order: 1;
+      width: 100%;
+      padding-top: rem(15);
+    }
+  }
 }
 
 .nav-exim {
@@ -175,10 +200,7 @@ header {
     }
   }
 
-  &-btn-active {
-    background-color: #ff6f55;
-    box-shadow: 0 3px 20px rgba(255, 111, 85, 0.3);
-
+  &-btn {
     &:hover {
       box-shadow: none;
 
@@ -188,10 +210,58 @@ header {
     }
 
     & > a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ff6f55;
+      box-shadow: 0 3px 20px rgba(255, 111, 85, 0.3);
       color: white;
       font-family: "Montserrat";
       font-size: rem(13);
       font-weight: 500;
+      width: rem(200);
+      min-height: rem(44);
+      border-radius: 1.5rem;
+    }
+  }
+
+  @include lg-block() {
+    &-menu {
+      &-category {
+        padding: rem(10) rem(15);
+        white-space: nowrap;
+      }
+    }
+  }
+  @include md-block(){
+    &-btn>a{
+      width: rem(135);
+    }
+  }
+  @include sm-block() {
+    &-menu {
+      &-category {
+        padding: rem(10) 0;
+      }
+    }
+    &-container{
+      flex-wrap: wrap;
+    }
+    &-logo{
+      width: 50%;
+    }
+    &-menu{
+      width: 100%;
+      order: 1;
+      &-categories{
+        justify-content: space-evenly;
+      }
+    }
+    &-btn{
+      width: 50%;
+      a{
+        margin-left: auto;
+      }
     }
   }
 }
@@ -556,6 +626,7 @@ header {
       }
     }
   }
+
   @include md-block() {
     &-top {
       flex-wrap: wrap;
@@ -568,7 +639,7 @@ header {
       order: 1;
       padding: rem(15) 0 0;
     }
-    &-elements{
+    &-elements {
       width: 50%;
       justify-content: flex-end;
     }
@@ -711,22 +782,23 @@ footer {
       margin-bottom: 0;
     }
   }
-  @include md-block(){
-    &-nav{
+
+  @include md-block() {
+    &-nav {
       flex-wrap: wrap;
       padding-bottom: rem(20);
     }
-    &-app{
+    &-app {
       margin: auto;
     }
   }
-  @include sm-block(){
-    &-app{
+  @include sm-block() {
+    &-app {
       margin: 0;
     }
   }
-  @include xs-block(){
-    &-app{
+  @include xs-block() {
+    &-app {
       padding-top: rem(15);
     }
   }
@@ -803,10 +875,11 @@ footer {
       }
     }
   }
-  @include md-block(){
+
+  @include md-block() {
     width: 100%;
     overflow-x: scroll;
-    &-items{
+    &-items {
       min-width: rem(900);
     }
   }
