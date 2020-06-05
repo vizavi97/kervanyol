@@ -88,6 +88,7 @@
   &-nav {
     @include col();
     @include size(9);
+    @include size-sm(12);
 
     &-menu {
       position: relative;
@@ -320,5 +321,22 @@
 
   .product-recommended-item {
     @include size-md(4);
+    @include size-xs(6);
+  }
+
+  @include sm-block(){
+    &-main{
+      flex-wrap: wrap;
+    }
+    &-nav{
+      &-menu{
+        &-categories{
+          justify-content: space-between;
+        }
+        &-call, &-category{
+          padding: 0;
+        }
+      }
+    }
   }
 }

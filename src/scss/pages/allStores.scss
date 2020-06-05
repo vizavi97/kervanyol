@@ -30,6 +30,8 @@
   &-item{
     @include col();
     @include size(3);
+    @include size-md(4);
+    @include size-xs(6);
   }
   &-card{
     display: block;
@@ -104,4 +106,5 @@
   .catalog-container-pageNavigation{
     padding-top: rem(20);
   }
+
 }
