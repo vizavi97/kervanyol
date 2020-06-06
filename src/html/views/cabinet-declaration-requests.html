@@ -1,0 +1,408 @@
+<% var data = {title: "Личный кабинет: Декларации",};%><%= _.template(require('./../includes/headerExim.html').default)(data) %>
+<main class="content grey">
+	<div class="container">
+		<div class="content-container pt-4">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs-items">
+					<li class="breadcrumbs-item active">
+						<a href="javascript:">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Документация
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="cabinet">
+				<div class="cabinet-nav">
+					<div class="cabinet-nav-headline">
+						<h5>Личный кабинет</h5>
+					</div>
+					<ul class="cabinet-nav-items">
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/conversetion.svg" alt="icon"/>
+								<span>Основные данные </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:" class="disabled">
+								<img src="img/cabinet/manuscript.svg" alt="icon"/>
+								<span>История покупок</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:" class="active">
+								<img src="img/cabinet/independence.svg" alt="icon"/>
+								<span>Декларации</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/transaction.svg" alt="icon"/>
+								<span>История транзакций</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/list.svg" alt="icon"/>
+								<span>Список обязательных документов </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/notification.svg" alt="icon"/>
+								<span>Уведомления</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/like.svg" alt="icon"/>
+								<span>Понравившееся</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/news.svg" alt="icon"/>
+								<span>Новости</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/checklist.svg" alt="icon"/>
+								<span>Ассортимент</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/deal.svg" alt="icon"/>
+								<span>Иностранные партнеры</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/building.svg" alt="icon"/>
+								<span>Импортёры-компании РУз</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/term.svg" alt="icon"/>
+								<span>Условия и правила </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/feedback.svg" alt="icon"/>
+								<span>Отзывы обо мне</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/help.svg" alt="icon"/>
+								<span>Центр поддержки</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/lock.svg" alt="icon"/>
+								<span>Безопасность</span>
+							</a>
+						</li>
+					</ul>
+					<div class="cabinet-nav-logout">
+						<a href="javascript:">
+							<img src="img/cabinet/logout.svg" alt="icon"/>
+							<span>Выйти</span>
+						</a>
+					</div>
+				</div>
+				<div class="cabinet-container sticker">
+					<div class="cabinet-data">
+						<div class="cabinet-data-container">
+							<div class="cabinet-data-nav">
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Мои заявки</a>
+									</li>
+									<li class="nav-item" role="presentation">
+										<a class="nav-link " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Создать заявку</a>
+									</li>
+								</ul>
+							</div>
+							<div class="cabinet-data-tabs">
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+										<div class="cabinet-declaration-requests">
+											<ul class="cabinet-declaration-requests-items">
+												<li class="cabinet-declaration-requests-item">
+													<div class="cabinet-declaration-requests-item-top">
+														<div class="cabinet-declaration-requests-item-top-img">
+															<img src="img/cabinet/cabinet-declaration/pc.png" alt="pc"/>
+														</div>
+														<div class="cabinet-declaration-requests-item-top-info">
+															<h6>Газированная вода Bonaqua</h6>
+															<p>Заявка № 12636482</p>
+															<div class="btn-container">
+																<a href="javascript:">Подробнее</a>
+															</div>
+														</div>
+													</div>
+													<ul class="cabinet-declaration-requests-item-descs">
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Количество:</p>
+															<p><b>14 000</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Дата прибытия:</p>
+															<p><b>20.05.2020</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Тип доставки:</p>
+															<p><b>Самолёт</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Страна-отправитель:</p>
+															<p><b>Турция</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Цена:</p>
+															<p><b>230 000 000 000 UZS</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Компания-отправитель:</p>
+															<p><b>acer</b></p>
+														</li>
+													</ul>
+												</li>
+												<li class="cabinet-declaration-requests-item not-payed">
+													<div class="cabinet-declaration-requests-item-top">
+														<div class="cabinet-declaration-requests-item-top-img">
+															<img src="img/cabinet/cabinet-declaration/pc.png" alt="pc"/>
+														</div>
+														<div class="cabinet-declaration-requests-item-top-info">
+															<h6>Газированная вода Bonaqua</h6>
+															<p>Заявка № 12636482</p>
+															<div class="btn-container">
+																<a href="javascript:">Подробнее</a>
+																<a href="javascript:" class="not-payed">Оплатить</a>
+															</div>
+														</div>
+													</div>
+													<ul class="cabinet-declaration-requests-item-descs">
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Количество:</p>
+															<p><b>14 000</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Дата прибытия:</p>
+															<p><b>20.05.2020</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Тип доставки:</p>
+															<p><b>Самолёт</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Страна-отправитель:</p>
+															<p><b>Турция</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Цена:</p>
+															<p><b>230 000 000 000 UZS</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Компания-отправитель:</p>
+															<p><b>acer</b></p>
+														</li>
+													</ul>
+												</li>
+												<li class="cabinet-declaration-requests-item in-process">
+													<div class="cabinet-declaration-requests-item-top">
+														<div class="cabinet-declaration-requests-item-top-img">
+															<img src="img/cabinet/cabinet-declaration/pc.png" alt="pc"/>
+														</div>
+														<div class="cabinet-declaration-requests-item-top-info">
+															<h6>Газированная вода Bonaqua</h6>
+															<p>Заявка № 12636482</p>
+															<div class="btn-container">
+																<a href="javascript:">Подробнее</a>
+															</div>
+														</div>
+													</div>
+													<ul class="cabinet-declaration-requests-item-descs">
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Количество:</p>
+															<p><b>14 000</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Дата прибытия:</p>
+															<p><b>20.05.2020</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Тип доставки:</p>
+															<p><b>Самолёт</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Страна-отправитель:</p>
+															<p><b>Турция</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Цена:</p>
+															<p><b>230 000 000 000 UZS</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Компания-отправитель:</p>
+															<p><b>acer</b></p>
+														</li>
+													</ul>
+												</li>
+												<li class="cabinet-declaration-requests-item done">
+													<div class="cabinet-declaration-requests-item-top">
+														<div class="cabinet-declaration-requests-item-top-img">
+															<img src="img/cabinet/cabinet-declaration/pc.png" alt="pc"/>
+														</div>
+														<div class="cabinet-declaration-requests-item-top-info">
+															<h6>Газированная вода Bonaqua</h6>
+															<p>Заявка № 12636482</p>
+															<div class="btn-container">
+																<a href="javascript:">Подробнее</a>
+															</div>
+														</div>
+													</div>
+													<ul class="cabinet-declaration-requests-item-descs">
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Количество:</p>
+															<p><b>14 000</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Дата прибытия:</p>
+															<p><b>20.05.2020</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Тип доставки:</p>
+															<p><b>Самолёт</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Страна-отправитель:</p>
+															<p><b>Турция</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Цена:</p>
+															<p><b>230 000 000 000 UZS</b></p>
+														</li>
+														<li class="cabinet-declaration-requests-item-desc">
+															<p>Компания-отправитель:</p>
+															<p><b>acer</b></p>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+										<div class="cabinet-declaration">
+											<form action="javascript:" class="cabinet-declaration-form">
+												<div class="cabinet-declaration-form-top">
+													<div class="cabinet-declaration-form-inputs">
+														<label>
+															<span>Наименование товара</span>
+															<input type="text" placeholder="Наименование товара" name="product[0]" id="declaration-input" rel="0"/>
+														</label>
+														<label>
+															<span>Количество товара</span>
+															<input type="text" placeholder="шт" name="count[0]"/>
+														</label>
+													</div>
+													<button type="button" id="add-switcher" class="add-switcher">
+														<span>+</span>
+													</button>
+												</div>
+												<div class="cabinet-declaration-form-wrapper" id="declaration-input-wrapper">
+												</div>
+												<div class="cabinet-declaration-form-condition">
+													<div class="cabinet-declaration-form-inputs">
+														<label>
+															<span>Выберите условие доставки</span>
+															<select name="places" id="places">
+																<option value="до дома" selected>Стандарт</option>
+																<option value="Samarkand">Экспрес</option>
+															</select>
+														</label>
+														<label>
+															<span>Грузополучатель</span>
+															<input type="text" placeholder="ФИО"/>
+														</label>
+													</div>
+													<div class="cabinet-declaration-form-inputs">
+														<label>
+															<span>Адрес</span>
+															<input type="text" placeholder="адрес" name="count[0]"/>
+														</label>
+														<label>
+															<span>Условие оплаты</span>
+															<select name="places" id="places">
+																<option value="до дома" selected>Click</option>
+																<option value="Samarkand">PayMe</option>
+																<option value="Samarkand">UzCard</option>
+																<option value="Samarkand">Visa</option>
+																<option value="Samarkand">MasterCard</option>
+															</select>
+														</label>
+													</div>
+												</div>
+												<div class="cabinet-declaration-form-button">
+													<button type="submit" class="btn-kervan">Отправить</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cabinet-sticker">
+						<div class="cabinet-sticker-company">
+							<div class="cabinet-sticker-company-header">
+								<div class="cabinet-sticker-company-img">
+									<img src="img/companies/pepsi.png" alt="">
+								</div>
+								<div class="cabinet-sticker-company-description">
+									<h5>OOO Bonaqua</h5>
+									<span>
+											Производство газированной
+											воды</span>
+								</div>
+							</div>
+							<div class="cabinet-sticker-company-info">
+								<div class="cabinet-sticker-company-info-address">
+									<span>Москва, ул, Новикузнецкая 24 стр, 4а, N 15</span>
+								</div>
+								<div class="cabinet-sticker-company-info-numbers">
+									<a href="tel:+99871 800-80-80">
+										<span>71 800-80-80</span>
+									</a>
+									<a href="tel:+99871 700-70-70">
+										<span>71 700-70-70</span>
+									</a>
+								</div>
+								<div class="cabinet-sticker-company-info-site">
+									<a href="https://www.example.com">
+										<span>www.example.com</span>
+									</a>
+								</div>
+							</div>
+							<div class="cabinet-sticker-company-replace">
+								<a href="javascript:">замена</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
