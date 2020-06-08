@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130.222" height="130" viewBox="0 0 130.222 130">
+  <defs>
+    <filter id="NoPath_-_Copy_82_" x="0" y="0" width="50" height="50" filterUnits="userSpaceOnUse">
+      <feOffset dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#e9eef7"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_23120" data-name="Group 23120" transform="translate(-589.563 -540.5)">
+    <g id="Group_22496" data-name="Group 22496" transform="translate(621.063 571)">
+      <g transform="matrix(1, 0, 0, 1, -31.5, -30.5)" filter="url(#NoPath_-_Copy_82_)">
+        <rect id="NoPath_-_Copy_82_2" data-name="NoPath - Copy (82)" width="55.222" height="55" rx="27.5" transform="translate(37.5 30.5)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Icon_feather-user" data-name="Icon feather-user" transform="translate(637.008 580.5)">
+      <path id="Path_33098" data-name="Path 33098" d="M30,31.5v-3a6,6,0,0,0-6-6H12a6,6,0,0,0-6,6v3" fill="none" stroke="#bccbd9" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_33099" data-name="Path 33099" d="M24,10.5a6,6,0,1,1-6-6A6,6,0,0,1,24,10.5Z" fill="none" stroke="#bccbd9" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
