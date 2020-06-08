@@ -122,246 +122,267 @@
 				</div>
 				<div class="cabinet-container sticker">
 					<div class="cabinet-data">
-						<div class="cabinet-data-container">
-							<div class="cabinet-data-nav">
-								<ul class="nav nav-tabs" id="myTab" role="tablist">
-									<li class="nav-item" role="presentation">
-										<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Мои заявки</a>
-									</li>
-									<li class="nav-item" role="presentation">
-										<a class="nav-link " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Создать заявку</a>
-									</li>
-								</ul>
-							</div>
-							<div class="cabinet-data-tabs">
-								<div class="tab-content" id="myTabContent">
-									<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-										<div class="cabinet-declaration-requests">
-											<ul class="cabinet-declaration-requests-items">
-												<li class="cabinet-declaration-requests-item">
-													<div class="cabinet-declaration-requests-item-top">
-														<div class="cabinet-declaration-requests-item-top-img">
-															<img src="img/cabinet/cabinet-declaration/pc.png" alt="pc"/>
+						<form action="javascript:" class="cabinet-data-form">
+							<div class="cabinet-data-container">
+								<div class="cabinet-declaration-bid">
+									<div class="cabinet-declaration-bid-return">
+										<a href="./cabinet-declaration.html">
+											<i class="fas fa-chevron-left"></i> <span>
+											Вернуться к списку
+										</span>
+										</a>
+									</div>
+									<div class="cabinet-declaration-bid-headline">
+										<h5>Заявка на импорт товара</h5>
+									</div>
+									<div class="cabinet-declaration-bid-item">
+										<div class="cabinet-declaration-bid-number">
+											<h6>Товар № 1</h6>
+										</div>
+										<ul class="cabinet-declaration-bid-descs">
+											<li class="cabinet-declaration-bid-desc">
+												<p>Количество товара:</p>
+												<p><strong>14 000</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p>Наименование товара</p>
+												<p><strong>Газированная вода Bonaqua</strong></p>
+											</li>
+										</ul>
+										<div class="cabinet-declaration-bid-label">
+											<label>
+												<span>Код ТНВЭД</span>
+												<input type="text" value="123549816439" disabled/>
+											</label>
+										</div>
+										<ul class="cabinet-declaration-bid-descs">
+											<li class="cabinet-declaration-bid-desc">
+												<p>Наименование товара</p>
+												<p><strong>Газированная вода Bonaqua</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p> Госпошлина</p>
+												<p><strong>200$ ( 12% )</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p>Таможенный платеж</p>
+												<p><strong>75$ ( 8% )</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p>НДС</p>
+												<p><strong>95$ ( 9.5% )</strong></p>
+											</li>
+										</ul>
+										<div class="cabinet-declaration-bid-certificates">
+											<h6>Требуемые сертификаты</h6>
+											<ul class="main-certificates">
+												<li class="cabinet-register-container-form-addFile-item">
+													<label>
+														<div class="addFile-inner disabled" style="background: url('../../img/card-girl.png') no-repeat center; background-size: cover">
+															<img src="img/data-falling/plus.png" alt="plus">
+															<span>Загрузить</span>
 														</div>
-														<div class="cabinet-declaration-requests-item-top-info">
-															<h6>Газированная вода Bonaqua</h6>
-															<p>Заявка № 12636482</p>
-															<div class="btn-container">
-																<a href="javascript:">Подробнее</a>
-															</div>
-														</div>
-													</div>
-													<ul class="cabinet-declaration-requests-item-descs">
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Количество:</p>
-															<p><b>14 000</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Дата прибытия:</p>
-															<p><b>20.05.2020</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Тип доставки:</p>
-															<p><b>Самолёт</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Страна-отправитель:</p>
-															<p><b>Турция</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Цена:</p>
-															<p><b>230 000 000 000 UZS</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Компания-отправитель:</p>
-															<p><b>acer</b></p>
-														</li>
-													</ul>
+														<input type="file" rel="0" name="certificates[0]" onchange="readURL(this)" data-name="certificates" disabled>
+														<em class="hidden">замена изображения</em>
+													</label>
 												</li>
-												<li class="cabinet-declaration-requests-item not-payed">
-													<div class="cabinet-declaration-requests-item-top">
-														<div class="cabinet-declaration-requests-item-top-img">
-															<img src="img/cabinet/cabinet-declaration/pc.png" alt="pc"/>
+												<li class="cabinet-register-container-form-addFile-item">
+													<label>
+														<div class="addFile-inner">
+															<img src="img/data-falling/plus.png" alt="plus">
+															<span>Загрузить</span>
 														</div>
-														<div class="cabinet-declaration-requests-item-top-info">
-															<h6>Газированная вода Bonaqua</h6>
-															<p>Заявка № 12636482</p>
-															<div class="btn-container">
-																<a href="javascript:">Подробнее</a>
-																<a href="javascript:" class="not-payed">Оплатить</a>
-															</div>
-														</div>
-													</div>
-													<ul class="cabinet-declaration-requests-item-descs">
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Количество:</p>
-															<p><b>14 000</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Дата прибытия:</p>
-															<p><b>20.05.2020</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Тип доставки:</p>
-															<p><b>Самолёт</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Страна-отправитель:</p>
-															<p><b>Турция</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Цена:</p>
-															<p><b>230 000 000 000 UZS</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Компания-отправитель:</p>
-															<p><b>acer</b></p>
-														</li>
-													</ul>
+														<input type="file" rel="1" name="certificates[1]" onchange="readURL(this)" data-name="certificates">
+														<em class="hidden">замена изображения</em>
+													</label>
 												</li>
-												<li class="cabinet-declaration-requests-item in-process">
-													<div class="cabinet-declaration-requests-item-top">
-														<div class="cabinet-declaration-requests-item-top-img">
-															<img src="img/cabinet/cabinet-declaration/pc.png" alt="pc"/>
+											</ul>
+											<h6>Дополнительные сертификаты</h6>
+											<ul class="additional-certificates">
+												<li class="cabinet-register-container-form-addFile-item">
+													<label>
+														<div class="addFile-inner">
+															<img src="img/data-falling/plus.png" alt="plus">
+															<span>Загрузить</span>
 														</div>
-														<div class="cabinet-declaration-requests-item-top-info">
-															<h6>Газированная вода Bonaqua</h6>
-															<p>Заявка № 12636482</p>
-															<div class="btn-container">
-																<a href="javascript:">Подробнее</a>
-															</div>
-														</div>
-													</div>
-													<ul class="cabinet-declaration-requests-item-descs">
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Количество:</p>
-															<p><b>14 000</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Дата прибытия:</p>
-															<p><b>20.05.2020</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Тип доставки:</p>
-															<p><b>Самолёт</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Страна-отправитель:</p>
-															<p><b>Турция</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Цена:</p>
-															<p><b>230 000 000 000 UZS</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Компания-отправитель:</p>
-															<p><b>acer</b></p>
-														</li>
-													</ul>
-												</li>
-												<li class="cabinet-declaration-requests-item done">
-													<div class="cabinet-declaration-requests-item-top">
-														<div class="cabinet-declaration-requests-item-top-img">
-															<img src="img/cabinet/cabinet-declaration/pc.png" alt="pc"/>
-														</div>
-														<div class="cabinet-declaration-requests-item-top-info">
-															<h6>Газированная вода Bonaqua</h6>
-															<p>Заявка № 12636482</p>
-															<div class="btn-container">
-																<a href="javascript:">Подробнее</a>
-															</div>
-														</div>
-													</div>
-													<ul class="cabinet-declaration-requests-item-descs">
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Количество:</p>
-															<p><b>14 000</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Дата прибытия:</p>
-															<p><b>20.05.2020</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Тип доставки:</p>
-															<p><b>Самолёт</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Страна-отправитель:</p>
-															<p><b>Турция</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Цена:</p>
-															<p><b>230 000 000 000 UZS</b></p>
-														</li>
-														<li class="cabinet-declaration-requests-item-desc">
-															<p>Компания-отправитель:</p>
-															<p><b>acer</b></p>
-														</li>
-													</ul>
+														<input type="file" rel="0" name="additional[0]" onchange="readURL(this)" data-name="additional">
+														<em class="hidden">замена изображения</em>
+													</label>
 												</li>
 											</ul>
 										</div>
-									</div>
-									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-										<div class="cabinet-declaration">
-											<form action="javascript:" class="cabinet-declaration-form">
-												<div class="cabinet-declaration-form-top">
-													<div class="cabinet-declaration-form-inputs">
-														<label>
-															<span>Наименование товара</span>
-															<input type="text" placeholder="Наименование товара" name="product[0]" id="declaration-input" rel="0"/>
-														</label>
-														<label>
-															<span>Количество товара</span>
-															<input type="text" placeholder="шт" name="count[0]"/>
-														</label>
-													</div>
-													<button type="button" id="add-switcher" class="add-switcher">
-														<span>+</span>
-													</button>
-												</div>
-												<div class="cabinet-declaration-form-wrapper" id="declaration-input-wrapper">
-												</div>
-												<div class="cabinet-declaration-form-condition">
-													<div class="cabinet-declaration-form-inputs">
-														<label>
-															<span>Выберите условие доставки</span>
-															<select name="places" id="places">
-																<option value="до дома" selected>Стандарт</option>
-																<option value="Samarkand">Экспрес</option>
-															</select>
-														</label>
-														<label>
-															<span>Грузополучатель</span>
-															<input type="text" placeholder="ФИО"/>
-														</label>
-													</div>
-													<div class="cabinet-declaration-form-inputs">
-														<label>
-															<span>Адрес</span>
-															<input type="text" placeholder="адрес" name="count[0]"/>
-														</label>
-														<label>
-															<span>Условие оплаты</span>
-															<select name="places" id="places">
-																<option value="до дома" selected>Click</option>
-																<option value="Samarkand">PayMe</option>
-																<option value="Samarkand">UzCard</option>
-																<option value="Samarkand">Visa</option>
-																<option value="Samarkand">MasterCard</option>
-															</select>
-														</label>
-													</div>
-												</div>
-												<div class="cabinet-declaration-form-button">
-													<button type="submit" class="btn-kervan">Отправить</button>
-												</div>
-											</form>
-										</div>
+										<ul class="cabinet-declaration-bid-descs">
+											<li class="cabinet-declaration-bid-desc">
+												<p>Цена за единицу</p>
+												<p><strong>12$</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p>Количество</p>
+												<p><strong>20 000 шт</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p>Ед. измерения</p>
+												<p><strong>кг</strong></p>
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div>
-						</div>
+							<div class="cabinet-data-container">
+								<div class="cabinet-declaration-bid">
+									<div class="cabinet-declaration-bid-item">
+										<div class="cabinet-declaration-bid-number">
+											<h6>Товар № 1</h6>
+										</div>
+										<ul class="cabinet-declaration-bid-descs">
+											<li class="cabinet-declaration-bid-desc">
+												<p>Количество товара:</p>
+												<p><strong>14 000</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p>Наименование товара</p>
+												<p><strong>Газированная вода Bonaqua</strong></p>
+											</li>
+										</ul>
+										<div class="cabinet-declaration-bid-label">
+											<label>
+												<span>Код ТНВЭД</span>
+												<input type="text" value="123549816439" disabled/>
+											</label>
+										</div>
+										<ul class="cabinet-declaration-bid-descs">
+											<li class="cabinet-declaration-bid-desc">
+												<p>Наименование товара</p>
+												<p><strong>Газированная вода Bonaqua</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p> Госпошлина</p>
+												<p><strong>200$ ( 12% )</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p>Таможенный платеж</p>
+												<p><strong>75$ ( 8% )</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p>НДС</p>
+												<p><strong>95$ ( 9.5% )</strong></p>
+											</li>
+										</ul>
+										<div class="cabinet-declaration-bid-certificates">
+											<h6>Требуемые сертификаты</h6>
+											<ul class="main-certificates">
+												<li class="cabinet-register-container-form-addFile-item">
+													<label>
+														<div class="addFile-inner disabled" style="background: url('../../img/card-girl.png') no-repeat center; background-size: cover">
+															<img src="img/data-falling/plus.png" alt="plus">
+															<span>Загрузить</span>
+														</div>
+														<input type="file" rel="0" name="certificates[0]" onchange="readURL(this)" data-name="certificates" disabled>
+														<em class="hidden">замена изображения</em>
+													</label>
+												</li>
+												<li class="cabinet-register-container-form-addFile-item">
+													<label>
+														<div class="addFile-inner">
+															<img src="img/data-falling/plus.png" alt="plus">
+															<span>Загрузить</span>
+														</div>
+														<input type="file" rel="1" name="certificates[1]" onchange="readURL(this)" data-name="certificates">
+														<em class="hidden">замена изображения</em>
+													</label>
+												</li>
+											</ul>
+											<h6>Дополнительные сертификаты</h6>
+											<ul class="additional-certificates">
+												<li class="cabinet-register-container-form-addFile-item">
+													<label>
+														<div class="addFile-inner">
+															<img src="img/data-falling/plus.png" alt="plus">
+															<span>Загрузить</span>
+														</div>
+														<input type="file" rel="0" name="additional[0]" onchange="readURL(this)" data-name="additional">
+														<em class="hidden">замена изображения</em>
+													</label>
+												</li>
+											</ul>
+										</div>
+										<ul class="cabinet-declaration-bid-descs">
+											<li class="cabinet-declaration-bid-desc">
+												<p>Цена за единицу</p>
+												<p><strong>12$</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p>Количество</p>
+												<p><strong>20 000 шт</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p>Ед. измерения</p>
+												<p><strong>кг</strong></p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="cabinet-data-container last">
+								<div class="cabinet-declaration-bid">
+									<div class="cabinet-declaration-bid-item">
+										<ul class="cabinet-declaration-bid-descs">
+											<li class="cabinet-declaration-bid-desc">
+												<p>Условия доставки</p>
+												<p><strong>CIP</strong></p>
+											</li>
+											<li class="cabinet-declaration-bid-desc">
+												<p>Грузополучатель</p>
+												<p><strong>ООО СТРОЙ ГРОУП</strong></p>
+											</li>
+										</ul>
+										<div class="cabinet-inputs">
+											<label>
+												<span>Руководитель организации</span>
+												<input type="text" name="name" placeholder="www.kervanyol.uz"/>
+											</label>
+											<label>
+												<span>Руководитель организации</span>
+												<input type="text" name="name" placeholder="www.kervanyol.uz"/>
+											</label>
+										</div>
+										<div class="cabinet-inputs">
+											<label>
+												<span>Руководитель организации</span>
+												<input type="text" name="name" placeholder="www.kervanyol.uz"/>
+											</label>
+											<label>
+												<span>Руководитель организации</span>
+												<input type="text" name="name" placeholder="www.kervanyol.uz"/>
+											</label>
+										</div>
+										<div class="cabinet-inputs">
+											<label>
+												<span>Руководитель организации</span>
+												<input type="text" name="name" placeholder="www.kervanyol.uz"/>
+											</label>
+											<label>
+												<span>Руководитель организации</span>
+												<input type="text" name="name" placeholder="www.kervanyol.uz"/>
+											</label>
+										</div>
+										<div class="cabinet-declaration-bid-select">
+											<h6>Общая сумма: 5000</h6>
+											<select name="rates" id="rates">
+												<option value="USD">USD</option>
+												<option value="RUB">RUB</option>
+												<option value="UZB">UZB</option>
+											</select>
+										</div>
+										<button type="submit" class="btn-kervan">
+											Продолжить
+										</button>
+
+									</div>
+								</div>
+
+							</div>
+						</form>
 					</div>
 					<div class="cabinet-sticker">
 						<div class="cabinet-sticker-company">
@@ -404,5 +425,42 @@
 		</div>
 	</div>
 </main>
+
+<script>
+  function readURL(input) {
+    let rel = Number(input.getAttribute('rel'));
+    const nameInput = input.getAttribute('data-name');
+    if (input.files && input.files[0]) {
+      let reader = new FileReader();
+      reader.onload = function (e) {
+        input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
+        input.previousElementSibling.innerHTML = ' ';
+        input.nextElementSibling.classList.remove('hidden');
+      };
+      reader.readAsDataURL(input.files[0]);
+      document.getElementsByClassName('')
+    }
+    rel++;
+    const wrapper = input.parentElement.parentElement.parentElement;
+    if (!input.parentElement.parentElement.nextElementSibling) {
+      let htmlSection = `
+			<li class="cabinet-register-container-form-addFile-item">
+			 <label>
+			   <div class="addFile-inner">
+			       <img src="img/data-falling/plus.png" alt="plus">
+			       <span>Загрузить</span>
+			   </div>
+			   <input type="file"
+			    onchange="readURL(this)"
+			     rel="${rel}"
+			     name='${nameInput}[${rel}]'>
+			   <em class="hidden">замена изображения</em>
+			 </label>
+			 <a href="javascript:" class="remove-container" onclick="this.parentElement.remove()">&times;</a>
+			</li>`;
+      wrapper.insertAdjacentHTML("beforeend", htmlSection);
+    }
+  }
+</script>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
