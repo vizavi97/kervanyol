@@ -16,7 +16,8 @@
       justify-content: center;
       align-items: start;
       position: relative;
-      &:before{
+
+      &:before {
         content: '';
         position: absolute;
         background-image: url("../img/register-1.png");
@@ -26,7 +27,8 @@
         height: 36px;
         animation: parachute 5s infinite linear;
       }
-      &:after{
+
+      &:after {
         content: '';
         position: absolute;
         background-image: url("../img/register-2.png");
@@ -94,12 +96,29 @@
       }
     }
   }
-  @include lg-block(){
-    &-inner{
+
+  @include lg-block() {
+    &-inner {
       padding: rem(20);
     }
-    &-item{
+    &-item {
       width: 65%;
+    }
+  }
+  @include xs-block() {
+    .sign-register {
+      &-item {
+        width: 100%;
+
+        &-img {
+          display: none;
+        }
+      }
+      &-nav{
+        &-link{
+          padding: 0 0 rem(10);
+        }
+      }
     }
   }
 }
@@ -150,10 +169,12 @@
       font-weight: 600;
       letter-spacing: 0.24px;
       box-shadow: 0 16px 50px #e9eef7;
-      &:hover{
+
+      &:hover {
         box-shadow: none;
         text-decoration: none;
       }
+
       img {
         padding-right: rem(10);
       }
@@ -224,21 +245,23 @@
       }
     }
 
-    input[type=password]{
+    input[type=password] {
       font-size: rem(30);
     }
 
     &-password {
       position: relative;
-      a{
+
+      a {
         position: absolute;
         bottom: 3px;
         right: 20px;
         color: black;
       }
-      .view{
-        i{
-          &:before{
+
+      .view {
+        i {
+          &:before {
             content: "\f070";
           }
         }
@@ -305,11 +328,13 @@
     &-checkbox {
       display: flex;
       align-items: center;
-      label{
+
+      label {
         display: flex;
         align-items: center;
         justify-content: center;
       }
+
       .custom-control-label:after,
       .custom-control-label:before {
         top: auto;
@@ -406,12 +431,15 @@
     font-size: rem(10);
     font-weight: 500;
   }
-  a{
+
+  a {
     text-decoration: underline;
   }
-  &-number{
+
+  &-number {
     padding-top: rem(32);
-    p{
+
+    p {
       margin: 0;
     }
   }

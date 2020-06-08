@@ -131,7 +131,7 @@
       flex-direction: column;
       text-align: left;
       flex-grow: 1;
-      padding: 1.75rem 1rem 2rem 2rem;
+      padding: rem(32) rem(24) rem(60) rem(32);
       box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
       background-color: #ffffff;
 
@@ -166,7 +166,12 @@
         background-color: #fff3e7;
 
         p {
-          padding: 0 .5rem;
+          padding: 0 rem(12);
+          color: #ff8d1c;
+        }
+
+        img {
+          min-width: rem(23);
         }
 
         &-close {
@@ -181,16 +186,24 @@
       &-form {
         padding-top: 1.5rem;
 
+        h6{
+          font-size: rem(16);
+          font-weight: 700;
+          margin-bottom: rem(24);
+        }
+
         label {
           display: flex;
           flex-direction: column;
           padding-top: .25rem;
+          margin: 0;
 
           span {
             color: #7d8b9d;
             font-size: .75rem;
             font-weight: 500;
             padding-bottom: rem(7);
+            white-space: nowrap;
           }
 
           input {
@@ -228,7 +241,7 @@
 
         button {
           padding: rem(10) rem(42);
-          margin-top: 2rem;
+          margin-top: rem(15);
           color: #ffffff;
           font-size: rem(13);
           font-weight: 700;
@@ -329,11 +342,11 @@
         &-inputs {
           display: flex;
           flex-direction: row;
-          padding-bottom: 1.5rem;
+          padding-bottom: rem(17);
 
           label {
             flex: 1;
-            padding: 0 .5rem;
+            @include col();
 
             &:first-of-type {
               margin-left: 0;
@@ -344,6 +357,61 @@
             }
 
             padding-bottom: 7px;
+          }
+
+          textarea {
+            color: #000000;
+            font-size: rem(12);
+            font-weight: 500;
+            text-indent: 1.5rem;
+            border: 1px solid #D3D9DE;
+            background-color: #ffffff;
+            resize: none;
+            height: 80px;
+            border-radius: 1rem;
+            padding-top: rem(12);
+
+            &::placeholder{
+              color: #BCCBD9;
+            }
+
+            &:focus {
+              border-color: #ff6f55;
+            }
+          }
+        }
+
+        &-input {
+          width: 50%;
+          h6{
+            font-size: rem(14);
+            margin-bottom: rem(16);
+          }
+
+          label {
+            span {
+              color: #68D20B;
+            }
+          }
+
+          .cabinet-register-container-form {
+            &-addFile-item {
+              padding: 0;
+              label {
+                padding: 0;
+              }
+
+              .addFile-inner {
+                max-width: 110px;
+                height: 110px;
+                padding-bottom: rem(10);
+              }
+              .remove-container{
+                right: auto;
+                left: 32%;
+                top: rem(-7);
+              }
+            }
           }
         }
       }
@@ -698,7 +766,7 @@
 
         p {
           color: #00b419;
-          font-size: .75rem;
+          font-size: rem(12);
           font-weight: 600;
           margin: 0;
         }
@@ -1553,38 +1621,6 @@
 
 
   @include lg-block() {
-    &-register {
-      &-container {
-        &-warning {
-          flex-wrap: wrap;
-
-          &-img {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-
-            img {
-              width: 30px;
-            }
-          }
-
-          &-text {
-            width: 80%;
-          }
-
-          &-close {
-            width: 20%;
-          }
-        }
-      }
-    }
-    &-data {
-      &-container {
-        padding: 1rem;
-      }
-    }
-  }
-  @include sm-block() {
     &-nav {
       width: auto;
       min-width: auto;
@@ -1609,7 +1645,90 @@
         }
       }
     }
+    &-data {
+      &-container {
+        padding: 1rem;
+      }
+    }
+  }
+  @include md-block() {
     &-register {
+      &-container {
+        &-warning {
+          flex-wrap: wrap;
+
+          &-img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 30px;
+            }
+          }
+
+          &-text {
+            width: 80%;
+          }
+
+          &-close {
+            width: 20%;
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+  @include sm-block() {
+    &-register {
+      flex-direction: column-reverse;
+
+      &-stages {
+        margin: 0 0 rem(20);
+        width: 100%;
+
+        &-items {
+          flex-direction: row;
+          padding: 40px 32px 15px;
+          justify-content: center;
+        }
+
+        &-item {
+          transform: rotateZ(90deg);
+          padding: 15px 35px;
+
+          &:last-of-type:after {
+            height: 100%;
+          }
+
+          &:before {
+            transform: rotateZ(-90deg);
+            width: rem(40);
+            height: rem(40);
+          }
+
+          &.done {
+            &:before {
+              font-size: rem(24);
+            }
+
+            &:after {
+              left: 18px;
+            }
+          }
+
+          &:after {
+            top: 55px;
+            left: 18px;
+          }
+
+          h6, p {
+            display: none;
+          }
+        }
+      }
+
       &-container {
         &-form {
           &-inputs {
@@ -1621,8 +1740,11 @@
       }
     }
     &-modal {
+      flex-direction: column;
+      padding: rem(20);
+
       &-img {
-        display: none;
+        padding-bottom: rem(10);
       }
 
       &-info {
@@ -1645,9 +1767,16 @@
     &-register {
       flex-wrap: wrap;
 
-      &-stages {
-        min-width: 100%;
-        margin: rem(10) 0;
+      &-container {
+        &-form {
+          &-inputs {
+            flex-direction: column;
+          }
+
+          button {
+            margin: 0;
+          }
+        }
       }
     }
     &-container {
