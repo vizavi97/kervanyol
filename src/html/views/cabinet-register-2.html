@@ -118,11 +118,11 @@
 					<div class="cabinet-register">
 						<div class="cabinet-register-container">
 							<div class="cabinet-register-container-headline">
-								<h5>Регистрация компании</h5>
+								<h5>Настройки</h5>
 							</div>
 							<div class="cabinet-register-container-text">
-								<p>Для возможности пользования нашими услугами Вам необходимо зарегистрироваться,
-									заполнив электронные формы в данном разделе.
+								<p>Данный раздел поможет Вам заполнить анкету для продолжения мероприятий
+									на нашем сайте.
 								</p>
 							</div>
 							<div class="cabinet-register-container-warning">
@@ -141,20 +141,28 @@
 								</div>
 							</div>
 							<div class="cabinet-register-container-form">
-								<h6>Требуемые сертификаты</h6>
+								<h6>Контактные данные компании</h6>
 								<form action="cabinet-register-3.html">
-									<ul class="cabinet-register-container-form-addFile-items" id="formWrapper">
-										<li class="cabinet-register-container-form-addFile-item">
-											<label>
-												<div class="addFile-inner">
-													<img src="img/data-falling/plus.png" alt="plus">
-													<span>Загрузить</span>
-												</div>
-												<input type="file" rel="0" name="img[0]" onchange="readURL(this)">
-												<em class="hidden">замена изображения</em>
-											</label>
-										</li>
-									</ul>
+									<div class="cabinet-register-container-form-inputs">
+										<label for="ogpn">
+											<span>Регион</span>
+											<input type="text" name="name" placeholder="____"/>
+										</label>
+										<label for="Web-site">
+											<span>Web-сайт</span>
+											<input type="text" name="name" id="Web-site" placeholder="www.kervanyol.com"/>
+										</label>
+									</div>
+									<div class="cabinet-register-container-form-inputs">
+										<label for="ogpn">
+											<span>Адрес</span>
+											<input type="text" name='name' placeholder="______"/>
+										</label>
+										<label for="ogpn">
+											<span>Контактный телефон</span>
+											<input type="text" name="client-phone" id="ogpn" placeholder="+998(__)___-__-__"/>
+										</label>
+									</div>
 									<button type="submit" class="btn-kervan">
 										Продолжить
 									</button>
@@ -167,24 +175,16 @@
 							</div>
 							<ul class="cabinet-register-stages-items">
 								<li class="cabinet-register-stages-item done">
-									<h6>Что Вы ищете?</h6>
-									<p>Укажите сведения о желаемом товаре</p>
+									<h6>Основные данные</h6>
+									<p>Укажите базовые сведения о компании</p>
 								</li>
 								<li class="cabinet-register-stages-item done">
-									<h6>Требуемые сертификаты</h6>
-									<p>Загрузка документации на сайт</p>
+									<h6>Контактные данные</h6>
+									<p>Заполните данные поля для возможности связаться с Вами</p>
 								</li>
 								<li class="cabinet-register-stages-item">
-									<h6>Основные данные</h6>
-									<p>Укажите персональные сведения</p>
-								</li>
-								<li class="cabinet-register-stages-item">
-									<h6>Информация об адресе</h6>
-									<p>Укажите адрес Вашей организации</p>
-								</li>
-								<li class="cabinet-register-stages-item">
-									<h6>Контакты организации</h6>
-									<p>Укажите контактные данные</p>
+									<h6>Сведения о руководителе</h6>
+									<p>Данные о руководителе остаются конфедициальными</p>
 								</li>
 							</ul>
 						</div>
@@ -194,40 +194,5 @@
 		</div>
 	</div>
 </main>
-<script>
-  function readURL(input) {
-    let rel = Number(input.getAttribute('rel'));
-    if (input.files && input.files[0]) {
-      let reader = new FileReader();
-      reader.onload = function (e) {
-        input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
-        input.previousElementSibling.innerHTML = ' ';
-        input.nextElementSibling.classList.remove('hidden');
-      };
-      reader.readAsDataURL(input.files[0]);
-      document.getElementsByClassName('')
-    }
-    rel++;
-    if (!input.parentElement.parentElement.nextElementSibling) {
-      let collection = document.getElementById('formWrapper');
-      let htmlSection = `
-			<li class="cabinet-register-container-form-addFile-item">
-			 <label>
-			   <div class="addFile-inner">
-			       <img src="img/data-falling/plus.png" alt="plus">
-			       <span>Загрузить</span>
-			   </div>
-			   <input type="file"
-			    onchange="readURL(this)"
-			     rel="${rel}"
-			     name='img[${rel}]'>
-			   <em class="hidden">замена изображения</em>
-			 </label>
-			 <a href="javascript:" class="remove-container" onclick="this.parentElement.remove()">&times;</a>
-			</li>`;
-      collection.insertAdjacentHTML("beforeend", htmlSection);
-    }
-  }
-</script>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

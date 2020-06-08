@@ -118,11 +118,10 @@
 					<div class="cabinet-register">
 						<div class="cabinet-register-container">
 							<div class="cabinet-register-container-headline">
-								<h5>Регистрация компании</h5>
+								<h5>Настройки</h5>
 							</div>
 							<div class="cabinet-register-container-text">
-								<p>Для возможности пользования нашими услугами Вам необходимо зарегистрироваться,
-									заполнив электронные формы в данном разделе.
+								<p>Данный раздел поможет Вам заполнить анкету для продолжения мероприятий на нашем сайте.
 								</p>
 							</div>
 							<div class="cabinet-register-container-warning">
@@ -141,60 +140,39 @@
 								</div>
 							</div>
 							<div class="cabinet-register-container-form">
-								<h6>Контакты организации</h6>
-								<form action="cabinet-register-4.html">
+								<h6>Сведения о руководителе компании</h6>
+								<form action="cabinet-register-3.html">
 									<div class="cabinet-register-container-form-inputs">
+										<label for="ogpn">
+											<span>Фамилия</span>
+											<input type="text" name="name" placeholder="____"/>
+										</label>
 										<label for="Web-site">
-											<span>Название организации</span>
-											<input type="text" name="name" id="Web-site" placeholder="Web-сайт"/>
-										</label>
-										<label for="ogpn">
-											<span>Минимальное кол-во заказа</span>
-											<input type="text" name="name" id="ogpn" placeholder="www.kervanyol.uz"/>
+											<span>Имя</span>
+											<input type="text" name="name" id="Web-site" placeholder="____"/>
 										</label>
 									</div>
 									<div class="cabinet-register-container-form-inputs">
-										<label for="boss">
-											<span>Должость руководителя</span>
-											<select name="boss" id="boss">
-												<option value="www.kervanyol.uz" selected>www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-
-											</select>
-										</label>
 										<label for="ogpn">
-											<span>Руководитель организации</span>
-											<input type="text" name="name" id="ogpn" placeholder="www.kervanyol.uz"/>
+											<span>Отчество</span>
+											<input type="text" name="name" placeholder="____"/>
+										</label>
+										<label for="Web-site">
+											<span>Должность</span>
+											<input type="text" name="name" id="position" placeholder="____"/>
 										</label>
 									</div>
 									<div class="cabinet-register-container-form-inputs">
-										<label for="boss">
-											<span>Регион</span>
-											<select name="boss" id="boss">
-												<option value="www.kervanyol.uz" selected>www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-
-											</select>
+										<label for="ogpn">
+											<span>Эл.почта</span>
+											<input type="text" name='name' placeholder="______"/>
 										</label>
-										<label for="boss">
-											<span>Телефон организации</span>
-											<select name="boss" id="boss">
-												<option value="www.kervanyol.uz" selected>www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-												<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-
-											</select>
+										<label for="ogpn">
+											<span>Контактный телефон</span>
+											<input type="text" name="client-phone" id="ogpn" placeholder="+998(__)___-__-__"/>
 										</label>
 									</div>
-									<button type="submit" class="btn-kervan">
+									<button type="button" class="btn-kervan" data-toggle="modal" data-target="#exampleModalCenter">
 										Продолжить
 									</button>
 								</form>
@@ -206,24 +184,16 @@
 							</div>
 							<ul class="cabinet-register-stages-items">
 								<li class="cabinet-register-stages-item done">
-									<h6>Что Вы ищете?</h6>
-									<p>Укажите сведения о желаемом товаре</p>
-								</li>
-								<li class="cabinet-register-stages-item done">
-									<h6>Требуемые сертификаты</h6>
-									<p>Загрузка документации на сайт</p>
-								</li>
-								<li class="cabinet-register-stages-item done">
 									<h6>Основные данные</h6>
-									<p>Укажите персональные сведения</p>
+									<p>Укажите базовые сведения о компании</p>
 								</li>
-								<li class="cabinet-register-stages-item">
-									<h6>Информация об адресе</h6>
-									<p>Укажите адрес Вашей организации</p>
+								<li class="cabinet-register-stages-item done">
+									<h6>Контактные данные</h6>
+									<p>Заполните данные поля для возможности связаться с Вами</p>
 								</li>
-								<li class="cabinet-register-stages-item">
-									<h6>Контакты организации</h6>
-									<p>Укажите контактные данные</p>
+								<li class="cabinet-register-stages-item done">
+									<h6>Сведения о руководителе</h6>
+									<p>Данные о руководителе остаются конфедициальными</p>
 								</li>
 							</ul>
 						</div>
@@ -234,4 +204,75 @@
 	</div>
 </main>
 
+<section class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered container" role="document">
+		<div class="modal-content cabinet-modal">
+
+			<div class="cabinet-modal-img">
+				<img src="img/cabinet/operator.png" alt="icon"/>
+			</div>
+			<div class="cabinet-modal-info">
+				<div class="cabinet-modal-info-headline">
+					<h6>Процесс заполнения формы завершен!</h6>
+				</div>
+				<div class="cabinet-modal-info-warning">
+					<div class="cabinet-modal-info-warning-img">
+						<img src="img/cabinet/success.png" alt=""/>
+					</div>
+					<div class="cabinet-modal-info-warning-text">
+						<p><strong>Статус: "Успешно"</strong></p>
+					</div>
+					<div class="cabinet-modal-info-warning-close">
+						<a href="javascript:" onclick="this.parentElement.parentElement.remove()">&times;
+						</a>
+					</div>
+				</div>
+				<div class="cabinet-modal-info-text">
+					<p>Ваши данные переданы на обработку нашим сотрудникам. Это займёт некоторое время.</p>
+					<p>По окончанию процесса рассмотрения, на указанный Вами номер телефона придёт <strong>СМС-оповещение.</strong>
+					</p>
+					<b>Благодарим Вас за содействие!</b>
+				</div>
+				<div class="cabinet-modal-info-button">
+					<a href="javascript:" class="btn btn-kervan">Продолжить</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+  function readURL(input) {
+    let rel = Number(input.getAttribute('rel'));
+    if (input.files && input.files[0]) {
+      let reader = new FileReader();
+      reader.onload = function (e) {
+        input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
+        input.previousElementSibling.innerHTML = ' ';
+        input.nextElementSibling.classList.remove('hidden');
+      };
+      reader.readAsDataURL(input.files[0]);
+      document.getElementsByClassName('')
+    }
+    rel++;
+    if (!input.parentElement.parentElement.nextElementSibling) {
+      let collection = document.getElementById('formWrapper');
+      let htmlSection = `
+			<li class="cabinet-register-container-form-addFile-item">
+			 <label>
+			   <div class="addFile-inner">
+			       <img src="img/data-falling/plus.png" alt="plus">
+			       <span>Загрузить</span>
+			   </div>
+			   <input type="file"
+			    onchange="readURL(this)"
+			     rel="${rel}"
+			     name='img[${rel}]'>
+			   <em class="hidden">замена изображения</em>
+			 </label>
+			 <a href="javascript:" class="remove-container" onclick="this.parentElement.remove()">&times;</a>
+			</li>`;
+      collection.insertAdjacentHTML("beforeend", htmlSection);
+    }
+  }
+</script>
 <%= _.template(require('./../includes/footer.html').default)(data) %>
