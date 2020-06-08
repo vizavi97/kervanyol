@@ -6,6 +6,8 @@
   &-content{
     @include col();
     @include size(9);
+    @include size-sm(8);
+    @include size-xs(12);
     background-color: white;
     padding: rem(42) rem(32) rem(15);
   }
@@ -48,6 +50,7 @@
   &-item{
     @include col();
     @include size(6);
+    @include size-sm(12);
     padding: rem(14) rem(20) rem(14) 0;
     a, h5{
       font-family: "Montserrat";
@@ -75,6 +78,8 @@
 .sidebar {
   @include col();
   @include size(3);
+  @include size-sm(4);
+  @include size-xs(12);
   box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
   background-color: #ffffff;
   border-radius: 15px;
@@ -210,5 +215,8 @@
         }
       }
     }
+  }
+  @include xs-block(){
+    margin-bottom: rem(20);
   }
 }

@@ -665,5 +665,23 @@
 
     }
   }
-
+  @include xs-block(){
+    &-main{
+      padding: 0;
+    }
+    &-card{
+      width: 100%;
+      flex-direction: column;
+      &-info{
+        padding: 1rem 0;
+      }
+    }
+    &-tab{
+      &-properties{
+        &-items{
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }
