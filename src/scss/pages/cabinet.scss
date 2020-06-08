@@ -528,11 +528,14 @@
           color: #9EA6B0;
           margin-bottom: 0;
 
+
           strong {
             font-weight: 600;
             font-size: 1rem;
             color: #0F1016;
             padding-left: 1rem;
+            text-align: right;
+            display: block;
           }
         }
       }
@@ -814,16 +817,19 @@
         flex-direction: row;
         justify-content: space-between;
       }
+
       &-top {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         padding-bottom: 1.75rem;
         border-bottom: 1px solid #F9FAFC;
+
         & > .cabinet-declaration-form-inputs {
           padding-right: .5rem;
           flex-grow: 1;
         }
+
         .add-switcher {
           display: flex;
           justify-content: center;
@@ -833,10 +839,12 @@
           background-color: #68D20B;
           border-radius: 50%;
           cursor: pointer;
+
           &:focus {
             outline: 0;
             box-shadow: 0 0 20px 1px rgba(93, 185, 30, 0.5);
           }
+
           span {
             font-size: 1rem;
             font-weight: 800;
@@ -844,6 +852,7 @@
             user-select: none;
           }
         }
+
         .remove-switcher {
           display: flex;
           justify-content: center;
@@ -853,6 +862,7 @@
           background-color: #FF6F55;
           border-radius: 50%;
           cursor: pointer;
+
           span {
             font-size: 1rem;
             font-weight: 800;
@@ -861,11 +871,13 @@
           }
         }
       }
+
       &-condition {
         & > .cabinet-declaration-form-inputs {
           padding-bottom: 1rem;
         }
       }
+
       &-button {
 
         button {
@@ -876,6 +888,7 @@
         }
       }
     }
+
     label {
       width: 50%;
       display: flex;
@@ -893,6 +906,7 @@
         font-weight: 500;
         padding-bottom: rem(7);
       }
+
       input {
         max-width: 287px;
         height: 31px;
@@ -925,12 +939,14 @@
         cursor: pointer;
       }
     }
+
     &-requests {
       &-items {
         width: 100%;
         display: flex;
         flex-direction: column;
       }
+
       &-item {
         display: flex;
         flex-direction: column;
@@ -939,45 +955,54 @@
         border-top: 1px solid #E1E6EE;
         padding-right: rem(42);
         position: relative;
+
         &-top {
           position: relative;
           display: flex;
           flex-direction: row;
+
           &-img {
             display: flex;
             justify-content: center;
             align-items: flex-start;
             max-width: 90px;
           }
+
           &-info {
             padding-left: 1.5rem;
+
             h6 {
               font-size: rem(14);
               font-weight: 800;
               color: #000000;
             }
+
             p {
               font-size: .75rem;
               margin-bottom: 0;
             }
+
             a {
               font-weight: 700;
               font-size: .75rem;
               color: #003E7C;
               text-decoration: underline;
               padding-right: .5rem;
+
               &.not-payed {
                 color: #00B71B;
               }
             }
           }
-          }
+        }
+
         &-descs {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
           padding-top: 1rem;
         }
+
         &-desc {
           display: flex;
           flex-direction: row;
@@ -985,11 +1010,13 @@
           align-items: center;
           width: 50%;
           padding-bottom: 1rem;
+
           p {
             margin-bottom: 0;
             font-size: rem(13);
             color: #9EA6B0;
             font-weight: 400;
+
             b {
               padding-left: 1rem;
               color: #0F1016;
@@ -997,6 +1024,7 @@
 
           }
         }
+
         &:after {
           position: absolute;
           width: 65px;
@@ -1006,14 +1034,17 @@
           content: '';
           background: url("../../img/cabinet/cabinet-declaration/new.png") no-repeat right;
         }
+
         &.not-payed:after {
           background: url("../../img/cabinet/cabinet-declaration/not-payed.png") no-repeat right;
 
         }
+
         &.in-process:after {
           background: url("../../img/cabinet/cabinet-declaration/in-proccess.png") no-repeat right;
 
         }
+
         &.done:after {
           background: url("../../img/cabinet/cabinet-declaration/done.png") no-repeat right;
 
@@ -1021,5 +1052,112 @@
       }
     }
 
+  }
+
+  @include lg-block() {
+    &-register {
+      &-container {
+        &-warning {
+          flex-wrap: wrap;
+
+          &-img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 30px;
+            }
+          }
+
+          &-text {
+            width: 80%;
+          }
+
+          &-close {
+            width: 20%;
+          }
+        }
+      }
+    }
+    &-data {
+      &-container {
+        padding: 1rem;
+      }
+    }
+  }
+  @include sm-block() {
+    &-nav {
+      width: auto;
+      min-width: auto;
+
+      &-headline {
+        display: none;
+      }
+
+      a {
+        span {
+          display: none;
+        }
+      }
+
+      &-items {
+        padding: 1rem;
+      }
+
+      &-item {
+        a {
+          justify-content: center;
+        }
+      }
+    }
+    &-register {
+      &-container {
+        &-form {
+          &-inputs {
+            label {
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+    &-modal {
+      &-img {
+        display: none;
+      }
+
+      &-info {
+        padding: 0;
+      }
+    }
+    &-data{
+      &-nav{
+        .nav{
+          flex-wrap: nowrap;
+          &-item{
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  @include xs-block() {
+    &-register {
+      flex-wrap: wrap;
+
+      &-stages {
+        min-width: 100%;
+        margin: rem(10) 0;
+      }
+    }
+    &-container {
+      flex-wrap: wrap;
+    }
+    &-sticker {
+      margin: 0;
+      width: 100%;
+      min-width: 100%;
+    }
   }
 }

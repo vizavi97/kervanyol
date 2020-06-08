@@ -885,10 +885,11 @@ footer {
   }
 
   @include md-block() {
-    width: 100%;
-    overflow-x: scroll;
     &-items {
-      min-width: rem(900);
+      overflow: auto;
+    }
+    &-item{
+      white-space: nowrap;
     }
   }
 }

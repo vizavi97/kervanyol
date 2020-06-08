@@ -3,7 +3,6 @@
 
   &-items {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -93,6 +92,14 @@
           box-shadow: 0 3px 6px rgba(255, 111, 85, 0.5);
         }
       }
+    }
+  }
+  @include lg-block(){
+    &-inner{
+      padding: rem(20);
+    }
+    &-item{
+      width: 65%;
     }
   }
 }
@@ -209,11 +216,16 @@
       border-radius: rem(24);
       color: #000000;
       padding-left: rem(19);
+      max-height: rem(32);
 
       &:focus {
         color: #000000;
         box-shadow: none;
       }
+    }
+
+    input[type=password]{
+      font-size: rem(30);
     }
 
     &-password {

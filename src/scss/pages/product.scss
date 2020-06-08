@@ -911,8 +911,7 @@
   }
 
   &-slider {
-    max-width: 48%;
-    width: 100%;
+    width: rem(395);
 
     &-container {
       width: 100%;
@@ -1196,6 +1195,7 @@
     }
     &-slider {
       max-width: 100%;
+      width: 100%;
 
       &-thumbs {
         display: none;

@@ -278,6 +278,21 @@
     }
   }
   @include lg-block(){
+    .banners{
+      &-middle{
+        padding: rem(20);
+        align-items: center;
+        h1{
+          font-size: rem(80);
+        }
+        h5{
+          font-size: rem(30);
+        }
+        a{
+          font-size: rem(15);
+        }
+      }
+    }
     &-elements{
       &-type{
         margin-right: 0;
@@ -289,7 +304,7 @@
       }
     }
   }
-  @include md-block(){
+  @include sm-block(){
     &-elements{
       &-headline{
         flex-direction: column;
@@ -303,6 +318,32 @@
       &-search{
         padding-top: rem(15);
       }
+    }
+  }
+  @include xs-block(){
+    .banners{
+      &-middle{
+        padding: rem(15);
+        h1{
+          font-size: rem(50);
+        }
+        h5{
+          font-size: rem(20);
+        }
+        a{
+          font-size: rem(13);
+        }
+      }
+    }
+    &-container{
+      flex-direction: column;
+    }
+    &-nav{
+      width: 100%;
+      min-width: 100%;
+    }
+    &-elements{
+      padding: rem(15) 0;
     }
   }
 }
