@@ -397,6 +397,7 @@
 
           .cabinet-register-container-form {
             &-addFile-item {
+              padding: 0;
               label {
                 padding: 0;
               }
@@ -1636,6 +1637,256 @@
     }
   }
 
+  &-payment {
+    border-top: 1px solid #f2f2f2;
+    margin-top: 1rem;
+    padding: 1rem 0;
+
+    &-check {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      &-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 216px;
+        height: 25px;
+        background: #FFFFFF;
+        border: 3px solid #FF6F55;
+        border-radius: 13px;
+
+        &-hidden {
+          position: absolute;
+          top: 10px;
+          width: 196px;
+          height: 201px;
+          overflow: hidden;
+        }
+
+        &-elements {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          background: url("../../img/cabinet/cabinet-coupons/check.png");
+          background-size: cover;
+          box-shadow: 0px -3px 20px 1px rgba(25, 25, 25, .05);
+          cursor: pointer;
+          padding: 1.75rem 1rem;
+          transform: translateY(-200px);
+          transition: all 1s ease;
+
+          &.finish {
+            transform: translateY(0);
+          }
+
+          h6 {
+            width: 100%;
+            text-align: center;
+            color: #000000;
+            font-size: rem(14);
+            border-bottom: 1px dashed #BCCBD9;
+            padding-bottom: 1rem;
+          }
+
+          h4 {
+            font-weight: 700;
+            font-size: rem(22);
+            color: #FF6F55;
+            padding-top: 1rem;
+          }
+          em {
+            width: 100%;
+            font-weight: 300;
+            font-size: rem(10);
+            color: #BCCBD9;
+            border-bottom: 1px dashed #BCCBD9;
+            padding-bottom: 1rem;
+
+            strong {
+              font-style: normal;
+              font-size: rem(15);
+            }
+          }
+        }
+      }
+
+      &-types {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding-left: 2rem;
+
+        h6 {
+          font-weight: 600;
+          font-size: 1rem;
+          color: #000000;
+          margin-bottom: 1rem;
+        }
+
+        input[type='radio'] {
+          display: none;
+        }
+
+        input[type="radio"]:checked + label {
+          border: 1px solid #ff6f55;
+        }
+
+        &-items {
+          @include row-flex();
+
+        }
+
+        &-item {
+          @include col();
+          @include size(6);
+
+          label {
+            padding: 1rem;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFFFF;
+            box-shadow: 0 16px 50px #E9EEF7;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all .3s ease;
+
+            &:hover {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+
+    &-form {
+      &-deadline {
+        display: flex;
+        flex-direction: row;
+        div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 181px;
+          height: 31px;
+          border: 1px solid #D3D9DE;
+          border-radius: 500rem;
+          overflow: hidden;
+          opacity: 1;
+          margin-right: 1.5rem;
+          input {
+            max-width: 50%;
+            border: none;
+            background-color: #fff;
+            &:first-of-type {
+              border-right: 1px solid #d3d9de;
+              border-radius: 0;
+            }
+          }
+        }
+      }
+      &-name {
+        div {
+          display: flex;
+          flex-direction: row;
+          input {
+            width: 50%;
+            &:first-of-type {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+
+      & > .btn {
+        margin-top: 2rem;
+        padding: .5rem 2.5rem;
+        font-weight: 600;
+      }
+
+    }
+  }
+  &-delivery {
+    border-top: 1px solid #f2f2f2;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    label {
+      width: 50%;
+      &:first-of-type {
+        margin-right: 1rem;
+      }
+      input {
+        width: 100%;
+      }
+    }
+    &-form {
+      & > div {
+        display: flex;
+        flex-direction: row;
+      }
+      &-address {
+        label {
+          width: 100%;
+          margin-right: 0!important;
+          input {
+            width: 100%;
+            max-width: none;
+          }
+        }
+      }
+      &-checkbox {
+        padding-top: 1rem;
+        input[type='checkbox'] {
+          display: none;
+        }
+        label {
+          width: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          padding-left: 1.5rem;
+          cursor: pointer;
+          &:before {
+            position: absolute;
+            left: 0;
+            content: '';
+            width: 13px;
+            height: 13px;
+            background: #FFFFFF;
+            border: 1px solid #BCCBD9;
+            border-radius: 3px;
+          }
+          &:after {
+            position: absolute;
+            left: .1rem;
+            font-family: "FontAwesome";
+            content: "\f00c";
+            z-index: 1;
+            font-size: 10px;
+            opacity: 0;
+          }
+          span {
+            font-size: rem(13);
+            font-weight: 400;
+            color: #7D8B9D;
+          }
+        }
+        input[type='checkbox']:checked + label:after {
+          opacity: 1;
+        }
+      }
+      & > .btn {
+        margin-top: 1rem;
+        padding: .5rem 2.5rem;
+        font-weight: 600;
+      }
+    }
+  }
 
   @include lg-block() {
     &-nav {

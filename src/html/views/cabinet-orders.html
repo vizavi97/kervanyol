@@ -61,7 +61,7 @@
 				<div class="cabinet-container sticker">
 					<div class="cabinet-data">
 						<div class="tab-content">
-							<div class="tab-pane  fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+							<div class="tab-pane  fade" id="home" role="tabpanel" aria-labelledby="home-tab">
 								<div class="cabinet-data-container">
 									<h4>Все заказы</h4>
 									<p class="my-0 text-muted">
@@ -162,7 +162,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="tab-pane  fade show active" id="profile" role="tabpanel" aria-labelledby="home-tab">
+							<div class="tab-pane  fade" id="profile" role="tabpanel" aria-labelledby="home-tab">
 								<div class="cabinet-data-container">
 									<h4>Все заказы</h4>
 									<p class="my-0 text-muted">
@@ -331,8 +331,195 @@
 									</ul>
 								</div>
 							</div>
-						</div>
+							<div class="tab-pane  fade" id="messages" role="tabpanel" aria-labelledby="home-tab">
+								<div class="cabinet-data-container">
+									<h4>Карты и способы оплаты</h4>
+									<p class="my-0 text-muted">
+										<small>Примите во внимание, что различные платежные системы и сервисы могут
+											взимать разную комиссию. Также, поступление платежа занимает от нескольких
+											минут до пары часов.
+										</small>
+									</p>
+									<div class="cabinet-payment">
+										<form action="javascript:">
+											<div class="cabinet-payment-check">
+												<div class="cabinet-payment-check-container">
+													<div class="cabinet-payment-check-container-hidden">
+														<div class="cabinet-payment-check-container-elements" id="check-loaded">
+															<h6>Сумма к оплате</h6>
+															<h4>141 000 UZS</h4>
+															<em>Номер заказа <strong>№5549875</strong></em>
+														</div>
+													</div>
+												</div>
+												<div class="cabinet-payment-check-types">
+													<h6>Выберите способ оплаты:</h6>
+													<ul class="cabinet-payment-check-types-items">
+														<li class="cabinet-payment-check-types-item">
+															<input type="radio" id="payment-visa" name="payment-types"/>
+															<label for="payment-visa">
+																<img src="img/cabinet/cabinet-coupons/visa.svg" alt="payment"/>
+															</label>
+														</li>
+														<li class="cabinet-payment-check-types-item">
+															<input type="radio" id="payment-mastercard" name="payment-types"/>
+															<label for="payment-mastercard">
+																<img src="img/cabinet/cabinet-coupons/mastercard.svg" alt="payment"/>
+															</label>
+														</li>
+														<li class="cabinet-payment-check-types-item">
+															<input type="radio" id="payment-paypal" name="payment-types"/>
+															<label for="payment-paypal">
+																<img src="img/cabinet/cabinet-coupons/paypal.svg" alt="payment"/>
+															</label>
+														</li>
+														<li class="cabinet-payment-check-types-item">
+															<input type="radio" id="payment-express" name="payment-types"/>
+															<label for="payment-express">
+																<img src="img/cabinet/cabinet-coupons/american-express.svg" alt="payment"/>
+															</label>
+														</li>
+														<li class="cabinet-payment-check-types-item">
+															<input type="radio" id="payment-uzcard" name="payment-types"/>
+															<label for="payment-uzcard">
+																<img src="img/cabinet/cabinet-coupons/uzcard.png" alt="payment"/>
+															</label>
+														</li>
+														<li class="cabinet-payment-check-types-item">
+															<input type="radio" id="payment-payme" name="payment-types"/>
+															<label for="payment-payme">
+																<img src="img/cabinet/cabinet-coupons/payme.png" alt="payment"/>
+															</label>
+														</li>
 
+													</ul>
+												</div>
+											</div>
+											<div class="cabinet-payment-form">
+												<h4>ОПЛАТА КАРТОЙ</h4>
+												<div class="cabinet-payment-form-cardNumber cabinet-data-inputs">
+													<label>
+														<span>Номер карты</span>
+														<input type="text" placeholder="___ ___ ___ ___"/>
+													</label>
+												</div>
+												<div class="cabinet-payment-form-deadline cabinet-data-inputs">
+													<label>
+														<span> Срок действия:</span>
+														<div>
+															<input type="text" placeholder="MM"/>
+															<input type="text" placeholder="YY"/>
+														</div>
+													</label>
+													<label>
+														<span>Код CVV|CVC:</span>
+														<input type="text" placeholder="___"/>
+													</label>
+												</div>
+												<div class="cabinet-payment-form-name cabinet-data-inputs">
+													<label>
+														<span>Имя владельца карты:</span>
+														<div>
+															<input type="text" placeholder="Имя"/>
+															<input type="text" placeholder="Фамилия"/>
+														</div>
+													</label>
+												</div>
+												<a href="javascript:" class="btn btn-kervan">оплатить </a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane  fade  show active" id="settings" role="tabpanel" aria-labelledby="home-tab">
+								<div class="cabinet-data-container">
+									<h4>Карты и способы оплаты</h4>
+									<p class="my-0 text-muted">
+										<small>
+											Укажите адреса доставки.
+										</small>
+									</p>
+									<div class="cabinet-delivery">
+										<form action="javascript:">
+											<div class="cabinet-delivery-form">
+												<div class="cabinet-delivery-form-name cabinet-data-inputs">
+													<label>
+														<span>Имя получателя</span>
+														<input type="text" placeholder="___ ___ ___ ___"/>
+													</label>
+													<label>
+														<span>Страна/Регион</span>
+														<select name="sss">
+															<option value="uzb" selected>uzb</option>
+															<option value="rus">rus</option>
+															<option value="usa">usa</option>
+														</select>
+													</label>
+												</div>
+												<div class="cabinet-delivery-form-address cabinet-data-inputs">
+													<label>
+														<span> Улица, дом, квартира:</span>
+															<input type="text" placeholder="MM"/>
+													</label>
+												</div>
+												<div class="cabinet-delivery-form-name cabinet-data-inputs">
+													<label>
+														<span>Край/Область/Регион:</span>
+														<select name="sss">
+															<option value="uzb">uzb</option>
+															<option value="rus" selected>rus</option>
+															<option value="usa">usa</option>
+														</select>
+													</label>
+													<label>
+														<span>Город:</span>
+														<input type="text" placeholder="___ ___ ___ ___"/>
+													</label>
+												</div>
+												<div class="cabinet-delivery-form-name cabinet-data-inputs">
+													<label>
+														<span>Почтовый индекс:</span>
+														<input type="text" placeholder="___ ___ ___ ___"/>
+													</label>
+													<label>
+														<span>Номер телефона</span>
+														<input type="text" name="client-phone" placeholder="+998-(__) ___ - __ - __"/>
+													</label>
+												</div>
+												<div class="cabinet-delivery-form-checkbox">
+													<input type="checkbox" id="box"/>
+													<label for="box">
+														<span>В моём адресе нет почтового кода.</span>
+													</label>
+
+												</div>
+												<div class="cabinet-delivery-form-checkbox">
+													<input type="checkbox" id="remember"/>
+
+													<label for="remember">
+														<span>Запомнить данные</span>
+													</label>
+												</div>
+												<a href="javascript:" class="btn btn-kervan">оплатить </a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane  fade" id="last" role="tabpanel" aria-labelledby="home-tab">
+								<div class="cabinet-data-container">
+									<h4>Возврат</h4>
+									<p class="my-0 text-muted">
+										<small>
+											В случае дефекта заказанного товара, Вы сможете обсудить условия возврата непосредственно с Поставщиком.
+										</small>
+									</p>
+									<div class="cabinet-delivery">
+									</div>
+								</div>
+							</div>
+
+						</div>
 					</div>
 					<div class="cabinet-profile">
 						<div class="cabinet-profile-container">
@@ -357,27 +544,27 @@
 							<ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
 								<li class="nav-item" role="presentation">
 									<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
-										Заполнить
+										Все заказы
 									</a>
 								</li>
 								<li class="nav-item" role="presentation">
-									<a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-										Требуемые сертификаты
+									<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+										Мои купоны
 									</a>
 								</li>
 								<li class="nav-item" role="presentation">
 									<a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">
-										Основные данные
+										Карты и способы оплаты
 									</a>
 								</li>
 								<li class="nav-item" role="presentation">
-									<a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">
-										Информация об адресе
+									<a class="nav-link active" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">
+										Адреса доставки
 									</a>
 								</li>
 								<li class="nav-item" role="presentation">
 									<a class="nav-link" id="last-tab" data-toggle="tab" href="#last" role="tab" aria-controls="last" aria-selected="false">
-										Контакты организации
+										Возвраты и споры
 									</a>
 								</li>
 							</ul>

@@ -204,3 +204,11 @@ $(document).ready(function () {
 $("[name='client-phone']").mask("+998 (zz) zzz-zz-zz");
 $("[name='client-fax']").mask("+998 (zz) zzz-zz-zz");
 
+// CHECK LOADED
+document.addEventListener('DOMContentLoaded', () => {
+  const check = document.getElementById('check-loaded');
+  setTimeout(()=> {
+    check.classList.add('finish');
+  },500);
+});
+
