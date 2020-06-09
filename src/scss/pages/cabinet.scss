@@ -257,7 +257,7 @@
 
           &-item {
             position: relative;
-            padding-bottom: 1rem;
+            padding-bottom: rem(10);
             padding-right: 1rem;
 
             input[type="file"] {
@@ -398,7 +398,6 @@
           .cabinet-register-container-form {
             &-addFile-item {
               padding: 0;
-
               label {
                 padding: 0;
               }
@@ -411,7 +410,7 @@
 
               .remove-container {
                 right: auto;
-                left: 32%;
+                left: 28%;
                 top: rem(-7);
               }
             }
@@ -746,6 +745,10 @@
 
     &-img {
       min-width: 50%;
+
+      img {
+        width: 100%;
+      }
     }
 
     &-info {
@@ -754,6 +757,7 @@
       text-align: left;
       flex-grow: 1;
       padding-left: 1.8125rem;
+      min-width: 50%;
 
       &-warning {
         display: flex;
@@ -1694,7 +1698,6 @@
             color: #FF6F55;
             padding-top: 1rem;
           }
-
           em {
             width: 100%;
             font-weight: 300;
@@ -1944,6 +1947,18 @@
         }
       }
     }
+    &-modal {
+      flex-direction: column;
+      padding: rem(20);
+
+      &-img {
+        padding-bottom: rem(10);
+      }
+
+      &-info {
+        padding: 0;
+      }
+    }
   }
   @include sm-block() {
     &-register {
@@ -2004,18 +2019,6 @@
         }
       }
     }
-    &-modal {
-      flex-direction: column;
-      padding: rem(20);
-
-      &-img {
-        padding-bottom: rem(10);
-      }
-
-      &-info {
-        padding: 0;
-      }
-    }
     &-data {
       &-nav {
         .nav {
@@ -2036,10 +2039,28 @@
         &-form {
           &-inputs {
             flex-direction: column;
+            @include row-flex();
+
+            label, label:first-of-type, label:last-of-type {
+              margin-left: 7.5px;
+              margin-right: 7.5px;
+            }
+            div + div {
+              padding-top: rem(10);
+            }
+          }
+
+          &-upload{
+            margin: 0;
           }
 
           button {
             margin: 0;
+          }
+          label{
+            input, select{
+              max-width: 100%;
+            }
           }
         }
       }
