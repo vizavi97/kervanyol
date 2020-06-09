@@ -205,10 +205,10 @@ $("[name='client-phone']").mask("+998 (zz) zzz-zz-zz");
 $("[name='client-fax']").mask("+998 (zz) zzz-zz-zz");
 
 // CHECK LOADED
-document.addEventListener('DOMContentLoaded', () => {
+const checkSwitcher = document.getElementById('cards-tab');
+checkSwitcher ? checkSwitcher.addEventListener('click', () => {
   const check = document.getElementById('check-loaded');
   setTimeout(()=> {
     check.classList.add('finish');
-  },500);
-});
-
+  },500)
+}) : null;

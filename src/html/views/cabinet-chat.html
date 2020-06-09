@@ -1,10 +1,283 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Title</title>
-</head>
-<body>
+<% var data = {title: "Личный кабинет: Чаты",};%><%= _.template(require('./../includes/header.html').default)(data) %>
+<main class="content grey">
+	<div class="container-lg">
+		<div class="content-container pt-4">
+			<div class="cabinet">
+				<div class="cabinet-nav pb-1">
+					<div class="cabinet-nav-headline">
+						<h5>Личный кабинет</h5>
+					</div>
+					<ul class="cabinet-nav-items">
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/conversetion.svg" alt="icon"/>
+								<span>Мой кабинет </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:" class="active">
+								<img src="img/cabinet/manuscript.svg" alt="icon"/>
+								<span>Мои заказы</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/transaction.svg" alt="icon"/>
+								<span>Сообщения</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/list.svg" alt="icon"/>
+								<span>Мои желания </span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/notification.svg" alt="icon"/>
+								<span>Любимые магазины</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/like.svg" alt="icon"/>
+								<span>настройки профиля</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/news.svg" alt="icon"/>
+								<span>Новости</span>
+							</a>
+						</li>
+						<li class="cabinet-nav-item">
+							<a href="javascript:">
+								<img src="img/cabinet/logout.svg" alt="icon"/>
+								<span>Выйти</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cabinet-container sticker">
+					<div class="cabinet-data">
+						<div class="cabinet-data-container">
+							<h4>Личные сообщения</h4>
+							<p class="my-0 text-muted">
+								<small>
+									В данном разделе Вы можете проверить оповещения от магазинов или наших сотрудников.
+								</small>
+							</p>
+							<div class="cabinet-chat">
+								<div class="cabinet-chat-search">
+									<form action="javascript:">
+										<button type="submit">
+											<img src="img/cabinet/cabinet-chat/search.svg" alt=""/>
+										</button>
+										<label>
+											<input type="search" placeholder="Поиск..."/>
+										</label>
+									</form>
+								</div>
+								<ul class="cabinet-chat-users">
+									<li class="cabinet-chat-user online">
+										<a href="javascript:">
+											<div class="cabinet-chat-user-image">
+												<img src="/img/cabinet/cabinet-chat/girl-1.png" alt="img"/>
+											</div>
+											<div class="cabinet-chat-user-info">
+												<div class="cabinet-chat-user-name">
+													<h6>Jennifer Fritz</h6>
+												</div>
+												<div class="cabinet-chat-user-text">
+													<p>I'm looking to work with a designer that...</p>
+												</div>
+											</div>
+											<div class="cabinet-chat-user-actions">
+												<div class="cabinet-chat-user-actions-last-seen">
+													<span>3:15 PM</span>
+												</div>
+												<div class="cabinet-chat-user-actions-messages">
+													<span>7</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="cabinet-chat-user online">
+										<a href="javascript:">
+											<div class="cabinet-chat-user-image">
+												<img src="/img/cabinet/cabinet-chat/girl-1.png" alt="img"/>
+											</div>
+											<div class="cabinet-chat-user-info">
+												<div class="cabinet-chat-user-name">
+													<h6>Jennifer Fritz</h6>
+												</div>
+												<div class="cabinet-chat-user-text">
+													<p>I'm looking to work with a designer that... I'm looking to work with a designer that.. I'm looking to work with a designer that..</p>
+												</div>
+											</div>
+											<div class="cabinet-chat-user-actions">
+												<div class="cabinet-chat-user-actions-last-seen">
+													<span>3:15 PM</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="cabinet-chat-user">
+										<a href="javascript:">
+											<div class="cabinet-chat-user-image">
+												<img src="/img/cabinet/cabinet-chat/girl-2.svg" alt="img"/>
+											</div>
+											<div class="cabinet-chat-user-info">
+												<div class="cabinet-chat-user-name">
+													<h6>Jennifer Fritz</h6>
+												</div>
+												<div class="cabinet-chat-user-text">
+													<p>I'm looking to work with a designer that...</p>
+												</div>
+											</div>
+											<div class="cabinet-chat-user-actions">
+												<div class="cabinet-chat-user-actions-last-seen">
+													<span>3:15 PM</span>
+												</div>
+												<div class="cabinet-chat-user-actions-messages">
+													<span>7</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="cabinet-chat-user">
+										<a href="javascript:">
+											<div class="cabinet-chat-user-image">
+												<img src="/img/cabinet/cabinet-chat/girl-2.svg" alt="img"/>
+											</div>
+											<div class="cabinet-chat-user-info">
+												<div class="cabinet-chat-user-name">
+													<h6>Jennifer Fritz</h6>
+												</div>
+												<div class="cabinet-chat-user-text">
+													<p>I'm looking to work with a designer that... I'm looking to work with a designer that.. I'm looking to work with a designer that..</p>
+												</div>
+											</div>
+											<div class="cabinet-chat-user-actions">
+												<div class="cabinet-chat-user-actions-last-seen">
+													<span>3:15 PM</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="cabinet-chat-user online">
+										<a href="javascript:">
+											<div class="cabinet-chat-user-image">
+												<img src="/img/cabinet/cabinet-chat/girl-1.png" alt="img"/>
+											</div>
+											<div class="cabinet-chat-user-info">
+												<div class="cabinet-chat-user-name">
+													<h6>Jennifer Fritz</h6>
+												</div>
+												<div class="cabinet-chat-user-text">
+													<p>I'm looking to work with a designer that...</p>
+												</div>
+											</div>
+											<div class="cabinet-chat-user-actions">
+												<div class="cabinet-chat-user-actions-last-seen">
+													<span>3:15 PM</span>
+												</div>
+												<div class="cabinet-chat-user-actions-messages">
+													<span>7</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="cabinet-chat-user online">
+										<a href="javascript:">
+											<div class="cabinet-chat-user-image">
+												<img src="/img/cabinet/cabinet-chat/girl-1.png" alt="img"/>
+											</div>
+											<div class="cabinet-chat-user-info">
+												<div class="cabinet-chat-user-name">
+													<h6>Jennifer Fritz</h6>
+												</div>
+												<div class="cabinet-chat-user-text">
+													<p>I'm looking to work with a designer that... I'm looking to work with a designer that.. I'm looking to work with a designer that..</p>
+												</div>
+											</div>
+											<div class="cabinet-chat-user-actions">
+												<div class="cabinet-chat-user-actions-last-seen">
+													<span>3:15 PM</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="cabinet-chat-user">
+										<a href="javascript:">
+											<div class="cabinet-chat-user-image">
+												<img src="/img/cabinet/cabinet-chat/girl-2.svg" alt="img"/>
+											</div>
+											<div class="cabinet-chat-user-info">
+												<div class="cabinet-chat-user-name">
+													<h6>Jennifer Fritz</h6>
+												</div>
+												<div class="cabinet-chat-user-text">
+													<p>I'm looking to work with a designer that...</p>
+												</div>
+											</div>
+											<div class="cabinet-chat-user-actions">
+												<div class="cabinet-chat-user-actions-last-seen">
+													<span>3:15 PM</span>
+												</div>
+												<div class="cabinet-chat-user-actions-messages">
+													<span>7</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="cabinet-chat-user">
+										<a href="javascript:">
+											<div class="cabinet-chat-user-image">
+												<img src="/img/cabinet/cabinet-chat/girl-2.svg" alt="img"/>
+											</div>
+											<div class="cabinet-chat-user-info">
+												<div class="cabinet-chat-user-name">
+													<h6>Jennifer Fritz</h6>
+												</div>
+												<div class="cabinet-chat-user-text">
+													<p>I'm looking to work with a designer that... I'm looking to work with a designer that.. I'm looking to work with a designer that..</p>
+												</div>
+											</div>
+											<div class="cabinet-chat-user-actions">
+												<div class="cabinet-chat-user-actions-last-seen">
+													<span>3:15 PM</span>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="cabinet-profile">
+						<div class="cabinet-profile-container">
+							<div class="cabinet-profile-image">
+								<img src="img/cabinet/default-user.svg" alt=""/>
+							</div>
+							<div class="cabinet-profile-name">
+								<h5>John Doe</h5>
+							</div>
+							<div class="cabinet-profile-email">
+								<p>example@gmail.com</p>
+							</div>
+							<div class="cabinet-profile-number">
+								<p>+998 94 538 65 98</p>
+							</div>
+							<div class="cabinet-profile-link">
+								<a href="javascript:">изменение</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
 
-</body>
-</html>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
