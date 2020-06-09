@@ -1888,6 +1888,139 @@
     }
   }
 
+  &-chat {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid #f2f2f2;
+    &-search {
+      form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      button {
+        background: transparent;
+        padding: .5rem 1rem .5rem 2.25rem;
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+      label{
+        display: flex;
+        flex-grow: 1;
+        margin-bottom: 0;
+        input {
+          border: 0;
+          width: 100%;
+          text-indent: .25rem;
+        }
+      }
+    }
+    &-users {
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      padding-top: 1.25rem;
+      margin: 0 -2rem;
+      max-height: 500px;
+    }
+    &-user {
+      padding: 1rem 2.75rem;
+      border-bottom: 1px solid #f2f2f2;
+      a {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-decoration: none;
+        color: black;
+      }
+      &:focus {
+        background: #E9EEF7;
+      }
+      &:hover {
+        background: #E9EEF7;
+      }
+      &-image {
+        padding-left: .75rem;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+      }
+      &-info {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        padding-left: 1.5rem;
+
+      }
+      &-name {
+        h6 {
+          font-weight: 700;
+          font-size: rem(14);
+          color: #000000;
+        }
+      }
+      &-text {
+        p {
+          font-weight: 300;
+          font-size: rem(14);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 310px;
+        }
+      }
+      &-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        &-last-seen {
+          span {
+            font-size: .75rem;
+            color: #787993;
+          }
+        }
+        &-messages {
+          width: 22px;
+          height: 22px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #FF4F33;
+          border-radius: 50%;
+          overflow: hidden;
+          span {
+            font-weight: 600;
+            font-size: rem(13);
+            color: white;
+          }
+        }
+      }
+      &.online {
+        .cabinet-chat-user-image {
+          position: relative;
+          &:after {
+            position: absolute;
+            content: '';
+            top: -1px;
+            right: -1px;
+            width: 15px;
+            height: 15px;
+            background: #43D881;
+            border: 3px solid #FFFFFF;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
   @include lg-block() {
     &-nav {
       width: auto;
