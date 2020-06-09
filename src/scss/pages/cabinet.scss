@@ -186,7 +186,7 @@
       &-form {
         padding-top: 1.5rem;
 
-        h6{
+        h6 {
           font-size: rem(16);
           font-weight: 700;
           margin-bottom: rem(24);
@@ -257,7 +257,7 @@
 
           &-item {
             position: relative;
-            padding-bottom: 1rem;
+            padding-bottom: rem(10);
             padding-right: 1rem;
 
             input[type="file"] {
@@ -371,7 +371,7 @@
             border-radius: 1rem;
             padding-top: rem(12);
 
-            &::placeholder{
+            &::placeholder {
               color: #BCCBD9;
             }
 
@@ -383,7 +383,8 @@
 
         &-input {
           width: 50%;
-          h6{
+
+          h6 {
             font-size: rem(14);
             margin-bottom: rem(16);
           }
@@ -396,7 +397,6 @@
 
           .cabinet-register-container-form {
             &-addFile-item {
-              padding: 0;
               label {
                 padding: 0;
               }
@@ -406,9 +406,10 @@
                 height: 110px;
                 padding-bottom: rem(10);
               }
-              .remove-container{
+
+              .remove-container {
                 right: auto;
-                left: 32%;
+                left: 28%;
                 top: rem(-7);
               }
             }
@@ -743,6 +744,10 @@
 
     &-img {
       min-width: 50%;
+
+      img {
+        width: 100%;
+      }
     }
 
     &-info {
@@ -751,6 +756,7 @@
       text-align: left;
       flex-grow: 1;
       padding-left: 1.8125rem;
+      min-width: 50%;
 
       &-warning {
         display: flex;
@@ -1503,7 +1509,7 @@
           background-color: #ff6f55;
         }
       }
-      
+
       h6 {
         font-weight: 600;
         font-size: rem(14);
@@ -1537,6 +1543,7 @@
         color: #000000;
       }
     }
+
     h5 {
       padding-top: rem(6);
       font-weight: 700;
@@ -1557,8 +1564,10 @@
     align-items: flex-start;
     padding: 1.5rem 0;
     border-top: 1px solid #f2f2f2;
+
     &-image {
       position: relative;
+
       &-text {
         position: absolute;
         right: 0;
@@ -1570,12 +1579,14 @@
         text-align: left;
         height: 100%;
         padding: .5rem 0;
+
         p {
           font-weight: 400;
           font-size: rem(10);
           color: #FFFFFF;
           margin-bottom: 0;
         }
+
         h6 {
           font-weight: 700;
           font-size: rem(18);
@@ -1585,30 +1596,37 @@
 
       }
     }
+
     &-description {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
       padding-left: 1rem;
+
       li {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding-bottom: .5rem;
+
         p {
           font-weight: 400;
           font-size: rem(10);
           color: #9EA6B0;
           margin-bottom: 0;
+
           &:first-of-type {
             width: 100px;
           }
+
           strong {
             font-weight: 500;
             color: #0F1016;
+
             &.expired {
               color: #FA3338;
             }
+
             &.active {
               color: #00B81D;
             }
@@ -1617,7 +1635,6 @@
       }
     }
   }
-
 
 
   @include lg-block() {
@@ -1677,6 +1694,18 @@
             justify-content: flex-end;
           }
         }
+      }
+    }
+    &-modal {
+      flex-direction: column;
+      padding: rem(20);
+
+      &-img {
+        padding-bottom: rem(10);
+      }
+
+      &-info {
+        padding: 0;
       }
     }
   }
@@ -1739,18 +1768,6 @@
         }
       }
     }
-    &-modal {
-      flex-direction: column;
-      padding: rem(20);
-
-      &-img {
-        padding-bottom: rem(10);
-      }
-
-      &-info {
-        padding: 0;
-      }
-    }
     &-data {
       &-nav {
         .nav {
@@ -1771,10 +1788,28 @@
         &-form {
           &-inputs {
             flex-direction: column;
+            @include row-flex();
+
+            label, label:first-of-type, label:last-of-type {
+              margin-left: 7.5px;
+              margin-right: 7.5px;
+            }
+            div + div {
+              padding-top: rem(10);
+            }
+          }
+
+          &-upload{
+            margin: 0;
           }
 
           button {
             margin: 0;
+          }
+          label{
+            input, select{
+              max-width: 100%;
+            }
           }
         }
       }
