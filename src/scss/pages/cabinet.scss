@@ -1944,6 +1944,7 @@
       &-sale-block {
       @include col();
       @include size(4);
+      @include size-sm(6);
         background-color: #fff;
         box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
         border-radius: 5px;
@@ -2282,6 +2283,12 @@
     }
   }
   @include md-block() {
+    &-nav{
+      position: sticky;
+      top: 0;
+      padding: 0;
+      margin-bottom: rem(8);
+    }
     &-register {
       &-container {
         &-warning {
@@ -2319,6 +2326,13 @@
 
       &-info {
         padding: 0;
+      }
+    }
+    &-profile{
+      position: sticky;
+      top: 0;
+      &-sidebar{
+        margin-bottom: rem(8);
       }
     }
   }
@@ -2436,6 +2450,24 @@
       margin: 0;
       width: 100%;
       min-width: 100%;
+    }
+    &-profile{
+      min-width: 100%;
+      width: 100%;
+      margin: 0;
+    }
+    &-stores{
+      &-container{
+        &-sale{
+          &-block{
+            &-img{
+              img{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
