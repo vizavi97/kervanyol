@@ -1,6 +1,7 @@
 import $ from "jquery";
 import 'bootstrap'
 import 'owl.carousel2/dist/owl.carousel'
+import EmojiButton from '@joeattardi/emoji-button'
 import Drift from "drift-zoom/src/js/Drift";
 import Swiper from "swiper";
 import './inputPhone';
@@ -173,30 +174,29 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 //JQUERY Companies Filter-nav toggler
 
-$(document).on('click','.companies-nav-categories-item',function(){
-    $('.companies-nav-categories-item > a').removeClass('active');
-    $(this).find('a').addClass('active');
+$(document).on('click', '.companies-nav-categories-item', function () {
+  $('.companies-nav-categories-item > a').removeClass('active');
+  $(this).find('a').addClass('active');
 });
 
 //JQUERY Companies Filter-nav toggler
 
-$(document).on('click','.companies-elements-type',function(){
+$(document).on('click', '.companies-elements-type', function () {
   $('.companies-elements-type').removeClass('active');
   $(this).addClass('active');
 });
 
 //Js Btn Copy ExIm-products
 $(document).ready(function () {
-    $('#exim-btn-copy').click(function() {
-	    let $temp = $("<input>");
-	    $("body").append($temp);
-	    $temp.val($('#text').text()).select();
-	    document.execCommand("copy");
-	    $temp.remove();
-	});
+  $('#exim-btn-copy').click(function () {
+    let $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($('#text').text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  });
 });
 
 
@@ -208,7 +208,33 @@ $("[name='client-fax']").mask("+998 (zz) zzz-zz-zz");
 const checkSwitcher = document.getElementById('cards-tab');
 checkSwitcher ? checkSwitcher.addEventListener('click', () => {
   const check = document.getElementById('check-loaded');
-  setTimeout(()=> {
+  setTimeout(() => {
     check.classList.add('finish');
-  },500)
+  }, 500)
 }) : null;
+
+const objDiv = document.getElementById("chat-conversation");
+objDiv ? objDiv.scrollTop = objDiv.scrollHeight : null;
+
+
+
+//EMOJI PICKER
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  const button = document.querySelector('#emoji-button');
+  const picker = new EmojiButton();
+  picker.on('emoji', emoji => {
+    document.getElementById('immoji').value += emoji;
+  });
+  button.addEventListener('click', () => {
+    picker.togglePicker(button);
+  });
+});
+
+
+// show chat
+
+$(document).on('click','.cabinet-chat-user',function(){
+  $(document).find('.cabinet-chat-conversation').removeClass('hide');
+});
