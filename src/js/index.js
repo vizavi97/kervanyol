@@ -223,13 +223,15 @@ objDiv ? objDiv.scrollTop = objDiv.scrollHeight : null;
 
 window.addEventListener('DOMContentLoaded', () => {
   const button = document.querySelector('#emoji-button');
-  const picker = new EmojiButton();
-  picker.on('emoji', emoji => {
-    document.getElementById('immoji').value += emoji;
-  });
-  button.addEventListener('click', () => {
-    picker.togglePicker(button);
-  });
+  if (button) {
+    const picker = new EmojiButton();
+    picker.on('emoji', emoji => {
+      document.getElementById('immoji').value += emoji;
+    });
+    button.addEventListener('click', () => {
+      picker.togglePicker(button);
+    });
+  }
 });
 
 

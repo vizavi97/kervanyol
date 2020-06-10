@@ -419,7 +419,8 @@
     }
 
     &-stages {
-      min-width: 272px;
+      width: 100%;
+      max-width: 272px;
       margin-left: 15px;
       box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
       background-color: #ffffff;
@@ -2510,6 +2511,8 @@
         align-items: center;
         min-height: 1.5rem;
         position: relative;
+        cursor: pointer;
+        user-select: none;
 
         &-input {
           position: absolute;
@@ -2529,6 +2532,7 @@
           font-size: rem(14);
           font-weight: 500;
           padding-right: rem(6g0);
+          cursor: pointer;
 
           &:before, &:after {
             position: absolute;

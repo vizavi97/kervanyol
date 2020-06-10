@@ -118,26 +118,10 @@
 					<div class="cabinet-register">
 						<div class="cabinet-register-container">
 							<div class="cabinet-register-container-headline">
-								<h5>Настройки</h5>
+								<h5>Регистрация</h5>
 							</div>
 							<div class="cabinet-register-container-text">
-								<p>Данный раздел поможет Вам заполнить анкету для продолжения мероприятий на нашем сайте.
-								</p>
-							</div>
-							<div class="cabinet-register-container-warning">
-								<div class="cabinet-register-container-warning-img">
-									<img src="img/cabinet/warning.png" alt=""/>
-								</div>
-								<div class="cabinet-register-container-warning-text">
-									<p><strong>Важно!</strong></p>
-									<p>Все пункты должны быть заполнены поэтапно для возможности получения дальнейшего
-										доступа.
-									</p>
-								</div>
-								<div class="cabinet-register-container-warning-close">
-									<a href="javascript:" onclick="this.parentElement.parentElement.remove()">&times;
-									</a>
-								</div>
+								<p>Данные этап является заключетельным и сохранит Ваши учетные данные.</p>
 							</div>
 							<div class="cabinet-register-container-form">
 								<h6>Сведения о руководителе компании</h6>
@@ -173,7 +157,7 @@
 										</label>
 									</div>
 									<button type="button" class="btn-kervan" data-toggle="modal" data-target="#exampleModalCenter">
-										Продолжить
+										Сохранить
 									</button>
 								</form>
 							</div>
@@ -229,7 +213,7 @@
 				</div>
 				<div class="cabinet-modal-info-text">
 					<p>Ваши данные переданы на обработку нашим сотрудникам. Это займёт некоторое время.</p>
-					<p>По окончанию процесса рассмотрения, на указанный Вами номер телефона придёт <strong>СМС-оповещение.</strong>
+					<p>По окончании процесса рассмотрения, на указанный Вами номер телефона придёт <strong>СМС-оповещение.</strong>
 					</p>
 					<b>Благодарим Вас за содействие!</b>
 				</div>
@@ -240,39 +224,4 @@
 		</div>
 	</div>
 </section>
-<script>
-  function readURL(input) {
-    let rel = Number(input.getAttribute('rel'));
-    if (input.files && input.files[0]) {
-      let reader = new FileReader();
-      reader.onload = function (e) {
-        input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
-        input.previousElementSibling.innerHTML = ' ';
-        input.nextElementSibling.classList.remove('hidden');
-      };
-      reader.readAsDataURL(input.files[0]);
-      document.getElementsByClassName('')
-    }
-    rel++;
-    if (!input.parentElement.parentElement.nextElementSibling) {
-      let collection = document.getElementById('formWrapper');
-      let htmlSection = `
-			<li class="cabinet-register-container-form-addFile-item">
-			 <label>
-			   <div class="addFile-inner">
-			       <img src="img/data-falling/plus.png" alt="plus">
-			       <span>Загрузить</span>
-			   </div>
-			   <input type="file"
-			    onchange="readURL(this)"
-			     rel="${rel}"
-			     name='img[${rel}]'>
-			   <em class="hidden">замена изображения</em>
-			 </label>
-			 <a href="javascript:" class="remove-container" onclick="this.parentElement.remove()">&times;</a>
-			</li>`;
-      collection.insertAdjacentHTML("beforeend", htmlSection);
-    }
-  }
-</script>
 <%= _.template(require('./../includes/footer.html').default)(data) %>

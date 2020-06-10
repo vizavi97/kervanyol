@@ -471,9 +471,10 @@
           }
 
           p {
-            font: rem(14) "Montserrat";
-            font-weight: 400;
-            line-height: rem(22);
+            font-size: 1rem;
+            font-family: "Montserrat";
+            font-weight: 300;
+            margin: 1rem 0;
           }
         }
       }
@@ -718,7 +719,7 @@
 
     p {
       font: rem(12) "Montserrat";
-      font-weight: 500;
+      font-weight: 300;
       color: #7D8B9D;
       margin: 0;
     }
