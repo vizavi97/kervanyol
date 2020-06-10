@@ -2528,6 +2528,7 @@
           box-shadow .15s ease-in-out;
           font-size: rem(14);
           font-weight: 500;
+          padding-right: rem(6g0);
 
           &:before, &:after {
             position: absolute;
@@ -2536,6 +2537,8 @@
             width: 32px;
             height: 20px;
             content: "";
+            top: 50%;
+            transform: translateY(-50%);
           }
 
           &:before {
@@ -2547,7 +2550,6 @@
           }
 
           &:after {
-            top: rem(3);
             right: rem(33);
             width: rem(18);
             height: rem(18);
@@ -2570,7 +2572,7 @@
 
         &:after {
           background-color: #FFFFFF;
-          transform: translateX(0.75rem);
+          transform: translate(0.75rem, -50%);
         }
       }
     }
@@ -2585,9 +2587,11 @@
         font-size: rem(12);
         font-weight: 400;
         line-height: rem(18);
-        text-decoration: underline;
         color: #7d8b9d;
         padding: rem(16) 0;
+        &:hover, &:focus{
+          color: #7d8b9d;
+        }
       }
     }
   }
@@ -2620,6 +2624,7 @@
     &-data {
       &-container {
         padding: 1rem;
+        margin-bottom: rem(8)
       }
     }
   }
@@ -2639,10 +2644,6 @@
             width: 100%;
             display: flex;
             justify-content: center;
-
-            img {
-              width: 30px;
-            }
           }
 
           &-text {
@@ -2794,6 +2795,7 @@
       min-width: 100%;
     }
     &-profile {
+      position: relative;
       min-width: 100%;
       width: 100%;
       margin: 0;
@@ -2810,6 +2812,9 @@
           }
         }
       }
+    }
+    &-account{
+      order: 1;
     }
   }
 }
