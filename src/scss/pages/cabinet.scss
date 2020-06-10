@@ -2511,6 +2511,8 @@
         align-items: center;
         min-height: 1.5rem;
         position: relative;
+        cursor: pointer;
+        user-select: none;
 
         &-input {
           position: absolute;
@@ -2530,6 +2532,7 @@
           font-size: rem(14);
           font-weight: 500;
           padding-right: rem(6g0);
+          cursor: pointer;
 
           &:before, &:after {
             position: absolute;
