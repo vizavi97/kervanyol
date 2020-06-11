@@ -81,7 +81,7 @@
       &.active {
         color: #222227;
         position: relative;
-        font-weight: 700;
+        font-weight: 500;
 
         &:after {
           content: '';
@@ -132,7 +132,7 @@
       color: #222227;
       font-family: "Montserrat";
       font-size: rem(16);
-      font-weight: 700;
+      font-weight: 500;
       margin-bottom: rem(14);
     }
 
@@ -204,7 +204,7 @@
         color: #222227;
         font-family: "Montserrat";
         font-size: rem(16);
-        font-weight: 700;
+        font-weight: 500;
         text-transform: uppercase;
         margin: 0;
       }
@@ -383,7 +383,7 @@
   h3 {
     font-family: "Montserrat";
     font-size: rem(18);
-    font-weight: 700;
+    font-weight: 500;
   }
 
   p {

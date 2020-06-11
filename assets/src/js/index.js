@@ -240,3 +240,18 @@ window.addEventListener('DOMContentLoaded', () => {
 $(document).on('click','.cabinet-chat-user',function(){
   $(document).find('.cabinet-chat-conversation').removeClass('hide');
 });
+
+
+
+// main page search box-shadow
+
+const mainSearch = document.getElementById('mainSearch');
+
+if ( mainSearch) {
+  mainSearch.addEventListener("focusin", () => {
+    mainSearch.parentElement.parentElement.classList.add('focused');
+  })
+  mainSearch.addEventListener("focusout", () => {
+    mainSearch.parentElement.parentElement.classList.remove('focused');
+  })
+}
