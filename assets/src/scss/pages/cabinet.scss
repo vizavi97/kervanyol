@@ -525,7 +525,7 @@
 
       span {
         color: #9ea6b0;
-        font-size: rem(10);
+        font-size: rem(14);
         font-weight: 400;
       }
 
@@ -1017,6 +1017,11 @@
         border-top: 1px solid #E1E6EE;
         padding-right: rem(42);
         position: relative;
+
+        &:first-of-type {
+        	border-top: 0;
+        	padding-top: 0;
+        }
 
         &-top {
           position: relative;
