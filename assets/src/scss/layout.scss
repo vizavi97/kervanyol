@@ -496,7 +496,6 @@ header {
   //NAV-MENU
   &-menu {
     position: relative;
-    z-index: 2;
 
     &-categories {
       display: flex;
@@ -507,16 +506,32 @@ header {
       @include lg-block() {
         justify-content: center;
       }
+      @include md-block(){
+        overflow-x: scroll;
+        padding: 1rem 0;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+      }
     }
 
     &-category {
       border-radius: 20px;
       display: flex;
+      margin: 0 .5rem;
       transition: all .3s ease-in;
+      justify-content: center;
+
+      a {
+        .arrow {
+          padding-right: .5rem;
+        }
+        @include md-block(){
+          white-space: nowrap;
+        }
+      }
 
       &:hover {
         box-shadow: 0 0 1px 1px #ff6f55;
-        transition: all 5s;
 
         > a {
           color: #ff6f55;
@@ -525,6 +540,7 @@ header {
         & > div {
           display: block;
           opacity: 1;
+          z-index: 5;
         }
 
         &:after {
@@ -536,7 +552,7 @@ header {
           bottom: -38px;
           width: 26px;
           height: 68px;
-          z-index: 100;
+          z-index: 100
         }
       }
 
@@ -551,20 +567,21 @@ header {
       & > a {
         padding: rem(6) rem(12);
         color: #000711;
-        font-size: 15px;
+        font-size: rem(15);
         font-weight: 500;
         text-decoration: none;
       }
 
       &-inner {
-        display: none;
+        //display: none;
         opacity: 0;
         position: absolute;
         right: 0;
         left: 0;
-        z-index: 32;
+        z-index: -1;
         padding-top: 30px;
         margin-top: 27px;
+        transition: all.1s linear;
 
         &-wrapper {
           display: flex;
@@ -576,12 +593,18 @@ header {
           padding: 2rem 3rem;
           border: 1px solid rgba(60, 60, 60, 0.08);
           border-radius: 1rem;
+          @include bd-block() {
+            max-width: 100%;
+          }
+          @include md-block(){
+            padding: 1rem;
+          }
         }
       }
     }
 
     &-column {
-      width: 280px;
+      width: 25%;
       margin: 0 15px;
     }
 
@@ -613,7 +636,7 @@ header {
       a {
         display: block;
         color: #000;
-        font-size: 13px;
+        font-size: .75rem;
         margin-bottom: 7px;
         text-decoration: none;
 

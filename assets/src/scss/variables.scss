@@ -46,6 +46,7 @@ h2 {
   cursor: pointer;
 }
 .btn-kervan {
+  min-width: 10rem;
   background-color: #ff6f55;
   color: #ffffff;
   font-size: 16px;
@@ -109,6 +110,24 @@ h2 {
   }
   &.longer {
     padding: .5rem 4rem;
+  }
+}
+.input-kervan {
+  max-width: 100%;
+  height: 2.625rem;
+  border: 1px solid #d3d9de;
+  background-color: #fff;
+  border-radius: 500rem;
+  color: #000;
+  font-size: .75rem;
+  font-weight: 500;
+  text-indent: 1rem;
+  &:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
   }
 }
 .vertical-line {
@@ -203,26 +222,9 @@ legend {
   color: #000;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-button {
-  z-index: 0;
-}
 
 a, button {
   cursor: pointer;
-}
-input {
-  z-index: 0;
 }
 
 main {
