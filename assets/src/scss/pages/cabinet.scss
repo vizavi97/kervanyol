@@ -4,7 +4,6 @@
   align-items: flex-start;
   padding-top: 1.5rem;
   padding-bottom: 5rem;
-  font-family: "Montserrat";
 
   &-nav {
     min-width: 272px;
@@ -59,7 +58,6 @@
         max-width: 20px;
         -webkit-filter: grayscale(100%);
         -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
         -o-filter: grayscale(100%);
         filter: grayscale(100%);
         transition: all .3s ease;
@@ -68,7 +66,7 @@
       span {
         color: black;
         font-size: rem(14);
-        font-weight: 600;
+        font-weight: 400;
         padding-left: rem(14);
       }
 
@@ -213,7 +211,7 @@
 
           input {
             max-width: 287px;
-            height: 31px;
+            height: 2.625rem;
             border: 1px solid #d3d9de;
             background-color: #ffffff;
             border-radius: 500rem;
@@ -225,7 +223,7 @@
 
           select {
             max-width: 287px;
-            height: 31px;
+            height: 2.625rem;
             border: 1px solid #d3d9de;
             background-color: #ffffff;
             border-radius: 500rem;
@@ -667,7 +665,7 @@
 
         input {
           max-width: 287px;
-          height: 31px;
+          height: 2.625rem;
           border: 1px solid #d3d9de;
           background-color: #ffffff;
           border-radius: 500rem;
@@ -679,7 +677,7 @@
 
         select {
           max-width: 287px;
-          height: 31px;
+          height: 2.625rem;
           border: 1px solid #d3d9de;
           background-color: #ffffff;
           border-radius: 500rem;
@@ -716,7 +714,6 @@
 
       & .nav-link {
         cursor: pointer;
-        font-size: 1;
         color: #000000;
         border: 0;
         padding: 0;
@@ -935,8 +932,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 31px;
-          height: 31px;
+          width: 2.625rem;
+          height: 2.625rem;
           background-color: #68D20B;
           border-radius: 50%;
           cursor: pointer;
@@ -958,8 +955,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 31px;
-          height: 31px;
+          width: 2.625rem;
+          height: 2.625rem;
           background-color: #FF6F55;
           border-radius: 50%;
           cursor: pointer;
@@ -1010,7 +1007,7 @@
 
       input {
         max-width: 287px;
-        height: 31px;
+        height: 2.625rem;
         border: 1px solid #d3d9de;
         background-color: #ffffff;
         border-radius: 500rem;
@@ -1022,7 +1019,7 @@
 
       select {
         max-width: 287px;
-        height: 31px;
+        height: 2.625rem;
         border: 1px solid #d3d9de;
         background-color: #ffffff;
         border-radius: 500rem;
@@ -1249,7 +1246,7 @@
         }
 
         input {
-          height: 31px;
+          height: 2.625rem;
           border: 1px solid #d3d9de;
           background-color: #ffffff;
           border-radius: 500rem;
@@ -1267,7 +1264,7 @@
 
       select {
         width: 122px;
-        height: 31px;
+        height: 2.625rem;
         position: relative;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -1789,7 +1786,7 @@
           flex-direction: row;
           align-items: center;
           width: 181px;
-          height: 31px;
+          height: 2.625rem;
           border: 1px solid #D3D9DE;
           border-radius: 500rem;
           overflow: hidden;
@@ -2270,8 +2267,7 @@
       width: 100%;
       height: 100%;
       background: rgba(255, 255, 255, 0.99);
-      transition: all .2 ease;
-
+      transition: all .2s ease;
       &.hide {
         left: -5000px;
       }
@@ -2401,7 +2397,7 @@
             p {
               margin-bottom: 0;
               color: #787993;
-              font-size: 1;
+              font-size: 1rem;
               font-weight: 400;
             }
           }
@@ -2502,7 +2498,7 @@
 
         input {
           max-width: 100%;
-          height: 31px;
+          height: 2.625rem;
           border: 1px solid #d3d9de;
           background-color: #fff;
           border-radius: 500rem;
