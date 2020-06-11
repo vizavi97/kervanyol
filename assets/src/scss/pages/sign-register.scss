@@ -233,12 +233,7 @@
     }
 
     input {
-      border: rem(1) solid #d3d9de;
-      background-color: #ffffff;
-      border-radius: rem(24);
-      color: #000000;
-      padding-left: rem(19);
-      max-height: rem(32);
+      width: 100%;
 
       &:focus {
         color: #000000;
@@ -255,7 +250,7 @@
 
       a {
         position: absolute;
-        bottom: 3px;
+        bottom: 8px;
         right: 20px;
         color: black;
       }
@@ -304,11 +299,7 @@
   }
 
   input {
-    border: rem(1) solid #d3d9de;
-    background-color: #ffffff;
-    border-radius: rem(24);
-    color: #000000;
-    padding-left: rem(19);
+    width: 100%;
 
     &:focus {
       color: #000000;
@@ -321,7 +312,7 @@
 
     &-password {
       input {
-        height: 32px;
+        width: 100%;
         font-size: rem(30);
       }
     }
@@ -413,12 +404,9 @@
   }
 
   input {
-    border: rem(1) solid #d3d9de;
-    background-color: #ffffff;
-    border-radius: rem(24);
-    color: #000000;
-    padding-left: rem(19);
     max-width: rem(277);
+    width: 100%;
+    display: block;
 
     &:focus {
       color: #000000;
