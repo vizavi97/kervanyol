@@ -183,7 +183,6 @@ header {
 
     &-category {
       border-radius: 1.5rem;
-      padding: .625rem 2rem;
       transition: all .3s ease-in;
       margin: 0 .25rem;
 
@@ -197,6 +196,7 @@ header {
         font-size: .8125rem;
         font-weight: 700;
         text-decoration: none;
+        padding: .625rem 2rem;
       }
     }
   }
