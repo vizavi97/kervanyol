@@ -309,11 +309,11 @@
 													<div class="cabinet-declaration-form-inputs">
 														<label>
 															<span>Наименование товара</span>
-															<input type="text" placeholder="Наименование товара" name="product[0]" id="declaration-input" rel="0"/>
+															<input type="text" class="input-kervan" placeholder="Наименование товара" name="product[0]" id="declaration-input" rel="0"/>
 														</label>
 														<label>
 															<span>Количество товара</span>
-															<input type="text" placeholder="шт" name="count[0]"/>
+															<input type="text" class="input-kervan" placeholder="шт" name="count[0]"/>
 														</label>
 													</div>
 													<button type="button" id="add-switcher" class="add-switcher">
@@ -333,13 +333,13 @@
 														</label>
 														<label>
 															<span>Грузополучатель</span>
-															<input type="text" placeholder="ФИО"/>
+															<input type="text" class="input-kervan" placeholder="ФИО"/>
 														</label>
 													</div>
 													<div class="cabinet-declaration-form-inputs">
 														<label>
 															<span>Адрес</span>
-															<input type="text" placeholder="адрес" name="count[0]"/>
+															<input type="text" class="input-kervan" placeholder="адрес" name="count[0]"/>
 														</label>
 														<label>
 															<span>Условие оплаты</span>
@@ -416,11 +416,11 @@
 			<div class="cabinet-declaration-form-inputs">
 				<label>
 					<span>Наименование товара</span>
-					<input type="text" placeholder="Наименование товара" name="product[${declarationInputNumber}]"/>
+					<input type="text" class="input-kervan" placeholder="Наименование товара" name="product[${declarationInputNumber}]"/>
 				</label>
 				<label>
 					<span>Количество товара</span>
-					<input type="text" placeholder="шт" name="count[${declarationInputNumber}]"/>
+					<input type="text" class="input-kervan" placeholder="шт" name="count[${declarationInputNumber}]"/>
 				</label>
 			</div>
 			<button type="button" id="remove-switcher" class="remove-switcher" onclick="this.parentElement.remove()">
