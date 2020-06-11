@@ -503,6 +503,7 @@ header {
       flex-direction: row;
       align-items: center;
       flex-wrap: wrap;
+      padding-bottom: 1rem;
       @include lg-block() {
         justify-content: center;
       }
@@ -510,16 +511,12 @@ header {
 
     &-category {
       border-radius: 20px;
-      padding: 6px 12px;
-      //margin-right: 12px;
+      display: flex;
       transition: all .3s ease-in;
 
       &:hover {
         box-shadow: 0 0 1px 1px #ff6f55;
-
-        .arrow {
-          opacity: 0;
-        }
+        transition: all 5s;
 
         > a {
           color: #ff6f55;
@@ -536,7 +533,7 @@ header {
           display: block;
           background: url("../img/menu_arr.png") bottom no-repeat;
           background-size: cover;
-          bottom: -53px;
+          bottom: -38px;
           width: 26px;
           height: 68px;
           z-index: 100;
@@ -552,6 +549,7 @@ header {
       }
 
       & > a {
+        padding: rem(6) rem(12);
         color: #000711;
         font-size: 15px;
         font-weight: 500;
@@ -566,6 +564,7 @@ header {
         left: 0;
         z-index: 32;
         padding-top: 30px;
+        margin-top: 27px;
 
         &-wrapper {
           display: flex;

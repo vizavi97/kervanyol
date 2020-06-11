@@ -13,6 +13,21 @@ $browser-context: 16;
     max-width: 1170px;
   }
 }
+
+
+@media (min-width: 1600px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 80%;
+  }
+}
+
+
+@media (min-width: 2560px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1800px;
+  }
+}
+
 //CLASSES
 h2 {
   color: #000000;
