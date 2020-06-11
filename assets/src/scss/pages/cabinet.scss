@@ -210,7 +210,6 @@
           }
 
           select {
-            max-width: 287px;
             height: 2.625rem;
             border: 1px solid #d3d9de;
             background-color: #ffffff;
@@ -2618,6 +2617,19 @@
           color: #0f1016;
         }
       }
+    }
+  }
+
+  &-store-orders{
+    display: flex;
+    align-items: center;
+    &-img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-info{
+      padding-left: rem(12);
     }
   }
 
