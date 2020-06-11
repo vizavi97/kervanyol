@@ -1,115 +1,116 @@
 <% var data = {title: "Личный кабинет: Аккаунт",};%><%= _.template(require('./../includes/header.html').default)(data) %>
 <main class="content grey">
-	<div class="container-lg">
-		<div class="content-container pt-4">
-			<div class="cabinet">
-				<div class="cabinet-nav pb-1">
-					<div class="cabinet-nav-headline">
-						<h5>Личный кабинет</h5>
-					</div>
-					<ul class="cabinet-nav-items">
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/conversetion.svg" alt="icon"/>
-								<span>Мой кабинет </span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/manuscript.svg" alt="icon"/>
-								<span>Мои заказы</span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/transaction.svg" alt="icon"/>
-								<span>Сообщения</span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/list.svg" alt="icon"/>
-								<span>Мои желания </span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/notification.svg" alt="icon"/>
-								<span>Любимые магазины</span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:" class="active">
-								<img src="img/cabinet/like.svg" alt="icon"/>
-								<span>настройки профиля</span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/news.svg" alt="icon"/>
-								<span>Новости</span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/logout.svg" alt="icon"/>
-								<span>Выйти</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="cabinet-container sticker">
-					<div class="cabinet-data">
-						<div class="cabinet-data-container">
-
-						</div>
-					</div>
-					<div class="cabinet-profile">
-						<div class="cabinet-profile-container">
-							<div class="cabinet-profile-image">
+    <div class="container-lg">
+        <div class="content-container pt-4">
+            <div class="cabinet">
+                <div class="cabinet-nav pb-1">
+                    <div class="cabinet-nav-headline">
+                        <h5>Личный кабинет</h5>
+                    </div>
+                    <ul class="cabinet-nav-items">
+                        <li class="cabinet-nav-item">
+                            <a href="javascript:">
+                                <img src="img/cabinet/conversetion.svg" alt="icon"/>
+                                <span>Консоль</span>
+                            </a>
+                        </li>
+                        <li class="cabinet-nav-item">
+                            <a href="javascript:">
+                                <img src="img/cabinet/manuscript.svg" alt="icon"/>
+                                <span>Мой магазин</span>
+                            </a>
+                        </li>
+                        <li class="cabinet-nav-item">
+                            <a href="javascript:" class="active">
+                                <img src="img/cabinet/transaction.svg" alt="icon"/>
+                                <span>Мои продукты</span>
+                            </a>
+                        </li>
+                        <li class="cabinet-nav-item">
+                            <a href="javascript:">
+                                <img src="img/cabinet/list.svg" alt="icon"/>
+                                <span>Заказы</span>
+                            </a>
+                        </li>
+                        <li class="cabinet-nav-item">
+                            <a href="javascript:">
+                                <img src="img/cabinet/notification.svg" alt="icon"/>
+                                <span>Выйти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cabinet-container sticker">
+                    <div class="cabinet-data">
+                        <div class="cabinet-data-container">
+                            <div class="tab-pane  fade  show active" id="home" role="tabpanel"
+                                 aria-labelledby="home-tab">
+                                <div class="cabinet-data-container">
+                                    <h4>Личные данные</h4>
+                                    <p class="my-0 text-muted pb-2">
+                                        <small>Данный раздел предназначен для редактирования
+                                            ранее внесенных данных.</small>
+                                    </p>
+                                    <div class="cabinet-delivery">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cabinet-profile">
+                        <div class="cabinet-profile-container">
+                            <div class="cabinet-profile-image">
 								<span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="31" viewBox="0 0 28 31"><g><g><g><path
-		                                    fill="none" stroke="#bccbd9" stroke-linecap="round" stroke-linejoin="round"
-		                                    stroke-miterlimit="20" stroke-width="3"
-		                                    d="M26.007 29v0-3a6 6 0 0 0-6-6h-12a6 6 0 0 0-6 6v3"/></g><g><path
-		                                    fill="none" stroke="#bccbd9" stroke-linecap="round" stroke-linejoin="round"
-		                                    stroke-miterlimit="20" stroke-width="3"
-		                                    d="M20.007 8a6 6 0 1 1-12 0 6 6 0 0 1 12 0z"/></g></g></g></svg>
+                                            fill="none" stroke="#bccbd9" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="20" stroke-width="3"
+                                            d="M26.007 29v0-3a6 6 0 0 0-6-6h-12a6 6 0 0 0-6 6v3"/></g><g><path
+                                            fill="none" stroke="#bccbd9" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="20" stroke-width="3"
+                                            d="M20.007 8a6 6 0 1 1-12 0 6 6 0 0 1 12 0z"/></g></g></g></svg>
                                 </span>
-							</div>
-							<div class="cabinet-profile-name">
-								<h5>Иван Иванов</h5>
-							</div>
-							<div class="cabinet-profile-email">
-								<p>ivanka90@gmail.com</p>
-							</div>
-							<div class="cabinet-profile-number">
-								<p>+ 998 94 123 45 67</p>
-							</div>
-							<div class="cabinet-profile-link">
-								<a href="javascript:">изменение</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                            </div>
+                            <div class="cabinet-profile-name">
+                                <h5>Иван Иванов</h5>
+                            </div>
+                            <div class="cabinet-profile-email">
+                                <p>ivanka90@gmail.com</p>
+                            </div>
+                            <div class="cabinet-profile-number">
+                                <p>+ 998 94 123 45 67</p>
+                            </div>
+                            <div class="cabinet-profile-link">
+                                <a href="javascript:">изменение</a>
+                            </div>
+                        </div>
+                        <div class="cabinet-profile-sidebar">
+                            <h6>Управление товарами</h6>
+                            <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                       aria-controls="home" aria-selected="true">
+                                        Активные товары
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="safety-tab" data-toggle="tab" href="#safety" role="tab"
+                                       aria-controls="safety" aria-selected="false">
+                                        Неактивные товары
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="notice-tab" data-toggle="tab" href="#notice" role="tab"
+                                       aria-controls="notice" aria-selected="false">
+                                        Загрузка товара
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
-
-<script>
-  function readURL(input) {
-    if (input.files && input.files[0]) {
-      let reader = new FileReader();
-      reader.onload = function (e) {
-        input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
-        input.previousElementSibling.innerHTML = ' ';
-        input.nextElementSibling.classList.remove('hidden');
-      };
-      reader.readAsDataURL(input.files[0]);
-      document.getElementsByClassName('')
-    }
-  }
-</script>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
