@@ -1,876 +1,823 @@
 <% var data = {title: "PRODUCT_PAGE",}; %><%= _.template(require('./../includes/header.html').default)(data) %>
 <main class="content store">
-    <div class="container">
-        <div class="content-container">
-            <div class="breadcrumbs">
-                <ul class="breadcrumbs-items">
-                    <li class="breadcrumbs-item active">
-                        <a href="/">
-                            Главная
-                        </a>
-                    </li>
-                    <li class="breadcrumbs-item">
-                        <a href="javascript:">
-                            Все категории
-                        </a>
-                    </li>
-                    <li class="breadcrumbs-item">
-                        <a href="javascript:">
-                            Верхняя одежда
-                        </a>
-                    </li>
-                    <li class="breadcrumbs-item">
-                        <a href="javascript:">
-                            Головные уборы спецназначения
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="store-sides">
-                <div class="store-main">
-                    <div class="store-card">
-                        <img src="img/city-style-logo.png" alt="city-style-logo.png">
-                        <div class="store-card-info">
-                            <h5>City style</h5>
-                            <div class="store-card-info-rating">
-                                <ul class="stars">
-                                    <li class="star active">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star active">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star active">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star active">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                </ul>
-                                <div class="store-card-info-rating-orders">
-                                    <span>4.0</span>
-                                </div>
-                            </div>
-                            <div class="store-card-info-reviews">
-                                <p>Отзывы</p>
-                                <div class="store-card-info-reviews-orders">
-                                    <span>-45</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="store-nav">
-                        <nav class="store-nav-menu">
-                            <ul class="store-nav-menu-categories">
-                                <li class="store-nav-menu-call">
+	<div class="container">
+		<div class="content-container">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs-items">
+					<li class="breadcrumbs-item active">
+						<a href="/">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Все категории
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Верхняя одежда
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Головные уборы спецназначения
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="store-sides">
+				<div class="store-main">
+					<div class="store-card">
+						<img src="img/city-style-logo.png" alt="city-style-logo.png">
+						<div class="store-card-info">
+							<h5>City style</h5>
+							<div class="store-card-info-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star"></i>
+									</li>
+								</ul>
+								<div class="store-card-info-rating-orders">
+									<span>4.0</span>
+								</div>
+							</div>
+							<div class="store-card-info-reviews">
+								<p>Отзывы</p>
+								<div class="store-card-info-reviews-orders">
+									<span>-45</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="store-nav">
+						<nav class="store-nav-menu">
+							<ul class="store-nav-menu-categories">
+								<li class="store-nav-menu-call">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15.98" height="16"
-                                             viewBox="0 0 15.98 16">
-                                            <path id="Icon_zocial-call" data-name="Icon zocial-call"
-                                                  d="M3.3,6.086a1.177,1.177,0,0,1,.3-.639L6,3.05q.28-.24.42.08L8.355,6.765a.523.523,0,0,1-.1.619l-.879.879a.994.994,0,0,0-.28.619,3.05,3.05,0,0,0,.619,1.538,13.136,13.136,0,0,0,1.219,1.6l.619.639c.187.187.426.416.72.689a12.061,12.061,0,0,0,1.448,1.079,3.24,3.24,0,0,0,1.588.669.87.87,0,0,0,.639-.26L14.988,13.8a.439.439,0,0,1,.6-.08l3.5,2.058a.292.292,0,0,1,.16.21.255.255,0,0,1-.08.23l-2.4,2.4a1.174,1.174,0,0,1-.639.3,4.833,4.833,0,0,1-2.208-.27,9.99,9.99,0,0,1-2.277-1.089q-1.049-.679-1.948-1.378t-1.438-1.2l-.519-.5q-.2-.2-.529-.549t-1.15-1.378a20.063,20.063,0,0,1-1.418-2.008A11.712,11.712,0,0,1,3.6,8.314,4.739,4.739,0,0,1,3.3,6.086Z"
-                                                  transform="translate(-3.267 -2.947)" fill="#a2a2a2"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15.98" height="16" viewBox="0 0 15.98 16">
+                                            <path id="Icon_zocial-call" data-name="Icon zocial-call" d="M3.3,6.086a1.177,1.177,0,0,1,.3-.639L6,3.05q.28-.24.42.08L8.355,6.765a.523.523,0,0,1-.1.619l-.879.879a.994.994,0,0,0-.28.619,3.05,3.05,0,0,0,.619,1.538,13.136,13.136,0,0,0,1.219,1.6l.619.639c.187.187.426.416.72.689a12.061,12.061,0,0,0,1.448,1.079,3.24,3.24,0,0,0,1.588.669.87.87,0,0,0,.639-.26L14.988,13.8a.439.439,0,0,1,.6-.08l3.5,2.058a.292.292,0,0,1,.16.21.255.255,0,0,1-.08.23l-2.4,2.4a1.174,1.174,0,0,1-.639.3,4.833,4.833,0,0,1-2.208-.27,9.99,9.99,0,0,1-2.277-1.089q-1.049-.679-1.948-1.378t-1.438-1.2l-.519-.5q-.2-.2-.529-.549t-1.15-1.378a20.063,20.063,0,0,1-1.418-2.008A11.712,11.712,0,0,1,3.6,8.314,4.739,4.739,0,0,1,3.3,6.086Z" transform="translate(-3.267 -2.947)" fill="#a2a2a2"/>
                                         </svg>
                                     </span>
-                                    <a href="javascript:">
-                                        +998 (99) 111
-                                        <span class="underline">показать</span>
-                                    </a>
-                                    <div class="store-nav-menu-call-inner">
-                                        <div class="store-nav-menu-call-inner-wrapper">
-                                            <div class="store-nav-menu-call-column">
-                                                <h4>Контакты продавца</h4>
-                                                <div class="store-nav-menu-call-item">
-                                                    <a href="">+998 (99) 111 22 66</a>
-                                                    <div class="store-nav-menu-call-social">
-                                                        <a class="tg" href="javascript:">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22.656"
-                                                                 height="19" viewBox="0 0 22.656 19">
-                                                                <path id="Icon_awesome-telegram-plane"
-                                                                      data-name="Icon awesome-telegram-plane"
-                                                                      d="M22.592,6.258,19.173,22.381c-.258,1.138-.931,1.421-1.886.885l-5.209-3.839L9.564,21.845a1.308,1.308,0,0,1-1.047.511l.374-5.305,9.655-8.724c.42-.374-.091-.582-.652-.207L5.958,15.634.82,14.026c-1.118-.349-1.138-1.118.233-1.654l20.1-7.743c.931-.349,1.745.207,1.441,1.629Z"
-                                                                      transform="translate(-0.001 -4.528)"
-                                                                      fill="#276899"/>
-                                                            </svg>
-                                                        </a>
-                                                        <a class="viber" href="javascript:">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.017"
-                                                                 height="19" viewBox="0 0 18.017 19">
-                                                                <path id="Icon_awesome-viber"
-                                                                      data-name="Icon awesome-viber"
-                                                                      d="M16.912,1.853C16.441,1.419,14.534.035,10.282.016c0,0-5.013-.3-7.454,1.941C1.47,3.315.991,5.307.939,7.775S.824,14.865,5.28,16.12h0l0,1.915s-.03.775.482.931c.616.193.98-.4,1.57-1.032.323-.349.768-.861,1.106-1.25a17.242,17.242,0,0,0,5.658-.416A5.572,5.572,0,0,0,18.76,11c.586-4.772-.282-7.785-1.848-9.146Zm.516,8.8c-.479,3.859-3.3,4.1-3.822,4.271a15.952,15.952,0,0,1-4.868.416s-1.929,2.326-2.531,2.931c-.2.2-.412.178-.408-.211,0-.256.015-3.18.015-3.18h0C2.037,13.83,2.26,9.893,2.3,7.834s.43-3.748,1.581-4.883c2.067-1.874,6.323-1.6,6.323-1.6,3.6.015,5.317,1.1,5.718,1.462,1.325,1.135,2,3.851,1.506,7.833Zm-5.158-3a.24.24,0,0,1-.479.022,1.147,1.147,0,0,0-1.21-1.258.24.24,0,0,1,.026-.479A1.613,1.613,0,0,1,12.271,7.652Zm.753.419a2.772,2.772,0,0,0-2.813-2.942.24.24,0,0,1,.033-.479A3.25,3.25,0,0,1,13.5,8.083.239.239,0,0,1,13.024,8.072Zm1.744.5a.239.239,0,0,1-.479,0,4.374,4.374,0,0,0-4.482-4.69.239.239,0,0,1,0-.479A4.854,4.854,0,0,1,14.768,8.569Zm-.419,3.64v.007c-.4.7-1.15,1.484-1.922,1.236l-.007-.011a14.263,14.263,0,0,1-3.792-2.1A9.7,9.7,0,0,1,7.054,9.771,12.041,12.041,0,0,1,5.911,8.042a11.087,11.087,0,0,1-.965-2.067C4.7,5.2,5.473,4.454,6.182,4.053h.007a.675.675,0,0,1,.887.145s.46.549.657.82c.186.252.434.657.564.883a.775.775,0,0,1-.137.987l-.445.356a.653.653,0,0,0-.2.519,4.646,4.646,0,0,0,3.128,3.128.653.653,0,0,0,.519-.2l.356-.445a.775.775,0,0,1,.987-.137,9.614,9.614,0,0,1,1.7,1.221.663.663,0,0,1,.141.876Z"
-                                                                      transform="translate(-0.927 -0.003)"
-                                                                      fill="#665ca7"/>
-                                                            </svg>
-                                                        </a>
-                                                        <a class="whatsapp" href="javascript:">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="19"
-                                                                 height="19"
-                                                                 viewBox="0 0 19 19">
-                                                                <path id="Icon_simple-whatsapp"
-                                                                      data-name="Icon simple-whatsapp"
-                                                                      d="M13.853,11.386c-.238-.119-1.4-.686-1.615-.765s-.374-.119-.533.119-.61.763-.747.92-.276.166-.511.059a6.425,6.425,0,0,1-1.9-1.176A7.182,7.182,0,0,1,7.23,8.9c-.138-.238-.015-.368.1-.487s.238-.273.357-.414a2.007,2.007,0,0,0,.235-.393A.435.435,0,0,0,7.9,7.2c-.059-.119-.532-1.283-.73-1.746s-.386-.4-.532-.4-.294-.012-.452-.012a.892.892,0,0,0-.631.284,2.643,2.643,0,0,0-.827,1.959A4.632,4.632,0,0,0,5.7,9.712a10.556,10.556,0,0,0,4.038,3.551c.565.238,1.005.38,1.349.5a3.275,3.275,0,0,0,1.488.1,2.436,2.436,0,0,0,1.6-1.129,1.96,1.96,0,0,0,.142-1.128c-.059-.107-.214-.166-.451-.273M9.548,17.219H9.536a7.92,7.92,0,0,1-4-1.092l-.285-.169-2.969.772.8-2.886-.189-.3A7.852,7.852,0,0,1,15.115,3.86a7.749,7.749,0,0,1,2.3,5.534A7.861,7.861,0,0,1,9.553,17.22M16.245,2.73A9.612,9.612,0,0,0,9.536,0,9.413,9.413,0,0,0,1.343,14.122L0,19l5.015-1.308a9.549,9.549,0,0,0,4.52,1.146h0A9.453,9.453,0,0,0,19,9.42a9.337,9.337,0,0,0-2.767-6.659"
-                                                                      fill="#1bd741"/>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <p>Служба поддержки клиентов</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="store-nav-menu-category">
+									<a href="javascript:">
+										+998 (99) 111 <span class="underline">показать</span>
+									</a>
+									<div class="store-nav-menu-call-inner">
+										<div class="store-nav-menu-call-inner-wrapper">
+											<div class="store-nav-menu-call-column">
+												<h4>Контакты продавца</h4>
+												<div class="store-nav-menu-call-item">
+													<a href="">+998 (99) 111 22 66</a>
+													<div class="store-nav-menu-call-social">
+														<a class="tg" href="javascript:">
+															<svg xmlns="http://www.w3.org/2000/svg" width="22.656" height="19" viewBox="0 0 22.656 19">
+																<path id="Icon_awesome-telegram-plane" data-name="Icon awesome-telegram-plane" d="M22.592,6.258,19.173,22.381c-.258,1.138-.931,1.421-1.886.885l-5.209-3.839L9.564,21.845a1.308,1.308,0,0,1-1.047.511l.374-5.305,9.655-8.724c.42-.374-.091-.582-.652-.207L5.958,15.634.82,14.026c-1.118-.349-1.138-1.118.233-1.654l20.1-7.743c.931-.349,1.745.207,1.441,1.629Z" transform="translate(-0.001 -4.528)" fill="#276899"/>
+															</svg>
+														</a>
+														<a class="viber" href="javascript:">
+															<svg xmlns="http://www.w3.org/2000/svg" width="18.017" height="19" viewBox="0 0 18.017 19">
+																<path id="Icon_awesome-viber" data-name="Icon awesome-viber" d="M16.912,1.853C16.441,1.419,14.534.035,10.282.016c0,0-5.013-.3-7.454,1.941C1.47,3.315.991,5.307.939,7.775S.824,14.865,5.28,16.12h0l0,1.915s-.03.775.482.931c.616.193.98-.4,1.57-1.032.323-.349.768-.861,1.106-1.25a17.242,17.242,0,0,0,5.658-.416A5.572,5.572,0,0,0,18.76,11c.586-4.772-.282-7.785-1.848-9.146Zm.516,8.8c-.479,3.859-3.3,4.1-3.822,4.271a15.952,15.952,0,0,1-4.868.416s-1.929,2.326-2.531,2.931c-.2.2-.412.178-.408-.211,0-.256.015-3.18.015-3.18h0C2.037,13.83,2.26,9.893,2.3,7.834s.43-3.748,1.581-4.883c2.067-1.874,6.323-1.6,6.323-1.6,3.6.015,5.317,1.1,5.718,1.462,1.325,1.135,2,3.851,1.506,7.833Zm-5.158-3a.24.24,0,0,1-.479.022,1.147,1.147,0,0,0-1.21-1.258.24.24,0,0,1,.026-.479A1.613,1.613,0,0,1,12.271,7.652Zm.753.419a2.772,2.772,0,0,0-2.813-2.942.24.24,0,0,1,.033-.479A3.25,3.25,0,0,1,13.5,8.083.239.239,0,0,1,13.024,8.072Zm1.744.5a.239.239,0,0,1-.479,0,4.374,4.374,0,0,0-4.482-4.69.239.239,0,0,1,0-.479A4.854,4.854,0,0,1,14.768,8.569Zm-.419,3.64v.007c-.4.7-1.15,1.484-1.922,1.236l-.007-.011a14.263,14.263,0,0,1-3.792-2.1A9.7,9.7,0,0,1,7.054,9.771,12.041,12.041,0,0,1,5.911,8.042a11.087,11.087,0,0,1-.965-2.067C4.7,5.2,5.473,4.454,6.182,4.053h.007a.675.675,0,0,1,.887.145s.46.549.657.82c.186.252.434.657.564.883a.775.775,0,0,1-.137.987l-.445.356a.653.653,0,0,0-.2.519,4.646,4.646,0,0,0,3.128,3.128.653.653,0,0,0,.519-.2l.356-.445a.775.775,0,0,1,.987-.137,9.614,9.614,0,0,1,1.7,1.221.663.663,0,0,1,.141.876Z" transform="translate(-0.927 -0.003)" fill="#665ca7"/>
+															</svg>
+														</a>
+														<a class="whatsapp" href="javascript:">
+															<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+																<path id="Icon_simple-whatsapp" data-name="Icon simple-whatsapp" d="M13.853,11.386c-.238-.119-1.4-.686-1.615-.765s-.374-.119-.533.119-.61.763-.747.92-.276.166-.511.059a6.425,6.425,0,0,1-1.9-1.176A7.182,7.182,0,0,1,7.23,8.9c-.138-.238-.015-.368.1-.487s.238-.273.357-.414a2.007,2.007,0,0,0,.235-.393A.435.435,0,0,0,7.9,7.2c-.059-.119-.532-1.283-.73-1.746s-.386-.4-.532-.4-.294-.012-.452-.012a.892.892,0,0,0-.631.284,2.643,2.643,0,0,0-.827,1.959A4.632,4.632,0,0,0,5.7,9.712a10.556,10.556,0,0,0,4.038,3.551c.565.238,1.005.38,1.349.5a3.275,3.275,0,0,0,1.488.1,2.436,2.436,0,0,0,1.6-1.129,1.96,1.96,0,0,0,.142-1.128c-.059-.107-.214-.166-.451-.273M9.548,17.219H9.536a7.92,7.92,0,0,1-4-1.092l-.285-.169-2.969.772.8-2.886-.189-.3A7.852,7.852,0,0,1,15.115,3.86a7.749,7.749,0,0,1,2.3,5.534A7.861,7.861,0,0,1,9.553,17.22M16.245,2.73A9.612,9.612,0,0,0,9.536,0,9.413,9.413,0,0,0,1.343,14.122L0,19l5.015-1.308a9.549,9.549,0,0,0,4.52,1.146h0A9.453,9.453,0,0,0,19,9.42a9.337,9.337,0,0,0-2.767-6.659" fill="#1bd741"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<p>Служба поддержки клиентов</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="store-nav-menu-category">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26.4" height="16.7"
-                                             viewBox="0 0 26.4 16.7"><defs><style>.a {
-                                            fill: #a2a2a2;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26.4" height="16.7" viewBox="0 0 26.4 16.7"><defs><style>.a {
+	                                        fill: #a2a2a2;
                                         }</style></defs>
                                             <g transform="translate(0 -94.062)">
                                                 <g transform="translate(0 94.062)">
                                                     <g transform="translate(0 0)">
-                                                        <path class="a"
-                                                              d="M24.552,101.142l-.684-2.735A.413.413,0,0,0,24.2,98v-.441a1.738,1.738,0,0,0-1.736-1.736H19.346v-.909a.855.855,0,0,0-.854-.854H2.618a.855.855,0,0,0-.854.854v7.5a.413.413,0,0,0,.827,0v-7.5a.028.028,0,0,1,.028-.028H18.491a.028.028,0,0,1,.028.028v7.5a.413.413,0,1,0,.827,0v-.469h4.879a1.353,1.353,0,0,1,1.285.937H24.223a.413.413,0,0,0-.413.413v.882a1.3,1.3,0,0,0,1.3,1.3h.469v1.819H24.493a2.617,2.617,0,0,0-4.948,0h-.2v-3.114a.413.413,0,0,0-.827,0v3.114H9.942a2.617,2.617,0,0,0-4.948,0H2.618a.028.028,0,0,1-.028-.028v-.909H4.382a.413.413,0,0,0,0-.827H.413a.413.413,0,0,0,0,.827h1.35v.909a.855.855,0,0,0,.854.854H4.851c0,.009,0,.018,0,.028a2.618,2.618,0,1,0,5.236,0c0-.009,0-.018,0-.028H19.4c0,.009,0,.018,0,.028a2.618,2.618,0,1,0,5.236,0c0-.009,0-.018,0-.028h1.351a.413.413,0,0,0,.413-.413v-4.409A2.18,2.18,0,0,0,24.552,101.142Zm-5.207-4.489H22.46a.91.91,0,0,1,.909.909v.028H19.346Zm0,4.464v-2.7h3.673l.675,2.7ZM7.468,109.935a1.791,1.791,0,1,1,1.791-1.791A1.793,1.793,0,0,1,7.468,109.935Zm14.551,0a1.791,1.791,0,1,1,1.791-1.791A1.793,1.793,0,0,1,22.019,109.935Zm3.555-5.291h-.469a.469.469,0,0,1-.469-.468v-.469h.937v.937Z"
-                                                              transform="translate(0 -94.062)"/>
+                                                        <path class="a" d="M24.552,101.142l-.684-2.735A.413.413,0,0,0,24.2,98v-.441a1.738,1.738,0,0,0-1.736-1.736H19.346v-.909a.855.855,0,0,0-.854-.854H2.618a.855.855,0,0,0-.854.854v7.5a.413.413,0,0,0,.827,0v-7.5a.028.028,0,0,1,.028-.028H18.491a.028.028,0,0,1,.028.028v7.5a.413.413,0,1,0,.827,0v-.469h4.879a1.353,1.353,0,0,1,1.285.937H24.223a.413.413,0,0,0-.413.413v.882a1.3,1.3,0,0,0,1.3,1.3h.469v1.819H24.493a2.617,2.617,0,0,0-4.948,0h-.2v-3.114a.413.413,0,0,0-.827,0v3.114H9.942a2.617,2.617,0,0,0-4.948,0H2.618a.028.028,0,0,1-.028-.028v-.909H4.382a.413.413,0,0,0,0-.827H.413a.413.413,0,0,0,0,.827h1.35v.909a.855.855,0,0,0,.854.854H4.851c0,.009,0,.018,0,.028a2.618,2.618,0,1,0,5.236,0c0-.009,0-.018,0-.028H19.4c0,.009,0,.018,0,.028a2.618,2.618,0,1,0,5.236,0c0-.009,0-.018,0-.028h1.351a.413.413,0,0,0,.413-.413v-4.409A2.18,2.18,0,0,0,24.552,101.142Zm-5.207-4.489H22.46a.91.91,0,0,1,.909.909v.028H19.346Zm0,4.464v-2.7h3.673l.675,2.7ZM7.468,109.935a1.791,1.791,0,1,1,1.791-1.791A1.793,1.793,0,0,1,7.468,109.935Zm14.551,0a1.791,1.791,0,1,1,1.791-1.791A1.793,1.793,0,0,1,22.019,109.935Zm3.555-5.291h-.469a.469.469,0,0,1-.469-.468v-.469h.937v.937Z" transform="translate(0 -94.062)"/>
                                                     </g>
                                                 </g>
                                                 <g transform="translate(6.614 107.29)">
-                                                    <g transform="translate(0 0)"><path class="a"
-                                                                                        d="M129.121,350.6a.854.854,0,1,0,.854.854A.855.855,0,0,0,129.121,350.6Z"
-                                                                                        transform="translate(-128.267 -350.597)"/></g></g><g
-                                                    transform="translate(21.164 107.29)"><g transform="translate(0 0)"><path
-                                                    class="a"
-                                                    d="M411.309,350.6a.854.854,0,1,0,.854.854A.855.855,0,0,0,411.309,350.6Z"
-                                                    transform="translate(-410.455 -350.597)"/></g></g><g
-                                                    transform="translate(10.582 105.526)"><g transform="translate(0 0)"><path
-                                                    class="a"
-                                                    d="M211.813,316.393H205.64a.413.413,0,0,0,0,.827h6.173a.413.413,0,0,0,0-.827Z"
-                                                    transform="translate(-205.227 -316.393)"/></g></g><g
-                                                    transform="translate(0.882 103.762)"><g transform="translate(0 0)"><path
-                                                    class="a"
-                                                    d="M22.807,282.188H17.515a.413.413,0,0,0,0,.827h5.291a.413.413,0,0,0,0-.827Z"
-                                                    transform="translate(-17.102 -282.188)"/></g></g><g
-                                                    transform="translate(7.496 98.03)"><path class="a"
-                                                                                             d="M152.248,171.144a.413.413,0,0,0-.585,0l-3.676,3.676-1.912-1.912a.413.413,0,1,0-.585.585l2.2,2.2a.413.413,0,0,0,.585,0l3.968-3.968A.413.413,0,0,0,152.248,171.144Z"
-                                                                                             transform="translate(-145.37 -171.023)"/>
+                                                    <g transform="translate(0 0)"><path class="a" d="M129.121,350.6a.854.854,0,1,0,.854.854A.855.855,0,0,0,129.121,350.6Z" transform="translate(-128.267 -350.597)"/></g></g><g transform="translate(21.164 107.29)"><g transform="translate(0 0)"><path class="a" d="M411.309,350.6a.854.854,0,1,0,.854.854A.855.855,0,0,0,411.309,350.6Z" transform="translate(-410.455 -350.597)"/></g></g><g transform="translate(10.582 105.526)"><g transform="translate(0 0)"><path class="a" d="M211.813,316.393H205.64a.413.413,0,0,0,0,.827h6.173a.413.413,0,0,0,0-.827Z" transform="translate(-205.227 -316.393)"/></g></g><g transform="translate(0.882 103.762)"><g transform="translate(0 0)"><path class="a" d="M22.807,282.188H17.515a.413.413,0,0,0,0,.827h5.291a.413.413,0,0,0,0-.827Z" transform="translate(-17.102 -282.188)"/></g></g><g transform="translate(7.496 98.03)"><path class="a" d="M152.248,171.144a.413.413,0,0,0-.585,0l-3.676,3.676-1.912-1.912a.413.413,0,1,0-.585.585l2.2,2.2a.413.413,0,0,0,.585,0l3.968-3.968A.413.413,0,0,0,152.248,171.144Z" transform="translate(-145.37 -171.023)"/>
                                             </g>
                                             </g>
                                         </svg>
                                     </span>
-                                    <a href="javascript:">Доставка
-                                        <span class="arrow"></span>
-                                    </a>
-                                </li>
-                                <li class="store-nav-menu-category">
+									<a href="javascript:">Доставка <span class="arrow"></span>
+									</a>
+								</li>
+								<li class="store-nav-menu-category">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25.05" height="16.7"
-                                             viewBox="0 0 25.05 16.7"><defs><style>.a {
-                                            fill: #a2a2a2;
-                                        }</style></defs><g transform="translate(0 -85.333)"><g
-                                                transform="translate(0 85.333)"><path class="a"
-                                                                                      d="M22.441,85.333H2.609A2.613,2.613,0,0,0,0,87.942V99.424a2.613,2.613,0,0,0,2.609,2.609H22.441a2.613,2.613,0,0,0,2.609-2.609V87.942A2.613,2.613,0,0,0,22.441,85.333Zm1.566,14.091a1.568,1.568,0,0,1-1.566,1.566H2.609a1.568,1.568,0,0,1-1.566-1.566V87.942a1.568,1.568,0,0,1,1.566-1.566H22.441a1.568,1.568,0,0,1,1.566,1.566V99.424Z"
-                                                                                      transform="translate(0 -85.333)"/></g><g
-                                                transform="translate(0 88.464)"><path class="a"
-                                                                                      d="M24.528,149.333H.522a.522.522,0,0,0-.522.522v3.131a.522.522,0,0,0,.522.522H24.528a.522.522,0,0,0,.522-.522v-3.131A.522.522,0,0,0,24.528,149.333Zm-.522,3.131H1.044v-2.088H24.006v2.088Z"
-                                                                                      transform="translate(0 -149.333)"/></g><g
-                                                transform="translate(3.131 95.771)"><path class="a"
-                                                                                          d="M70.784,298.667H64.522a.522.522,0,1,0,0,1.044h6.262a.522.522,0,1,0,0-1.044Z"
-                                                                                          transform="translate(-64 -298.667)"/></g><g
-                                                transform="translate(3.131 97.858)"><path class="a"
-                                                                                          d="M70.784,341.333H64.522a.522.522,0,0,0,0,1.044h6.262a.522.522,0,0,0,0-1.044Z"
-                                                                                          transform="translate(-64 -341.333)"/></g><g
-                                                transform="translate(17.744 94.727)"><path class="a"
-                                                                                           d="M365.276,277.333h-1.044a1.568,1.568,0,0,0-1.566,1.566v1.044a1.568,1.568,0,0,0,1.566,1.566h1.044a1.568,1.568,0,0,0,1.566-1.566V278.9A1.568,1.568,0,0,0,365.276,277.333Zm.522,2.609a.522.522,0,0,1-.522.522h-1.044a.522.522,0,0,1-.522-.522V278.9a.522.522,0,0,1,.522-.522h1.044a.522.522,0,0,1,.522.522Z"
-                                                                                           transform="translate(-362.667 -277.333)"/></g></g></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25.05" height="16.7" viewBox="0 0 25.05 16.7"><defs><style>.a {
+	                                        fill: #a2a2a2;
+                                        }</style></defs><g transform="translate(0 -85.333)"><g transform="translate(0 85.333)"><path class="a" d="M22.441,85.333H2.609A2.613,2.613,0,0,0,0,87.942V99.424a2.613,2.613,0,0,0,2.609,2.609H22.441a2.613,2.613,0,0,0,2.609-2.609V87.942A2.613,2.613,0,0,0,22.441,85.333Zm1.566,14.091a1.568,1.568,0,0,1-1.566,1.566H2.609a1.568,1.568,0,0,1-1.566-1.566V87.942a1.568,1.568,0,0,1,1.566-1.566H22.441a1.568,1.568,0,0,1,1.566,1.566V99.424Z" transform="translate(0 -85.333)"/></g><g transform="translate(0 88.464)"><path class="a" d="M24.528,149.333H.522a.522.522,0,0,0-.522.522v3.131a.522.522,0,0,0,.522.522H24.528a.522.522,0,0,0,.522-.522v-3.131A.522.522,0,0,0,24.528,149.333Zm-.522,3.131H1.044v-2.088H24.006v2.088Z" transform="translate(0 -149.333)"/></g><g transform="translate(3.131 95.771)"><path class="a" d="M70.784,298.667H64.522a.522.522,0,1,0,0,1.044h6.262a.522.522,0,1,0,0-1.044Z" transform="translate(-64 -298.667)"/></g><g transform="translate(3.131 97.858)"><path class="a" d="M70.784,341.333H64.522a.522.522,0,0,0,0,1.044h6.262a.522.522,0,0,0,0-1.044Z" transform="translate(-64 -341.333)"/></g><g transform="translate(17.744 94.727)"><path class="a" d="M365.276,277.333h-1.044a1.568,1.568,0,0,0-1.566,1.566v1.044a1.568,1.568,0,0,0,1.566,1.566h1.044a1.568,1.568,0,0,0,1.566-1.566V278.9A1.568,1.568,0,0,0,365.276,277.333Zm.522,2.609a.522.522,0,0,1-.522.522h-1.044a.522.522,0,0,1-.522-.522V278.9a.522.522,0,0,1,.522-.522h1.044a.522.522,0,0,1,.522.522Z" transform="translate(-362.667 -277.333)"/></g></g></svg>
                                     </span>
-                                    <a href="javascript:">Оплата
-                                        <span class="arrow"></span>
-                                    </a>
-                                </li>
-                                <li class="store-nav-menu-category">
+									<a href="javascript:">Оплата <span class="arrow"></span>
+									</a>
+								</li>
+								<li class="store-nav-menu-category">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="13.754" height="17"
-                                             viewBox="0 0 13.754 17"><defs><style>.a {
-                                            fill: #a2a2a2;
-                                        }</style></defs><g transform="translate(-48.886)"><g
-                                                transform="translate(48.886)"><path class="a"
-                                                                                    d="M61.406,2.956a6.864,6.864,0,0,0-11.285,0,6.865,6.865,0,0,0-.8,6.325,5.407,5.407,0,0,0,1,1.645l4.993,5.865a.594.594,0,0,0,.905,0l4.992-5.863a5.412,5.412,0,0,0,1-1.643A6.866,6.866,0,0,0,61.406,2.956ZM61.09,8.868a4.24,4.24,0,0,1-.784,1.284l0,0-4.54,5.333L51.22,10.152a4.243,4.243,0,0,1-.785-1.288A5.679,5.679,0,0,1,51.1,3.632a5.675,5.675,0,0,1,9.33,0A5.68,5.68,0,0,1,61.09,8.868Z"
-                                                                                    transform="translate(-48.886)"/></g><g
-                                                transform="translate(52.434 3.527)"><path class="a"
-                                                                                          d="M159.083,106.219a3.329,3.329,0,1,0,3.329,3.329A3.332,3.332,0,0,0,159.083,106.219Zm0,5.469a2.14,2.14,0,1,1,2.14-2.14A2.142,2.142,0,0,1,159.083,111.688Z"
-                                                                                          transform="translate(-155.754 -106.219)"/></g></g></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13.754" height="17" viewBox="0 0 13.754 17"><defs><style>.a {
+	                                        fill: #a2a2a2;
+                                        }</style></defs><g transform="translate(-48.886)"><g transform="translate(48.886)"><path class="a" d="M61.406,2.956a6.864,6.864,0,0,0-11.285,0,6.865,6.865,0,0,0-.8,6.325,5.407,5.407,0,0,0,1,1.645l4.993,5.865a.594.594,0,0,0,.905,0l4.992-5.863a5.412,5.412,0,0,0,1-1.643A6.866,6.866,0,0,0,61.406,2.956ZM61.09,8.868a4.24,4.24,0,0,1-.784,1.284l0,0-4.54,5.333L51.22,10.152a4.243,4.243,0,0,1-.785-1.288A5.679,5.679,0,0,1,51.1,3.632a5.675,5.675,0,0,1,9.33,0A5.68,5.68,0,0,1,61.09,8.868Z" transform="translate(-48.886)"/></g><g transform="translate(52.434 3.527)"><path class="a" d="M159.083,106.219a3.329,3.329,0,1,0,3.329,3.329A3.332,3.332,0,0,0,159.083,106.219Zm0,5.469a2.14,2.14,0,1,1,2.14-2.14A2.142,2.142,0,0,1,159.083,111.688Z" transform="translate(-155.754 -106.219)"/></g></g></svg>
                                     </span>
-                                    <a href="javascript:">Ташкент</a>
-                                    <span class="arrow"></span>
-                                </li>
-                                <li class="store-nav-menu-category">
+									<a href="javascript:">Ташкент</a>
+									<span class="arrow"></span>
+								</li>
+								<li class="store-nav-menu-category">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.352" height="16.352"
-                                             viewBox="0 0 16.352 16.352"><defs><style>.a {
-                                            fill: #a2a2a2;
-                                        }</style></defs><path class="a"
-                                                              d="M8.176,16.352a8.176,8.176,0,1,1,8.176-8.176A8.185,8.185,0,0,1,8.176,16.352Zm0-15.33A7.154,7.154,0,1,0,15.33,8.176,7.162,7.162,0,0,0,8.176,1.022Zm0,0"/><path
-                                                class="a"
-                                                d="M244.088,110.7a.507.507,0,0,1-.361-.15l-3.577-3.577a.511.511,0,0,1-.15-.361v-4.769a.511.511,0,0,1,1.022,0V106.4l3.427,3.427a.511.511,0,0,1-.361.873Zm0,0"
-                                                transform="translate(-232.335 -98.096)"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.352" height="16.352" viewBox="0 0 16.352 16.352"><defs><style>.a {
+	                                        fill: #a2a2a2;
+                                        }</style></defs><path class="a" d="M8.176,16.352a8.176,8.176,0,1,1,8.176-8.176A8.185,8.185,0,0,1,8.176,16.352Zm0-15.33A7.154,7.154,0,1,0,15.33,8.176,7.162,7.162,0,0,0,8.176,1.022Zm0,0"/><path class="a" d="M244.088,110.7a.507.507,0,0,1-.361-.15l-3.577-3.577a.511.511,0,0,1-.15-.361v-4.769a.511.511,0,0,1,1.022,0V106.4l3.427,3.427a.511.511,0,0,1-.361.873Zm0,0" transform="translate(-232.335 -98.096)"/></svg>
                                     </span>
-                                    <a href="javascript:">Круглосуточно</a>
-                                    <span class="arrow"></span>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <div class="store-banner">
-                <img src="img/store/banner-store.png" alt="banner-store.png">
-            </div>
-            <div class="store-products">
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-6.png" alt="product-6.png">
-                        <p>Нижняя одежда</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-4.png" alt="product-6.png">
-                        <p>Стройматериалы</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-1.png" alt="product-6.png">
-                        <p>Товары для дома</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-2.png" alt="product-6.png">
-                        <p>Товары для офиса</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-5.png" alt="product-6.png">
-                        <p>Товары для праздника</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-3.png" alt="product-6.png">
-                        <p>Сумки и чемоданы</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-3.png" alt="product-6.png">
-                        <p>Сумки и чемоданы</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-1.png" alt="product-6.png">
-                        <p>Товары для дома</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-4.png" alt="product-6.png">
-                        <p>Стройматериалы</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-5.png" alt="product-6.png">
-                        <p>Товары для праздника</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-2.png" alt="product-6.png">
-                        <p>Товары для офиса</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-6.png" alt="product-6.png">
-                        <p>Нижняя одежда</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-3.png" alt="product-6.png">
-                        <p>Сумки и чемоданы</p>
-                    </a>
-                </div>
-                <div class="store-products-item">
-                    <a href="javascript:">
-                        <img src="img/store/product-2.png" alt="product-6.png">
-                        <p>Товары для офиса</p>
-                    </a>
-                </div>
-            </div>
-            <div class="store-links">
-                <div class="store-links-block">
-                    <a href="javascript:">Новинка</a>
-                </div>
-                <div class="store-links-block">
-                    <a href="javascript:">Дорогой</a>
-                </div>
-                <div class="store-links-block">
-                    <a href="javascript:">Дешевые</a>
-                </div>
-                <div class="store-links-block">
-                    <a href="javascript:">Популярные</a>
-                </div>
-                <div class="store-links-block">
-                    <a href="javascript:">Высший рейтинг</a>
-                </div>
-                <div class="store-links-block">
-                    <a href="javascript:">Дорогой</a>
-                </div>
-                <div class="store-links-block">
-                    <a href="javascript:">Низкий рейтинг</a>
-                </div>
-            </div>
-            <div class="store-items">
-                <ul class="product-recommended-items">
-                    <li class="product-recommended-item">
-                        <div class="product-recommended-item-img">
-                            <img src="./img/product/product-collection-1.png" alt="product-1">
-                        </div>
-                        <div class="product-recommended-item-name">
-                            <a href="javascript:">Air Jordan XXXIV</a>
-                        </div>
-                        <div class="product-recommended-item-cost">
-                            <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                            <div class="product-recommended-item-send">
+									<a href="javascript:">Круглосуточно</a>
+									<span class="arrow"></span>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="store-banner">
+				<img src="img/store/banner-store.png" alt="banner-store.png">
+			</div>
+			<div class="store-products">
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-6.png" alt="product-6.png">
+						<p>Нижняя одежда</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-4.png" alt="product-6.png">
+						<p>Стройматериалы</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-1.png" alt="product-6.png">
+						<p>Товары для дома</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-2.png" alt="product-6.png">
+						<p>Товары для офиса</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-5.png" alt="product-6.png">
+						<p>Товары для праздника</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-3.png" alt="product-6.png">
+						<p>Сумки и чемоданы</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-3.png" alt="product-6.png">
+						<p>Сумки и чемоданы</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-1.png" alt="product-6.png">
+						<p>Товары для дома</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-4.png" alt="product-6.png">
+						<p>Стройматериалы</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-5.png" alt="product-6.png">
+						<p>Товары для праздника</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-2.png" alt="product-6.png">
+						<p>Товары для офиса</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-6.png" alt="product-6.png">
+						<p>Нижняя одежда</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-3.png" alt="product-6.png">
+						<p>Сумки и чемоданы</p>
+					</a>
+				</div>
+				<div class="store-products-item">
+					<a href="javascript:">
+						<img src="img/store/product-2.png" alt="product-6.png">
+						<p>Товары для офиса</p>
+					</a>
+				</div>
+			</div>
+			<div class="store-links">
+				<div class="store-links-block">
+					<a href="javascript:">Новинка</a>
+				</div>
+				<div class="store-links-block">
+					<a href="javascript:">Дорогой</a>
+				</div>
+				<div class="store-links-block">
+					<a href="javascript:">Дешевые</a>
+				</div>
+				<div class="store-links-block">
+					<a href="javascript:">Популярные</a>
+				</div>
+				<div class="store-links-block">
+					<a href="javascript:">Высший рейтинг</a>
+				</div>
+				<div class="store-links-block">
+					<a href="javascript:">Дорогой</a>
+				</div>
+				<div class="store-links-block">
+					<a href="javascript:">Низкий рейтинг</a>
+				</div>
+			</div>
+			<div class="store-items">
+				<ul class="product-recommended-items">
+					<li class="product-recommended-item">
+						<div class="product-recommended-item-img">
+							<a href="javascript:">
+								<img src="./img/product/product-collection-1.png" alt="product-1">
+							</a>
+						</div>
+						<div class="product-recommended-item-name">
+							<a href="javascript:">Air Jordan XXXIV</a>
+						</div>
+						<div class="product-recommended-item-cost">
+							<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+							<div class="product-recommended-item-send">
 								<span>
 									Отправка: 141 000 UZS
 								</span>
-                            </div>
-                            <!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-                            <div class="product-recommended-item-favourite">
-                                <a href="javascript:" onclick="this.classList.toggle('active')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-                                        <g>
-                                            <g>
-                                                <path fill="none" stroke="#636363" stroke-linecap="round"
-                                                      stroke-linejoin="round" stroke-miterlimit="20"
-                                                      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Добавить в "Мои желания"</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-recommended-item-rating">
-                            <ul class="stars">
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                            </ul>
-                            <div class="product-recommended-item-brand">
-                                <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-recommended-item">
-                        <div class="product-recommended-item-img">
-                            <img src="./img/product/product-collection-2.png" alt="product-1">
-                        </div>
-                        <div class="product-recommended-item-name">
-                            <a href="javascript:">Air Jordan XXXIV</a>
-                        </div>
-                        <div class="product-recommended-item-cost">
-                            <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                            <div class="product-recommended-item-send">
+							</div>
+							<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
+							<div class="product-recommended-item-favourite">
+								<a href="javascript:" onclick="this.classList.toggle('active')">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+										<g>
+											<g>
+												<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
+											</g>
+										</g>
+									</svg>
+									<span>Добавить в "Мои желания"</span>
+								</a>
+							</div>
+						</div>
+						<div class="product-recommended-item-rating">
+							<ul class="stars">
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star">
+									<i class="fas fa-star"></i>
+								</li>
+							</ul>
+							<div class="product-recommended-item-brand">
+								<a href="javascript:">ANMONE OfficalFlagship Store</a>
+							</div>
+						</div>
+					</li>
+					<li class="product-recommended-item">
+						<div class="product-recommended-item-img">
+							<a href="javascript:">
+
+								<img src="./img/product/product-collection-2.png" alt="product-1">
+
+
+							</a>
+						</div>
+						<div class="product-recommended-item-name">
+							<a href="javascript:">Air Jordan XXXIV</a>
+						</div>
+						<div class="product-recommended-item-cost">
+							<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+							<div class="product-recommended-item-send">
 								<span>
 									Отправка: 141 000 UZS
 								</span>
-                            </div>
-                            <!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-                            <div class="product-recommended-item-favourite">
-                                <a href="javascript:" onclick="this.classList.toggle('active')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-                                        <g>
-                                            <g>
-                                                <path fill="none" stroke="#636363" stroke-linecap="round"
-                                                      stroke-linejoin="round" stroke-miterlimit="20"
-                                                      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Добавить в "Мои желания"</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-recommended-item-rating">
-                            <ul class="stars">
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                            </ul>
-                            <div class="product-recommended-item-brand">
-                                <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-recommended-item">
-                        <div class="product-recommended-item-img">
-                            <img src="./img/product/product-collection-3.png" alt="product-1">
-                        </div>
-                        <div class="product-recommended-item-name">
-                            <a href="javascript:">Air Jordan XXXIV</a>
-                        </div>
-                        <div class="product-recommended-item-cost">
-                            <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                            <div class="product-recommended-item-send">
+							</div>
+							<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
+							<div class="product-recommended-item-favourite">
+								<a href="javascript:" onclick="this.classList.toggle('active')">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+										<g>
+											<g>
+												<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
+											</g>
+										</g>
+									</svg>
+									<span>Добавить в "Мои желания"</span>
+								</a>
+							</div>
+						</div>
+						<div class="product-recommended-item-rating">
+							<ul class="stars">
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star">
+									<i class="fas fa-star"></i>
+								</li>
+							</ul>
+							<div class="product-recommended-item-brand">
+								<a href="javascript:">ANMONE OfficalFlagship Store</a>
+							</div>
+						</div>
+					</li>
+					<li class="product-recommended-item">
+						<div class="product-recommended-item-img">
+							<a href="javascript:">
+
+
+								<img src="./img/product/product-collection-3.png" alt="product-1">
+							</a>
+						</div>
+						<div class="product-recommended-item-name">
+							<a href="javascript:">Air Jordan XXXIV</a>
+						</div>
+						<div class="product-recommended-item-cost">
+							<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+							<div class="product-recommended-item-send">
 								<span>
 									Отправка: 141 000 UZS
 								</span>
-                            </div>
-                            <!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-                            <div class="product-recommended-item-favourite">
-                                <a href="javascript:" onclick="this.classList.toggle('active')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-                                        <g>
-                                            <g>
-                                                <path fill="none" stroke="#636363" stroke-linecap="round"
-                                                      stroke-linejoin="round" stroke-miterlimit="20"
-                                                      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Добавить в "Мои желания"</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-recommended-item-rating">
-                            <ul class="stars">
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                            </ul>
-                            <div class="product-recommended-item-brand">
-                                <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-recommended-item">
-                        <div class="product-recommended-item-img">
-                            <img src="./img/product/product-collection-4.png" alt="product-1">
-                        </div>
-                        <div class="product-recommended-item-name">
-                            <a href="javascript:">Air Jordan XXXIV</a>
-                        </div>
-                        <div class="product-recommended-item-cost">
-                            <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                            <div class="product-recommended-item-send">
+							</div>
+							<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
+							<div class="product-recommended-item-favourite">
+								<a href="javascript:" onclick="this.classList.toggle('active')">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+										<g>
+											<g>
+												<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
+											</g>
+										</g>
+									</svg>
+									<span>Добавить в "Мои желания"</span>
+								</a>
+							</div>
+						</div>
+						<div class="product-recommended-item-rating">
+							<ul class="stars">
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star">
+									<i class="fas fa-star"></i>
+								</li>
+							</ul>
+							<div class="product-recommended-item-brand">
+								<a href="javascript:">ANMONE OfficalFlagship Store</a>
+							</div>
+						</div>
+					</li>
+					<li class="product-recommended-item">
+						<div class="product-recommended-item-img">
+							<a href="javascript:">
+
+								<img src="./img/product/product-collection-4.png" alt="product-1">
+
+							</a>
+						</div>
+						<div class="product-recommended-item-name">
+							<a href="javascript:">Air Jordan XXXIV</a>
+						</div>
+						<div class="product-recommended-item-cost">
+							<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+							<div class="product-recommended-item-send">
 								<span>
 									Отправка: 141 000 UZS
 								</span>
-                            </div>
-                            <!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-                            <div class="product-recommended-item-favourite">
-                                <a href="javascript:" onclick="this.classList.toggle('active')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-                                        <g>
-                                            <g>
-                                                <path fill="none" stroke="#636363" stroke-linecap="round"
-                                                      stroke-linejoin="round" stroke-miterlimit="20"
-                                                      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Добавить в "Мои желания"</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-recommended-item-rating">
-                            <ul class="stars">
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                            </ul>
-                            <div class="product-recommended-item-brand">
-                                <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-recommended-item">
-                        <div class="product-recommended-item-img">
-                            <img src="./img/product/product-collection-2.png" alt="product-1">
-                        </div>
-                        <div class="product-recommended-item-name">
-                            <a href="javascript:">Air Jordan XXXIV</a>
-                        </div>
-                        <div class="product-recommended-item-cost">
-                            <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                            <div class="product-recommended-item-send">
+							</div>
+							<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
+							<div class="product-recommended-item-favourite">
+								<a href="javascript:" onclick="this.classList.toggle('active')">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+										<g>
+											<g>
+												<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
+											</g>
+										</g>
+									</svg>
+									<span>Добавить в "Мои желания"</span>
+								</a>
+							</div>
+						</div>
+						<div class="product-recommended-item-rating">
+							<ul class="stars">
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star">
+									<i class="fas fa-star"></i>
+								</li>
+							</ul>
+							<div class="product-recommended-item-brand">
+								<a href="javascript:">ANMONE OfficalFlagship Store</a>
+							</div>
+						</div>
+					</li>
+					<li class="product-recommended-item">
+						<div class="product-recommended-item-img">
+							<a href="javascript:">
+								<img src="./img/product/product-collection-2.png" alt="product-1">
+							</a>
+						</div>
+						<div class="product-recommended-item-name">
+							<a href="javascript:">Air Jordan XXXIV</a>
+						</div>
+						<div class="product-recommended-item-cost">
+							<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+							<div class="product-recommended-item-send">
 								<span>
 									Отправка: 141 000 UZS
 								</span>
-                            </div>
-                            <!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-                            <div class="product-recommended-item-favourite">
-                                <a href="javascript:" onclick="this.classList.toggle('active')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-                                        <g>
-                                            <g>
-                                                <path fill="none" stroke="#636363" stroke-linecap="round"
-                                                      stroke-linejoin="round" stroke-miterlimit="20"
-                                                      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Добавить в "Мои желания"</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-recommended-item-rating">
-                            <ul class="stars">
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                            </ul>
-                            <div class="product-recommended-item-brand">
-                                <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-recommended-item">
-                        <div class="product-recommended-item-img">
-                            <img src="./img/product/product-collection-1.png" alt="product-1">
-                        </div>
-                        <div class="product-recommended-item-name">
-                            <a href="javascript:">Air Jordan XXXIV</a>
-                        </div>
-                        <div class="product-recommended-item-cost">
-                            <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                            <div class="product-recommended-item-send">
+							</div>
+							<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
+							<div class="product-recommended-item-favourite">
+								<a href="javascript:" onclick="this.classList.toggle('active')">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+										<g>
+											<g>
+												<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
+											</g>
+										</g>
+									</svg>
+									<span>Добавить в "Мои желания"</span>
+								</a>
+							</div>
+						</div>
+						<div class="product-recommended-item-rating">
+							<ul class="stars">
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star">
+									<i class="fas fa-star"></i>
+								</li>
+							</ul>
+							<div class="product-recommended-item-brand">
+								<a href="javascript:">ANMONE OfficalFlagship Store</a>
+							</div>
+						</div>
+					</li>
+					<li class="product-recommended-item">
+						<div class="product-recommended-item-img">
+							<a href="javascript:">
+
+								<img src="./img/product/product-collection-1.png" alt="product-1">
+
+							</a>
+						</div>
+						<div class="product-recommended-item-name">
+							<a href="javascript:">Air Jordan XXXIV</a>
+						</div>
+						<div class="product-recommended-item-cost">
+							<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+							<div class="product-recommended-item-send">
 								<span>
 									Отправка: 141 000 UZS
 								</span>
-                            </div>
-                            <!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-                            <div class="product-recommended-item-favourite">
-                                <a href="javascript:" onclick="this.classList.toggle('active')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-                                        <g>
-                                            <g>
-                                                <path fill="none" stroke="#636363" stroke-linecap="round"
-                                                      stroke-linejoin="round" stroke-miterlimit="20"
-                                                      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Добавить в "Мои желания"</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-recommended-item-rating">
-                            <ul class="stars">
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                            </ul>
-                            <div class="product-recommended-item-brand">
-                                <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-recommended-item">
-                        <div class="product-recommended-item-img">
-                            <img src="./img/product/product-collection-2.png" alt="product-1">
-                        </div>
-                        <div class="product-recommended-item-name">
-                            <a href="javascript:">Air Jordan XXXIV</a>
-                        </div>
-                        <div class="product-recommended-item-cost">
-                            <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                            <div class="product-recommended-item-send">
+							</div>
+							<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
+							<div class="product-recommended-item-favourite">
+								<a href="javascript:" onclick="this.classList.toggle('active')">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+										<g>
+											<g>
+												<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
+											</g>
+										</g>
+									</svg>
+									<span>Добавить в "Мои желания"</span>
+								</a>
+							</div>
+						</div>
+						<div class="product-recommended-item-rating">
+							<ul class="stars">
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star">
+									<i class="fas fa-star"></i>
+								</li>
+							</ul>
+							<div class="product-recommended-item-brand">
+								<a href="javascript:">ANMONE OfficalFlagship Store</a>
+							</div>
+						</div>
+					</li>
+					<li class="product-recommended-item">
+						<div class="product-recommended-item-img">
+							<a href="javascript:">
+
+								<img src="./img/product/product-collection-2.png" alt="product-1">
+
+							</a>
+						</div>
+						<div class="product-recommended-item-name">
+							<a href="javascript:">Air Jordan XXXIV</a>
+						</div>
+						<div class="product-recommended-item-cost">
+							<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+							<div class="product-recommended-item-send">
 								<span>
 									Отправка: 141 000 UZS
 								</span>
-                            </div>
-                            <!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-                            <div class="product-recommended-item-favourite">
-                                <a href="javascript:" onclick="this.classList.toggle('active')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-                                        <g>
-                                            <g>
-                                                <path fill="none" stroke="#636363" stroke-linecap="round"
-                                                      stroke-linejoin="round" stroke-miterlimit="20"
-                                                      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Добавить в "Мои желания"</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-recommended-item-rating">
-                            <ul class="stars">
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                            </ul>
-                            <div class="product-recommended-item-brand">
-                                <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-recommended-item">
-                        <div class="product-recommended-item-img">
-                            <img src="./img/product/product-collection-3.png" alt="product-1">
-                        </div>
-                        <div class="product-recommended-item-name">
-                            <a href="javascript:">Air Jordan XXXIV</a>
-                        </div>
-                        <div class="product-recommended-item-cost">
-                            <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                            <div class="product-recommended-item-send">
+							</div>
+							<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
+							<div class="product-recommended-item-favourite">
+								<a href="javascript:" onclick="this.classList.toggle('active')">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+										<g>
+											<g>
+												<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
+											</g>
+										</g>
+									</svg>
+									<span>Добавить в "Мои желания"</span>
+								</a>
+							</div>
+						</div>
+						<div class="product-recommended-item-rating">
+							<ul class="stars">
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star">
+									<i class="fas fa-star"></i>
+								</li>
+							</ul>
+							<div class="product-recommended-item-brand">
+								<a href="javascript:">ANMONE OfficalFlagship Store</a>
+							</div>
+						</div>
+					</li>
+					<li class="product-recommended-item">
+						<div class="product-recommended-item-img">
+							<a href="javascript:">
+								<img src="./img/product/product-collection-3.png" alt="product-1">
+
+
+							</a>
+						</div>
+						<div class="product-recommended-item-name">
+							<a href="javascript:">Air Jordan XXXIV</a>
+						</div>
+						<div class="product-recommended-item-cost">
+							<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+							<div class="product-recommended-item-send">
 								<span>
 									Отправка: 141 000 UZS
 								</span>
-                            </div>
-                            <!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-                            <div class="product-recommended-item-favourite">
-                                <a href="javascript:" onclick="this.classList.toggle('active')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-                                        <g>
-                                            <g>
-                                                <path fill="none" stroke="#636363" stroke-linecap="round"
-                                                      stroke-linejoin="round" stroke-miterlimit="20"
-                                                      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Добавить в "Мои желания"</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-recommended-item-rating">
-                            <ul class="stars">
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                            </ul>
-                            <div class="product-recommended-item-brand">
-                                <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-recommended-item">
-                        <div class="product-recommended-item-img">
-                            <img src="./img/product/product-collection-4.png" alt="product-1">
-                        </div>
-                        <div class="product-recommended-item-name">
-                            <a href="javascript:">Air Jordan XXXIV</a>
-                        </div>
-                        <div class="product-recommended-item-cost">
-                            <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                            <div class="product-recommended-item-send">
+							</div>
+							<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
+							<div class="product-recommended-item-favourite">
+								<a href="javascript:" onclick="this.classList.toggle('active')">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+										<g>
+											<g>
+												<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
+											</g>
+										</g>
+									</svg>
+									<span>Добавить в "Мои желания"</span>
+								</a>
+							</div>
+						</div>
+						<div class="product-recommended-item-rating">
+							<ul class="stars">
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star">
+									<i class="fas fa-star"></i>
+								</li>
+							</ul>
+							<div class="product-recommended-item-brand">
+								<a href="javascript:">ANMONE OfficalFlagship Store</a>
+							</div>
+						</div>
+					</li>
+					<li class="product-recommended-item">
+						<div class="product-recommended-item-img">
+
+							<a href="javascript:">
+
+								<img src="./img/product/product-collection-4.png" alt="product-1">
+
+							</a>
+						</div>
+						<div class="product-recommended-item-name">
+							<a href="javascript:">Air Jordan XXXIV</a>
+						</div>
+						<div class="product-recommended-item-cost">
+							<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+							<div class="product-recommended-item-send">
 								<span>
 									Отправка: 141 000 UZS
 								</span>
-                            </div>
-                            <!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-                            <div class="product-recommended-item-favourite">
-                                <a href="javascript:" onclick="this.classList.toggle('active')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-                                        <g>
-                                            <g>
-                                                <path fill="none" stroke="#636363" stroke-linecap="round"
-                                                      stroke-linejoin="round" stroke-miterlimit="20"
-                                                      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Добавить в "Мои желания"</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-recommended-item-rating">
-                            <ul class="stars">
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                            </ul>
-                            <div class="product-recommended-item-brand">
-                                <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-recommended-item">
-                        <div class="product-recommended-item-img">
-                            <img src="./img/product/product-collection-2.png" alt="product-1">
-                        </div>
-                        <div class="product-recommended-item-name">
-                            <a href="javascript:">Air Jordan XXXIV</a>
-                        </div>
-                        <div class="product-recommended-item-cost">
-                            <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                            <div class="product-recommended-item-send">
+							</div>
+							<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
+							<div class="product-recommended-item-favourite">
+								<a href="javascript:" onclick="this.classList.toggle('active')">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+										<g>
+											<g>
+												<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
+											</g>
+										</g>
+									</svg>
+									<span>Добавить в "Мои желания"</span>
+								</a>
+							</div>
+						</div>
+						<div class="product-recommended-item-rating">
+							<ul class="stars">
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star">
+									<i class="fas fa-star"></i>
+								</li>
+							</ul>
+							<div class="product-recommended-item-brand">
+								<a href="javascript:">ANMONE OfficalFlagship Store</a>
+							</div>
+						</div>
+					</li>
+					<li class="product-recommended-item">
+						<div class="product-recommended-item-img">
+							<a href="javascript:">
+								<img src="./img/product/product-collection-2.png" alt="product-1">
+
+							</a>
+						</div>
+						<div class="product-recommended-item-name">
+							<a href="javascript:">Air Jordan XXXIV</a>
+						</div>
+						<div class="product-recommended-item-cost">
+							<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+							<div class="product-recommended-item-send">
 								<span>
 									Отправка: 141 000 UZS
 								</span>
-                            </div>
-                            <!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-                            <div class="product-recommended-item-favourite">
-                                <a href="javascript:" onclick="this.classList.toggle('active')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-                                        <g>
-                                            <g>
-                                                <path fill="none" stroke="#636363" stroke-linecap="round"
-                                                      stroke-linejoin="round" stroke-miterlimit="20"
-                                                      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Добавить в "Мои желания"</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-recommended-item-rating">
-                            <ul class="stars">
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star active">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                                <li class="star">
-                                    <i class="fas fa-star"></i>
-                                </li>
-                            </ul>
-                            <div class="product-recommended-item-brand">
-                                <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</main>
-<%= _.template(require('./../includes/footer.html').default)(data) %>
+							</div>
+							<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
+							<div class="product-recommended-item-favourite">
+								<a href="javascript:" onclick="this.classList.toggle('active')">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+										<g>
+											<g>
+												<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
+											</g>
+										</g>
+									</svg>
+									<span>Добавить в "Мои желания"</span>
+								</a>
+							</div>
+						</div>
+						<div class="product-recommended-item-rating">
+							<ul class="stars">
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star active">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="star">
+									<i class="fas fa-star"></i>
+								</li>
+							</ul>
+							<div class="product-recommended-item-brand">
+								<a href="javascript:">ANMONE OfficalFlagship Store</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</main><%= _.template(require('./../includes/footer.html').default)(data) %>
