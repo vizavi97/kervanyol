@@ -196,7 +196,7 @@ header {
         color: #000711;
         font-family: "Montserrat";
         font-size: .8125rem;
-        font-weight: 700;
+        font-weight: 500;
         text-decoration: none;
         padding: .625rem 2rem;
       }
@@ -397,7 +397,9 @@ header {
       background-color: #ffffff;
       border-radius: 1.5rem;
       overflow: hidden;
-
+      &.focused  {
+        box-shadow: 0 0 5px 1px #ff6f55;
+      }
       label {
         flex: 1;
         margin-bottom: 0;
@@ -409,7 +411,6 @@ header {
           text-indent: 1rem;
           font-size: 16px;
           font-weight: 400;
-
           &::placeholder {
             color: #bebebe;
             font-size: 16px;
@@ -634,7 +635,7 @@ header {
 
       &.headline {
         a {
-          font-weight: 700;
+          font-weight: 500;
         }
       }
 
@@ -852,7 +853,7 @@ footer {
     text-transform: none;
     font-family: "Montserrat";
     font-size: 46px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   p {
