@@ -185,6 +185,8 @@ header {
       border-radius: 1.5rem;
       transition: all .3s ease-in;
       margin: 0 .25rem;
+      display: flex;
+      align-items: center;
 
       &:hover {
         box-shadow: 0 0 1px 1px #ff6f55;
