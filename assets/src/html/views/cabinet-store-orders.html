@@ -43,7 +43,7 @@
                 <div class="cabinet-container sticker">
                     <div class="cabinet-data cabinet-account">
                         <div class="tab-content">
-                            <div class="tab-pane  fade  show active" id="home" role="tabpanel"
+                            <div class="tab-pane  fade" id="home" role="tabpanel"
                                  aria-labelledby="home-tab">
                                 <div class="cabinet-data-container">
                                     <h4>Мои продукты</h4>
@@ -477,7 +477,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="tab-pane  fade" id="load" role="tabpanel"
+                            <div class="tab-pane  fade show active" id="load" role="tabpanel"
                                  aria-labelledby="home-tab">
                                 <div class="cabinet-data-container">
                                     <h4>Мои продукты</h4>
@@ -492,10 +492,9 @@
                                             Процесс загрузки товара займёт некоторое время.
                                         </p>
                                         <div class="cabinet-store-orders-load-input">
-                                            <label for="upload">Выберите файл</label>
+                                            <label for="uploadProductFile" id="uploadProductFileLabel">Выберите файл</label>
                                             <div class="cabinet-store-orders-load-btn">Обзор</div>
-                                            <input type="file" name="upload" id="upload"
-                                                   onchange="console.log(this.filename[0]);"/>
+                                            <input type="file" name="upload" id="uploadProductFile"/>
                                         </div>
                                     </div>
                                 </div>
