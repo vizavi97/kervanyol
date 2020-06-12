@@ -507,6 +507,7 @@ header {
   //NAV-MENU
   &-menu {
     position: relative;
+    z-index: 10;
 
     &-categories {
       display: flex;
@@ -529,7 +530,7 @@ header {
       border-radius: 20px;
       display: flex;
       margin: 0 .5rem;
-      transition: all .3s ease-in;
+      transition: all .2s linear;
       justify-content: center;
 
       a {
@@ -548,23 +549,6 @@ header {
           color: #ff6f55;
         }
 
-        & > div {
-          display: block;
-          opacity: 1;
-          z-index: 5;
-        }
-
-        &:after {
-          position: absolute;
-          content: '';
-          display: block;
-          background: url("../img/menu_arr.png") bottom no-repeat;
-          background-size: cover;
-          bottom: -38px;
-          width: 26px;
-          height: 68px;
-          z-index: 100
-        }
       }
 
       &:first-of-type {
@@ -584,16 +568,12 @@ header {
       }
 
       &-inner {
-        //display: none;
-        opacity: 0;
+        display: none;
         position: absolute;
         right: 0;
         left: 0;
-        z-index: -1;
         padding-top: 30px;
         margin-top: 27px;
-        transition: all.1s linear;
-
         &-wrapper {
           display: flex;
           flex-direction: row;
@@ -611,6 +591,17 @@ header {
             padding: 1rem;
           }
         }
+      }
+      &-arrow {
+          position: absolute;
+          content: '';
+          display: none;
+          background: url("../img/menu_arr.png") bottom no-repeat;
+          background-size: cover;
+          bottom: -38px;
+          width: 26px;
+          height: 68px;
+          z-index: 100
       }
     }
 
