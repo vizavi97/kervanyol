@@ -565,8 +565,10 @@
       box-shadow: 0 16px 50px #E9EEF780;
       border-radius: 5px;
       margin-bottom: 1.5rem;
-      transition: all .3s ease-in;
       padding: .75rem;
+      &:hover {
+        box-shadow: 0 0 1px 1px #bccbd9;
+      }
 
       &:before {
         position: absolute;
