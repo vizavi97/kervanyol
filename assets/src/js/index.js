@@ -247,7 +247,7 @@ $(document).ready(function () {
     $(this).children('div').stop(true).delay(500).show(0);
     // $('.nav-menu-category:after').stop(true).delay(200).fadeIn();
   }, function () {
-    $(this).children('div').stop(true).delay(500).hide(0);
+    $(this).children('div').stop(true).delay(200).hide(0);
     // $('.nav-menu-category:after').stop(true).delay(200).fadeOut();
   });
 });
