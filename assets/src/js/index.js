@@ -216,11 +216,7 @@ checkSwitcher ? checkSwitcher.addEventListener('click', () => {
 const objDiv = document.getElementById("chat-conversation");
 objDiv ? objDiv.scrollTop = objDiv.scrollHeight : null;
 
-
-
 //EMOJI PICKER
-
-
 window.addEventListener('DOMContentLoaded', () => {
   const button = document.querySelector('#emoji-button');
   if (button) {
@@ -233,8 +229,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-
-
 // show chat
 
 $(document).on('click','.cabinet-chat-user',function(){
@@ -248,8 +242,6 @@ $(document).ready(function () {
     $(this).children('div').stop(true).delay(200).hide(0);
   });
 });
-
-
 // main page search box-shadow
 
 const mainSearch = document.getElementById('mainSearch');
@@ -258,7 +250,15 @@ if ( mainSearch) {
   mainSearch.addEventListener("focusin", () => {
     mainSearch.parentElement.parentElement.classList.add('focused');
   });
-  mainSearch.addEventListener("focusout", () => {
-    mainSearch.parentElement.parentElement.classList.remove('focused');
+  mainSearch.addEventListener('click',(e)=> {
+    if (!e.target) {
+      mainSearch.parentElement.parentElement.classList.remove('focused');
+    }
   })
 }
+
+const uploadProductFile = document.getElementById('uploadProductFile');
+uploadProductFile ? uploadProductFile.addEventListener("change", (e) => {
+  const uploadProductFileLabel = document.getElementById('uploadProductFileLabel');
+  uploadProductFileLabel.innerHTML = e.target.value;
+}) : null;
