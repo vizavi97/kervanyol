@@ -229,9 +229,8 @@
           }
         }
 
-        button {
+        button  {
           padding: rem(10) rem(42);
-          margin-top: rem(15);
           color: #ffffff;
           font-size: rem(13);
           font-weight: 500;
@@ -404,6 +403,13 @@
               }
             }
           }
+        }
+        &-buttons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 1rem;
+          font-size: .75rem;
         }
       }
     }
