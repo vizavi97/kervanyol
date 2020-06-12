@@ -24,7 +24,6 @@ function generateHtmlPlugins(templateDir) {
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
 const config = {
-  //DEV server
   devServer: {
     host: '0.0.0.0',
     port: 8080,

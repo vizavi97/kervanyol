@@ -183,7 +183,7 @@ header {
 
     &-category {
       border-radius: 1.5rem;
-      transition: all .3s ease-in;
+      transition: all .1s ease-in;
       margin: 0 .25rem;
       display: flex;
       align-items: center;
@@ -393,7 +393,7 @@ header {
       flex-direction: row;
       width: 100%;
       height: 50px;
-      border: 1px solid #ebebeb;
+      border: 2px solid #ff6f55;
       background-color: #ffffff;
       border-radius: 1.5rem;
       overflow: hidden;
@@ -423,12 +423,18 @@ header {
     &-btn {
       height: 100%;
       padding: 0 1.5rem;
-      border-radius: 2rem;
+      border-radius: 20px;
       background-color: #ff6f55;
+      padding-right: 20px;
 
       &:focus {
         outline: none;
       }
+    }
+
+    &-verticalLine {
+      border-left: 1px solid #ddd;
+      height: 30px;
     }
 
     &-select {
@@ -436,7 +442,7 @@ header {
       align-items: center;
 
       label {
-        padding-left: 20px;
+        padding-left: 15px;
         padding-right: 20px;
       }
 
@@ -452,6 +458,10 @@ header {
         color: #ff6f55;
         font-size: 16px;
         font-weight: 400;
+        background-image: url(./../img/search-arrow-down.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+        padding-right: 20px;
       }
     }
   }
@@ -507,6 +517,7 @@ header {
   //NAV-MENU
   &-menu {
     position: relative;
+    z-index: 10;
 
     &-categories {
       display: flex;
@@ -529,7 +540,7 @@ header {
       border-radius: 20px;
       display: flex;
       margin: 0 .5rem;
-      transition: all .3s ease-in;
+      transition: all .2s linear;
       justify-content: center;
 
       a {
@@ -548,31 +559,10 @@ header {
           color: #ff6f55;
         }
 
-        & > div {
-          display: block;
-          opacity: 1;
-          z-index: 5;
-        }
-
-        &:after {
-          position: absolute;
-          content: '';
-          display: block;
-          background: url("../img/menu_arr.png") bottom no-repeat;
-          background-size: cover;
-          bottom: -38px;
-          width: 26px;
-          height: 68px;
-          z-index: 100
-        }
       }
 
       &:first-of-type {
         padding-left: 0;
-
-        &:after {
-          left: 20px;
-        }
       }
 
       & > a {
@@ -584,16 +574,12 @@ header {
       }
 
       &-inner {
-        //display: none;
-        opacity: 0;
+        display: none;
         position: absolute;
         right: 0;
         left: 0;
-        z-index: -1;
-        padding-top: 30px;
+        padding-top: 20px;
         margin-top: 27px;
-        transition: all.1s linear;
-
         &-wrapper {
           display: flex;
           flex-direction: row;

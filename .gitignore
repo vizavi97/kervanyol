@@ -63,5 +63,3 @@ typings/
 
 # dotenv environment variables file
 .env
-assets/webpack.config.js
-assets/webpack.config.js

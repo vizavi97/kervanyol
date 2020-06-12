@@ -1,4 +1,6 @@
 //COLORS
+$border-hover: #BCCBD9;
+
 
 //Methods
 $browser-context: 16;
@@ -55,6 +57,7 @@ h2 {
   border-radius: 500rem;
   text-decoration: none;
   transition: all.3s ease;
+  text-align: center;
   &:focus {
     outline: 0;
     box-shadow: 0 0 0 0;

@@ -241,6 +241,13 @@ $(document).on('click','.cabinet-chat-user',function(){
   $(document).find('.cabinet-chat-conversation').removeClass('hide');
 });
 
+$(document).ready(function () {
+  $('.nav-menu-category').hover(function () {
+    $(this).children('div').stop(true).delay(500).show(0);
+  }, function () {
+    $(this).children('div').stop(true).delay(200).hide(0);
+  });
+});
 
 
 // main page search box-shadow
@@ -250,7 +257,7 @@ const mainSearch = document.getElementById('mainSearch');
 if ( mainSearch) {
   mainSearch.addEventListener("focusin", () => {
     mainSearch.parentElement.parentElement.classList.add('focused');
-  })
+  });
   mainSearch.addEventListener("focusout", () => {
     mainSearch.parentElement.parentElement.classList.remove('focused');
   })
