@@ -740,6 +740,7 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: center;
       }
 
       &-item {
@@ -749,6 +750,18 @@
           color: #636363;
           font-size: 18px;
           font-weight: 500;
+
+          &:hover {
+            color: #ff6f55;
+          }
+        }
+
+        p {
+          color: #a1abb8;
+          font-size: rem(14);
+          font-weight: 500;
+          margin-bottom: 0;
+          margin-right: rem(5);
 
           &:hover {
             color: #ff6f55;
