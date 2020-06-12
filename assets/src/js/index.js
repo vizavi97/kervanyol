@@ -242,13 +242,10 @@ $(document).on('click','.cabinet-chat-user',function(){
 });
 
 $(document).ready(function () {
-  //Show then hide ddown menu on hover
   $('.nav-menu-category').hover(function () {
     $(this).children('div').stop(true).delay(500).show(0);
-    // $('.nav-menu-category:after').stop(true).delay(200).fadeIn();
   }, function () {
     $(this).children('div').stop(true).delay(200).hide(0);
-    // $('.nav-menu-category:after').stop(true).delay(200).fadeOut();
   });
 });
 
