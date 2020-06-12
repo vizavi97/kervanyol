@@ -1,6 +1,4 @@
-<% var data = {title: "MAIN_PAGE"}; %>
-<%= _.template(require('./../includes/header.html').default)(data) %>
-<%= _.template(require('./../includes/top-slider.html').default)(data) %>
+<% var data = {title: "MAIN_PAGE"}; %><%= _.template(require('./../includes/header.html').default)(data) %><%= _.template(require('./../includes/top-slider.html').default)(data) %>
 
 <main class="content">
 	<div class="container">
@@ -114,342 +112,802 @@
 					<h4>Недавние</h4>
 				</div>
 				<div class="recent-products-container">
-					<ul class="recent-products-items owl-carousel owl-theme">
-						<li class="recent-products-item new sale">
-							<div class="recent-products-item-img">
-								<a href="/product.html"><img src="img/products-item-1.png" alt="product-1"/></a>
+					<ul class="cards recent-products-items owl-carousel owl-theme">
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
 							</div>
-							<div class="recent-products-item-name">
-								<a href="/product.html">Air Jordan XXXIV</a>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 							</div>
-							<div class="recent-products-item-brand">
+							<div class="card-brand">
 								<a href="/store.html">Nike</a>
 							</div>
-							<div class="recent-products-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
 							</div>
-							<div class="recent-products-item-cost">
+							<div class="card-cost">
 								<span>180$</span>
 							</div>
-							<div class="recent-products-item-period">
+							<div class="card-period">
 								<span>
 									96 days 11:35:18
 								</span>
 							</div>
 						</li>
-						<li class="recent-products-item sale">
-							<div class="recent-products-item-img">
-								<a href="/product.html"> <img src="./img/products-item-1.png" alt="product-1"/> </a>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-2.png" alt="product-1"/>
+								</a>
 							</div>
-							<div class="recent-products-item-name">
-								<a href="/product.html">Air Jordan XXXIV</a>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 							</div>
-							<div class="recent-products-item-brand">
+							<div class="card-brand">
 								<a href="/store.html">Nike</a>
 							</div>
-							<div class="recent-products-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
 							</div>
-							<div class="recent-products-item-cost">
+							<div class="card-cost">
 								<span>180$</span>
 							</div>
-							<div class="recent-products-item-period">
+							<div class="card-period">
 								<span>
 									96 days 11:35:18
 								</span>
 							</div>
 						</li>
-						<li class="recent-products-item">
-							<div class="recent-products-item-img">
-								<a href="/product.html"> <img src="./img/products-item-2.png" alt="product-1"/> </a>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
 							</div>
-							<div class="recent-products-item-name">
-								<a href="/product.html">Оливковое масло для тела (...</a>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 							</div>
-							<div class="recent-products-item-brand">
-								<a href="/store.html">Procter and campbell</a>
-							</div>
-							<div class="recent-products-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-							</div>
-							<div class="recent-products-item-cost">
-								<span>5$</span> <span class="inactive-price">25$</span>
-							</div>
-							<div class="recent-products-item-period">
-								<span>
-									96 days 11:35:18
-								</span>
-							</div>
-						</li>
-						<li class="recent-products-item new sale">
-							<div class="recent-products-item-img">
-								<a href="/product.html"> <img src="./img/products-item-3.png" alt="product-1"/> </a>
-							</div>
-							<div class="recent-products-item-name">
-								<a href="javascript:">Nike Air Force 1 React</a>
-							</div>
-							<div class="recent-products-item-brand">
+							<div class="card-brand">
 								<a href="/store.html">Nike</a>
 							</div>
-							<div class="recent-products-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
 							</div>
-							<div class="recent-products-item-cost">
-								<span>120$</span> <span class="inactive-price">150$</span>
-							</div>
-							<div class="recent-products-item-period">
-								<span>
-									96 days 11:35:18
-								</span>
-							</div>
-						</li>
-						<li class="recent-products-item">
-							<div class="recent-products-item-img">
-								<a href="/product.html"> <img src="./img/products-item-3.png" alt="product-1"/> </a>
-							</div>
-							<div class="recent-products-item-name">
-								<a href="javascript:">Nike Air Force 1 React</a>
-							</div>
-							<div class="recent-products-item-brand">
-								<a href="/store.html">Nike</a>
-							</div>
-							<div class="recent-products-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-							</div>
-							<div class="recent-products-item-cost">
-								<span>120$</span> <span class="inactive-price">150$</span>
-							</div>
-							<div class="recent-products-item-period">
-								<span>
-									96 days 11:35:18
-								</span>
-							</div>
-						</li>
-						<li class="recent-products-item new sale">
-							<div class="recent-products-item-img">
-								<a href="/product.html"> <img src="./img/products-item-1.png" alt="product-1"/> </a>
-							</div>
-							<div class="recent-products-item-name">
-								<a href="/product.html">Air Jordan XXXIV</a>
-							</div>
-							<div class="recent-products-item-brand">
-								<a href="/store.html">Nike</a>
-							</div>
-							<div class="recent-products-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-							</div>
-							<div class="recent-products-item-cost">
+							<div class="card-cost">
 								<span>180$</span>
 							</div>
-							<div class="recent-products-item-period">
+							<div class="card-period">
 								<span>
 									96 days 11:35:18
 								</span>
 							</div>
 						</li>
-						<li class="recent-products-item sale">
-							<div class="recent-products-item-img">
-								<a href="/product.html"> <img src="./img/products-item-1.png" alt="product-1"/> </a>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-3.png" alt="product-1"/>
+								</a>
 							</div>
-							<div class="recent-products-item-name">
-								<a href="/product.html">Air Jordan XXXIV</a>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 							</div>
-							<div class="recent-products-item-brand">
+							<div class="card-brand">
 								<a href="/store.html">Nike</a>
 							</div>
-							<div class="recent-products-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
 							</div>
-							<div class="recent-products-item-cost">
+							<div class="card-cost">
 								<span>180$</span>
 							</div>
-							<div class="recent-products-item-period">
+							<div class="card-period">
 								<span>
 									96 days 11:35:18
 								</span>
 							</div>
 						</li>
-						<li class="recent-products-item">
-							<div class="recent-products-item-img">
-								<a href="/product.html"> <img src="./img/products-item-2.png" alt="product-1"/> </a>
+						<li class="card">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
 							</div>
-							<div class="recent-products-item-name">
-								<a href="/product.html">Оливковое масло для тела (...</a>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 							</div>
-							<div class="recent-products-item-brand">
-								<a href="/store.html">Procter and campbell</a>
-							</div>
-							<div class="recent-products-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-							</div>
-							<div class="recent-products-item-cost">
-								<span>5$</span> <span class="inactive-price">25$</span>
-							</div>
-							<div class="recent-products-item-period">
-								<span>
-									96 days 11:35:18
-								</span>
-							</div>
-						</li>
-						<li class="recent-products-item new sale">
-							<div class="recent-products-item-img">
-								<a href="/product.html"> <img src="./img/products-item-3.png" alt="product-1"/> </a>
-							</div>
-							<div class="recent-products-item-name">
-								<a href="javascript:">Nike Air Force 1 React</a>
-							</div>
-							<div class="recent-products-item-brand">
+							<div class="card-brand">
 								<a href="/store.html">Nike</a>
 							</div>
-							<div class="recent-products-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
 							</div>
-							<div class="recent-products-item-cost">
-								<span>120$</span> <span class="inactive-price">150$</span>
+							<div class="card-cost">
+								<span>180$</span>
 							</div>
-							<div class="recent-products-item-period">
+							<div class="card-period">
 								<span>
 									96 days 11:35:18
 								</span>
 							</div>
 						</li>
-						<li class="recent-products-item">
-							<div class="recent-products-item-img">
-								<a href="/product.html"> <img src="./img/products-item-3.png" alt="product-1"/> </a>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
 							</div>
-							<div class="recent-products-item-name">
-								<a href="javascript:">Nike Air Force 1 React</a>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 							</div>
-							<div class="recent-products-item-brand">
+							<div class="card-brand">
 								<a href="/store.html">Nike</a>
 							</div>
-							<div class="recent-products-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
 							</div>
-							<div class="recent-products-item-cost">
-								<span>120$</span> <span class="inactive-price">150$</span>
+							<div class="card-cost">
+								<span>180$</span>
 							</div>
-							<div class="recent-products-item-period">
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-2.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-3.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
+								<span>
+									96 days 11:35:18
+								</span>
+							</div>
+						</li>
+						<li class="card new sale">
+							<div class="card-img">
+								<a href="/product.html">
+									<img src="img/products-item-1.png" alt="product-1"/>
+								</a>
+							</div>
+							<div class="card-name">
+								<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
+							</div>
+							<div class="card-brand">
+								<a href="/store.html">Nike</a>
+							</div>
+							<div class="card-rating">
+								<ul class="stars">
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star active">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+									<li class="star">
+										<i class="fas fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="card-cost">
+								<span>180$</span>
+							</div>
+							<div class="card-period">
 								<span>
 									96 days 11:35:18
 								</span>
@@ -499,16 +957,6 @@
 					</li>
 				</ul>
 			</div>
-			<div class="getApp">
-				<div class="getApp-img col-6">
-					<img src="./img/download-app.png" alt="download-app"/>
-				</div>
-				<div class="getApp-text col-6">
-					<h3>Скачать <br/> приложение</h3>
-					<p>Покупать вещи никогда не было так легко,<br/> как с мобильным приложением</p>
-					<a href="javascript:" class="btn btn-kervan longer">Скачать</a>
-				</div>
-			</div>
 			<div class="popular-products">
 				<div class="popular-products-headline">
 					<div class="popular-products-headline-container">
@@ -521,237 +969,285 @@
 							<div class="popular-products-banner absolute col-3">
 								<img src="img/popular-products-banner.png" alt="img"/>
 							</div>
-							<ul class="popular-products-items col-12 col-lg-9">
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="img/products-item-1.png" alt="product-1"/>
+							<ul class="popular-products-items cards col-12 col-lg-9">
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
-									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV Air Jordan</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
 									</div>
 								</li>
 							</ul>
@@ -760,237 +1256,285 @@
 							<div class="popular-products-banner absolute col-3">
 								<img src="img/popular-products-banner.png" alt="img"/>
 							</div>
-							<ul class="popular-products-items col-12 col-lg-9">
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="img/products-item-1.png" alt="product-1"/>
+							<ul class="popular-products-items cards col-12 col-lg-9">
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
-									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV Air Jordan</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
 									</div>
 								</li>
 							</ul>
@@ -999,237 +1543,285 @@
 							<div class="popular-products-banner absolute col-3">
 								<img src="img/popular-products-banner.png" alt="img"/>
 							</div>
-							<ul class="popular-products-items col-12 col-lg-9">
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="img/products-item-1.png" alt="product-1"/>
+							<ul class="popular-products-items cards col-12 col-lg-9">
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
-									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV Air Jordan</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
 									</div>
 								</li>
 							</ul>
@@ -1238,237 +1830,285 @@
 							<div class="popular-products-banner absolute col-3">
 								<img src="img/popular-products-banner.png" alt="img"/>
 							</div>
-							<ul class="popular-products-items col-12 col-lg-9">
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="img/products-item-1.png" alt="product-1"/>
+							<ul class="popular-products-items cards col-12 col-lg-9">
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
-									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV Air Jordan</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
 									</div>
 								</li>
 							</ul>
@@ -1477,237 +2117,285 @@
 							<div class="popular-products-banner absolute col-3">
 								<img src="img/popular-products-banner.png" alt="img"/>
 							</div>
-							<ul class="popular-products-items col-12 col-lg-9">
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="img/products-item-1.png" alt="product-1"/>
+							<ul class="popular-products-items cards col-12 col-lg-9">
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
-									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV Air Jordan</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
 									</div>
 								</li>
 							</ul>
@@ -1716,241 +2404,290 @@
 							<div class="popular-products-banner absolute col-3">
 								<img src="img/popular-products-banner.png" alt="img"/>
 							</div>
-							<ul class="popular-products-items col-12 col-lg-9">
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="img/products-item-1.png" alt="product-1"/>
+							<ul class="popular-products-items cards col-12 col-lg-9">
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV XXXIV XXXIV XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<img src="./img/products-item-3.png" alt="product-1"/>
-									</div>
-									<div class="popular-products-item-name">
-										<a href="javascript:">Nike Air Force 1 React</a>
-									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Nike</a>
-									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
-									</div>
-									<div class="popular-products-item-cost">
-										<span>120$</span> <span class="inactive-price">150$</span>
-									</div>
-								</li>
-								<li class="popular-products-item new sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
-									</div>
-									<div class="popular-products-item-name">
+									<div class="card-name">
 										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item sale">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-1.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Air Jordan XXXIV</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV Air Jordan</a>
 									</div>
-									<div class="popular-products-item-brand">
+									<div class="card-brand">
 										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
+									<div class="card-cost">
 										<span>180$</span>
 									</div>
 								</li>
-								<li class="popular-products-item">
-									<div class="popular-products-item-img">
-										<a href="/product.html"><img src="./img/products-item-2.png" alt="product-1"/></a>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
 									</div>
-									<div class="popular-products-item-name">
-										<a href="/product.html">Оливковое масло для тела (...</a>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
 									</div>
-									<div class="popular-products-item-brand">
-										<a href="/store.html">Procter and campbell</a>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
 									</div>
-									<div class="popular-products-item-rating">
-										<div class="star-rating__stars">
-											<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-											<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-											<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-											<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-											<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-											<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-											<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-											<div class="star-rating__focus"></div>
-										</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
 									</div>
-									<div class="popular-products-item-cost">
-										<span>5$</span> <span class="inactive-price">25$</span>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-3.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-2.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
+									</div>
+								</li>
+								<li class="card new sale">
+									<div class="card-img">
+										<a href="/product.html">
+											<img src="img/products-item-1.png" alt="product-1"/>
+										</a>
+									</div>
+									<div class="card-name">
+										<a href="/product.html">Air Jordan XXXIV</a>
+									</div>
+									<div class="card-brand">
+										<a href="/store.html">Nike</a>
+									</div>
+									<div class="card-rating">
+										<ul class="stars">
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star active">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+											<li class="star">
+												<i class="fas fa-star" aria-hidden="true"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="card-cost">
+										<span>180$</span>
 									</div>
 								</li>
 							</ul>
 						</li>
+
 					</ul>
 				</div>
 			</div>
@@ -1965,19 +2702,23 @@
 							<div class="popular-stores-item-top-info">
 								<h5>City style</h5>
 								<div class="popular-stores-item-top-info-stars">
-									<div class="star-rating__stars">
-										<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-										<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-										<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-										<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-										<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-										<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-										<div class="star-rating__focus"></div>
-									</div>
+									<ul class="stars">
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+									</ul>
 									<strong> 4.0</strong>
 								</div>
 								<p>Отзывы: <strong>-45</strong></p>
@@ -2004,19 +2745,23 @@
 							<div class="popular-stores-item-top-info">
 								<h5>City style</h5>
 								<div class="popular-stores-item-top-info-stars">
-									<div class="star-rating__stars">
-										<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-										<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-										<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-										<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-										<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-										<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-										<div class="star-rating__focus"></div>
-									</div>
+									<ul class="stars">
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+									</ul>
 									<strong> 4.0</strong>
 								</div>
 								<p>Отзывы: <strong>-45</strong></p>
@@ -2043,19 +2788,23 @@
 							<div class="popular-stores-item-top-info">
 								<h5>City style</h5>
 								<div class="popular-stores-item-top-info-stars">
-									<div class="star-rating__stars">
-										<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-										<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-										<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-										<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-										<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-										<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-										<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-										<div class="star-rating__focus"></div>
-									</div>
+									<ul class="stars">
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star active">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+										<li class="star">
+											<i class="fas fa-star" aria-hidden="true"></i>
+										</li>
+									</ul>
 									<strong> 4.0</strong>
 								</div>
 								<p>Отзывы: <strong>-45</strong></p>
@@ -2109,13 +2858,23 @@
 					</li>
 					<li class="partners-item col-lg-2 col-4">
 						<div class="partners-item-inner">
-						<strong>274</strong>
+							<strong>274</strong>
 							<a href="javascript:" class="absolute">
-							<span>Все <br/> партнеры</span>
-						</a>
+								<span>Все <br/> партнеры</span>
+							</a>
 						</div>
 					</li>
 				</ul>
+			</div>
+			<div class="getApp">
+				<div class="getApp-img col-6">
+					<img src="./img/download-app.png" alt="download-app"/>
+				</div>
+				<div class="getApp-text col-6">
+					<h3>Скачать <br/> приложение</h3>
+					<p>Покупать вещи никогда не было так легко,<br/> как с мобильным приложением</p>
+					<a href="javascript:" class="btn btn-kervan longer">Скачать</a>
+				</div>
 			</div>
 		</div>
 	</div>

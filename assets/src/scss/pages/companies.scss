@@ -243,7 +243,7 @@
       margin-bottom: 1.5rem;
       span {
         color: #9ea6b0;
-        font-size: rem(10);
+        font-size: rem(14);
         font-weight: 400;
       }
       &-header {
@@ -274,6 +274,15 @@
       }
       &-info {
         padding-top: .5rem;
+        &-address {
+          margin-bottom: 1rem;
+        }
+        &-numbers {
+          margin-bottom: 1rem;
+          a {
+            margin-right: .5rem;
+          }
+        }
       }
     }
   }
