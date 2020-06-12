@@ -32,6 +32,8 @@
     @include size(3);
     @include size-md(4);
     @include size-xs(6);
+    margin-top: .75rem;
+    margin-bottom: .75rem;
   }
   &-card{
     display: block;
@@ -39,11 +41,11 @@
     background-color: #fff;
     box-shadow: 0 rem(16) rem(50) #E9EEF780;
     border-radius: 5px;
-    margin: rem(12) 0;
-    transition: all .3s ease-in;
     padding: rem(22) rem(14) rem(13);
+
     &:hover, &:focus{
       text-decoration: none;
+      box-shadow: 0 0 1px 1px #bccbd9;
     }
     &-block{
       display: flex;
