@@ -1089,19 +1089,17 @@
       }
 
       &-cost {
+        margin-bottom: 10px;
         span {
           color: #ff6f55;
           font-size: rem(18);
-          letter-spacing: -1px;
           font-weight: 500;
-          text-transform: uppercase;
         }
 
         strong {
           color: #bfbfbf;
           font-size: 10px;
           font-weight: 400;
-          text-transform: uppercase;
           text-decoration: line-through;
         }
       }
