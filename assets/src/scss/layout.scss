@@ -396,7 +396,7 @@ header {
       flex-direction: row;
       width: 100%;
       height: 50px;
-      border: 1px solid #ebebeb;
+      border: 2px solid #ff6f55;
       background-color: #ffffff;
       border-radius: 1.5rem;
       overflow: hidden;
@@ -426,12 +426,18 @@ header {
     &-btn {
       height: 100%;
       padding: 0 1.5rem;
-      border-radius: 2rem;
+      border-radius: 20px;
       background-color: #ff6f55;
+      padding-right: 20px;
 
       &:focus {
         outline: none;
       }
+    }
+
+    &-verticalLine {
+      border-left: 1px solid #ddd;
+      height: 30px;
     }
 
     &-select {
@@ -439,7 +445,7 @@ header {
       align-items: center;
 
       label {
-        padding-left: 20px;
+        padding-left: 15px;
         padding-right: 20px;
       }
 
@@ -455,6 +461,10 @@ header {
         color: #ff6f55;
         font-size: 16px;
         font-weight: 400;
+        background-image: url(./../img/search-arrow-down.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+        padding-right: 20px;
       }
     }
   }
