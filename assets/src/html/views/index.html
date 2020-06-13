@@ -1,6 +1,7 @@
-<% var data = {title: "MAIN_PAGE"}; %><%= _.template(require('./../includes/header.html').default)(data) %><%= _.template(require('./../includes/top-slider.html').default)(data) %>
+<% var data = {title: "MAIN_PAGE"}; %><%= _.template(require('./../includes/header.html').default)(data) %>
 
 <main class="content">
+	<%= _.template(require('./../includes/top-slider.html').default)(data) %>
 	<div class="container">
 		<div class="content-container">
 			<div class="banners">
@@ -2878,22 +2879,22 @@
 			</div>
 		</div>
 	</div>
-</main>
-<section class="subscribe">
-	<div class="container">
-		<div class="subscribe-container">
-			<div class="subscribe-info">
-				<h4>Подписка на новости</h4>
-				<p>Получайте информацию на ваш почтовый ящик</p>
-			</div>
-			<div class="subscribe-form">
-				<label for="emailSubscribe">
-					<input type="text" class="input-kervan" id="emailSubscribe" placeholder="Ваш email"/>
-				</label>
-				<button type="submit" class="btn btn-kervan">Подписаться</button>
+	<div class="subscribe">
+		<div class="container">
+			<div class="subscribe-container">
+				<div class="subscribe-info">
+					<h4>Подписка на новости</h4>
+					<p>Получайте информацию на ваш почтовый ящик</p>
+				</div>
+				<div class="subscribe-form">
+					<label for="emailSubscribe">
+						<input type="text" class="input-kervan" id="emailSubscribe" placeholder="Ваш email"/>
+					</label>
+					<button type="submit" class="btn btn-kervan">Подписаться</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</section>
+</main>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
