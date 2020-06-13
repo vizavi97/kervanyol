@@ -1,0 +1,34 @@
+.single-blog{
+  padding: rem(24) 0 rem(100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-block{
+    @include col();
+    @include size(6);
+    @include size-md(12);
+    img{
+      width: 100%;
+    }
+    &-indent{
+      text-indent: rem(30);
+    }
+  }
+  h1{
+    font-size: rem(24);
+    font-weight: 600;
+    line-height: rem(36);
+    margin-bottom: rem(16);
+  }
+  &-banner{
+    padding: rem(16) 0;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  p{
+    line-height: rem(30);
+    margin: rem(16) 0;
+  }
+}
