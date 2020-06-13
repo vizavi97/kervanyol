@@ -39,6 +39,7 @@ build/Release
 node_modules/
 jspm_packages/
 docs/
+.idea/
 .DS_Store/
 
 # Typescript v1 declaration files
