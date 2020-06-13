@@ -289,8 +289,9 @@
                 justify-content: center;
                 border-radius: 5px;
                 box-shadow: 0 0 1px 1px#dfe3eb;
+                padding: rem(5) 0;
                 &.selected {
-                  box-shadow: 0 0 1px 1px #000;
+                  box-shadow: 0 0 1px 1px #ff6f55;
                 }
               }
             }
@@ -317,15 +318,15 @@
               transition: all .2s ease;
 
               &:hover {
-                box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);
+                box-shadow: 0 0 10px 1px #ff6f55;
               }
 
               &:focus {
-                border-color: #000;
+                border-color: #ff6f55;
               }
 
               &.selected {
-                border-color: #000;
+                border-color: #ff6f55;
               }
 
               span {
@@ -365,6 +366,7 @@
               text-align: center;
               color: white;
               text-decoration: none;
+              border-radius: rem(5);
             }
 
             input {
@@ -460,12 +462,15 @@
       &-delivery {
         h6 {
           color: #000711;
-          font-family: "Montserrat";
           font-size: 12px;
-          font-weight: 500;
+          font-weight: 600;
           padding-top: 2.25rem;
           margin-bottom: 0;
-
+        }
+        p{
+          font-size: rem(10);
+          font-weight: 400;
+          color: #9EA6B0;
         }
       }
 
@@ -961,7 +966,7 @@
       }
 
       &-slide {
-        width: 40px !important;
+        width: 48px !important;
         padding: 1px;
         margin-right: 10px;
         border: 1px solid #dfe3eb;
@@ -970,6 +975,9 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        &.swiper-slide-thumb-active{
+          border: rem(1) solid #ff6f55;
+        }
       }
 
     }
