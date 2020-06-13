@@ -375,12 +375,11 @@ header {
   &-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
     @include md-block(){
       overflow-x: hidden;
     }
   }
-
-
   //NAV-TOP
   &-top {
     display: flex;
