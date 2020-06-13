@@ -1,0 +1,606 @@
+title = "cabinet-stores.html"
+url = "/cabinet-stores.html"
+layout = "home"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+==
+<?php
+public function onStart() {
+	
+	$this['pageClass'] = 'grey';
+}
+?>
+==
+<div class="container-lg">
+  <div class="content-container pt-4">
+    <div class="cabinet">
+      <div class="cabinet-nav pb-1">
+        <div class="cabinet-nav-headline"><h5>Личный кабинет</h5></div>
+        <ul class="cabinet-nav-items">
+          <li class="cabinet-nav-item">
+            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/conversetion.svg'|theme }}" alt="icon" /> <span>Мой кабинет</span></a
+            >
+          </li>
+          <li class="cabinet-nav-item">
+            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/manuscript.svg'|theme }}" alt="icon" /> <span>Мои заказы</span></a>
+          </li>
+          <li class="cabinet-nav-item">
+            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/transaction.svg'|theme }}" alt="icon" /> <span>Сообщения</span></a>
+          </li>
+          <li class="cabinet-nav-item">
+            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/list.svg'|theme }}" alt="icon" /> <span>Мои желания</span></a>
+          </li>
+          <li class="cabinet-nav-item">
+            <a href="javascript:" class="active"
+              ><img src="{{ 'assets/dist/img/cabinet/notification.svg'|theme }}" alt="icon" /> <span>Любимые магазины</span></a
+            >
+          </li>
+          <li class="cabinet-nav-item">
+            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/like.svg'|theme }}" alt="icon" /> <span>настройки профиля</span></a>
+          </li>
+          <li class="cabinet-nav-item">
+            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/news.svg'|theme }}" alt="icon" /> <span>Новости</span></a>
+          </li>
+          <li class="cabinet-nav-item">
+            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/logout.svg'|theme }}" alt="icon" /> <span>Выйти</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="cabinet-container sticker">
+        <div class="cabinet-stores">
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
+              <div class="cabinet-data-container">
+                <h4>Новинки</h4>
+                <p class="my-0 text-muted">
+                  <small
+                    >В разделе «Новинки» Вы можете просмотреть новые поступления в Ваши любимые магазины.</small
+                  >
+                </p>
+              </div>
+              <div class="cabinet-stores-container">
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/allStores/stores-1.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>General Mobile</h5>
+                        <p>Всё для стиля и комфорта</p>
+                        <div class="allStores-card-block-info-rating">
+                          <ul class="stars">
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                          </ul>
+                          <div class="allStores-card-block-info-rating-orders"><span>4.0</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allStores-card-items">
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-1(1).png'|theme }}" alt="store-1(1).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-1(2).png'|theme }}" alt="store-1(2).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-1(3).png'|theme }}" alt="store-1(3).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-1(1).png'|theme }}" alt="store-1(4).png" />
+                      </div></div
+                  ></a>
+                </div>
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/allStores/stores-2.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>General Mobile</h5>
+                        <p>Всё для стиля и комфорта</p>
+                        <div class="allStores-card-block-info-rating">
+                          <ul class="stars">
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                          </ul>
+                          <div class="allStores-card-block-info-rating-orders"><span>4.0</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allStores-card-items">
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-2(1).png'|theme }}" alt="store-2(1).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-2(2).png'|theme }}" alt="store-2(2).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-2(3).png'|theme }}" alt="store-2(3).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-2(4).png'|theme }}" alt="store-2(4).png" />
+                      </div></div
+                  ></a>
+                </div>
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/allStores/stores-3.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>General Mobile</h5>
+                        <p>Всё для стиля и комфорта</p>
+                        <div class="allStores-card-block-info-rating">
+                          <ul class="stars">
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                          </ul>
+                          <div class="allStores-card-block-info-rating-orders"><span>4.0</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allStores-card-items">
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-3(1).png'|theme }}" alt="store-3(1).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-3(2).png'|theme }}" alt="store-3(2).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-3(3).png'|theme }}" alt="store-3(3).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-3(4).png'|theme }}" alt="store-3(4).png" />
+                      </div></div
+                  ></a>
+                </div>
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/allStores/stores-4.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>General Mobile</h5>
+                        <p>Всё для стиля и комфорта</p>
+                        <div class="allStores-card-block-info-rating">
+                          <ul class="stars">
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                          </ul>
+                          <div class="allStores-card-block-info-rating-orders"><span>4.0</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allStores-card-items">
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-4(1).png'|theme }}" alt="store-4(1).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-4(2).png'|theme }}" alt="store-4(2).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-4(3).png'|theme }}" alt="store-4(3).png" />
+                      </div>
+                      <div class="allStores-card-item">
+                        <img src="{{ 'assets/dist/img/allStores/store-4(4).png'|theme }}" alt="store-4(4).png" />
+                      </div></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="sale" role="tabpanel" aria-labelledby="new-tab">
+              <div class="cabinet-data-container">
+                <h4>Со скидками</h4>
+                <p class="my-0 text-muted">
+                  <small>В этом разделе Вы можете найти товары с действующими скидками.</small>
+                </p>
+              </div>
+              <div class="cabinet-stores-container">
+                <div class="cabinet-stores-container-sale-block">
+                  <div class="cabinet-stores-container-sale-block-img">
+                    <img src="{{ 'assets/dist/img/cabinet/cabinet-stores/cabinet-product.png'|theme }}" alt="cabinet-product" />
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-name">
+                    <a href="javascript:">Красная рубашка ZARA</a>
+                    <p>-10%</p>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-cost">
+                    <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+                    <div class="cabinet-stores-container-sale-block-send"><span>Отправка: 141 000 UZS</span></div>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-rating">
+                    <ul class="stars">
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star"><i class="fas fa-star"></i></li>
+                    </ul>
+                    <div class="cabinet-stores-container-sale-block-brand">
+                      <a href="javascript:">ANMONE OfficalFlagship Store</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-stores-container-sale-block">
+                  <div class="cabinet-stores-container-sale-block-img">
+                    <img src="{{ 'assets/dist/img/cabinet/cabinet-stores/cabinet-product3.png'|theme }}" alt="cabinet-product" />
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-name">
+                    <a href="javascript:">Air Jordan XXXIV</a>
+                    <p>-10%</p>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-cost">
+                    <span>130 000 UZS</span> <strong class="inactive-price">155 000 UZS</strong>
+                    <div class="cabinet-stores-container-sale-block-send"><span>Отправка: 141 000 UZS</span></div>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-rating">
+                    <ul class="stars">
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star"><i class="fas fa-star"></i></li>
+                    </ul>
+                    <div class="cabinet-stores-container-sale-block-brand">
+                      <a href="javascript:">ANMONE OfficalFlagship Store</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-stores-container-sale-block">
+                  <div class="cabinet-stores-container-sale-block-img">
+                    <img src="{{ 'assets/dist/img/cabinet/cabinet-stores/cabinet-product2.png'|theme }}" alt="cabinet-product" />
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-name">
+                    <a href="javascript:">Белая футболка</a>
+                    <p>-20%</p>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-cost">
+                    <span>80 000 UZS</span> <strong class="inactive-price">100 000 UZS</strong>
+                    <div class="cabinet-stores-container-sale-block-send"><span>Отправка: 141 000 UZS</span></div>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-rating">
+                    <ul class="stars">
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star"><i class="fas fa-star"></i></li>
+                    </ul>
+                    <div class="cabinet-stores-container-sale-block-brand">
+                      <a href="javascript:">ANMONE OfficalFlagship Store</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-stores-container-sale-block">
+                  <div class="cabinet-stores-container-sale-block-img">
+                    <img src="{{ 'assets/dist/img/cabinet/cabinet-stores/cabinet-product.png'|theme }}" alt="cabinet-product" />
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-name">
+                    <a href="javascript:">Пилотка Чайна</a>
+                    <p>-5%</p>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-cost">
+                    <span>53 000 UZS</span> <strong class="inactive-price">55 000 UZS</strong>
+                    <div class="cabinet-stores-container-sale-block-send"><span>Отправка: 141 000 UZS</span></div>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-rating">
+                    <ul class="stars">
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star"><i class="fas fa-star"></i></li>
+                    </ul>
+                    <div class="cabinet-stores-container-sale-block-brand">
+                      <a href="javascript:">ANMONE OfficalFlagship Store</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-stores-container-sale-block">
+                  <div class="cabinet-stores-container-sale-block-img">
+                    <img src="{{ 'assets/dist/img/cabinet/cabinet-stores/cabinet-product3.png'|theme }}" alt="cabinet-product" />
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-name">
+                    <a href="javascript:">Air Jordan XXXIV</a>
+                    <p>-10%</p>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-cost">
+                    <span>130 000 UZS</span> <strong class="inactive-price">155 000 UZS</strong>
+                    <div class="cabinet-stores-container-sale-block-send"><span>Отправка: 141 000 UZS</span></div>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-rating">
+                    <ul class="stars">
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star"><i class="fas fa-star"></i></li>
+                    </ul>
+                    <div class="cabinet-stores-container-sale-block-brand">
+                      <a href="javascript:">ANMONE OfficalFlagship Store</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-stores-container-sale-block">
+                  <div class="cabinet-stores-container-sale-block-img">
+                    <img src="{{ 'assets/dist/img/cabinet/cabinet-stores/cabinet-product2.png'|theme }}" alt="cabinet-product" />
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-name">
+                    <a href="javascript:">Белая футболка</a>
+                    <p>-20%</p>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-cost">
+                    <span>80 000 UZS</span> <strong class="inactive-price">100 000 UZS</strong>
+                    <div class="cabinet-stores-container-sale-block-send"><span>Отправка: 141 000 UZS</span></div>
+                  </div>
+                  <div class="cabinet-stores-container-sale-block-rating">
+                    <ul class="stars">
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star active"><i class="fas fa-star"></i></li>
+                      <li class="star"><i class="fas fa-star"></i></li>
+                    </ul>
+                    <div class="cabinet-stores-container-sale-block-brand">
+                      <a href="javascript:">ANMONE OfficalFlagship Store</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="bought" role="tabpanel" aria-labelledby="new-tab">
+              <div class="cabinet-data-container">
+                <h4>Вы уже покупали в этом магазине</h4>
+                <p class="my-0 text-muted">
+                  <small>Данный раздел посвящён магазинам, где Вы уже приобретали товары.</small>
+                </p>
+              </div>
+              <div class="cabinet-stores-container">
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card allStores-card-bought" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/companies/cola.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>OOO Coca-Cola</h5>
+                        <p>Производство газированной воды</p>
+                      </div>
+                    </div></a
+                  >
+                </div>
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card allStores-card-bought" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/allStores/stores-1.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>Yurtbay ITC</h5>
+                        <p>Всё для стиля и комфорта</p>
+                        <div class="allStores-card-block-info-rating">
+                          <ul class="stars">
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                          </ul>
+                          <div class="allStores-card-block-info-rating-orders"><span>4.0</span></div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card allStores-card-bought" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/allStores/stores-6.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>Dalin ITC</h5>
+                        <p>Всё для стиля и комфорта</p>
+                        <div class="allStores-card-block-info-rating">
+                          <ul class="stars">
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                          </ul>
+                          <div class="allStores-card-block-info-rating-orders"><span>4.0</span></div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card allStores-card-bought" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/allStores/stores-7.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>Duru Soup</h5>
+                        <p>Всё для стиля и комфорта</p>
+                        <div class="allStores-card-block-info-rating">
+                          <ul class="stars">
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                          </ul>
+                          <div class="allStores-card-block-info-rating-orders"><span>4.0</span></div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card allStores-card-bought" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/companies/fanta.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>OOO Bonaqua</h5>
+                        <p>Производство газированной воды</p>
+                      </div>
+                    </div></a
+                  >
+                </div>
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card allStores-card-bought" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/allStores/stores-2.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>Ugur Group</h5>
+                        <p>Всё для стиля и комфорта</p>
+                        <div class="allStores-card-block-info-rating">
+                          <ul class="stars">
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                          </ul>
+                          <div class="allStores-card-block-info-rating-orders"><span>4.0</span></div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card allStores-card-bought" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/allStores/stores-3.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>Casper</h5>
+                        <p>Всё для стиля и комфорта</p>
+                        <div class="allStores-card-block-info-rating">
+                          <ul class="stars">
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                          </ul>
+                          <div class="allStores-card-block-info-rating-orders"><span>4.0</span></div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+                <div class="cabinet-stores-container-block">
+                  <a class="allStores-card allStores-card-bought" href="javascript:"
+                    ><div class="allStores-card-block">
+                      <img src="{{ 'assets/dist/img/allStores/stores-5.png'|theme }}" alt="stores-1.png" />
+                      <div class="allStores-card-block-info">
+                        <h5>Sunny Clothes</h5>
+                        <p>Всё для стиля и комфорта</p>
+                        <div class="allStores-card-block-info-rating">
+                          <ul class="stars">
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                            <li class="star active"><i class="fas fa-star"></i></li>
+                          </ul>
+                          <div class="allStores-card-block-info-rating-orders"><span>4.0</span></div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cabinet-profile">
+          <div class="cabinet-profile-container">
+            <div class="cabinet-profile-image">
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="28" height="31" viewBox="0 0 28 31">
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          fill="none"
+                          stroke="#bccbd9"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="20"
+                          stroke-width="3"
+                          d="M26.007 29v0-3a6 6 0 0 0-6-6h-12a6 6 0 0 0-6 6v3"
+                        />
+                      </g>
+                      <g>
+                        <path
+                          fill="none"
+                          stroke="#bccbd9"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="20"
+                          stroke-width="3"
+                          d="M20.007 8a6 6 0 1 1-12 0 6 6 0 0 1 12 0z"
+                        />
+                      </g>
+                    </g>
+                  </g></svg
+              ></span>
+            </div>
+            <div class="cabinet-profile-name"><h5>John Doe</h5></div>
+            <div class="cabinet-profile-email"><p>example@gmail.com</p></div>
+            <div class="cabinet-profile-number"><p>+998 94 538 65 98</p></div>
+            <div class="cabinet-profile-link"><a href="javascript:">изменение</a></div>
+          </div>
+          <div class="cabinet-profile-sidebar">
+            <h6>Управление заказами</h6>
+            <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="new-tab"
+                  data-toggle="tab"
+                  href="#new"
+                  role="tab"
+                  aria-controls="new"
+                  aria-selected="true"
+                  >Новинки</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="sale-tab"
+                  data-toggle="tab"
+                  href="#sale"
+                  role="tab"
+                  aria-controls="sale"
+                  aria-selected="false"
+                  >Со скидками</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="bought-tab"
+                  data-toggle="tab"
+                  href="#bought"
+                  role="tab"
+                  aria-controls="bought"
+                  aria-selected="false"
+                  >Вы уже покупали в этом магазине</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
