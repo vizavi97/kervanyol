@@ -2,8 +2,8 @@ import $ from "jquery";
 import 'bootstrap'
 import 'owl.carousel2/dist/owl.carousel'
 import EmojiButton from '@joeattardi/emoji-button'
-import Drift from "drift-zoom/src/js/Drift";
 import Swiper from "swiper";
+import Magnifier from 'magnifier';
 import './inputPhone';
 import './app';
 import categories from '../json/categories'
@@ -126,19 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
 const demoWrapper = document.getElementsByClassName('product-slider');
 
 if (demoWrapper.length > 0) {
-  let demoTrigger = document.querySelector('.swiper-slide-active').querySelector('img');
-  let demoCollection = document.querySelector('.product-slider-thumbs-slide-img');
-  let paneContainer = document.querySelector('.product-slider-container');
-  new Drift(demoTrigger, {
-    paneContainer: paneContainer,
-    inlinePane: true,
-    zoomFactor: 2,
-  });
-  new Drift(demoCollection, {
-    paneContainer: paneContainer,
-    inlinePane: false,
-  });
-
   var productSliderThumbs = new Swiper('.product-slider-thumbs', {
     spaceBetween: 10,
     slidesPerView: 4,
@@ -154,6 +141,9 @@ if (demoWrapper.length > 0) {
   });
 
 }
+
+new Magnifier('.swiper-slide-active');
+
 //COUNTER PRODUCT_PAGE
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -167,8 +157,10 @@ document.addEventListener('DOMContentLoaded', () => {
       counter.value = counterValue;
     });
     counterDecr.addEventListener('click', () => {
-      counterValue--;
-      counter.value = counterValue;
+      if (counter.value > 0) {
+        counterValue--;
+        counter.value = counterValue;
+      }
     });
   }
 });
