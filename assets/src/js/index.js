@@ -3,7 +3,6 @@ import 'bootstrap'
 import 'owl.carousel2/dist/owl.carousel'
 import EmojiButton from '@joeattardi/emoji-button'
 import Swiper from "swiper";
-import Magnifier from 'magnifier';
 import './inputPhone';
 import './app';
 import categories from '../json/categories'
@@ -141,8 +140,6 @@ if (demoWrapper.length > 0) {
   });
 
 }
-
-new Magnifier('.swiper-slide-active');
 
 //COUNTER PRODUCT_PAGE
 
