@@ -1,0 +1,28 @@
+description = "Layout of marketplace"
+==
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="{{'assets/dist/css/style.bundle.css'|theme}}" />
+    <title>MAIN_PAGE</title>
+  </head>
+  <body>
+    <header>
+      {% partial 'home/header' %}
+    </header>
+    
+	<main>
+		{% page %}
+	</main>
+	
+    <footer>
+      {% partial 'home/footer' %}
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/43236b6dfa.js" crossorigin="anonymous"></script>
+    <script src="{{'assets/dist/js/bundle.js' | theme }}"></script>
+  </body>
+</html>
