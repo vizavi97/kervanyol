@@ -496,6 +496,9 @@ header {
           font-weight: 600;
         }
       }
+      &.show {
+        display: block;
+      }
 
 
       &.show {
