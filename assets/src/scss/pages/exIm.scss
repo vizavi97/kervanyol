@@ -38,10 +38,17 @@
           margin-bottom: rem(5);
         }
 
-        p {
-          font: rem(14) "Montserrat";
-          font-weight: 400;
-          margin-bottom: rem(24);
+        ul {
+          padding-bottom: rem(24);
+          list-style: none;
+
+          li {
+            font: rem(14) "Montserrat";
+            font-weight: 400;
+            &:before{
+
+            }
+          }
         }
 
         a {
@@ -703,7 +710,7 @@
         padding: 0 rem(66) rem(32);
       }
 
-      .card{
+      .card {
         width: 100%;
         padding: 0;
       }
