@@ -1,0 +1,861 @@
+title = "companies"
+url = "/companies"
+layout = "exim"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+==
+<div class="container-lg">
+		<div class="content-container pt-4">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs-items">
+					<li class="breadcrumbs-item active">
+						<a href="/">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Импорт и Экспорт
+						</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="javascript:">
+							Оформление заявки
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="companies">
+				<div class="companies-banner">
+					<%= _.template(require('./../includes/banner-discount.html').default)(data) %>
+				</div>
+				<div class="companies-headline">
+					<h4>Список компаний</h4>
+				</div>
+				<div class="companies-container">
+					<div class="companies-nav">
+						<div class="companies-nav-headline">
+							<h5>категории</h5>
+						</div>
+						<div class="companies-nav-categories">
+							<input type="checkbox" id="companies-skirts" checked/>
+							<label for="companies-skirts">
+								<span>Верхняя одежда</span>
+							</label>
+							<ul class="companies-nav-categories-items">
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Классические туфли</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Ботинки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Кеды</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Повседневная обувь</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Кроссовки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Тапочки</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="companies-nav-categories">
+							<input type="checkbox" id="companies-art" checked/>
+							<label for="companies-art">
+								<span>Искусство</span>
+							</label>
+							<ul class="companies-nav-categories-items">
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Очки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Ремни</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шапки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Бабочки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Носовой платок</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шарфы</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Перчатки</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="companies-nav-categories">
+							<input type="checkbox" id="companies-games"/>
+							<label for="companies-games">
+								<span>Развивающие игры</span>
+							</label>
+							<ul class="companies-nav-categories-items">
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Очки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Ремни</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шапки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Бабочки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Носовой платок</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шарфы</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Перчатки</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="companies-nav-categories">
+							<input type="checkbox" id="companies-skin"/>
+							<label for="companies-skin">
+								<span>Уход за кожей</span>
+							</label>
+							<ul class="companies-nav-categories-items">
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Очки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Ремни</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шапки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Бабочки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Носовой платок</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шарфы</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Перчатки</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="companies-nav-categories">
+							<input type="checkbox" id="companies-furniture"/>
+							<label for="companies-furniture">
+								<span>Мебель</span>
+							</label>
+							<ul class="companies-nav-categories-items">
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Очки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Ремни</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шапки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Бабочки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Носовой платок</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шарфы</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Перчатки</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="companies-nav-categories">
+							<input type="checkbox" id="companies-accessories"/>
+							<label for="companies-accessories">
+								<span>Аксессуары</span>
+							</label>
+							<ul class="companies-nav-categories-items">
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Очки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Ремни</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шапки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Бабочки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Носовой платок</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шарфы</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Перчатки</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="companies-nav-categories">
+							<input type="checkbox" id="companies-beauty"/>
+							<label for="companies-beauty">
+								<span>Красота и здоровье</span>
+							</label>
+							<ul class="companies-nav-categories-items">
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Очки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Ремни</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шапки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Бабочки</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Носовой платок</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Шарфы</span>
+									</a>
+								</li>
+								<li class="companies-nav-categories-item">
+									<a href="javascript:">
+										<span>Перчатки</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="companies-elements">
+						<div class="companies-elements-headline">
+							<div class="companies-elements-types">
+								<a class="companies-elements-type active" href="javascript:">Экспорт</a>
+								<a class="companies-elements-type" href="javascript:">Импорт</a>
+								<a class="companies-elements-type" href="javascript:">Все компании</a>
+							</div>
+							<div class="companies-elements-search">
+								<form action="javascript:">
+									<input type="search" placeholder="Поиск...">
+									<button type="submit"><span><i class="fas fa-search"></i></span></button>
+								</form>
+							</div>
+
+						</div>
+						<ul class="companies-elements-items">
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="companies-elements-item">
+								<div class="companies-elements-item-header">
+									<div class="companies-elements-item-img">
+										<img src="img/companies/pepsi.png" alt=""/>
+									</div>
+									<div class="companies-elements-item-description">
+										<h5>OOO Bonaqua</h5>
+										<span>
+											Производство газированной
+											воды</span>
+									</div>
+								</div>
+								<div class="companies-elements-item-info">
+									<div class="companies-elements-item-info-address">
+										<span>Москва, ул, Новикузнецкая 24 </span>
+									</div>
+									<div class="companies-elements-item-info-numbers">
+										<a href="tel:+99871 800-80-80">
+											<span>71 800-80-80</span>
+										</a>
+										<a href="tel:+99871 700-70-70">
+											<span>71 700-70-70</span>
+										</a>
+									</div>
+									<div class="companies-elements-item-info-site">
+										<a href="https://www.example.com">
+											<span>www.example.com</span>
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="catalog-container-pageNavigation">
+							<ul class="catalog-container-pageNavigation-items py-5">
+								<li class="catalog-container-pageNavigation-item active">
+									<a href="javascript:">1</a>
+								</li>
+								<li class="catalog-container-pageNavigation-item">
+									<a href="javascript:">2</a>
+								</li>
+								<li class="catalog-container-pageNavigation-item">
+									<a href="javascript:">3</a>
+								</li>
+								<li class="catalog-container-pageNavigation-item">
+									<a href="javascript:">4</a>
+								</li>
+								<li class="catalog-container-pageNavigation-item">
+									<a href="javascript:">5</a>
+								</li>
+								<li class="catalog-container-pageNavigation-item">
+									<a href="javascript:">...</a>
+								</li>
+								<li class="catalog-container-pageNavigation-item">
+									<a href="javascript:">10</a>
+								</li>
+								<li class="catalog-container-pageNavigation-item">
+									<a href="javascript:"><i class="fas fa-angle-right" aria-hidden="true"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>

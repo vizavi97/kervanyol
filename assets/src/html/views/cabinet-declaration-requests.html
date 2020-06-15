@@ -183,7 +183,7 @@
 															<img src="img/data-falling/plus.png" alt="plus">
 															<span>Загрузить</span>
 														</div>
-														<input type="file" rel="0" name="certificates[0]" onchange="readURL(this)" data-name="certificates" disabled>
+														<input type="file" class="addedPhotoAll" disabled>
 														<em class="hidden">замена изображения</em>
 													</label>
 												</li>
@@ -193,7 +193,7 @@
 															<img src="img/data-falling/plus.png" alt="plus">
 															<span>Загрузить</span>
 														</div>
-														<input type="file" rel="1" name="certificates[1]" onchange="readURL(this)" data-name="certificates">
+														<input type="file" class="addedPhotoAll">
 														<em class="hidden">замена изображения</em>
 													</label>
 												</li>
@@ -206,7 +206,7 @@
 															<img src="img/data-falling/plus.png" alt="plus">
 															<span>Загрузить</span>
 														</div>
-														<input type="file" rel="0" name="additional[0]" onchange="readURL(this)" data-name="additional">
+														<input type="file" class="addedPhotoAll" data-name="additional">
 														<em class="hidden">замена изображения</em>
 													</label>
 												</li>
@@ -278,7 +278,7 @@
 															<img src="img/data-falling/plus.png" alt="plus">
 															<span>Загрузить</span>
 														</div>
-														<input type="file" rel="0" name="certificates[0]" onchange="readURL(this)" data-name="certificates" disabled>
+														<input type="file" class="addedPhotoAll" disabled>
 														<em class="hidden">замена изображения</em>
 													</label>
 												</li>
@@ -288,7 +288,7 @@
 															<img src="img/data-falling/plus.png" alt="plus">
 															<span>Загрузить</span>
 														</div>
-														<input type="file" rel="1" name="certificates[1]" onchange="readURL(this)" data-name="certificates">
+														<input type="file" class="addedPhotoAll">
 														<em class="hidden">замена изображения</em>
 													</label>
 												</li>
@@ -301,7 +301,7 @@
 															<img src="img/data-falling/plus.png" alt="plus">
 															<span>Загрузить</span>
 														</div>
-														<input type="file" rel="0" name="additional[0]" onchange="readURL(this)" data-name="additional">
+														<input type="file" class="addedPhotoAll" data-name="additional">
 														<em class="hidden">замена изображения</em>
 													</label>
 												</li>
@@ -426,42 +426,5 @@
 		</div>
 	</div>
 </main>
-
-<script>
-  function readURL(input) {
-    let rel = Number(input.getAttribute('rel'));
-    const nameInput = input.getAttribute('data-name');
-    if (input.files && input.files[0]) {
-      let reader = new FileReader();
-      reader.onload = function (e) {
-        input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
-        input.previousElementSibling.innerHTML = ' ';
-        input.nextElementSibling.classList.remove('hidden');
-      };
-      reader.readAsDataURL(input.files[0]);
-      document.getElementsByClassName('')
-    }
-    rel++;
-    const wrapper = input.parentElement.parentElement.parentElement;
-    if (!input.parentElement.parentElement.nextElementSibling) {
-      let htmlSection = `
-			<li class="cabinet-register-container-form-addFile-item">
-			 <label>
-			   <div class="addFile-inner">
-			       <img src="img/data-falling/plus.png" alt="plus">
-			       <span>Загрузить</span>
-			   </div>
-			   <input type="file"
-			    onchange="readURL(this)"
-			     rel="${rel}"
-			     name='${nameInput}[${rel}]'>
-			   <em class="hidden">замена изображения</em>
-			 </label>
-			 <a href="javascript:" class="remove-container" onclick="this.parentElement.remove()">&times;</a>
-			</li>`;
-      wrapper.insertAdjacentHTML("beforeend", htmlSection);
-    }
-  }
-</script>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
