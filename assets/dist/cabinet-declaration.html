@@ -432,37 +432,6 @@
         </div>
       </div>
     </main>
-    <script>
-      const declarationinputsWrapper = document.getElementById("declaration-input-wrapper");
-      if (declarationinputsWrapper) {
-        const declarationCounter = document.getElementById("declaration-input");
-        let declarationInputNumber = Number(declarationCounter.getAttribute("rel")) + 1;
-        let declarationAddSwitcher = document.getElementById("add-switcher");
-        declarationAddSwitcher.addEventListener("click", () => {
-          declarationinputsWrapper.insertAdjacentHTML(
-            "afterbegin",
-            `
-		<div class="cabinet-declaration-form-top">
-			<div class="cabinet-declaration-form-inputs">
-				<label>
-					<span>Наименование товара</span>
-					<input type="text" class="input-kervan" placeholder="Наименование товара" name="product[${declarationInputNumber}]"/>
-				</label>
-				<label>
-					<span>Количество товара</span>
-					<input type="text" class="input-kervan" placeholder="шт" name="count[${declarationInputNumber}]"/>
-				</label>
-			</div>
-			<button type="button" id="remove-switcher" class="remove-switcher" onclick="this.parentElement.remove()">
-				<span>-</span>
-			</button>
-		</div>
-	  `
-          );
-          declarationInputNumber++;
-        });
-      }
-    </script>
     <footer>
       <div class="container">
         <div class="footer-container">
