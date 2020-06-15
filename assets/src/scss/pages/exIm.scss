@@ -43,10 +43,14 @@
           list-style: none;
 
           li {
-            font: rem(14) "Montserrat";
+            font-size: rem(24);
             font-weight: 400;
-            &:before{
+            line-height: rem(43.2);
 
+            &:before {
+              content: "-";
+              position: relative;
+              left: rem(-5);
             }
           }
         }
@@ -93,22 +97,29 @@
       align-items: center;
       justify-content: center;
       border-radius: rem(5);
-      padding: rem(20) rem(30);
+      padding: rem(16) rem(5) rem(30) rem(24);
       height: 100%;
+      flex-wrap: wrap;
 
-      &-text {
-        padding-left: rem(22);
+      &-header {
+        padding-left: rem(32);
+        width: 75%;
 
         h4 {
           font: rem(20) "Montserrat";
           font-weight: 500;
-          margin-bottom: rem(5);
+          line-height: rem(24);
         }
+      }
+
+      &-text {
+        width: 100%;
+        padding-top: rem(15);
 
         p {
-          font: rem(14) "Montserrat";
+          font-size: rem(14);
           font-weight: 400;
-          margin: 0;
+          line-height: rem(21);
         }
       }
 
@@ -118,12 +129,10 @@
 
       &-second {
         background-color: #D1EFB6;
-        padding-left: rem(40);
       }
 
       &-third {
         background-color: #DEC8F3;
-        padding-left: rem(40);
       }
     }
   }
@@ -165,24 +174,6 @@
   }
 
   &-export {
-    &-header {
-      text-align: center;
-      padding: rem(30) 0;
-
-      h2 {
-        font: rem(40) "Montserrat";
-        font-weight: 500;
-        margin-bottom: rem(12);
-        text-transform: none;
-      }
-
-      p {
-        font: rem(12) "Montserrat";
-        color: #7D8B9D;
-        margin: 0;
-      }
-    }
-
     &-content {
       @include row-flex();
 
@@ -241,11 +232,14 @@
         }
 
         p {
-          font: rem(14) "Montserrat";
+          font-size: rem(12);
           font-weight: 400;
-          line-height: rem(26);
-          margin: rem(12) 0 rem(8);
-          color: #768791;
+          line-height: rem(21);
+          margin: rem(8) 0;
+        }
+
+        .exim-btn {
+          padding-top: rem(12);
         }
       }
     }
@@ -341,7 +335,7 @@
 
     &-content {
       @include row-flex();
-      padding: rem(60) 0;
+      padding: rem(20) 0 rem(60);
 
       &-left, &-right {
         @include col();
@@ -719,21 +713,20 @@
 
   &-headline {
     text-align: center;
-    padding-bottom: rem(24);
+    padding: rem(40) 0;
     width: 100%;
 
     h2 {
-      font: rem(40) "Montserrat";
+      font-size: rem(40);
       font-weight: 500;
-      margin-bottom: rem(12);
       text-transform: none;
     }
 
     p {
-      font: rem(12) "Montserrat";
-      font-weight: 300;
-      color: #7D8B9D;
-      margin: 0;
+      font-size: rem(14);
+      line-height: rem(21);
+      margin: auto;
+      width: 70%;
     }
   }
 
