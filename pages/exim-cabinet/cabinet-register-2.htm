@@ -1,0 +1,88 @@
+title = "cabinet-register-2.html"
+url = "/cabinet-register-2.html"
+layout = "exim"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+==
+
+<div class="container-lg">
+        <div class="content-container pt-4">
+          <div class="breadcrumbs">
+            {% partial "global/breadcrumbs" %}
+          </div>
+          <div class="cabinet">
+            <div class="cabinet-nav">
+              {% partial "exim/exim-cabinet-nav" %}
+            </div>
+            <div class="cabinet-container">
+              <div class="cabinet-register">
+                <div class="cabinet-register-container">
+                  <div class="cabinet-register-container-headline"><h5>Регистрация</h5></div>
+                  <div class="cabinet-register-container-text">
+                    <p>Данный этап регистрации позволит сохранить Ваши контактные данные в базе Kervanyol.</p>
+                  </div>
+                  <div class="cabinet-register-container-warning">
+                    <div class="cabinet-register-container-warning-img">
+                      <img src="{{'assets/dist/img/cabinet/warning.png' | theme}}" alt="" />
+                    </div>
+                    <div class="cabinet-register-container-warning-text">
+                      <p><strong>Важно!</strong></p>
+                      <p>Все пункты должны быть заполнены поэтапно для возможности получения дальнейшего доступа.</p>
+                    </div>
+                    <div class="cabinet-register-container-warning-close">
+                      <a href="javascript:" onclick="this.parentElement.parentElement.remove()">&times;</a>
+                    </div>
+                  </div>
+                  <div class="cabinet-register-container-form">
+                    <h6>Контактные данные компании</h6>
+                    <form action="cabinet-register-3.html">
+                      <div class="cabinet-register-container-form-inputs">
+                        <label for="ogpn"
+                          ><span>Регион</span> <input class="input-kervan" name="name" placeholder="____"
+                        /></label>
+                        <label for="Web-site"
+                          ><span>Web-сайт</span>
+                          <input class="input-kervan" name="name" id="Web-site" placeholder="www.kervanyol.com"
+                        /></label>
+                      </div>
+                      <div class="cabinet-register-container-form-inputs">
+                        <label for="ogpn"
+                          ><span>Адрес</span> <input class="input-kervan" name="name" placeholder="______"
+                        /></label>
+                        <label for="ogpn"
+                          ><span>Контактный телефон</span>
+                          <input class="input-kervan" name="client-phone" id="ogpn" placeholder="+998(__)___-__-__"
+                        /></label>
+                      </div>
+                      <div class="cabinet-register-container-form-buttons justify-content-between">
+                        <button type="submit" class="btn-kervan">Продолжить</button>
+                        <a href="javascript:" onclick="window.history.back()">Назад</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="cabinet-register-stages">
+                  <div class="cabinet-register-stages-headline"><h5>Этапы заполнения</h5></div>
+                  <ul class="cabinet-register-stages-items">
+                    <li class="cabinet-register-stages-item done">
+                      <h6>Основные данные</h6>
+                      <p>Укажите базовые сведения о компании</p>
+                    </li>
+                    <li class="cabinet-register-stages-item done">
+                      <h6>Контактные данные</h6>
+                      <p>Заполните данные поля для возможности связаться с Вами</p>
+                    </li>
+                    <li class="cabinet-register-stages-item">
+                      <h6>Сведения о руководителе</h6>
+                      <p>Данные о руководителе остаются конфедициальными</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
