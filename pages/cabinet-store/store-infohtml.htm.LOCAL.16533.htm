@@ -1,0 +1,132 @@
+title = "cabinet-store-info.html"
+url = "/cabinet-store-info.html"
+layout = "home"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+==
+<?php
+public function onStart() {
+	
+	$this['pageClass'] = 'grey';
+}
+?>
+==
+<div class="container-lg">
+  <div class="content-container pt-4">
+    <div class="cabinet">
+      <div class="cabinet-nav pb-1">
+        <div class="cabinet-nav-headline"><h5>Личный кабинет</h5></div>
+        <ul class="cabinet-nav-items">
+          <li class="cabinet-nav-item">
+            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/conversetion.svg'|theme }}" alt="icon" /> <span>Консоль</span></a>
+          </li>
+          <li class="cabinet-nav-item">
+            <a href="javascript:" class="active"
+              ><img src="{{ 'assets/dist/img/cabinet/manuscript.svg'|theme }}" alt="icon" /> <span>Мой магазин</span></a
+            >
+          </li>
+          <li class="cabinet-nav-item">
+            <a href="javascript:"
+              ><img src="{{ 'assets/dist/img/cabinet/transaction.svg'|theme }}" alt="icon" /> <span>Мои продукты</span></a
+            >
+          </li>
+          <li class="cabinet-nav-item">
+            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/list.svg'|theme }}" alt="icon" /> <span>Заказы</span></a>
+          </li>
+          <li class="cabinet-nav-item">
+            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/notification.svg'|theme }}" alt="icon" /> <span>Выйти</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="cabinet-container sticker">
+        <div class="cabinet-store-main">
+          <div class="cabinet-data-container">
+            <h4>Сведения о магазине</h4>
+            <div class="cabinet-delivery"></div>
+            <div class="cabinet-store-main-content">
+              <a href="javascript:" class="cabinet-store-main-edit">Редактировать</a>
+              <div class="cabinet-store-main-info">
+                <div class="cabinet-store-main-info-headline"><p>Название:</p></div>
+                <div class="cabinet-store-main-info-text"><p>Star Elite</p></div>
+              </div>
+              <div class="cabinet-store-main-info">
+                <div class="cabinet-store-main-info-headline"><p>Дата открытия:</p></div>
+                <div class="cabinet-store-main-info-text"><p>12 июля 2010 г</p></div>
+              </div>
+              <div class="cabinet-store-main-info">
+                <div class="cabinet-store-main-info-headline"><p>Контактный телефон:</p></div>
+                <div class="cabinet-store-main-info-text"><p>+ 998 94 123 45 67</p></div>
+              </div>
+              <div class="cabinet-store-main-info">
+                <div class="cabinet-store-main-info-headline"><p>Адрес магазина:</p></div>
+                <div class="cabinet-store-main-info-text"><p>Ташкент, ул, Новикузнецкая 24 стр, 4а, N 15</p></div>
+              </div>
+              <div class="cabinet-store-main-info">
+                <div class="cabinet-store-main-info-headline"><p>Страна:</p></div>
+                <div class="cabinet-store-main-info-text"><p>Узбекистан</p></div>
+              </div>
+              <div class="cabinet-store-main-info">
+                <div class="cabinet-store-main-info-headline"><p>Вид производства:</p></div>
+                <div class="cabinet-store-main-info-text"><p>одежда</p></div>
+              </div>
+              <div class="cabinet-store-main-info">
+                <div class="cabinet-store-main-info-headline"><p>ФИ руководителя</p></div>
+                <div class="cabinet-store-main-info-text"><p>Иван Иванов</p></div>
+              </div>
+              <div class="cabinet-store-main-info">
+                <div class="cabinet-store-main-info-headline"><p>Эл.почта</p></div>
+                <div class="cabinet-store-main-info-text"><p>example@mail.ru</p></div>
+              </div>
+              <div class="cabinet-store-main-info border-bottom-0 pb-4">
+                <div class="cabinet-store-main-info-headline"><p>Телефон руководителя:</p></div>
+                <div class="cabinet-store-main-info-text"><p>+ 998 94 123 45 67</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cabinet-profile">
+          <div class="cabinet-profile-container">
+            <div class="cabinet-profile-image">
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="28" height="31" viewBox="0 0 28 31">
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          fill="none"
+                          stroke="#bccbd9"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="20"
+                          stroke-width="3"
+                          d="M26.007 29v0-3a6 6 0 0 0-6-6h-12a6 6 0 0 0-6 6v3"
+                        />
+                      </g>
+                      <g>
+                        <path
+                          fill="none"
+                          stroke="#bccbd9"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="20"
+                          stroke-width="3"
+                          d="M20.007 8a6 6 0 1 1-12 0 6 6 0 0 1 12 0z"
+                        />
+                      </g>
+                    </g>
+                  </g></svg
+              ></span>
+            </div>
+            <div class="cabinet-profile-name"><h5>John Doe</h5></div>
+            <div class="cabinet-profile-email"><p>example@gmail.com</p></div>
+            <div class="cabinet-profile-number"><p>+998 94 538 65 98</p></div>
+            <div class="cabinet-profile-link"><a href="javascript:">изменение</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -518,15 +518,24 @@
 
   &-item {
     &-headline {
+      a {
+        display: block;
+      }
+      h6 {
+      color: black;
       font-size: 16px;
       font-weight: 500;
       padding-top: 1rem;
+      }
     }
 
     &-text {
       color: #636363;
       font-size: 14px;
       font-weight: 400;
+    }
+    img {
+      border-radius: .75rem;
     }
   }
 }
