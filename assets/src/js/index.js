@@ -7,6 +7,7 @@ import './inputPhone';
 import './app';
 import categories from '../json/categories'
 
+
 const bgSwitcher = document.getElementById('bg-switcher');
 
 if (bgSwitcher) {
