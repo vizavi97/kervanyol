@@ -48,25 +48,25 @@
           </div>
         </div>
       </div>
-    </header>
-    <section class="nav-exim">
-      <div class="container">
-        <div class="nav-exim-container">
-          <div class="nav-exim-logo">
-            <a href="/"><img src="img/exIm/logo-exim.png" alt="logo-exim" /></a>
+      <div class="nav-exim">
+        <div class="container">
+          <div class="nav-exim-container">
+            <div class="nav-exim-logo">
+              <a href="/"><img src="img/exIm/logo-exim.png" alt="logo-exim" /></a>
+            </div>
+            <nav class="nav-exim-menu">
+              <ul class="nav-exim-menu-categories">
+                <li class="nav-exim-menu-category"><a href="javascript:">Главная</a></li>
+                <li class="nav-exim-menu-category"><a href="javascript:">О нас</a></li>
+                <li class="nav-exim-menu-category"><a href="javascript:">Оптовые товары</a></li>
+                <li class="nav-exim-menu-category"><a href="javascript:">Компании</a></li>
+              </ul>
+            </nav>
+            <div class="nav-exim-btn"><a href="/sign-register.html">Войти в систему</a></div>
           </div>
-          <nav class="nav-exim-menu">
-            <ul class="nav-exim-menu-categories">
-              <li class="nav-exim-menu-category"><a href="javascript:">Главная</a></li>
-              <li class="nav-exim-menu-category"><a href="javascript:">О нас</a></li>
-              <li class="nav-exim-menu-category"><a href="javascript:">Оптовые товары</a></li>
-              <li class="nav-exim-menu-category"><a href="javascript:">Компании</a></li>
-            </ul>
-          </nav>
-          <div class="nav-exim-btn"><a href="/sign-register.html">Войти в систему</a></div>
         </div>
       </div>
-    </section>
+    </header>
     <main class="content grey">
       <div class="container-lg">
         <div class="content-container pt-4">
@@ -209,7 +209,7 @@
                                   type="file"
                                   rel="1"
                                   name="certificates[1]"
-                                  onchange="readURL(this)"
+                                  class="addedPhotoAll"
                                   data-name="certificates"
                                 />
                                 <em class="hidden">замена изображения</em></label
@@ -231,7 +231,7 @@
                                   type="file"
                                   rel="0"
                                   name="additional[0]"
-                                  onchange="readURL(this)"
+                                  class="addedPhotoAll"
                                   data-name="additional"
                                 />
                                 <em class="hidden">замена изображения</em></label
@@ -267,42 +267,6 @@
         </div>
       </div>
     </main>
-    <script>
-      function readURL(input) {
-        let rel = Number(input.getAttribute("rel"));
-        const nameInput = input.getAttribute("data-name");
-        if (input.files && input.files[0]) {
-          let reader = new FileReader();
-          reader.onload = function (e) {
-            input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
-            input.previousElementSibling.innerHTML = " ";
-            input.nextElementSibling.classList.remove("hidden");
-          };
-          reader.readAsDataURL(input.files[0]);
-          document.getElementsByClassName("");
-        }
-        rel++;
-        const wrapper = input.parentElement.parentElement.parentElement;
-        if (!input.parentElement.parentElement.nextElementSibling) {
-          let htmlSection = `
-			<li class="cabinet-register-container-form-addFile-item">
-			 <label>
-			   <div class="addFile-inner">
-			       <img src="img/data-falling/plus.png" alt="plus">
-			       <span>Загрузить</span>
-			   </div>
-			   <input type="file"
-			    onchange="readURL(this)"
-			     rel="${rel}"
-			     name='${nameInput}[${rel}]'>
-			   <em class="hidden">замена изображения</em>
-			 </label>
-			 <a href="javascript:" class="remove-container" onclick="this.parentElement.remove()">&times;</a>
-			</li>`;
-          wrapper.insertAdjacentHTML("beforeend", htmlSection);
-        }
-      }
-    </script>
     <footer>
       <div class="container">
         <div class="footer-container">
