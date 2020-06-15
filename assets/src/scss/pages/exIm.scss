@@ -349,7 +349,7 @@
       }
 
       &-left {
-        padding: rem(20) rem(40) 0;
+        padding: 0 rem(40);
 
         h4 {
           font: rem(24) "Montserrat";
@@ -392,11 +392,13 @@
         }
 
         p {
-          font: rem(14) "Montserrat";
+          font-size: rem(12);
           font-weight: 400;
           line-height: rem(26);
           margin: rem(12) 0 rem(8);
-          color: #768791;
+        }
+        .exim-btn{
+          padding-top: rem(17);
         }
       }
     }
@@ -489,7 +491,7 @@
 
     &-content {
       @include row-flex();
-      padding: rem(60) 0;
+      padding: rem(20) 0 rem(40);
 
       &-left, &-right {
         @include col();
@@ -500,6 +502,8 @@
       &-left {
         position: relative;
         padding-right: rem(15);
+        display: flex;
+        justify-content: flex-end;
 
         img {
           box-shadow: 0 16px 50px #e9eef7;
@@ -550,11 +554,10 @@
         }
 
         p {
-          font: rem(14) "Montserrat";
+          font-size: rem(12);
           font-weight: 400;
           line-height: rem(26);
           margin: rem(12) 0 rem(8);
-          color: #768791;
         }
       }
     }
@@ -563,7 +566,7 @@
   &-call {
     &-content {
       @include row-flex();
-      padding: rem(80) 0;
+      padding: rem(40) 0 rem(80);
 
       &-left, &-right {
         @include col();
