@@ -65,16 +65,12 @@
 
 
         &.kit {
-
-          ul {
-            flex-wrap: wrap;
-          }
-
-          li {
+          div {
             padding-right: 0.5rem;
             padding-bottom: .75rem;
+            display: inline-block;
 
-            a {
+            span {
               padding: 5px 1rem;
               border: 1px solid #dfe3eb;
               border-radius: 5px;
@@ -84,20 +80,9 @@
               display: flex;
               align-items: center;
               justify-content: center;
-
-              &:hover {
-                box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);
-              }
-
-              &:focus {
-                border-color: #000;
-              }
-
-              span {
-                color: #636363;
-                font-size: 12px;
-                font-weight: 300;
-              }
+              color: #636363;
+              font-size: 12px;
+              font-weight: 300;
             }
 
             p {
@@ -125,7 +110,6 @@
             align-items: center;
             justify-content: space-between;
             width: rem(115);
-            height: 26px;
             border: 1px solid #dfe3eb;
             background-color: #ffffff;
             border-radius: 3px;
@@ -136,6 +120,7 @@
               display: flex;
               justify-content: center;
               align-items: center;
+              text-align: center;
               color: white;
               text-decoration: none;
             }
@@ -663,20 +648,22 @@
 
     }
   }
-  @include xs-block(){
-    &-main{
+
+  @include xs-block() {
+    &-main {
       padding: 0;
     }
-    &-card{
+    &-card {
       width: 100%;
       flex-direction: column;
-      &-info{
+
+      &-info {
         padding: 1rem 0;
       }
     }
-    &-tab{
-      &-properties{
-        &-items{
+    &-tab {
+      &-properties {
+        &-items {
           flex-direction: column;
         }
       }
