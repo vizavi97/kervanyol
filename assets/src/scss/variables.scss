@@ -244,6 +244,9 @@ img {
 
 a {
   text-decoration: none;
+  &:hover{
+    color: #000000;
+  }
 }
 
 b, strong {

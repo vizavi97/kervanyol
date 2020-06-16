@@ -321,7 +321,15 @@
   }
 
   &-items {
-    padding-bottom: rem(120);
+    padding-bottom: rem(80);
+    .catalog-container-item{
+      @include col();
+      @include size(2.4);
+      @include size-lg(3);
+      @include size-sm(4);
+      @include size-xs(6);
+      padding-bottom: 1.5rem;
+    }
   }
 
   .product-recommended-item {

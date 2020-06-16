@@ -2,1209 +2,419 @@
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 <main class="content">
-	<%= _.template(require('./../includes/static-top-banner.html').default)(data) %>
-	<div class="container-lg">
-		<div class="content-container pt-3">
-			<div class="breadcrumbs">
-				<ul class="breadcrumbs-items">
-					<li class="breadcrumbs-item active">
-						<a href="/">
-							Главная
-						</a>
-					</li>
-					<li class="breadcrumbs-item">
-						<a href="javascript:">
-							Все категории
-						</a>
-					</li>
-					<li class="breadcrumbs-item">
-						<a href="javascript:">
-							Верхняя одежда
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="catalog">
-				<div class="catalog-side">
-					<div class="catalog-side-nav">
-						<div class="catalog-side-nav-headline">
-							<h5>Категории</h5>
-						</div>
-						<div class="catalog-side-nav-categories">
-							<input type="checkbox" id="selected-catalog-categories" checked/>
-							<label for="selected-catalog-categories">
-								<img src="img/catalog/catalog-category-mini.png" alt="img"/>
-								<span>Смежные категории</span>
-							</label>
-							<ul class="catalog-side-nav-categories-items">
-								<li class="catalog-side-nav-categories-item prev-categories">
-									<a href="javascript:">Любая категория</a>
-								</li>
-								<li class="catalog-side-nav-categories-item headline">
-									<a href="javascript:">Компьютерная и офисная техника</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Классические туфли</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Ботинки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Кеды</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Повседневная обувь</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Кроссовки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Тапочки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Домашние тапочки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Мокасины</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Очки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Классические туфли</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Ботинки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Кеды</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Повседневная обувь</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Кроссовки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Тапочки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Домашние тапочки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Мокасины</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Очки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Кроссовки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Тапочки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Домашние тапочки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Мокасины</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Очки</span> <strong>15520</strong>
-									</a>
-								</li>
-								<li class="catalog-side-nav-categories-item">
-									<a href="javascript:">
-										<span>Очки</span> <strong>15520</strong>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="catalog-side-filter">
-						<form action="javascript:">
-							<div class="catalog-side-filter-headline">
-								<h5>Фильтры</h5>
-							</div>
-							<div class="catalog-side-filter-categories">
-								<input type="checkbox" id="brand-filter" checked/>
-								<label for="brand-filter">
-									<img src="img/catalog/adidas-brand.png" alt="img"/>
-									<span>Бренды</span>
-								</label>
-								<ul class="catalog-side-filter-categories-items">
-									<li class="catalog-side-filter-categories-item brands">
-										<a href="javascript:">
-											<img src="./img/catalog/brand-1.png" alt="brand"/>
-										</a>
-									</li>
-									<li class="catalog-side-filter-categories-item brands">
-										<a href="javascript:">
-											<img src="./img/catalog/brand-2.png" alt="brand"/>
-										</a>
-									</li>
-									<li class="catalog-side-filter-categories-item brands">
-										<a href="javascript:">
-											<img src="./img/catalog/brand-3.png" alt="brand"/>
-										</a>
-									</li>
-									<li class="catalog-side-filter-categories-item brands">
-										<a href="javascript:">
-											<img src="./img/catalog/brand-4.png" alt="brand"/>
-										</a>
-									</li>
-									<li class="catalog-side-filter-categories-item brands">
-										<a href="javascript:">
-											<img src="./img/catalog/brand-5.png" alt="brand"/>
-										</a>
-									</li>
-									<li class="catalog-side-filter-categories-item brands">
-										<a href="javascript:">
-											<img src="./img/catalog/brand-6.png" alt="brand"/>
-										</a>
-									</li>
-									<li class="catalog-side-filter-categories-item btn">
-										<a href="javascript:">Все</a>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-side-filter-categories">
-								<input type="checkbox" id="device-width-filter" checked/>
-								<label for="device-width-filter">
-									<img src="img/catalog/mobile-filter.png" alt="img"/>
-									<span>Размер экрана</span>
-								</label>
-								<ul class="catalog-side-filter-categories-items checkboxes">
-									<li class="catalog-side-filter-categories-item checkbox">
-										<input type="checkbox" id="device-width-10"/>
-										<label for="device-width-10"><span>10"</span></label>
-									</li>
-									<li class="catalog-side-filter-categories-item checkbox">
-										<input type="checkbox" id="device-width-another"/>
-										<label for="device-width-another"><span>Другое</span></label>
-									</li>
-									<li class="catalog-side-filter-categories-item checkbox">
-										<input type="checkbox" id="device-width-17"/>
-										<label for="device-width-17"><span>17"</span></label>
-									</li>
-									<li class="catalog-side-filter-categories-item checkbox">
-										<input type="checkbox" id="device-width-12"/>
-										<label for="device-width-12"><span>12"</span></label>
-									</li>
-									<li class="catalog-side-filter-categories-item checkbox">
-										<input type="checkbox" id="device-width-15"/>
-										<label for="device-width-15"><span>15"</span></label>
-									</li>
-									<li class="catalog-side-filter-categories-item checkbox btn">
-										<a href="javascript:">Все</a>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-side-filter-categories">
-								<input type="checkbox" id="device-color-filter" checked/>
-								<label for="device-color-filter">
-									<img src="img/catalog/marker-filter.png" alt="img"/>
-									<span>Цвета</span>
-								</label>
-								<ul class="catalog-side-filter-categories-items colors">
-									<li class="catalog-side-filter-categories-item color">
-										<input type="checkbox" id="bgColor-filter-green"/>
-										<label for="bgColor-filter-green">
-											<span style="background-color: #68d20b"></span></label>
-									</li>
-									<li class="catalog-side-filter-categories-item color">
-										<input type="checkbox" id="bgColor-filter-orange"/>
-										<label for="bgColor-filter-orange">
-											<span style="background-color: #ff6f55"></span></label>
-									</li>
-									<li class="catalog-side-filter-categories-item color">
-										<input type="checkbox" id="bgColor-filter-blue"/>
-										<label for="bgColor-filter-blue"><span style="background-color: #0bbed2"></span>
-										</label>
-									</li>
-									<li class="catalog-side-filter-categories-item color">
-										<input type="checkbox" id="bgColor-filter-darkBlue"/>
-										<label for="bgColor-filter-darkBlue">
-											<span style="background-color: #2b0bd2"></span></label>
-									</li>
-									<li class="catalog-side-filter-categories-item color">
-										<input type="checkbox" id="bgColor-filter-red"/>
-										<label for="bgColor-filter-red"><span style="background-color: #d20b0b;"></span>
-										</label>
-									</li>
-									<li class="catalog-side-filter-categories-item color">
-										<input type="checkbox" id="bgColor-filter-yellow"/>
-										<label for="bgColor-filter-yellow">
-											<span style="background-color: #ffee00;"></span></label>
-									</li>
-									<li class="catalog-side-filter-categories-item color">
-										<input type="checkbox" id="bgColor-filter-black"/>
-										<label for="bgColor-filter-black"><span style="background-color: #000;"></span>
-										</label>
-									</li>
-									<li class="catalog-side-filter-categories-item color">
-										<input type="checkbox" id="bgColor-filter-white"/>
-										<label for="bgColor-filter-white">
-											<span style="background-color: #f5f5f5;"></span></label>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-side-filter-categories">
-								<input type="checkbox" id="device-color-range" checked/>
-								<label for="device-color-range">
-									<img src="img/catalog/tag-filter.png" alt="img"/>
-									<span>Цена</span>
-								</label>
-								<div class="catalog-side-filter-categories-items cost">
-									<div class="catalog-side-filter-categories-item min">
-										<label for="cost-filter-minValue">
-											<input type="text" class="input-kervan" id="cost-filter-minValue" placeholder="мин" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
-										</label>
-									</div>
-									<div class="catalog-side-filter-categories-item">
-										<span>-</span>
-									</div>
-									<div class="catalog-side-filter-categories-item max">
-										<label for="cost-filter-maxValue">
-											<input type="text" class="input-kervan" id="cost-filter-maxValue" placeholder="макс" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="catalog-side-filter-buttons">
-								<button type="submit" class="btn btn-kervan">Применить</button>
-								<button class="refresh-btn" onClick="window.location.reload();">Сбросить</button>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="catalog-container">
-					<div class="catalog-container-headline">
-						<h4>Компьютерная и офисная техника</h4>
-						<div class="catalog-container-toggler">
-							<span>Вид:</span>
-							<div class="catalog-container-toggler-cube active">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
-									<g>
-										<g>
-											<g>
-												<path fill="#ff6f55" d="M0 8V0h8v8z"/>
-											</g>
-											<g>
-												<path fill="#ff6f55" d="M0 19v-8h8v8z"/>
-											</g>
-											<g>
-												<path fill="#ff6f55" d="M12 8V0h8v8z"/>
-											</g>
-											<g>
-												<path fill="#ff6f55" d="M12 19v-8h8v8z"/>
-											</g>
-										</g>
-									</g>
-								</svg>
-							</div>
-							<div class="catalog-container-toggler-line">
-								<svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 26 18">
-									<g>
-										<g>
-											<g>
-												<path fill="#bccbd9" d="M0 18v-4h26v4z"/>
-											</g>
-											<g>
-												<path fill="#bccbd9" d="M0 11V7h26v4z"/>
-											</g>
-											<g>
-												<path fill="#bccbd9" d="M0 4V0h26v4z"/>
-											</g>
-										</g>
-									</g>
-								</svg>
-							</div>
-							<div class="form-group">
-								<select class="select-css">
-									<option>Сортировать:</option>
-									<option>Apples</option>
-									<option>Bananas</option>
-									<option>Grapes</option>
-									<option>Oranges</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<ul class="catalog-container-items cube">
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-2.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>1 201 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-3.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>550 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-2.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>1 201 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-3.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>550 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-2.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>1 201 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-3.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>550 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-2.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>1 201 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-3.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>550 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-2.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>1 201 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-						<li class="catalog-container-item">
-							<div class="catalog-container-item-img">
-								<a href="/product.html"><img src="./img/catalog/item-3.png" alt="product-1"></a>
-							</div>
-							<div class="catalog-container-item-name">
-								<a href="javascript:">Air Jordan XXXIV</a>
-							</div>
-							<div class="catalog-container-item-desc">
-								<a href="javascript:">Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000
-									мАч Face Unlock 4GB RAM 64GB ROM MT6763 Octa Core 2. 0GHz
-								</a>
-							</div>
-							<div class="catalog-container-item-cost">
-								<span>550 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-								<div class="catalog-container-item-send">
-								<span>
-									Отправка: 141 000 UZS
-								</span>
-								</div>
-								<!--	ADD TO FAVORUITE IN LINE TYPE CARD-->
-								<div class="catalog-container-item-favourite">
-									<a href="javascript:" onclick="this.classList.toggle('active')">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-											<g>
-												<g>
-													<path fill="none" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
-													      d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"/>
-												</g>
-											</g>
-										</svg>
-										<span>Добавить в "Мои желания"</span>
-									</a>
-								</div>
-							</div>
-							<div class="catalog-container-item-rating">
-								<div class="star-rating__stars">
-									<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1">
-									<label class="star-rating__label" for="rating-1" aria-label="One"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2">
-									<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3">
-									<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4">
-									<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
-									<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5">
-									<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
-									<div class="star-rating__focus"></div>
-								</div>
-								<div class="catalog-container-item-brand">
-									<a href="javascript:">ANMONE OfficalFlagship Store</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<div class="catalog-container-pageNavigation">
-						<ul class="catalog-container-pageNavigation-items">
-							<li class="catalog-container-pageNavigation-item active">
-								<a href="javascript:">1</a>
-							</li>
-							<li class="catalog-container-pageNavigation-item">
-								<a href="javascript:">2</a>
-							</li>
-							<li class="catalog-container-pageNavigation-item">
-								<a href="javascript:">3</a>
-							</li>
-							<li class="catalog-container-pageNavigation-item">
-								<a href="javascript:">4</a>
-							</li>
-							<li class="catalog-container-pageNavigation-item">
-								<a href="javascript:">5</a>
-							</li>
-							<li class="catalog-container-pageNavigation-item">
-								<a href="javascript:">...</a>
-							</li>
-							<li class="catalog-container-pageNavigation-item">
-								<a href="javascript:">10</a>
-							</li>
-							<li class="catalog-container-pageNavigation-item">
-								<a href="javascript:"><i class="fas fa-angle-right"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <%= _.template(require('./../includes/static-top-banner.html').default)(data) %>
+    <div class="container-lg">
+        <div class="content-container pt-3">
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs-items">
+                    <li class="breadcrumbs-item active">
+                        <a href="/">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a href="javascript:">
+                            Все категории
+                        </a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a href="javascript:">
+                            Верхняя одежда
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalog">
+                <div class="catalog-side">
+                    <div class="catalog-side-nav">
+                        <div class="catalog-side-nav-headline">
+                            <h5>Категории</h5>
+                        </div>
+                        <div class="catalog-side-nav-categories">
+                            <input type="checkbox" id="selected-catalog-categories" checked/>
+                            <label for="selected-catalog-categories">
+                                <img src="img/catalog/catalog-category-mini.png" alt="img"/>
+                                <span>Смежные категории</span>
+                            </label>
+                            <ul class="catalog-side-nav-categories-items">
+                                <li class="catalog-side-nav-categories-item prev-categories">
+                                    <a href="javascript:">Любая категория</a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item headline">
+                                    <a href="javascript:">Компьютерная и офисная техника</a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Классические туфли</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Ботинки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Кеды</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Повседневная обувь</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Кроссовки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Тапочки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Домашние тапочки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Мокасины</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Очки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Классические туфли</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Ботинки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Кеды</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Повседневная обувь</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Кроссовки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Тапочки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Домашние тапочки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Мокасины</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Очки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Кроссовки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Тапочки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Домашние тапочки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Мокасины</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Очки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                                <li class="catalog-side-nav-categories-item">
+                                    <a href="javascript:">
+                                        <span>Очки</span> <strong>15520</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog-side-filter">
+                        <form action="javascript:">
+                            <div class="catalog-side-filter-headline">
+                                <h5>Фильтры</h5>
+                            </div>
+                            <div class="catalog-side-filter-categories">
+                                <input type="checkbox" id="brand-filter" checked/>
+                                <label for="brand-filter">
+                                    <img src="img/catalog/adidas-brand.png" alt="img"/>
+                                    <span>Бренды</span>
+                                </label>
+                                <ul class="catalog-side-filter-categories-items">
+                                    <li class="catalog-side-filter-categories-item brands">
+                                        <a href="javascript:">
+                                            <img src="./img/catalog/brand-1.png" alt="brand"/>
+                                        </a>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item brands">
+                                        <a href="javascript:">
+                                            <img src="./img/catalog/brand-2.png" alt="brand"/>
+                                        </a>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item brands">
+                                        <a href="javascript:">
+                                            <img src="./img/catalog/brand-3.png" alt="brand"/>
+                                        </a>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item brands">
+                                        <a href="javascript:">
+                                            <img src="./img/catalog/brand-4.png" alt="brand"/>
+                                        </a>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item brands">
+                                        <a href="javascript:">
+                                            <img src="./img/catalog/brand-5.png" alt="brand"/>
+                                        </a>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item brands">
+                                        <a href="javascript:">
+                                            <img src="./img/catalog/brand-6.png" alt="brand"/>
+                                        </a>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item btn">
+                                        <a href="javascript:">Все</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="catalog-side-filter-categories">
+                                <input type="checkbox" id="device-width-filter" checked/>
+                                <label for="device-width-filter">
+                                    <img src="img/catalog/mobile-filter.png" alt="img"/>
+                                    <span>Размер экрана</span>
+                                </label>
+                                <ul class="catalog-side-filter-categories-items checkboxes">
+                                    <li class="catalog-side-filter-categories-item checkbox">
+                                        <input type="checkbox" id="device-width-10"/>
+                                        <label for="device-width-10"><span>10"</span></label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item checkbox">
+                                        <input type="checkbox" id="device-width-another"/>
+                                        <label for="device-width-another"><span>Другое</span></label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item checkbox">
+                                        <input type="checkbox" id="device-width-17"/>
+                                        <label for="device-width-17"><span>17"</span></label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item checkbox">
+                                        <input type="checkbox" id="device-width-12"/>
+                                        <label for="device-width-12"><span>12"</span></label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item checkbox">
+                                        <input type="checkbox" id="device-width-15"/>
+                                        <label for="device-width-15"><span>15"</span></label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item checkbox btn">
+                                        <a href="javascript:">Все</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="catalog-side-filter-categories">
+                                <input type="checkbox" id="device-color-filter" checked/>
+                                <label for="device-color-filter">
+                                    <img src="img/catalog/marker-filter.png" alt="img"/>
+                                    <span>Цвета</span>
+                                </label>
+                                <ul class="catalog-side-filter-categories-items colors">
+                                    <li class="catalog-side-filter-categories-item color">
+                                        <input type="checkbox" id="bgColor-filter-green"/>
+                                        <label for="bgColor-filter-green">
+                                            <span style="background-color: #68d20b"></span></label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item color">
+                                        <input type="checkbox" id="bgColor-filter-orange"/>
+                                        <label for="bgColor-filter-orange">
+                                            <span style="background-color: #ff6f55"></span></label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item color">
+                                        <input type="checkbox" id="bgColor-filter-blue"/>
+                                        <label for="bgColor-filter-blue"><span style="background-color: #0bbed2"></span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item color">
+                                        <input type="checkbox" id="bgColor-filter-darkBlue"/>
+                                        <label for="bgColor-filter-darkBlue">
+                                            <span style="background-color: #2b0bd2"></span></label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item color">
+                                        <input type="checkbox" id="bgColor-filter-red"/>
+                                        <label for="bgColor-filter-red"><span style="background-color: #d20b0b;"></span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item color">
+                                        <input type="checkbox" id="bgColor-filter-yellow"/>
+                                        <label for="bgColor-filter-yellow">
+                                            <span style="background-color: #ffee00;"></span></label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item color">
+                                        <input type="checkbox" id="bgColor-filter-black"/>
+                                        <label for="bgColor-filter-black"><span style="background-color: #000;"></span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-side-filter-categories-item color">
+                                        <input type="checkbox" id="bgColor-filter-white"/>
+                                        <label for="bgColor-filter-white">
+                                            <span style="background-color: #f5f5f5;"></span></label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="catalog-side-filter-categories">
+                                <input type="checkbox" id="device-color-range" checked/>
+                                <label for="device-color-range">
+                                    <img src="img/catalog/tag-filter.png" alt="img"/>
+                                    <span>Цена</span>
+                                </label>
+                                <div class="catalog-side-filter-categories-items cost">
+                                    <div class="catalog-side-filter-categories-item min">
+                                        <label for="cost-filter-minValue">
+                                            <input type="text" class="input-kervan" id="cost-filter-minValue"
+                                                   placeholder="мин"
+                                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+                                        </label>
+                                    </div>
+                                    <div class="catalog-side-filter-categories-item">
+                                        <span>-</span>
+                                    </div>
+                                    <div class="catalog-side-filter-categories-item max">
+                                        <label for="cost-filter-maxValue">
+                                            <input type="text" class="input-kervan" id="cost-filter-maxValue"
+                                                   placeholder="макс"
+                                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-side-filter-buttons">
+                                <button type="submit" class="btn btn-kervan">Применить</button>
+                                <button class="refresh-btn" onClick="window.location.reload();">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="catalog-container">
+                    <div class="catalog-container-headline">
+                        <h4>Компьютерная и офисная техника</h4>
+                        <div class="catalog-container-toggler">
+                            <span>Вид:</span>
+                            <div class="catalog-container-toggler-cube active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path fill="#ff6f55" d="M0 8V0h8v8z"/>
+                                            </g>
+                                            <g>
+                                                <path fill="#ff6f55" d="M0 19v-8h8v8z"/>
+                                            </g>
+                                            <g>
+                                                <path fill="#ff6f55" d="M12 8V0h8v8z"/>
+                                            </g>
+                                            <g>
+                                                <path fill="#ff6f55" d="M12 19v-8h8v8z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="catalog-container-toggler-line">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 26 18">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path fill="#bccbd9" d="M0 18v-4h26v4z"/>
+                                            </g>
+                                            <g>
+                                                <path fill="#bccbd9" d="M0 11V7h26v4z"/>
+                                            </g>
+                                            <g>
+                                                <path fill="#bccbd9" d="M0 4V0h26v4z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="form-group">
+                                <select class="select-css">
+                                    <option>Сортировать:</option>
+                                    <option>Apples</option>
+                                    <option>Bananas</option>
+                                    <option>Grapes</option>
+                                    <option>Oranges</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="catalog-container-items cube">
+                        <%= _.template(require('./../includes/product-cards.html').default)(data) %>
+                    </ul>
+                    <div class="catalog-container-pageNavigation">
+                        <ul class="catalog-container-pageNavigation-items">
+                            <li class="catalog-container-pageNavigation-item active">
+                                <a href="javascript:">1</a>
+                            </li>
+                            <li class="catalog-container-pageNavigation-item">
+                                <a href="javascript:">2</a>
+                            </li>
+                            <li class="catalog-container-pageNavigation-item">
+                                <a href="javascript:">3</a>
+                            </li>
+                            <li class="catalog-container-pageNavigation-item">
+                                <a href="javascript:">4</a>
+                            </li>
+                            <li class="catalog-container-pageNavigation-item">
+                                <a href="javascript:">5</a>
+                            </li>
+                            <li class="catalog-container-pageNavigation-item">
+                                <a href="javascript:">...</a>
+                            </li>
+                            <li class="catalog-container-pageNavigation-item">
+                                <a href="javascript:">10</a>
+                            </li>
+                            <li class="catalog-container-pageNavigation-item">
+                                <a href="javascript:"><i class="fas fa-angle-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
