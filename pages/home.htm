@@ -6,6 +6,14 @@ child_of = "mey_no_parent"
 hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 3
+noPostsMessage = "Записей не найдено"
+sortOrder = "published_at desc"
+categoryPage = "allstoreshtml"
+postPage = "allstoreshtml"
 ==
 <div class="slider">
 	<div class="top-slider owl-carousel owl-theme">
@@ -2000,44 +2008,11 @@ crumb_disabled = 0
 				<a href="javascript:" class="btn btn-kervan longer">Скачать</a>
 			</div>
 		</div>
+		
 		<div class="faq">
-			<h2>faq</h2>
-			<ul class="faq-list row">
-				<li class="faq-item col-4">
-					<div class="faq-item-img">
-						<img src="{{'assets/dist/img/faq_1.png' | theme}}" alt="faq_1"/>
-					</div>
-					<div class="faq-item-headline">
-						<h6>Желания должны сбываться</h6>
-					</div>
-					<div class="faq-item-text">
-						<p>Даже за минуту до Нового года</p>
-					</div>
-				</li>
-				<li class="faq-item col-4">
-					<div class="faq-item-img">
-						<img src="{{'assets/dist/img/faq_2.png' | theme}}" alt="faq_2"/>
-					</div>
-					<div class="faq-item-headline">
-						<h6>Аутлет в центре Москвы</h6>
-					</div>
-					<div class="faq-item-text">
-						<p>Здесь, на площади в 1000 кв. метров, вас ждут 500 любимых марок с самыми большими скидками.</p>
-					</div>
-				</li>
-				<li class="faq-item col-4">
-					<div class="faq-item-img">
-						<img src="{{'assets/dist/img/faq_3.png' | theme}}" alt="faq_3"/>
-					</div>
-					<div class="faq-item-headline">
-						<h6>Ювелирные изделия James st</h6>
-					</div>
-					<div class="faq-item-text">
-						<p>Даже за минуту до Нового года</p>
-					</div>
-				</li>
-			</ul>
+			{% partial 'home/last-news' component=blogPosts %}
 		</div>
+		
 	</div>
 </div>
 
