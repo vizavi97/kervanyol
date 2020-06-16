@@ -221,7 +221,7 @@
             -moz-appearance: none;
             -webkit-appearance: none;
             appearance: none;
-            background-image: url("../../img/arrow-down.png");
+            background-image: url("../img/arrow-down.png");
             background-repeat: no-repeat, repeat;
             padding: .5rem 3rem .5rem 1rem;
             background-position: right 1rem top 50%, 0 0;
@@ -669,7 +669,7 @@
           -moz-appearance: none;
           -webkit-appearance: none;
           appearance: none;
-          background-image: url("../../img/arrow-down.png");
+          background-image: url("../img/arrow-down.png");
           background-repeat: no-repeat, repeat;
           padding: .5rem 3rem .5rem 1rem;
           background-position: right 1rem top 50%, 0 0;
@@ -998,7 +998,7 @@
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        background-image: url("../../img/arrow-down.png");
+        background-image: url("../img/arrow-down.png");
         background-repeat: no-repeat, repeat;
         padding: .5rem 3rem .5rem 1rem;
         background-position: right 1rem top 50%, 0 0;
@@ -1103,21 +1103,21 @@
           right: 0rem;
           top: 1.5rem;
           content: '';
-          background: url("../../img/cabinet/cabinet-declaration/new.png") no-repeat right;
+          background: url("../img/cabinet/cabinet-declaration/new.png") no-repeat right;
         }
 
         &.not-payed:after {
-          background: url("../../img/cabinet/cabinet-declaration/not-payed.png") no-repeat right;
+          background: url("../img/cabinet/cabinet-declaration/not-payed.png") no-repeat right;
 
         }
 
         &.in-process:after {
-          background: url("../../img/cabinet/cabinet-declaration/in-proccess.png") no-repeat right;
+          background: url("../img/cabinet/cabinet-declaration/in-proccess.png") no-repeat right;
 
         }
 
         &.done:after {
-          background: url("../../img/cabinet/cabinet-declaration/done.png") no-repeat right;
+          background: url("../img/cabinet/cabinet-declaration/done.png") no-repeat right;
 
         }
       }
@@ -1236,7 +1236,7 @@
         background: transparent;
         font-size: 16px;
         font-weight: 400;
-        background-image: url("../../img/arrow-down.png");
+        background-image: url("../img/arrow-down.png");
         background-repeat: no-repeat, repeat;
         background-position: right .7em top 50%, 0 0;
         cursor: pointer;
@@ -1653,7 +1653,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
-          background: url("../../img/cabinet/cabinet-coupons/check.png");
+          background: url("../img/cabinet/cabinet-coupons/check.png");
           background-size: cover;
           box-shadow: 0px -3px 20px 1px rgba(25, 25, 25, .05);
           cursor: pointer;
@@ -2909,7 +2909,7 @@
           -moz-appearance: none;
           -webkit-appearance: none;
           appearance: none;
-          background-image: url("../../img/arrow-down.png");
+          background-image: url("../img/arrow-down.png");
           background-repeat: no-repeat, repeat;
           padding: .5rem 3rem .5rem 1rem;
           background-position: right 1rem top 50%, 0 0;
