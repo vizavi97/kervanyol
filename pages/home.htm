@@ -6,6 +6,14 @@ child_of = "mey_no_parent"
 hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 3
+noPostsMessage = "Записей не найдено"
+sortOrder = "published_at desc"
+categoryPage = "allstoreshtml"
+postPage = "allstoreshtml"
 ==
 <div class="slider">
 	<div class="top-slider owl-carousel owl-theme">
@@ -137,35 +145,39 @@ crumb_disabled = 0
 				<div class="banners-bottom-sides row">
 					<div class="col-12 col-lg-5">
 						<ul class="banners-bottom-left-items">
-							<li class="banners-bottom-left-item top" style="
-                background: url('{{"assets/dist/img/Iphone.png" | theme }}') no-repeat left;
-                background-color: #bce7f0;
-                background-size: contain;
-                background-position: 20px 20px;
-              ">
+							<li
+									class="banners-bottom-left-item top"
+									style="
+                        background: url('{{'assets/dist/img/Iphone.png' | theme}}') no-repeat left;
+                        background-color: #bce7f0;
+                        background-size: contain;
+                        background-position: 20px 20px;
+                      "
+							>
 								<div class="banners-bottom-left-item-text">
 									<h4>Iphone 11 pro max</h4>
 									<h3>-50%</h3>
 								</div>
 								<div class="banners-bottom-left-item-btn">
-									<a href="javascript:">
-										<img src="{{'assets/dist/img/icon_basket.png' | theme}}" alt="basket"/>
-										<span>Купить</span></a>
+									<a href="javascript:"><img src="{{'assets/dist/img/icon_basket.png' | theme}}" alt="basket" /> <span>Купить</span></a>
 								</div>
 							</li>
-							<li class="banners-bottom-left-item bottom" style="
-                background: url('{{"assets/dist/img/card-girl.png" | theme}}') no-repeat right;
-                background-color: #dec8f3;
-                background-size: contain;
-              ">
+							<li
+									class="banners-bottom-left-item bottom"
+									style="
+                        background: url('{{'assets/dist/img/card-girl.png' | theme}}') no-repeat right;
+                        background-color: #dec8f3;
+                        background-size: contain;
+                      "
+							>
 								<div class="banners-bottom-left-item-text">
-									<h4>Коллекция<br/>весна-лето от Zara</h4>
+									<h4>Коллекция<br />весна-лето от Zara</h4>
 									<p>Новая коллекция</p>
 								</div>
 								<div class="banners-bottom-left-item-btn">
-									<a href="javascript:"><span>Перейти</span>
-										<img src="{{'assets/dist/img/right-arr-black.png' | theme}}" alt="basket"/>
-									</a>
+									<a href="javascript:"
+									><span>Перейти</span> <img src="{{'assets/dist/img/right-arr-black.png' | theme }}" alt="basket"
+									/></a>
 								</div>
 							</li>
 						</ul>
@@ -173,25 +185,28 @@ crumb_disabled = 0
 					<div class="col-12 col-lg-7">
 						<ul class="banners-bottom-right-items row">
 							<li class="col-6">
-								<div class="banners-bottom-right-item" style="
-								background: url('{{"assets/dist/img/mainPagebaner1.png" | theme}}') no-repeat top;
-								background-size: cover;" >
-								<a href="javascript:">
-									<div class="banners-bottom-right-item-headline">
-										<h2>Мебель для вас</h2>
-									</div>
-								</a>
+								<div
+										class="banners-bottom-right-item"
+										style="background: url('{{'assets/dist/img/mainPagebaner1.png' | theme }}') no-repeat top; background-size: cover;"
+								>
+									<a href="javascript:"
+									><div class="banners-bottom-right-item-headline"><h2>Мебель для вас</h2></div></a
+									>
+								</div>
+							</li>
+							<li class="col-6">
+								<div
+										class="banners-bottom-right-item"
+										style="background: url('{{'assets/dist/img/mainPagebaner2.png' | theme}}') no-repeat top; background-size: cover;"
+								>
+									<a href="javascript:"
+									><div class="banners-bottom-right-item-headline"><h2>Бытовая техника</h2></div></a
+									>
+								</div>
+							</li>
+						</ul>
 					</div>
-					</li>
-					<li class="col-6">
-						<div class="banners-bottom-right-item" style="background: url('{{"assets/dist/img/mainPagebaner2.png" | theme}}') no-repeat top; background-size: cover;" >
-						<a href="javascript:">
-							<div class="banners-bottom-right-item-headline">
-								<h2>Бытовая техника</h2>
-							</div>
-						</a>
 				</div>
-				</li></ul>
 			</div>
 		</div>
 		<div class="recent-products">
@@ -1993,46 +2008,14 @@ crumb_disabled = 0
 				<a href="javascript:" class="btn btn-kervan longer">Скачать</a>
 			</div>
 		</div>
+		
 		<div class="faq">
-			<h2>faq</h2>
-			<ul class="faq-list row">
-				<li class="faq-item col-4">
-					<div class="faq-item-img">
-						<img src="{{'assets/dist/img/faq_1.png' | theme}}" alt="faq_1"/>
-					</div>
-					<div class="faq-item-headline">
-						<h6>Желания должны сбываться</h6>
-					</div>
-					<div class="faq-item-text">
-						<p>Даже за минуту до Нового года</p>
-					</div>
-				</li>
-				<li class="faq-item col-4">
-					<div class="faq-item-img">
-						<img src="{{'assets/dist/img/faq_2.png' | theme}}" alt="faq_2"/>
-					</div>
-					<div class="faq-item-headline">
-						<h6>Аутлет в центре Москвы</h6>
-					</div>
-					<div class="faq-item-text">
-						<p>Здесь, на площади в 1000 кв. метров, вас ждут 500 любимых марок с самыми большими скидками.</p>
-					</div>
-				</li>
-				<li class="faq-item col-4">
-					<div class="faq-item-img">
-						<img src="{{'assets/dist/img/faq_3.png' | theme}}" alt="faq_3"/>
-					</div>
-					<div class="faq-item-headline">
-						<h6>Ювелирные изделия James st</h6>
-					</div>
-					<div class="faq-item-text">
-						<p>Даже за минуту до Нового года</p>
-					</div>
-				</li>
-			</ul>
+			{% partial 'home/last-news' component=blogPosts %}
 		</div>
+		
 	</div>
 </div>
+
 <div class="subscribe">
 	<div class="container">
 		<div class="subscribe-container">
