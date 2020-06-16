@@ -46,6 +46,7 @@
   -webkit-transform: translate3d(0, 0, 0);
   -ms-touch-action: pan-y;
   touch-action: pan-y;
+  border: rem(1) solid #dfe3eb;
 }
 
 figure.mz-figure {
@@ -1569,10 +1570,13 @@ a[data-zoom-id] img,
   flex-direction: row;
   overflow-y: hidden;
   overflow-x: scroll;
+  border: rem(1) solid #dfe3eb;
 }
 
 .selectors .mz-thumb img {
   max-width: 56px;
+  height: 56px;
+  object-fit: cover;
 }
 
 .app-code-sample {
