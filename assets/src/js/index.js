@@ -4,6 +4,7 @@ import 'owl.carousel2/dist/owl.carousel'
 import EmojiButton from '@joeattardi/emoji-button'
 import Swiper from "swiper";
 import './inputPhone';
+import './zoomple';
 import './app';
 import categories from '../json/categories'
 
