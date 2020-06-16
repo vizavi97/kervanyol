@@ -104,7 +104,7 @@
       display: flex;
       flex-direction: column;
       padding: 1rem;
-      .catalog-container-item{
+      .product-item{
         width: 100%;
         margin: 0 0 1.5rem;
         border: rem(1) solid #DFE3EB;
@@ -891,7 +891,7 @@
         }
       }
     }
-    .catalog-container-item{
+    .product-item{
       @include col();
       @include size(2.4);
       @include size-lg(3);

@@ -322,7 +322,7 @@
 
   &-items {
     padding-bottom: rem(80);
-    .catalog-container-item{
+    .product-item{
       @include col();
       @include size(2.4);
       @include size-lg(3);

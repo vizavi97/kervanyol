@@ -104,7 +104,7 @@ if (popularProductsWrapper) {
 document.addEventListener('DOMContentLoaded', () => {
   const cubeToggler = document.querySelector('.catalog-container-toggler-cube');
   const lineToggler = document.querySelector('.catalog-container-toggler-line');
-  const toogleWrapper = document.querySelector('.catalog-container-items');
+  const toogleWrapper = document.querySelector('.product-container');
   if (cubeToggler) {
     cubeToggler.addEventListener('click', () => {
       cubeToggler.classList.add('active');

@@ -164,6 +164,7 @@ header {
 
 .nav-exim {
   background: white;
+
   &-container {
     display: flex;
     align-items: center;
@@ -377,10 +378,11 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    @include md-block(){
+    @include md-block() {
       overflow-x: hidden;
     }
   }
+
   //NAV-TOP
   &-top {
     display: flex;
@@ -485,6 +487,7 @@ header {
       background: white;
       border-radius: 5px;
       z-index: 100;
+
       a {
         padding: rem(10) rem(40);
         display: block;
@@ -492,13 +495,16 @@ header {
         font-size: rem(14);
         font-weight: 400;
         text-decoration: none;
+
         &:hover {
           background: #E9EEF7;
         }
+
         &:first-letter {
           font-weight: 600;
         }
       }
+
       &.show {
         display: block;
       }
@@ -958,4 +964,242 @@ footer {
       white-space: nowrap;
     }
   }
+}
+
+
+// product-item
+.product-container {
+  width: 100%;
+  @include row-flex();
+  padding-top: 1rem;
+
+  &.line {
+    & > li {
+      width: auto;
+      display: grid;
+      grid-template-areas:
+              "img desc cost"
+              "img stars fav";
+      grid-template-rows: 3fr 2fr;
+      grid-template-columns: 1fr 3fr 2.25fr;
+      grid-gap: .5rem .625rem;
+      padding: .5rem;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+
+    .product-item-img {
+      grid-area: img;
+      min-height: auto;
+      justify-content: flex-start;
+
+      img {
+        max-height: none;
+      }
+    }
+
+    .product-item-name {
+      display: block;
+    }
+
+    .product-item-desc {
+      grid-area: desc;
+      display: flex;
+    }
+
+    .product-item-cost {
+      grid-area: cost;
+
+      & > span {
+        font-size: 18px;
+      }
+
+      & > strong {
+        padding-left: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+
+    .product-item-favourite {
+      display: flex;
+    }
+  }
+}
+
+.product-item {
+  @include col();
+  @include size(3);
+  background-color: #fff;
+  box-shadow: 0 16px 50px #E9EEF780;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  padding: .75rem;
+
+  &:hover {
+    box-shadow: 0 0 1px 1px #bccbd9;
+  }
+
+  &:before {
+    position: absolute;
+    display: none;
+    top: 1rem;
+    left: 1rem;
+    content: 'Sale';
+    background-color: #ff2600;
+    padding: .25rem .5rem;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  &:after {
+    position: absolute;
+    display: none;
+    top: 1rem;
+    right: 1rem;
+    content: 'New';
+    background-color: #68d20b;
+    padding: .25rem .5rem;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  &.new {
+    &:after {
+      display: block;
+    }
+  }
+
+  &.sale {
+    &:before {
+      display: block;
+    }
+  }
+
+  &-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 180px;
+
+    img {
+      max-height: 176px;
+      object-fit: contain;
+    }
+  }
+
+  &-name {
+    padding-top: 13px;
+
+    a {
+      color: #000000;
+      font-size: rem(14);
+      font-weight: 500;
+    }
+  }
+
+  &-desc {
+    display: none;
+    padding-top: 8px;
+
+    p {
+      color: #000000;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  &-brand {
+    a {
+      color: #636363;
+      font-size: 11px;
+      font-weight: 300;
+    }
+  }
+
+  &-cost {
+    span {
+      color: #ff6f55;
+
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    strong {
+      color: #bfbfbf;
+      font-size: 10px;
+      font-weight: 400;
+      text-decoration: line-through;
+    }
+  }
+
+  &-send {
+    margin-bottom: 10px;
+
+    span {
+      color: #636363;
+      font-size: 11px;
+      font-weight: 400;
+    }
+  }
+
+  &-period {
+    background-color: #ff6f55;
+    border-radius: 10px;
+    padding: .25rem .5rem;
+
+    span {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  &-favourite {
+    padding-top: 8px;
+    display: none;
+
+    a {
+      align-items: center;
+      display: flex;
+
+      &.active {
+        svg {
+          path {
+            fill: #ff6f55;
+            stroke: #ff6f55;
+
+          }
+        }
+
+        span {
+          color: black;
+        }
+      }
+    }
+
+    span {
+      color: #636363;
+      font-size: 11px;
+      font-weight: 400;
+      padding-left: 11px;
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: #ff6f55;
+        }
+      }
+    }
+  }
+
+  @include size-md(6);
 }

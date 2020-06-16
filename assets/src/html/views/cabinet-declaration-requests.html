@@ -264,21 +264,11 @@
 											<ul class="main-certificates">
 												<li class="cabinet-register-container-form-addFile-item">
 													<label>
-														<div class="addFile-inner disabled" style="background: url('../../img/card-girl.png') no-repeat center; background-size: cover">
-															<img src="img/data-falling/plus.png" alt="plus">
-															<span>Загрузить</span>
-														</div>
-														<input type="file" class="addedPhotoAll" disabled>
-														<em class="hidden">замена изображения</em>
-													</label>
-												</li>
-												<li class="cabinet-register-container-form-addFile-item">
-													<label>
 														<div class="addFile-inner">
 															<img src="img/data-falling/plus.png" alt="plus">
 															<span>Загрузить</span>
 														</div>
-														<input type="file" class="addedPhotoAll">
+														<input type="file" onchange="window.readURL(this)">
 														<em class="hidden">замена изображения</em>
 													</label>
 												</li>
@@ -291,7 +281,7 @@
 															<img src="img/data-falling/plus.png" alt="plus">
 															<span>Загрузить</span>
 														</div>
-														<input type="file" class="addedPhotoAll" data-name="additional">
+														<input type="file" onchange="window.readURL(this)" data-name="additional">
 														<em class="hidden">замена изображения</em>
 													</label>
 												</li>
