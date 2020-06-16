@@ -259,3 +259,19 @@ uploadProductFile ? uploadProductFile.addEventListener("change", (e) => {
   const uploadProductFileLabel = document.getElementById('uploadProductFileLabel');
   uploadProductFileLabel.innerHTML = e.target.value;
 }) : null;
+
+
+
+const menuToggle = document.getElementById('menuToggle');
+
+menuToggle ? menuToggle.addEventListener('input', () => {
+  const allCategories = document.getElementById('allCategories');
+  if (menuToggle.checked) {
+    allCategories.classList.add('show');
+    document.body.classList.add('overflow')
+  }
+  else {
+    allCategories.classList.remove('show');
+    document.body.classList.remove('overflow')
+  }
+}) : null;
