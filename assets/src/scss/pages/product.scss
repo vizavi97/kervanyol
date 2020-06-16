@@ -104,131 +104,13 @@
       display: flex;
       flex-direction: column;
       padding: 1rem;
-    }
-
-    &-item {
-      width: 100%;
-      border-radius: 5px;
-      margin-bottom: 1rem;
-      border: 1px solid #dfe3eb;
-      background-color: #ffffff;
-      padding-bottom: 1rem;
-      @include size-sm(6);
-
-      & > div {
-        padding: 0 .75rem;
-      }
-
-      &-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: white;
-        border-radius: 10px;
-        padding: .75rem 0 .75rem !important;
-        min-height: 225px;
-
-        img {
-          object-fit: contain;
-        }
-      }
-
-      &-name {
-        padding-top: 13px;
-
-        a {
-          color: #000000;
-          font-size: rem(14);
-          font-weight: 500;
-        }
-      }
-
-      &-brand {
-        a {
-          color: #636363;
-          font-size: 11px;
-          font-weight: 300;
-        }
-      }
-
-      &-cost {
-        span {
-          color: #ff6f55;
-          font-size: rem(18);
-          letter-spacing: -1px;
-          font-weight: 500;
-          text-transform: uppercase;
-        }
-
-        strong {
-          color: #bfbfbf;
-          font-size: 10px;
-          font-weight: 400;
-          text-transform: uppercase;
-          text-decoration: line-through;
-        }
-      }
-
-      &-send {
-        span {
-          color: #636363;
-          font-size: 11px;
-          font-weight: 400;
-        }
-      }
-
-      &-period {
-        background-color: #ff6f55;
-        border-radius: 10px;
-        padding: .25rem .5rem;
-
-        span {
-          color: #ffffff;
-          font-size: 14px;
-          font-weight: 400;
-        }
-      }
-
-      &-favourite {
-        padding-top: 8px;
-        display: none;
-
-        a {
-          align-items: center;
-          display: flex;
-
-          &.active {
-            svg {
-              path {
-                fill: #ff6f55;
-                stroke: #ff6f55;
-
-              }
-            }
-
-            span {
-              color: black;
-            }
-          }
-        }
-
-        span {
-          color: #636363;
-          font-size: 11px;
-          font-weight: 400;
-          padding-left: 11px;
-        }
-
-        &:hover {
-          svg {
-            path {
-              fill: #ff6f55;
-            }
-          }
-        }
+      .catalog-container-item{
+        width: 100%;
+        margin: 0 0 1.5rem;
+        border: rem(1) solid #DFE3EB;
+        box-shadow: none;
       }
     }
-
   }
 
   &-card {
