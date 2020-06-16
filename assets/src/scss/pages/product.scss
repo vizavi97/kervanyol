@@ -589,35 +589,38 @@
         width: calc(50% - 30px);
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        color: #9ea6b0;
+        //color: #9ea6b0;
         font-family: "Montserrat";
         font-size: rem(14);
         font-weight: 500;
         padding-bottom: 1.25rem;
 
+        .points {
+          margin: rem(3) .25rem 0;
+          border:none;
+          border-top: 2px dotted #5f616438;
+          color:#fff;
+          background-color:#fff;
+          height:auto;
+          width:50%;
+        }
+
         p {
+          white-space: nowrap;
           margin-bottom: 0;
+          color: #999;
         }
 
         em {
+          white-space: nowrap;
           display: flex;
           align-items: center;
-          padding-left: 3.5rem;
           color: #0f1016;
           font-style: normal;
           font-size: 1rem;
           font-weight: 600;
-          position: relative;
-
-          &:before {
-            position: absolute;
-            display: block;
-            left: 1.5rem;
-            font-size: 1.5rem;
-            color: #9ea6b0;
-            content: '•';
-          }
         }
       }
     }
