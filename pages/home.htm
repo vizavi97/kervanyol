@@ -11,9 +11,9 @@ crumb_disabled = 0
 pageNumber = "{{ :page }}"
 postsPerPage = 3
 noPostsMessage = "Записей не найдено"
-sortOrder = "published_at desc"
-categoryPage = "allstoreshtml"
-postPage = "allstoreshtml"
+sortOrder = "updated_at asc"
+categoryPage = "blog/detailt"
+postPage = "blog/detailt"
 ==
 <div class="slider">
 	<div class="top-slider owl-carousel owl-theme">
@@ -2009,9 +2009,11 @@ postPage = "allstoreshtml"
 			</div>
 		</div>
 		
+		
 		<div class="faq">
-			{% partial 'home/last-news' component=blogPosts %}
+			{% partial 'home/last-news' component=blogPosts  %}
 		</div>
+		
 		
 	</div>
 </div>

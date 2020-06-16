@@ -1,4 +1,6 @@
 description = "Layout of marketplace"
+
+[CategoryList]
 ==
 <!DOCTYPE html>
 <html lang="ru">
@@ -11,7 +13,7 @@ description = "Layout of marketplace"
   </head>
   <body>
     <header>
-      {% partial 'home/header' %}
+      {% partial 'home/header' component=CategoryList %}
     </header>
     
 	<main class="content {{pageClass}}">

@@ -8,10 +8,14 @@
 	{% for post in posts %}
 		<li class="faq-item col-4">
 			<div class="faq-item-img">
-				
+				<a href="{{post.url}}">
+					<img src="{{ post.featured_images[0].thumb(360, 200) }}">
+				</a>
 			</div>
 			<div class="faq-item-headline">
-				<h6> {{ post.title }} </h6>
+				<a href="{{post.url}}">
+					<h6> {{ post.title }} </h6>
+				</a>
 			</div>
 			<div class="faq-item-text">
 				<p>{{ post.summary|raw }}</p>
