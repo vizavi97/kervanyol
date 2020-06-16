@@ -22,60 +22,50 @@ $(document).ready(function () {
     });
 });
 // cabinet-account-load-photo
-$(".addedPhoto").change(function () {
-    loadPhotoURL(this);
-
-    function loadPhotoURL(input) {
-        if (input.files && input.files[0]) {
-            let reader = new FileReader();
-            reader.onload = function (e) {
-                input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
-                input.previousElementSibling.innerHTML = ' ';
-            };
-            reader.readAsDataURL(input.files[0]);
-            document.getElementsByClassName('')
-        }
+window.loadPhotoURL = function loadPhotoURL(input) {
+    if (input.files && input.files[0]) {
+        let reader = new FileReader();
+        reader.onload = function (e) {
+            input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
+            input.previousElementSibling.innerHTML = ' ';
+        };
+        reader.readAsDataURL(input.files[0]);
+        document.getElementsByClassName('')
     }
-});
-// all photo loading
-$(".addedPhotoAll").change(function () {
-    readURL(this);
+};
 
-    function readURL(input) {
-        let rel = Number(input.getAttribute('rel'));
-        const nameInput = input.getAttribute('data-name');
-        if (input.files && input.files[0]) {
-            let reader = new FileReader();
-            reader.onload = function (e) {
-                input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
-                input.previousElementSibling.innerHTML = ' ';
-                input.nextElementSibling.classList.remove('hidden');
-            };
-            reader.readAsDataURL(input.files[0]);
-            document.getElementsByClassName('')
-        }
-        rel++;
-        const wrapper = input.parentElement.parentElement.parentElement;
-        if (!input.parentElement.parentElement.nextElementSibling) {
-            let htmlSection = `
+// all photo loading
+window.readURL = function readURL(input) {
+    let rel = Number(input.getAttribute('rel'));
+    const nameInput = input.getAttribute('data-name');
+    if (input.files && input.files[0]) {
+        let reader = new FileReader();
+        reader.onload = function (e) {
+            input.previousElementSibling.style.backgroundImage = `url(${e.target.result})`;
+            input.previousElementSibling.innerHTML = ' ';
+            input.nextElementSibling.classList.remove('hidden');
+        };
+        reader.readAsDataURL(input.files[0]);
+        document.getElementsByClassName('')
+    }
+    rel++;
+    const wrapper = input.parentElement.parentElement.parentElement;
+    if (!input.parentElement.parentElement.nextElementSibling) {
+        let htmlSection = `
 			<li class="cabinet-register-container-form-addFile-item">
 			 <label>
 			   <div class="addFile-inner">
 			       <img src="img/data-falling/plus.png" alt="plus">
 			       <span>Загрузить</span>
 			   </div>
-			   <input type="file"
-			    onchange="readURL(this)"
-			     rel="${rel}"
-			     name='${nameInput}[${rel}]'>
+			   <input type="file" onchange="readURL(this)" rel="${rel}" name='${nameInput}[${rel}]'>
 			   <em class="hidden">замена изображения</em>
 			 </label>
 			 <a href="javascript:" class="remove-container" onclick="this.parentElement.remove()">&times;</a>
 			</li>`;
-            wrapper.insertAdjacentHTML("beforeend", htmlSection);
-        }
+        wrapper.insertAdjacentHTML("beforeend", htmlSection);
     }
-});
+}
 
 // cabinet-declaration add form
 const declarationinputsWrapper = document.getElementById('declaration-input-wrapper');
