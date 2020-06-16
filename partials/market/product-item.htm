@@ -1,0 +1,64 @@
+[viewBag]
+==
+<li class="catalog-container-item">
+	<div class="catalog-container-item-img">
+		<a href="/product.html">
+			<img src="{{ item.preview_image.getThumb(300, 300, {mode: 'auto'}) }}" alt="product-1" />
+		</a>
+	</div>
+	
+ 	<div class="catalog-container-item-name">
+ 		<a href="javascript:"> {{ item.name }} </a>
+ 	</div>
+ 	
+	<div class="catalog-container-item-desc">
+		<a href="javascript:">
+			Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+			MT6763 Octa Core 2. 0GHz
+		</a>
+	</div>
+	
+	<div class="catalog-container-item-cost">
+    	<span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+    	<div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+    	<div class="catalog-container-item-favourite">
+      		<a href="javascript:" onclick="this.classList.toggle('active')">
+      			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+		          <g>
+		            <g>
+		              <path
+		                fill="none"
+		                stroke="#636363"
+		                stroke-linecap="round"
+		                stroke-linejoin="round"
+		                stroke-miterlimit="20"
+		                d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"
+		              />
+		            </g>
+		          </g>
+		        </svg>
+				<span>Добавить в "Мои желания"</span>
+			</a>
+		</div>
+	</div>
+	
+	<div class="catalog-container-item-rating">
+    	<div class="star-rating__stars">
+			<input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1" />
+			<label class="star-rating__label" for="rating-1" aria-label="One"></label>
+			<input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2" />
+			<label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+			<input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3" />
+			<label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+			<input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4" />
+			<label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+			<input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5" />
+			<label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+			<div class="star-rating__focus"></div>
+    	</div>
+    	
+		<div class="catalog-container-item-brand">
+			<a href="javascript:">ANMONE OfficalFlagship Store</a>
+		</div>
+	</div>
+</li>

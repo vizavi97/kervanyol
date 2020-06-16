@@ -1,0 +1,19 @@
+[viewBag]
+==
+{% if pagination.hasPages %}
+	<ul class="catalog-container-pageNavigation-items">
+		
+		{% set from = pagination.currentPage > 10 ? (pagination.currentPage - 5) : 1 %}
+        {% set to = pagination.currentPage > 10 ? (pagination.currentPage + 5) : 10 %}
+        
+        {% for page in range(from, to) %}
+            <li class="catalog-container-pageNavigation-item {{ pagination.currentPage == page ? 'active' }}">
+                <a href="{{ pagination.url(page) }}">{{ page }}</a>
+            </li>
+        {% endfor %}
+		
+		<li class="catalog-container-pageNavigation-item">
+			<a href="javascript:"><i class="fas fa-angle-right"></i></a>
+		</li>
+	</ul>
+{% endif %}
