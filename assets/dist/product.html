@@ -650,7 +650,13 @@
                       <a
                         id="Zoom-1"
                         class="MagicZoom"
-                        data-options="variableZoom: true; lazyZoom: true; rightClick: true; selectorTrigger: hover;"
+                        data-options="textHoverZoomHint: Наведите чтобы увеличить;
+                                       textClickZoomHint: нажмите чтобы увеличит;
+                                       textExpandHint: нажмите чтобы открыть отдельно;
+                                       variableZoom: true;
+                                       lazyZoom: true;
+                                       rightClick: true;
+                                       selectorTrigger: hover;"
                         href="img/product/huawei-p30.png"
                         data-zoom-image-2x="img/product/huawei-p30.png 2x"
                         data-image-2x="img/product/huawei-p30.png -2x"
@@ -847,7 +853,7 @@
                   </li>
                 </ul>
                 <div class="tab-content">
-                  <div class="tab-pane" id="home" role="tabpanel">
+                  <div class="tab-pane fade" id="home" role="tabpanel">
                     <div class="product-tab-info">
                       <div class="product-tab-info-banner"><img src="img/product/banner-2.png" alt="" /></div>
                       <div class="product-tab-info-banner"><img src="img/product/banner-3.png" alt="" /></div>
@@ -877,7 +883,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane" id="profile" role="tabpanel">
+                  <div class="tab-pane fade active show" id="profile" role="tabpanel">
                     <div class="product-tab-reviews">
                       <div class="product-tab-reviews-headline"><h5>Отзывы (90)</h5></div>
                       <div class="product-tab-reviews-container">
@@ -1299,7 +1305,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane active" id="messages" role="tabpanel">
+                  <div class="tab-pane fade" id="messages" role="tabpanel">
                     <div class="product-tab-properties">
                       <ul class="product-tab-properties-items">
                         <li class="product-tab-properties-item">
@@ -1449,16 +1455,41 @@
               </div>
               <div class="product-store-headline"><h5>Лучшие товары магазина</h5></div>
               <ul class="product-store-items">
-                <li class="product-store-item">
-                  <div class="product-store-item-img">
-                    <a href="/product.html"><img src="./img/product/product-side.png" alt="product-1" /></a>
+                <li class="catalog-container-item">
+                  <div class="catalog-container-item-img">
+                    <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                   </div>
-                  <div class="product-store-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                  <div class="product-store-item-cost">
+                  <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                  <div class="catalog-container-item-desc">
+                    <a href="javascript:"
+                      >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                      MT6763 Octa Core 2. 0GHz</a
+                    >
+                  </div>
+                  <div class="catalog-container-item-cost">
                     <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                    <div class="product-store-item-send"><span>Отправка: 141 000 UZS</span></div>
+                    <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                    <div class="catalog-container-item-favourite">
+                      <a href="javascript:" onclick="this.classList.toggle('active')"
+                        ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                          <g>
+                            <g>
+                              <path
+                                fill="none"
+                                stroke="#636363"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-miterlimit="20"
+                                d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                        <span>Добавить в "Мои желания"</span></a
+                      >
+                    </div>
                   </div>
-                  <div class="product-store-item-rating">
+                  <div class="catalog-container-item-rating">
                     <ul class="stars">
                       <li class="star active"><i class="fas fa-star"></i></li>
                       <li class="star active"><i class="fas fa-star"></i></li>
@@ -1466,19 +1497,46 @@
                       <li class="star active"><i class="fas fa-star"></i></li>
                       <li class="star"><i class="fas fa-star"></i></li>
                     </ul>
-                    <div class="product-store-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
+                    <div class="catalog-container-item-brand">
+                      <a href="javascript:">ANMONE OfficalFlagship Store</a>
+                    </div>
                   </div>
                 </li>
-                <li class="product-store-item">
-                  <div class="product-store-item-img">
-                    <a href="/product.html"><img src="./img/product/product-side.png" alt="product-1" /></a>
+                <li class="catalog-container-item">
+                  <div class="catalog-container-item-img">
+                    <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                   </div>
-                  <div class="product-store-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                  <div class="product-store-item-cost">
+                  <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                  <div class="catalog-container-item-desc">
+                    <a href="javascript:"
+                      >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                      MT6763 Octa Core 2. 0GHz</a
+                    >
+                  </div>
+                  <div class="catalog-container-item-cost">
                     <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                    <div class="product-store-item-send"><span>Отправка: 141 000 UZS</span></div>
+                    <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                    <div class="catalog-container-item-favourite">
+                      <a href="javascript:" onclick="this.classList.toggle('active')"
+                        ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                          <g>
+                            <g>
+                              <path
+                                fill="none"
+                                stroke="#636363"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-miterlimit="20"
+                                d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                        <span>Добавить в "Мои желания"</span></a
+                      >
+                    </div>
                   </div>
-                  <div class="product-store-item-rating">
+                  <div class="catalog-container-item-rating">
                     <ul class="stars">
                       <li class="star active"><i class="fas fa-star"></i></li>
                       <li class="star active"><i class="fas fa-star"></i></li>
@@ -1486,19 +1544,46 @@
                       <li class="star active"><i class="fas fa-star"></i></li>
                       <li class="star"><i class="fas fa-star"></i></li>
                     </ul>
-                    <div class="product-store-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
+                    <div class="catalog-container-item-brand">
+                      <a href="javascript:">ANMONE OfficalFlagship Store</a>
+                    </div>
                   </div>
                 </li>
-                <li class="product-store-item">
-                  <div class="product-store-item-img">
-                    <a href="/product.html"><img src="./img/product/product-side.png" alt="product-1" /></a>
+                <li class="catalog-container-item">
+                  <div class="catalog-container-item-img">
+                    <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                   </div>
-                  <div class="product-store-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                  <div class="product-store-item-cost">
+                  <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                  <div class="catalog-container-item-desc">
+                    <a href="javascript:"
+                      >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                      MT6763 Octa Core 2. 0GHz</a
+                    >
+                  </div>
+                  <div class="catalog-container-item-cost">
                     <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                    <div class="product-store-item-send"><span>Отправка: 141 000 UZS</span></div>
+                    <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                    <div class="catalog-container-item-favourite">
+                      <a href="javascript:" onclick="this.classList.toggle('active')"
+                        ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                          <g>
+                            <g>
+                              <path
+                                fill="none"
+                                stroke="#636363"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-miterlimit="20"
+                                d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                        <span>Добавить в "Мои желания"</span></a
+                      >
+                    </div>
                   </div>
-                  <div class="product-store-item-rating">
+                  <div class="catalog-container-item-rating">
                     <ul class="stars">
                       <li class="star active"><i class="fas fa-star"></i></li>
                       <li class="star active"><i class="fas fa-star"></i></li>
@@ -1506,19 +1591,46 @@
                       <li class="star active"><i class="fas fa-star"></i></li>
                       <li class="star"><i class="fas fa-star"></i></li>
                     </ul>
-                    <div class="product-store-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
+                    <div class="catalog-container-item-brand">
+                      <a href="javascript:">ANMONE OfficalFlagship Store</a>
+                    </div>
                   </div>
                 </li>
-                <li class="product-store-item">
-                  <div class="product-store-item-img">
-                    <a href="/product.html"><img src="./img/product/product-side.png" alt="product-1" /></a>
+                <li class="catalog-container-item">
+                  <div class="catalog-container-item-img">
+                    <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                   </div>
-                  <div class="product-store-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                  <div class="product-store-item-cost">
+                  <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                  <div class="catalog-container-item-desc">
+                    <a href="javascript:"
+                      >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                      MT6763 Octa Core 2. 0GHz</a
+                    >
+                  </div>
+                  <div class="catalog-container-item-cost">
                     <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                    <div class="product-store-item-send"><span>Отправка: 141 000 UZS</span></div>
+                    <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                    <div class="catalog-container-item-favourite">
+                      <a href="javascript:" onclick="this.classList.toggle('active')"
+                        ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                          <g>
+                            <g>
+                              <path
+                                fill="none"
+                                stroke="#636363"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-miterlimit="20"
+                                d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                        <span>Добавить в "Мои желания"</span></a
+                      >
+                    </div>
                   </div>
-                  <div class="product-store-item-rating">
+                  <div class="catalog-container-item-rating">
                     <ul class="stars">
                       <li class="star active"><i class="fas fa-star"></i></li>
                       <li class="star active"><i class="fas fa-star"></i></li>
@@ -1526,7 +1638,9 @@
                       <li class="star active"><i class="fas fa-star"></i></li>
                       <li class="star"><i class="fas fa-star"></i></li>
                     </ul>
-                    <div class="product-store-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
+                    <div class="catalog-container-item-brand">
+                      <a href="javascript:">ANMONE OfficalFlagship Store</a>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -1536,16 +1650,22 @@
             <div class="product-recommended-headline">
               <div class="product-recommended-headline-inner"><h6>Специально для вас</h6></div>
             </div>
-            <ul class="product-recommended-items">
-              <li class="product-recommended-item">
-                <div class="product-recommended-item-img">
-                  <a href="javascript:"><img src="./img/product/product-collection-1.png" alt="product-1" /></a>
+            <ul class="catalog-container-items cube">
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                 </div>
-                <div class="product-recommended-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                <div class="product-recommended-item-cost">
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                  <div class="product-recommended-item-send"><span>Отправка: 141 000 UZS</span></div>
-                  <div class="product-recommended-item-favourite">
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
                     <a href="javascript:" onclick="this.classList.toggle('active')"
                       ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
                         <g>
@@ -1565,7 +1685,7 @@
                     >
                   </div>
                 </div>
-                <div class="product-recommended-item-rating">
+                <div class="catalog-container-item-rating">
                   <ul class="stars">
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star active"><i class="fas fa-star"></i></li>
@@ -1573,20 +1693,24 @@
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star"><i class="fas fa-star"></i></li>
                   </ul>
-                  <div class="product-recommended-item-brand">
-                    <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                  </div>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
                 </div>
               </li>
-              <li class="product-recommended-item">
-                <div class="product-recommended-item-img">
-                  <a href="javascript:"><img src="./img/product/product-collection-2.png" alt="product-1" /></a>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                 </div>
-                <div class="product-recommended-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                <div class="product-recommended-item-cost">
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                  <div class="product-recommended-item-send"><span>Отправка: 141 000 UZS</span></div>
-                  <div class="product-recommended-item-favourite">
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
                     <a href="javascript:" onclick="this.classList.toggle('active')"
                       ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
                         <g>
@@ -1606,7 +1730,7 @@
                     >
                   </div>
                 </div>
-                <div class="product-recommended-item-rating">
+                <div class="catalog-container-item-rating">
                   <ul class="stars">
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star active"><i class="fas fa-star"></i></li>
@@ -1614,20 +1738,24 @@
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star"><i class="fas fa-star"></i></li>
                   </ul>
-                  <div class="product-recommended-item-brand">
-                    <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                  </div>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
                 </div>
               </li>
-              <li class="product-recommended-item">
-                <div class="product-recommended-item-img">
-                  <a href="javascript:"><img src="./img/product/product-collection-3.png" alt="product-1" /></a>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                 </div>
-                <div class="product-recommended-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                <div class="product-recommended-item-cost">
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                  <div class="product-recommended-item-send"><span>Отправка: 141 000 UZS</span></div>
-                  <div class="product-recommended-item-favourite">
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
                     <a href="javascript:" onclick="this.classList.toggle('active')"
                       ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
                         <g>
@@ -1647,7 +1775,7 @@
                     >
                   </div>
                 </div>
-                <div class="product-recommended-item-rating">
+                <div class="catalog-container-item-rating">
                   <ul class="stars">
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star active"><i class="fas fa-star"></i></li>
@@ -1655,20 +1783,24 @@
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star"><i class="fas fa-star"></i></li>
                   </ul>
-                  <div class="product-recommended-item-brand">
-                    <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                  </div>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
                 </div>
               </li>
-              <li class="product-recommended-item">
-                <div class="product-recommended-item-img">
-                  <a href="javascript:"><img src="./img/product/product-collection-4.png" alt="product-1" /></a>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                 </div>
-                <div class="product-recommended-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                <div class="product-recommended-item-cost">
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                  <div class="product-recommended-item-send"><span>Отправка: 141 000 UZS</span></div>
-                  <div class="product-recommended-item-favourite">
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
                     <a href="javascript:" onclick="this.classList.toggle('active')"
                       ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
                         <g>
@@ -1688,7 +1820,7 @@
                     >
                   </div>
                 </div>
-                <div class="product-recommended-item-rating">
+                <div class="catalog-container-item-rating">
                   <ul class="stars">
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star active"><i class="fas fa-star"></i></li>
@@ -1696,20 +1828,24 @@
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star"><i class="fas fa-star"></i></li>
                   </ul>
-                  <div class="product-recommended-item-brand">
-                    <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                  </div>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
                 </div>
               </li>
-              <li class="product-recommended-item">
-                <div class="product-recommended-item-img">
-                  <a href="javascript:"><img src="./img/product/product-collection-2.png" alt="product-1" /></a>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                 </div>
-                <div class="product-recommended-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                <div class="product-recommended-item-cost">
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                  <div class="product-recommended-item-send"><span>Отправка: 141 000 UZS</span></div>
-                  <div class="product-recommended-item-favourite">
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
                     <a href="javascript:" onclick="this.classList.toggle('active')"
                       ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
                         <g>
@@ -1729,7 +1865,7 @@
                     >
                   </div>
                 </div>
-                <div class="product-recommended-item-rating">
+                <div class="catalog-container-item-rating">
                   <ul class="stars">
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star active"><i class="fas fa-star"></i></li>
@@ -1737,20 +1873,24 @@
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star"><i class="fas fa-star"></i></li>
                   </ul>
-                  <div class="product-recommended-item-brand">
-                    <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                  </div>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
                 </div>
               </li>
-              <li class="product-recommended-item">
-                <div class="product-recommended-item-img">
-                  <a href="javascript:"><img src="./img/product/product-collection-1.png" alt="product-1" /></a>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                 </div>
-                <div class="product-recommended-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                <div class="product-recommended-item-cost">
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                  <div class="product-recommended-item-send"><span>Отправка: 141 000 UZS</span></div>
-                  <div class="product-recommended-item-favourite">
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
                     <a href="javascript:" onclick="this.classList.toggle('active')"
                       ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
                         <g>
@@ -1770,7 +1910,7 @@
                     >
                   </div>
                 </div>
-                <div class="product-recommended-item-rating">
+                <div class="catalog-container-item-rating">
                   <ul class="stars">
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star active"><i class="fas fa-star"></i></li>
@@ -1778,20 +1918,24 @@
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star"><i class="fas fa-star"></i></li>
                   </ul>
-                  <div class="product-recommended-item-brand">
-                    <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                  </div>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
                 </div>
               </li>
-              <li class="product-recommended-item">
-                <div class="product-recommended-item-img">
-                  <a href="javascript:"><img src="./img/product/product-collection-2.png" alt="product-1" /></a>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                 </div>
-                <div class="product-recommended-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                <div class="product-recommended-item-cost">
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                  <div class="product-recommended-item-send"><span>Отправка: 141 000 UZS</span></div>
-                  <div class="product-recommended-item-favourite">
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
                     <a href="javascript:" onclick="this.classList.toggle('active')"
                       ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
                         <g>
@@ -1811,7 +1955,7 @@
                     >
                   </div>
                 </div>
-                <div class="product-recommended-item-rating">
+                <div class="catalog-container-item-rating">
                   <ul class="stars">
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star active"><i class="fas fa-star"></i></li>
@@ -1819,20 +1963,24 @@
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star"><i class="fas fa-star"></i></li>
                   </ul>
-                  <div class="product-recommended-item-brand">
-                    <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                  </div>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
                 </div>
               </li>
-              <li class="product-recommended-item">
-                <div class="product-recommended-item-img">
-                  <a href="javascript:"><img src="./img/product/product-collection-3.png" alt="product-1" /></a>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                 </div>
-                <div class="product-recommended-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                <div class="product-recommended-item-cost">
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                  <div class="product-recommended-item-send"><span>Отправка: 141 000 UZS</span></div>
-                  <div class="product-recommended-item-favourite">
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
                     <a href="javascript:" onclick="this.classList.toggle('active')"
                       ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
                         <g>
@@ -1852,7 +2000,7 @@
                     >
                   </div>
                 </div>
-                <div class="product-recommended-item-rating">
+                <div class="catalog-container-item-rating">
                   <ul class="stars">
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star active"><i class="fas fa-star"></i></li>
@@ -1860,20 +2008,24 @@
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star"><i class="fas fa-star"></i></li>
                   </ul>
-                  <div class="product-recommended-item-brand">
-                    <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                  </div>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
                 </div>
               </li>
-              <li class="product-recommended-item">
-                <div class="product-recommended-item-img">
-                  <a href="javascript:"><img src="./img/product/product-collection-4.png" alt="product-1" /></a>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                 </div>
-                <div class="product-recommended-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                <div class="product-recommended-item-cost">
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                  <div class="product-recommended-item-send"><span>Отправка: 141 000 UZS</span></div>
-                  <div class="product-recommended-item-favourite">
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
                     <a href="javascript:" onclick="this.classList.toggle('active')"
                       ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
                         <g>
@@ -1893,7 +2045,7 @@
                     >
                   </div>
                 </div>
-                <div class="product-recommended-item-rating">
+                <div class="catalog-container-item-rating">
                   <ul class="stars">
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star active"><i class="fas fa-star"></i></li>
@@ -1901,20 +2053,24 @@
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star"><i class="fas fa-star"></i></li>
                   </ul>
-                  <div class="product-recommended-item-brand">
-                    <a href="javascript:">ANMONE OfficalFlagship Store</a>
-                  </div>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
                 </div>
               </li>
-              <li class="product-recommended-item">
-                <div class="product-recommended-item-img">
-                  <a href="javascript:"><img src="./img/product/product-collection-2.png" alt="product-1" /></a>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
                 </div>
-                <div class="product-recommended-item-name"><a href="/product.html">Air Jordan XXXIV</a></div>
-                <div class="product-recommended-item-cost">
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
-                  <div class="product-recommended-item-send"><span>Отправка: 141 000 UZS</span></div>
-                  <div class="product-recommended-item-favourite">
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
                     <a href="javascript:" onclick="this.classList.toggle('active')"
                       ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
                         <g>
@@ -1934,7 +2090,7 @@
                     >
                   </div>
                 </div>
-                <div class="product-recommended-item-rating">
+                <div class="catalog-container-item-rating">
                   <ul class="stars">
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star active"><i class="fas fa-star"></i></li>
@@ -1942,9 +2098,277 @@
                     <li class="star active"><i class="fas fa-star"></i></li>
                     <li class="star"><i class="fas fa-star"></i></li>
                   </ul>
-                  <div class="product-recommended-item-brand">
-                    <a href="javascript:">ANMONE OfficalFlagship Store</a>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
+                </div>
+              </li>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
+                </div>
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
+                  <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
+                    <a href="javascript:" onclick="this.classList.toggle('active')"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                        <g>
+                          <g>
+                            <path
+                              fill="none"
+                              stroke="#636363"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-miterlimit="20"
+                              d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                      <span>Добавить в "Мои желания"</span></a
+                    >
                   </div>
+                </div>
+                <div class="catalog-container-item-rating">
+                  <ul class="stars">
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star"><i class="fas fa-star"></i></li>
+                  </ul>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
+                </div>
+              </li>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
+                </div>
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
+                  <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
+                    <a href="javascript:" onclick="this.classList.toggle('active')"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                        <g>
+                          <g>
+                            <path
+                              fill="none"
+                              stroke="#636363"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-miterlimit="20"
+                              d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                      <span>Добавить в "Мои желания"</span></a
+                    >
+                  </div>
+                </div>
+                <div class="catalog-container-item-rating">
+                  <ul class="stars">
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star"><i class="fas fa-star"></i></li>
+                  </ul>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
+                </div>
+              </li>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
+                </div>
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
+                  <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
+                    <a href="javascript:" onclick="this.classList.toggle('active')"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                        <g>
+                          <g>
+                            <path
+                              fill="none"
+                              stroke="#636363"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-miterlimit="20"
+                              d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                      <span>Добавить в "Мои желания"</span></a
+                    >
+                  </div>
+                </div>
+                <div class="catalog-container-item-rating">
+                  <ul class="stars">
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star"><i class="fas fa-star"></i></li>
+                  </ul>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
+                </div>
+              </li>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
+                </div>
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
+                  <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
+                    <a href="javascript:" onclick="this.classList.toggle('active')"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                        <g>
+                          <g>
+                            <path
+                              fill="none"
+                              stroke="#636363"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-miterlimit="20"
+                              d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                      <span>Добавить в "Мои желания"</span></a
+                    >
+                  </div>
+                </div>
+                <div class="catalog-container-item-rating">
+                  <ul class="stars">
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star"><i class="fas fa-star"></i></li>
+                  </ul>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
+                </div>
+              </li>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
+                </div>
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
+                  <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
+                    <a href="javascript:" onclick="this.classList.toggle('active')"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                        <g>
+                          <g>
+                            <path
+                              fill="none"
+                              stroke="#636363"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-miterlimit="20"
+                              d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                      <span>Добавить в "Мои желания"</span></a
+                    >
+                  </div>
+                </div>
+                <div class="catalog-container-item-rating">
+                  <ul class="stars">
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star"><i class="fas fa-star"></i></li>
+                  </ul>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
+                </div>
+              </li>
+              <li class="catalog-container-item">
+                <div class="catalog-container-item-img">
+                  <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
+                </div>
+                <div class="catalog-container-item-name"><a href="javascript:">Air Jordan XXXIV</a></div>
+                <div class="catalog-container-item-desc">
+                  <a href="javascript:"
+                    >Oukitel K3 Pro Global Version 5,5-дюймовый FHD Android 9,0 6000 мАч Face Unlock 4GB RAM 64GB ROM
+                    MT6763 Octa Core 2. 0GHz</a
+                  >
+                </div>
+                <div class="catalog-container-item-cost">
+                  <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
+                  <div class="catalog-container-item-send"><span>Отправка: 141 000 UZS</span></div>
+                  <div class="catalog-container-item-favourite">
+                    <a href="javascript:" onclick="this.classList.toggle('active')"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                        <g>
+                          <g>
+                            <path
+                              fill="none"
+                              stroke="#636363"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-miterlimit="20"
+                              d="M14.352 1.967a3.67 3.67 0 0 0-5.191 0l-.708.707v0l-.707-.707a3.671 3.671 0 1 0-5.192 5.192l.707.707v0l5.192 5.192v0l5.192-5.192v0l.707-.707a3.67 3.67 0 0 0 0-5.192z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                      <span>Добавить в "Мои желания"</span></a
+                    >
+                  </div>
+                </div>
+                <div class="catalog-container-item-rating">
+                  <ul class="stars">
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star active"><i class="fas fa-star"></i></li>
+                    <li class="star"><i class="fas fa-star"></i></li>
+                  </ul>
+                  <div class="catalog-container-item-brand"><a href="javascript:">ANMONE OfficalFlagship Store</a></div>
                 </div>
               </li>
             </ul>
