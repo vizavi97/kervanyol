@@ -621,7 +621,7 @@ header {
       align-items: center;
       flex-wrap: wrap;
       @include lg-block() {
-        justify-content: center;
+        justify-content: flex-start;
       }
       @include md-block() {
         overflow-x: scroll;
@@ -788,6 +788,7 @@ header {
           font-size: .9375rem;
           font-weight: 500;
           text-decoration: none;
+          white-space: nowrap;
         }
 
         &:hover {
@@ -857,12 +858,27 @@ header {
     &.show {
       opacity: 1;
       transform: translateY(3rem);
+      @include lg-block(){
+      transform: translateY(5.125rem);
+      }
+      @include md-block(){
+        transform: translateY(8.75rem);
+      }
     }
 
     &-container {
       display: flex;
       align-items: stretch;
       height: 100%;
+      @include lg-block(){
+        max-width: calc(100% - 4rem);
+      }
+      @include md-block(){
+        max-width: calc(100% - 2rem);
+      }
+      @include sm-block(){
+        max-width: calc(100% - 1rem);
+      }
     }
 
     &-links {
@@ -877,6 +893,9 @@ header {
       -moz-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      @include sm-block(){
+        width: 180px;
+      }
     }
 
     &-link {
@@ -921,6 +940,9 @@ header {
     &-content {
       flex: 1;
       min-height: 510px;
+      @include lg-block(){
+        min-height: auto;
+      }
 
       a {
         color: #222;
@@ -942,6 +964,9 @@ header {
         display: none;
         flex-direction: column;
         flex-grow: 1;
+        @include md-block(){
+          padding:  1rem .75rem;
+        }
         &:first-of-type {
           display: block;
         }
@@ -963,6 +988,11 @@ header {
         -webkit-column-gap: 0;
         -moz-column-gap: 0;
         column-gap: 0;
+        @include lg-block(){
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+        }
 
         &-items {
           width: 234px;
@@ -970,6 +1000,20 @@ header {
           page-break-inside: avoid;
           -webkit-column-break-inside: avoid;
           padding: rem(32) rem(42) 0 0;
+          @include md-block(){
+            break-inside: unset;
+            padding: 1rem 1.5rem 0 0;
+          }
+          @include sm-block(){
+            width: auto;
+          }
+        }
+      }
+      &-banners {
+        @include lg-block(){
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
