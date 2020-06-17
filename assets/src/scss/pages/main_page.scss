@@ -118,6 +118,9 @@
         justify-content: space-evenly;
         width: 100%;
         color: #000000;
+        @include sm-block(){
+          flex-direction: column-reverse;
+        }
 
         h5 {
           font-size: 20px;
@@ -637,6 +640,17 @@
     border-radius: 0.5rem;
   }
 
+  &-categories {
+    @include sm-block(){
+      .owl-dots {
+        overflow-x: scroll;
+        justify-content: flex-start;
+      }
+      .owl-dot {
+        white-space: nowrap;
+      }
+    }
+  }
   &-category {
     display: flex;
     flex-direction: row;
@@ -679,6 +693,7 @@
       }
 
     }
+
   }
 
   &-items {

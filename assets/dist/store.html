@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="css/style.bundle.css" />
     <title>PRODUCT_PAGE</title>
   </head>
-  <body class="layoust">
+  <body>
     <header>
-      <div class="container">
-        <div class="header">
-          <div class="header-info">
-            <img src="img/map-pin.png" alt="map-pin" /> <span>Доставка Олегу, Ташкент 100210</span>
-          </div>
-          <div class="header-language">
-            <img src="img/globe.png" alt="map" />
-            <div class="sl-nav">
-              <ul>
-                <li>
-                  <p class="mb-0">Русский / USD</p>
-                  <div class="triangle"></div>
-                  <ul>
-                    <li><a href="/catalog.html" class="active">Русский / USD</a></li>
-                    <li><a href="/catalog.html">English / USD</a></li>
-                  </ul>
-                </li>
-              </ul>
+      <div class="header">
+        <div class="container">
+          <div class="header-container">
+            <div class="header-info">
+              <img src="img/map-pin.png" alt="map-pin" /> <span>Доставка Олегу, Ташкент 100210</span>
             </div>
-            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+            <div class="header-language">
+              <img src="img/globe.png" alt="map" />
+              <div class="sl-nav">
+                <ul>
+                  <li>
+                    <p class="mb-0">Русский / USD</p>
+                    <div class="triangle"></div>
+                    <ul>
+                      <li><a href="/catalog.html" class="active">Русский / USD</a></li>
+                      <li><a href="/catalog.html">English / USD</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+            </div>
           </div>
         </div>
       </div>
@@ -92,6 +94,13 @@
                 </div>
               </div>
               <nav class="nav-menu">
+                <div class="nav-menu-allCategories">
+                  <input type="checkbox" id="menuToggle" />
+                  <label for="menuToggle"
+                    ><div class="nav-menu-allCategories-burger"><span></span> <span></span> <span></span></div>
+                    <span>Все категории</span></label
+                  >
+                </div>
                 <ul class="nav-menu-categories">
                   <li class="nav-menu-category">
                     <a href="/catalog.html">Одежда</a>
@@ -472,160 +481,194 @@
                       </div>
                     </div>
                   </li>
-                  <li class="nav-menu-category">
-                    <a href="/catalog.html">Техника</a>
-                    <div class="nav-menu-category-inner">
-                      <div class="nav-menu-category-inner-wrapper container">
-                        <div class="nav-menu-column">
-                          <ul class="nav-menu-items">
-                            <li class="nav-menu-item headline"><a href="/catalog.html">Категории</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                          </ul>
-                        </div>
-                        <div class="nav-menu-column">
-                          <ul class="nav-menu-items">
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                          </ul>
-                        </div>
-                        <div class="nav-menu-column">
-                          <ul class="nav-menu-items">
-                            <li class="nav-menu-item headline"><a href="/catalog.html">Бренды</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                          </ul>
-                        </div>
-                        <div class="nav-menu-column">
-                          <ul class="nav-menu-items">
-                            <li class="nav-menu-item headline"><a href="/catalog.html">Магазин</a></li>
-                            <li class="nav-menu-item">
-                              <a href="/catalog.html"
-                                ><img
-                                  src="https://yakapitalist.ru/wp-content/uploads/2018/12/Foto-12.-Francuzy-znayut-tolk-v-nastoyashhikh-sumkakh.-A-Louis-Vuitton-%E2%80%93-eshhyo-i-v-odezhde.jpg"
-                                  alt="store"
-                              /></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="nav-menu-category">
-                    <a href="/catalog.html">Бытовая химия</a>
-                    <div class="nav-menu-category-inner">
-                      <div class="nav-menu-category-inner-wrapper container">
-                        <div class="nav-menu-column">
-                          <ul class="nav-menu-items">
-                            <li class="nav-menu-item headline"><a href="/catalog.html">Категории</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                          </ul>
-                        </div>
-                        <div class="nav-menu-column">
-                          <ul class="nav-menu-items">
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                          </ul>
-                        </div>
-                        <div class="nav-menu-column">
-                          <ul class="nav-menu-items">
-                            <li class="nav-menu-item headline"><a href="/catalog.html">Бренды</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Новинки</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Брюки</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Верхняя одежда</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Вязаные костюмы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Джемперы, свитеры и кардиганы</a></li>
-                            <li class="nav-menu-item rec"><a href="/catalog.html">Джинсы</a></li>
-                            <li class="nav-menu-item"><a href="/catalog.html">Домашняя одежда</a></li>
-                          </ul>
-                        </div>
-                        <div class="nav-menu-column">
-                          <ul class="nav-menu-items">
-                            <li class="nav-menu-item headline"><a href="/catalog.html">Магазин</a></li>
-                            <li class="nav-menu-item">
-                              <a href="/catalog.html"
-                                ><img
-                                  src="https://yakapitalist.ru/wp-content/uploads/2018/12/Foto-12.-Francuzy-znayut-tolk-v-nastoyashhikh-sumkakh.-A-Louis-Vuitton-%E2%80%93-eshhyo-i-v-odezhde.jpg"
-                                  alt="store"
-                              /></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
                 </ul>
               </nav>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="nav-allCategories" id="allCategories">
+        <div class="nav-allCategories-container container">
+          <ul class="nav-allCategories-links">
+            <li class="nav-allCategories-link active" rel="firstCategories">
+              <a href="javascript:"
+                ><img
+                  class="nav-allCategories-link-image"
+                  alt="Продукты"
+                  src="//avatars.mds.yandex.net/get-marketcms/944743/img-2fa25175-e4b5-4dd5-963e-3ad89e69adb0.svg/svg"
+                  data-tid="3d8545d4" />
+                <span>Продукты</span> <i class="fas fa-chevron-right"></i
+              ></a>
+            </li>
+            <li class="nav-allCategories-link" rel="secondCategories">
+              <a href="javascript:"
+                ><img
+                  class="nav-allCategories-link-image"
+                  alt="Продукты"
+                  src="//avatars.mds.yandex.net/get-marketcms/944743/img-2fa25175-e4b5-4dd5-963e-3ad89e69adb0.svg/svg"
+                  data-tid="3d8545d4" />
+                <span>Одежда</span> <i class="fas fa-chevron-right"></i
+              ></a>
+            </li>
+            <li class="nav-allCategories-link" rel="thirdCategories">
+              <a href="javascript:"
+                ><img
+                  class="nav-allCategories-link-image"
+                  alt="Продукты"
+                  src="//avatars.mds.yandex.net/get-marketcms/944743/img-2fa25175-e4b5-4dd5-963e-3ad89e69adb0.svg/svg"
+                  data-tid="3d8545d4" />
+                <span>Электроника</span> <i class="fas fa-chevron-right"></i
+              ></a>
+            </li>
+            <li class="nav-allCategories-link" rel="fourthCategories">
+              <a href="javascript:"
+                ><img
+                  class="nav-allCategories-link-image"
+                  alt="Продукты"
+                  src="//avatars.mds.yandex.net/get-marketcms/944743/img-2fa25175-e4b5-4dd5-963e-3ad89e69adb0.svg/svg"
+                  data-tid="3d8545d4" />
+                <span>Еда</span> <i class="fas fa-chevron-right"></i
+              ></a>
+            </li>
+            <li class="nav-allCategories-link" rel="fifthCategories">
+              <a href="javascript:"
+                ><img
+                  class="nav-allCategories-link-image"
+                  alt="Продукты"
+                  src="//avatars.mds.yandex.net/get-marketcms/944743/img-2fa25175-e4b5-4dd5-963e-3ad89e69adb0.svg/svg"
+                  data-tid="3d8545d4" />
+                <span>Телефоны</span> <i class="fas fa-chevron-right"></i
+              ></a>
+            </li>
+            <li class="nav-allCategories-link" rel="sixthCategories">
+              <a href="javascript:"
+                ><img
+                  class="nav-allCategories-link-image"
+                  alt="Продукты"
+                  src="//avatars.mds.yandex.net/get-marketcms/944743/img-2fa25175-e4b5-4dd5-963e-3ad89e69adb0.svg/svg"
+                  data-tid="3d8545d4" />
+                <span>Ноутбуки</span> <i class="fas fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="nav-allCategories-content">
+            <li class="nav-allCategories-content-element" rel="firstCategories">
+              <h2><a href="javascript:">Спорт и Отдых</a></h2>
+              <div class="nav-allCategories-content-element-container">
+                <ul class="nav-allCategories-content-categories">
+                  <li class="nav-allCategories-content-category">
+                    <ul class="nav-allCategories-content-category-items">
+                      <li class="nav-allCategories-content-category-item headline">
+                        <a href="javascript:"><strong>Футбол</strong></a>
+                      </li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">мяч</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">перчатки</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">шорты</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">футболка</a></li>
+                    </ul>
+                    <ul class="nav-allCategories-content-category-items">
+                      <li class="nav-allCategories-content-category-item headline">
+                        <a href="javascript:"><strong>Футбол</strong></a>
+                      </li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">мяч</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">перчатки</a></li>
+                    </ul>
+                    <ul class="nav-allCategories-content-category-items">
+                      <li class="nav-allCategories-content-category-item headline">
+                        <a href="javascript:"><strong>перчатки</strong></a>
+                      </li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">футболка</a></li>
+                    </ul>
+                    <ul class="nav-allCategories-content-category-items">
+                      <li class="nav-allCategories-content-category-item headline">
+                        <a href="javascript:"><strong>Футбол</strong></a>
+                      </li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">мяч</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">футболка</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">футболка</a></li>
+                    </ul>
+                    <ul class="nav-allCategories-content-category-items">
+                      <li class="nav-allCategories-content-category-item headline">
+                        <a href="javascript:"><strong>Футбол</strong></a>
+                      </li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">мяч</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">перчатки</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">шорты</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">футболка</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="nav-allCategories-content-banners row">
+                  <div class="nav-allCategories-content-banners-small col-4">
+                    <div><img src="../../img/gipfel.webp" alt="" /></div>
+                    <div><img src="../../img/optimize.webp" alt="" /></div>
+                    <div><img src="../../img/tet-chair.webp" alt="" /></div>
+                  </div>
+                  <div class="nav-allCategories-content-banners-big col-8">
+                    <img src="../../img/orig.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-allCategories-content-element" rel="secondCategories">
+              <h2><a href="javascript:">Вторая категория</a></h2>
+              <div class="nav-allCategories-content-element-container">
+                <ul class="nav-allCategories-content-categories">
+                  <li class="nav-allCategories-content-category">
+                    <ul class="nav-allCategories-content-category-items">
+                      <li class="nav-allCategories-content-category-item headline">
+                        <a href="javascript:"><strong>Футбол</strong></a>
+                      </li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">мяч</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">перчатки</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">шорты</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">футболка</a></li>
+                    </ul>
+                    <ul class="nav-allCategories-content-category-items">
+                      <li class="nav-allCategories-content-category-item headline">
+                        <a href="javascript:"><strong>Футбол</strong></a>
+                      </li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">мяч</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">перчатки</a></li>
+                    </ul>
+                    <ul class="nav-allCategories-content-category-items">
+                      <li class="nav-allCategories-content-category-item headline">
+                        <a href="javascript:"><strong>перчатки</strong></a>
+                      </li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">футболка</a></li>
+                    </ul>
+                    <ul class="nav-allCategories-content-category-items">
+                      <li class="nav-allCategories-content-category-item headline">
+                        <a href="javascript:"><strong>Футбол</strong></a>
+                      </li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">мяч</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">футболка</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">футболка</a></li>
+                    </ul>
+                    <ul class="nav-allCategories-content-category-items">
+                      <li class="nav-allCategories-content-category-item headline">
+                        <a href="javascript:"><strong>Футбол</strong></a>
+                      </li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">мяч</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">перчатки</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">шорты</a></li>
+                      <li class="nav-allCategories-content-category-item"><a href="javascript:">футболка</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="nav-allCategories-content-banners row">
+                  <div class="nav-allCategories-content-banners-small col-4">
+                    <div><img src="../../img/gipfel.webp" alt="" /></div>
+                    <div><img src="../../img/optimize.webp" alt="" /></div>
+                    <div><img src="../../img/tet-chair.webp" alt="" /></div>
+                  </div>
+                  <div class="nav-allCategories-content-banners-big col-8">
+                    <img src="../../img/orig.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -991,7 +1034,7 @@
             <div class="store-links-block"><a href="javascript:">Низкий рейтинг</a></div>
           </div>
           <div class="store-items">
-            <ul class="product-container cube">
+            <ul class="product-container">
               <li class="product-item">
                 <div class="product-item-img">
                   <a href="/product.html"><img src="./img/catalog/item-1.png" alt="product-1" /></a>
@@ -1004,6 +1047,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1051,6 +1095,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1098,6 +1143,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1145,6 +1191,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1192,6 +1239,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1239,6 +1287,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1286,6 +1335,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1333,6 +1383,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1380,6 +1431,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1427,6 +1479,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1474,6 +1527,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1521,6 +1575,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1568,6 +1623,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1615,6 +1671,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1662,6 +1719,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
@@ -1709,6 +1767,7 @@
                       MT6763 Octa Core 2. 0GHz
                     </p>
                   </div>
+                  <div class="product-item-sale"><p></p></div>
                 </div>
                 <div class="product-item-cost">
                   <span>141 000 UZS</span> <strong class="inactive-price">141 000 UZS</strong>
