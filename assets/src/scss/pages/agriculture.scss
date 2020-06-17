@@ -1,0 +1,234 @@
+.agricult {
+  background-color: #F9FAFC;
+  &-static {
+    &-slider {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-banner {
+        position: relative;
+        z-index: 1;
+
+        &:after {
+          content: '';
+          position: absolute;
+          background-image: linear-gradient(270deg, rgba(255, 111, 85, 0) 0%, #ff6f55 100%);
+          width: 100%;
+          height: 100%;
+          left: 0;
+        }
+      }
+
+      &-block {
+        width: 75%;
+      }
+
+      &-info {
+        position: absolute;
+        width: 100%;
+        color: white;
+        z-index: 2;
+
+        h1 {
+          font: rem(42) "Montserrat";
+          font-weight: 500;
+          margin-bottom: rem(5);
+        }
+
+        ul {
+          padding-bottom: rem(24);
+          list-style: none;
+
+          li {
+            font-size: rem(24);
+            font-weight: 400;
+            line-height: rem(43.2);
+
+            &:before {
+              content: "-";
+              position: relative;
+              left: rem(-5);
+            }
+          }
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          height: 50px;
+          max-width: rem(220);
+          width: 100%;
+          font: rem(14) "Montserrat";
+          font-weight: 500;
+          background-color: white;
+          color: #FF6F55;
+          border-radius: rem(35);
+          padding-left: rem(75);
+
+          img {
+            padding-left: rem(35);
+          }
+        }
+      }
+    }
+
+    &-rows {
+      @include row-flex();
+      padding: rem(24) 0;
+    }
+
+    &-items {
+      @include col();
+      @include size(4);
+      @include size-sm(6);
+      @include size-xs(12);
+      padding: rem(7.5) 0;
+
+      &-last {
+        @include size-sm(12);
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: rem(5);
+      padding: rem(16) rem(5) rem(30) rem(24);
+      height: 100%;
+      flex-wrap: wrap;
+
+      &-header {
+        padding-left: rem(32);
+        width: 75%;
+
+        h4 {
+          font: rem(20) "Montserrat";
+          font-weight: 500;
+          line-height: rem(24);
+        }
+      }
+
+      &-text {
+        width: 100%;
+        padding-top: rem(15);
+
+        p {
+          font-size: rem(14);
+          font-weight: 400;
+          line-height: rem(21);
+        }
+      }
+
+      &-first {
+        background-color: #FED327;
+      }
+
+      &-second {
+        background-color: #D1EFB6;
+      }
+
+      &-third {
+        background-color: #DEC8F3;
+      }
+    }
+  }
+
+  &-content {
+    &-headline {
+      width: 100%;
+      text-align: center;
+      padding: rem(60) 0 rem(12);
+
+      h1 {
+        font-size: rem(40);
+        font-weight: 600;
+        line-height: rem(49);
+        margin-bottom: rem(16);
+      }
+
+      p {
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: rem(18);
+        color: #000711;
+        width: 50%;
+        margin: auto;
+      }
+    }
+
+    &-items {
+      @include row-flex();
+      padding-bottom: rem(60);
+    }
+    &-back{
+      background-color: #FFFFFF;
+      padding: rem(25) rem(20);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &:hover{
+        box-shadow: 0 0 1px 1px #BCCBD9;
+      }
+    }
+    &-item {
+      @include col();
+      @include size(3);
+      @include size-xs(6);
+      padding: rem(12) 0;
+      box-shadow: 0px 16px 50px #E9EEF780;
+
+      &-img {
+        width: 100%;
+        min-height: rem(200);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.block{
+          position: relative;
+          //&:before{
+          //  content: '';
+          //  position: absolute;
+          //  background-image: url("../img/agriculture/block-4(2).png");
+          //  background-repeat: no-repeat;
+          //  top: 29%;
+          //  left: 34%;
+          //  height: 100px;
+          //  width: 107px;
+          //  animation: block 4s infinite linear;
+          //  transform-origin: 37px top;
+          //}
+        }
+      }
+      &-headline{
+        padding: rem(16) 0;
+        text-align: center;
+        h4{
+          font-size: rem(16);
+          font-weight: 500;
+          line-height: rem(23);
+          margin: 0;
+        }
+      }
+      &-info {
+        text-align: center;
+        padding: rem(10);
+        p {
+          font-size: rem(12);
+          font-weight: 300;
+          margin: 0;
+          color: #9EA6B0;
+        }
+      }
+      &-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+      }
+    }
+  }
+}
