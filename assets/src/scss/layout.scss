@@ -245,6 +245,12 @@ header {
     &-btn > a {
       width: rem(135);
     }
+    &-menu {
+      &-categories {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+      }
+    }
   }
   @include sm-block() {
     &-container {
@@ -266,6 +272,15 @@ header {
 
       a {
         margin-left: auto;
+      }
+    }
+  }
+  @include xs-block() {
+    &-menu {
+      padding-top: rem(16);
+
+      &-category {
+        padding: 0;
       }
     }
   }
@@ -969,7 +984,6 @@ footer {
 
 // product-item
 .product-container {
-  width: 100%;
   @include row-flex();
   padding-top: 1rem;
 

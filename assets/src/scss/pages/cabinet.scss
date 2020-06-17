@@ -178,6 +178,7 @@
         }
 
         &-close {
+          margin-left: auto;
           a {
             color: #ff8d1c;
             font-size: 3rem;
@@ -1898,17 +1899,20 @@
     .cabinet-data-container {
       margin-bottom: rem(16);
     }
-
     &-container {
       @include row-flex();
 
+      .allStores-item{
+        @include size(6);
+        @include size-sm(12);
+      }
       &-block {
         @include col();
         @include size(6);
         @include size-sm(12);
         padding: rem(8) 0;
 
-        .allStores-card {
+        &-card {
           margin: 0;
           height: 100%;
 
@@ -1923,7 +1927,6 @@
         }
       }
     }
-
     .product-item {
       @include size(4);
       @include size-sm(6);
@@ -2922,6 +2925,7 @@
 
       &-stages {
         margin: 0 0 rem(20);
+        max-width: 100%;
         width: 100%;
 
         &-items {

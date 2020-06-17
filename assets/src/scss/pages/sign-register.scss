@@ -241,10 +241,6 @@
       }
     }
 
-    input[type=password] {
-      font-size: rem(30);
-    }
-
     &-password {
       position: relative;
 
@@ -309,13 +305,6 @@
 
   &-form {
     padding-bottom: rem(35);
-
-    &-password {
-      input {
-        width: 100%;
-        font-size: rem(30);
-      }
-    }
 
     &-checkbox {
       display: flex;
