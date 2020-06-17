@@ -1,4 +1,6 @@
-<% var data = {title: "PRODUCT_PAGE",}; %><%= _.template(require('./../includes/header.html').default)(data) %>
+<% var data = {title: "PRODUCT_PAGE",}; %>
+<% var sale_0 = {sale: ""} %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
 
 <main class="content store">
 	<div class="container">
@@ -269,23 +271,23 @@
 				</div>
 			</div>
 			<div class="store-items">
-				<ul class="product-container cube">
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
-                    <%= _.template(require('./../includes/product-cards.html').default)(data) %>
+				<ul class="product-container">
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
+                    <%= _.template(require('./../includes/product-cards.html').default)(sale_0) %>
                 </ul>
 			</div>
 		</div>
