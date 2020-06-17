@@ -263,15 +263,36 @@ uploadProductFile ? uploadProductFile.addEventListener("change", (e) => {
 
 
 const menuToggle = document.getElementById('menuToggle');
-
 menuToggle ? menuToggle.addEventListener('input', () => {
   const allCategories = document.getElementById('allCategories');
   if (menuToggle.checked) {
     allCategories.classList.add('show');
-    document.body.classList.add('overflow')
+    document.body.classList.add('overflow');
+    document.body.firstChild.childNode.after().addEventListener('click',()=> {
+      allCategories.classList.remove('show');
+      document.body.classList.remove('overflow')
+    })
   }
   else {
     allCategories.classList.remove('show');
     document.body.classList.remove('overflow')
   }
 }) : null;
+
+$(document).on("mouseenter",'.nav-allCategories-link',function(){
+  let linkRel = $(this).attr('rel');
+  $(document).find('.nav-allCategories-content-element').each(function () {
+    if($(this).attr('rel') === linkRel) {
+      $(this).css('display','flex')
+    }
+    else {
+      $(this).css('display','none')
+    }
+  })
+});
+$(document).mouseup(function (e) {
+  var container = $('header');
+  if (container.has(e.target).length === 0){
+    container.hide();
+  }
+});
