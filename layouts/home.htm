@@ -4,27 +4,28 @@ description = "Layout of marketplace"
 ==
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
-    <link rel="shortcut icon" href="{{'assets/dist/favicon/favicon.ico'|theme }}" />
-    <link rel="stylesheet" href="{{'assets/dist/css/style.bundle.css'|theme}}" />
-    <title>{{this.page.title}}</title>
-  </head>
-  <body>
-    <header>
-      {% partial 'home/header' component=CategoryList %}
-    </header>
-    
-	<main class="content {{pageClass}}">
-		{% page %}
-	</main>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+		<link rel="shortcut icon" href="{{'assets/dist/favicon/favicon.ico'|theme }}" />
+		<link rel="stylesheet" href="{{'assets/dist/css/style.bundle.css'|theme}}" />
+		<title>{{this.page.title}}</title>
+	</head>
 	
-    <footer>
-      {% partial 'home/footer' %}
-    </footer>
+	<body>
+		<header>
+			{% partial 'home/header' component=CategoryList %}
+		</header>
     
-    <script src="https://kit.fontawesome.com/43236b6dfa.js" crossorigin="anonymous"></script>
-    <script src="{{'assets/dist/js/bundle.js' | theme }}"></script>
+		<main class="content {{pageClass}}">
+			{% page %}
+		</main>
+	
+		<footer>
+			{% partial 'home/footer' %}
+		</footer>
+    
+	    <script src="https://kit.fontawesome.com/43236b6dfa.js" crossorigin="anonymous"></script>
+	    <script src="{{'assets/dist/js/bundle.js' | theme }}"></script>
   </body>
 </html>

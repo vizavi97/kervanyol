@@ -299,16 +299,16 @@ function onStart() {
           </div>
           
           
-          <ul class="catalog-container-items cube">
+          <ul class="product-container cube">
 	          {% for product in recentlyProducts %}
 	          	{% partial 'market/product-item' item=product %}
 	         {% endfor %}
           </ul>
           
           
-			<div class="catalog-container-pageNavigation">
-				{% partial 'market/product-pagination' pagination=recentlyProducts %}
-			</div>
+		<div class="catalog-container-pageNavigation">
+			{% partial 'market/product-pagination' pagination=recentlyProducts %}
+		</div>
           
         </div>
       </div>
