@@ -259,3 +259,45 @@ uploadProductFile ? uploadProductFile.addEventListener("change", (e) => {
   const uploadProductFileLabel = document.getElementById('uploadProductFileLabel');
   uploadProductFileLabel.innerHTML = e.target.value;
 }) : null;
+
+
+
+const menuToggle = document.getElementById('menuToggle');
+menuToggle ? menuToggle.addEventListener('input', () => {
+  const allCategories = document.getElementById('allCategories');
+  if (menuToggle.checked) {
+    allCategories.classList.add('show');
+    document.body.classList.add('overflow');
+    document.body.addEventListener("mouseup", (e)=> {
+    if (e.target === document.body) {
+      menuToggle.checked = false
+      allCategories.classList.remove('show');
+      document.body.classList.remove('overflow')
+    }
+    })
+  }
+  else {
+    allCategories.classList.remove('show');
+    document.body.classList.remove('overflow')
+  }
+}) : null;
+
+$(document).on("mouseenter",'.nav-allCategories-link',function(){
+  let linkRel = $(this).attr('rel');
+  $(document).find('.nav-allCategories-link').each(function () {
+    if($(this).attr('rel') === linkRel) {
+      $(this).addClass('active')
+    }
+    else {
+      $(this).removeClass('active')
+    }
+  })
+  $(document).find('.nav-allCategories-content-element').each(function () {
+    if($(this).attr('rel') === linkRel) {
+      $(this).css('display','flex')
+    }
+    else {
+      $(this).css('display','none')
+    }
+  })
+});
