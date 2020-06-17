@@ -681,130 +681,58 @@
               <div class="sign-register-tabs">
                 <ul class="nav sign-register-nav" role="tablist">
                   <li class="sign-register-nav-item">
-                    <a class="sign-register-nav-link" data-toggle="tab" href="#sign" role="tab"
-                      >Вход в Личный кабинет</a
-                    >
+                    <a class="sign-register-nav-link active" href="#">Вход в Личный кабинет</a>
                   </li>
                   <span class="sign-register-nav-br"></span>
                   <li class="sign-register-nav-item">
-                    <a class="sign-register-nav-link active" data-toggle="tab" href="#registr" role="tab"
-                      >Регистрация</a
-                    >
+                    <a class="sign-register-nav-link" href="sign-up.html">Регистрация</a>
                   </li>
                 </ul>
-                <div class="tab-content">
-                  <div class="tab-pane fade" id="sign" role="tabpanel">
-                    <div class="tab-sign">
-                      <div class="tab-sign-form">
-                        <form>
-                          <div class="form-row">
-                            <div class="col-md-6 mb-4">
-                              <label for="validatSing01">Введите логин</label>
-                              <input class="input-kervan" id="validatSing01" required />
-                            </div>
-                          </div>
-                          <div class="form-row tab-sign-form-password">
-                            <div class="col-md-6 mb-4">
-                              <label for="validatSing02">Пароль</label>
-                              <input type="password" class="input-kervan" id="validatSing02" required />
-                            </div>
-                          </div>
-                          <div class="custom-control custom-radio tab-sign-form-checkbox">
-                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              id="customControlValidation2"
-                              name="radio-stacked"
-                            />
-                            <label class="custom-control-label" for="customControlValidation2">Запомнить пароль</label>
-                          </div>
-                          <button class="btn tab-register-form-btn mt-2" type="submit">Вход</button>
-                        </form>
-                        <a href="javascript:" class="tab-sign-form-help mt-3">Забыли пароль?</a>
+                <div class="tab-sign">
+                  <div class="tab-sign-form">
+                    <form>
+                      <div class="form-row">
+                        <div class="col-md-6 mb-4">
+                          <label for="validatSing01">Введите логин</label>
+                          <input class="input-kervan" id="validatSing01" required />
+                        </div>
                       </div>
-                      <div class="tab-register-br">
-                        <span></span>
-                        <div class="tab-register-br-text"><p>или</p></div>
+                      <div class="form-row tab-sign-form-password">
+                        <div class="col-md-6 mb-4">
+                          <label for="validatSing02">Пароль</label>
+                          <input type="password" class="input-kervan" id="validatSing02" required />
+                        </div>
                       </div>
-                      <div class="tab-register-social">
-                        <h3>Также Вы можете войти через:</h3>
-                        <ul class="tab-register-blocks">
-                          <li class="tab-register-block">
-                            <a href="javascript:"><img src="img/google.png" alt="google.png" /> Google</a>
-                          </li>
-                          <li class="tab-register-block">
-                            <a href="javascript:"><img src="img/facebook.png" alt="facebook.png" /> facebook</a>
-                          </li>
-                          <li class="tab-register-block">
-                            <a href="javascript:"><img src="img/twitter.png" alt="twitter.png" /> twitter</a>
-                          </li>
-                        </ul>
+                      <div class="custom-control custom-radio tab-sign-form-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="customControlValidation2"
+                          name="radio-stacked"
+                        />
+                        <label class="custom-control-label" for="customControlValidation2">Запомнить пароль</label>
                       </div>
-                    </div>
+                      <button class="btn tab-register-form-btn mt-2" type="submit">Вход</button>
+                    </form>
+                    <a href="javascript:" class="tab-sign-form-help mt-3">Забыли пароль?</a>
                   </div>
-                  <div class="tab-pane fade show active" id="registr" role="tabpanel">
-                    <div class="tab-register">
-                      <div class="tab-register-social">
-                        <h3>Также Вы можете войти через:</h3>
-                        <ul class="tab-register-blocks">
-                          <li class="tab-register-block">
-                            <a href="javascript:"><img src="img/google.png" alt="google.png" /> Google</a>
-                          </li>
-                          <li class="tab-register-block">
-                            <a href="javascript:"><img src="img/facebook.png" alt="facebook.png" /> facebook</a>
-                          </li>
-                          <li class="tab-register-block">
-                            <a href="javascript:"><img src="img/twitter.png" alt="twitter.png" /> twitter</a>
-                          </li>
-                        </ul>
-                        <p>
-                          Регистрация с помощью социальных сетей занимает минимум времени. Вам не нужно создавать новые
-                          пароли и запоминать их. Все данные остаются конфиденциальными.
-                        </p>
-                      </div>
-                      <div class="tab-register-br">
-                        <span></span>
-                        <div class="tab-register-br-text"><p>или</p></div>
-                      </div>
-                      <div class="tab-register-form">
-                        <h4>Зарегистрируйтесь с помощью номера телефона или Эл.почты</h4>
-                        <form>
-                          <div class="form-row">
-                            <div class="col-md-6 mb-4">
-                              <label for="validationDefault01">Фамилия</label>
-                              <input class="input-kervan" id="validationDefault01" name="quantity" required />
-                            </div>
-                            <div class="col-md-6 mb-4">
-                              <label for="validationDefault02">Имя</label>
-                              <input class="input-kervan" id="validationDefault02" name="quantity" required />
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="col-md-12 mb-4">
-                              <label for="validationDefault03">Введите номер телефона или адрес эл.почты</label>
-                              <input class="input-kervan" id="validationDefault03" required />
-                            </div>
-                          </div>
-                          <div class="form-row tab-register-form-password">
-                            <div class="col-md-6 mb-4">
-                              <label for="password-input">Создайте пароль</label>
-                              <input type="password" class="input-kervan password-input" id="password-input" required />
-                            </div>
-                            <div class="col-md-6 mb-4">
-                              <label for="validationDefault05">Повторите пароль</label>
-                              <input
-                                type="password"
-                                class="input-kervan password-input"
-                                id="validationDefault05"
-                                required
-                              />
-                              <a href="javascript:" class="password-control"><i class="far fa-eye"></i></a>
-                            </div>
-                          </div>
-                          <button class="btn tab-register-form-btn mt-2" type="submit">Зарегистрироваться</button>
-                        </form>
-                      </div>
-                    </div>
+                  <div class="tab-register-br">
+                    <span></span>
+                    <div class="tab-register-br-text"><p>или</p></div>
+                  </div>
+                  <div class="tab-register-social">
+                    <h3>Также Вы можете войти через:</h3>
+                    <ul class="tab-register-blocks">
+                      <li class="tab-register-block">
+                        <a href="javascript:"><img src="img/google.png" alt="google.png" /> Google</a>
+                      </li>
+                      <li class="tab-register-block">
+                        <a href="javascript:"><img src="img/facebook.png" alt="facebook.png" /> facebook</a>
+                      </li>
+                      <li class="tab-register-block">
+                        <a href="javascript:"><img src="img/twitter.png" alt="twitter.png" /> twitter</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
