@@ -268,9 +268,12 @@ menuToggle ? menuToggle.addEventListener('input', () => {
   if (menuToggle.checked) {
     allCategories.classList.add('show');
     document.body.classList.add('overflow');
-    document.body.firstChild.childNode.after().addEventListener('click',()=> {
+    document.body.addEventListener("mouseup", (e)=> {
+    if (e.target === document.body) {
+      menuToggle.checked = false
       allCategories.classList.remove('show');
       document.body.classList.remove('overflow')
+    }
     })
   }
   else {
@@ -281,6 +284,14 @@ menuToggle ? menuToggle.addEventListener('input', () => {
 
 $(document).on("mouseenter",'.nav-allCategories-link',function(){
   let linkRel = $(this).attr('rel');
+  $(document).find('.nav-allCategories-link').each(function () {
+    if($(this).attr('rel') === linkRel) {
+      $(this).addClass('active')
+    }
+    else {
+      $(this).removeClass('active')
+    }
+  })
   $(document).find('.nav-allCategories-content-element').each(function () {
     if($(this).attr('rel') === linkRel) {
       $(this).css('display','flex')
@@ -289,10 +300,4 @@ $(document).on("mouseenter",'.nav-allCategories-link',function(){
       $(this).css('display','none')
     }
   })
-});
-$(document).mouseup(function (e) {
-  var container = $('header');
-  if (container.has(e.target).length === 0){
-    container.hide();
-  }
 });
