@@ -73,15 +73,18 @@
       font-family: "Montserrat";
       font-size: rem(16);
       font-weight: 500;
+      text-decoration: none;
 
       &:hover {
         color: #222227;
+        text-decoration: none;
       }
 
       &.active {
         color: #222227;
         position: relative;
         font-weight: 500;
+        text-decoration: none;
 
         &:after {
           content: '';
