@@ -1,0 +1,83 @@
+description = "Все категории"
+
+[viewBag]
+==
+{% set obCategoryList = CategoryList.make().tree() %}
+{% if obCategoryList.isNotEmpty() %}
+
+	<div class="nav-allCategories-container container">
+		<ul class="nav-allCategories-links">
+			{% for obCategory in obCategoryList %}
+				<li class="nav-allCategories-link{{obCategory.first() ? "active" : ''}}" rel="{{obCategory.slug}}">
+					<a href="javascript:">
+						<img class="nav-allCategories-link-image" alt="Продукты" src="//avatars.mds.yandex.net/get-marketcms/944743/img-2fa25175-e4b5-4dd5-963e-3ad89e69adb0.svg/svg" data-tid="3d8545d4">
+						<span>{{obCategory.name}}</span> <i class="fas fa-chevron-right"></i>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+		<ul class="nav-allCategories-content">
+			{% for obCategory in obCategoryList %}
+				<li class="nav-allCategories-content-element" rel="{{obCategory.slug}}">
+				<h2>
+					<a href="{{ obCategory.getPageUrl('category-page') }}">{{obCategory.name}}</a>
+				</h2>
+                {% if obCategory.children.isNotEmpty() %}
+              		<div class="nav-allCategories-content-element-container">
+					<div class="nav-allCategories-content-category">
+						{% for obChildCategory in obCategory.children%}
+							<ul class="nav-allCategories-content-category-items">
+								<li class="nav-allCategories-content-category-item headline">
+									<a href="{{ obChildCategory.getPageUrl('category-page') }}:">
+										<strong>{{obChildCategory.name}}</strong>
+									</a>
+								</li>
+								<li class="nav-allCategories-content-category-item">
+									<a href="javascript:">
+										мяч
+									</a>
+								</li>
+								<li class="nav-allCategories-content-category-item">
+									<a href="javascript:">
+										перчатки
+									</a>
+								</li>
+								<li class="nav-allCategories-content-category-item">
+									<a href="javascript:">
+										шорты
+									</a>
+								</li>
+								<li class="nav-allCategories-content-category-item">
+									<a href="javascript:">
+										футболка
+									</a>
+								</li>
+
+							</ul>
+						{% endfor %} 
+						</div>
+					<div class="nav-allCategories-content-banners row">
+						<div class="nav-allCategories-content-banners-small col-4">
+							<div>
+								<img src="{{'assets/dist/img/gipfel.webp'| theme}}" alt=""/></div>
+							<div>
+								<img src="{{'assets/dist/img/optimize.webp' | theme}}" alt=""/>
+							</div>
+							<div>
+								<img src="{{'assets/dist/img/tet-chair.webp' | theme}}" alt=""/>
+							</div>
+						</div>
+						<div class="nav-allCategories-content-banners-big col-8">
+							<img src="{{'assets/dist/img/orig.webp' | theme}}" alt=""/>
+						</div>
+					</div>
+				</div>
+                {% endif %}
+
+				
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	
+{% endif %}

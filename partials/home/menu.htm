@@ -5,7 +5,7 @@ description = "menu"
 {% set obCategoryList = CategoryList.make().tree() %}
 {% if obCategoryList.isNotEmpty() %}
 	<ul class="nav-menu-categories">
-		 {% for obCategory in obCategoryList|slice(0,5) %}
+		 {% for obCategory in obCategoryList|slice(0,4) %}
 		    <li class="nav-menu-category">
 		      <a href="/catalog.html"
 		         >{{obCategory.name}}
@@ -87,8 +87,5 @@ description = "menu"
 		      </div>
 		   </li>
 		 {% endfor %}
-		 <li class="nav-menu-category">
-		      <a href="/catalog.html">Все категории</a>
-		   </li>
 	</ul>
 {% endif %}
