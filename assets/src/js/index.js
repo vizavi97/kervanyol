@@ -7,7 +7,6 @@ import './zoomple';
 import './app';
 import categories from '../json/categories'
 
-//JQuery
 window.jQuery = $;
 window.$ = $;
 
