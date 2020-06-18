@@ -12,6 +12,10 @@ redirect = "cabinet-accounthtml"
 paramCode = "code"
 forceSecure = 0
 requirePassword = 0
+
+[session]
+security = "guest"
+redirect = "home"
 ==
 <?php
 function onStart() {
@@ -29,13 +33,13 @@ function onStart() {
 				<div class="sign-register-tabs">
 					<ul class="nav sign-register-nav" role="tablist">
 						<li class="sign-register-nav-item">
-							<a class="sign-register-nav-link" href="{{ 'auth/singin'|page }}">
+							<a class="sign-register-nav-link" href="{{ 'auth/signin'|page }}">
 								Вход в Личный кабинет
 							</a>
 						</li>
 						<span class="sign-register-nav-br"></span>
 						<li class="sign-register-nav-item">
-							<a class="sign-register-nav-link active">
+							<a class="sign-register-nav-link active" href="{{ 'auth/signup'|page }}">
 								Регистрация
 							</a>
 						</li>
@@ -63,6 +67,7 @@ function onStart() {
 									</a>
 								</li>
 							</ul>
+							
 							<p>Регистрация с помощью социальных сетей занимает минимум времени.
 								Вам не нужно создавать новые пароли и запоминать их.
 								Все данные остаются конфиденциальными.</p>
