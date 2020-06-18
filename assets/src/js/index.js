@@ -8,8 +8,7 @@ import './app';
 import categories from '../json/categories'
 //JQuery
 window.jQuery = $;
-window.$ = $;
-jQuery = $;
+window.$ = $
 
 
 $('.top-slider').owlCarousel({
