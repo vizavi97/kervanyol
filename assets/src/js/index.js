@@ -271,3 +271,6 @@ $(document).on("mouseenter",'.nav-allCategories-link',function(){
     }
   })
 });
+
+//JQuery
+window.$ = window.jQuery
