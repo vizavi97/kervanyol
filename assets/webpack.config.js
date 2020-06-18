@@ -119,12 +119,10 @@ const config = {
       ],
     }),
     new webpack.ProvidePlugin({
-      'window.$': 'jquery',
-      'window.jQuery': 'jquery',
       $: 'jquery',
-      jQuery: 'jquery'
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
     }),
-
   ].concat(htmlPlugins),
 };
 

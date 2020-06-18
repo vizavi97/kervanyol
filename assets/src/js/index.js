@@ -9,7 +9,7 @@ import categories from '../json/categories'
 //JQuery
 window.jQuery = $;
 window.$ = $;
-window.$ = jQuery;
+jQuery = $;
 
 
 $('.top-slider').owlCarousel({
