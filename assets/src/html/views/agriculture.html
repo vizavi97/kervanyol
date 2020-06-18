@@ -1,0 +1,109 @@
+<% var data = {title: "Agriculture"}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="content agricult">
+    <div class="agricult-static-slider">
+        <div class="agricult-static-slider-banner">
+            <img src="img/agriculture/banner-agricult.png" alt="banner-agricult"/>
+        </div>
+        <div class="agricult-static-slider-info">
+            <div class="container">
+                <div class="agricult-static-slider-block">
+                    <h1>Добро пожаловать на страницу Сельхозпродукции</h1>
+                    <ul>
+                        <li>автоматизированная система подачи документов</li>
+                        <li>безбумажный процесс оформления сделок</li>
+                        <li>экономия времени и расходов</li>
+                    </ul>
+                    <a href="javascript:">
+                        Перейти <img src="img/right-arr-red.png" alt="right-arr-red.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="agricult-content">
+        <div class="container-lg">
+            <div class="agricult-content-headline">
+                <h1>Сельхознаправление</h1>
+                <p>Профессиональное оформление сделок ВЭД, подготовка документов и другие процессы составления
+                    заказов для экспорта с Kervanyol Exim ускорит процедуры,</p>
+            </div>
+            <div class="agricult-content-items">
+                <div class="agricult-content-item">
+                    <div class="agricult-content-back">
+                        <div class="agricult-content-item-img">
+                            <img src="img/agriculture/block-1.png" alt="block-1">
+                        </div>
+                        <div class="agricult-content-item-headline">
+                            <h4>Интерактивная Агро Карта</h4>
+                        </div>
+                        <div class="agricult-content-item-info">
+                            <p>Электронная карта с информацией о состояние площади, здоровья растений и почвы.
+                                Функция «Умное поле» измеряет уровень влажности воздуха и почвы, контролирует свет
+                                на участке.</p>
+                        </div>
+                        <div class="agricult-content-item-btn">
+                            <a href="javascript:" class="btn-kervan">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agricult-content-item">
+                    <div class="agricult-content-back">
+                        <div class="agricult-content-item-img">
+                            <img src="img/agriculture/block-2.png" alt="block-2">
+                        </div>
+                        <div class="agricult-content-item-headline">
+                            <h4>Фьючерсные Контракты</h4>
+                        </div>
+                        <div class="agricult-content-item-info">
+                            <p>Минимизируем биржевые сборы. Исключаем издержки базового актива.
+                                Хеджирование рисков. Страхование договора.</p>
+                        </div>
+                        <div class="agricult-content-item-btn">
+                            <a href="javascript:" class="btn-kervan">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agricult-content-item">
+                    <div class="agricult-content-back">
+                        <div class="agricult-content-item-img">
+                            <img src="img/agriculture/block-3.png" alt="block-3">
+                        </div>
+                        <div class="agricult-content-item-headline">
+                            <h4>Сельхозпродукции</h4>
+                        </div>
+                        <div class="agricult-content-item-info">
+                            <p>Оптовая и розничная торговля удобрений, оборудований и других услуг.
+                                Безбумажный закуп товаров. Лабораторная проверка всей продукции.</p>
+                        </div>
+                        <div class="agricult-content-item-btn">
+                            <a href="javascript:" class="btn-kervan">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agricult-content-item">
+                    <div class="agricult-content-back">
+                        <div class="agricult-content-item-img block">
+                            <img src="img/agriculture/block-4.png" alt="block-4">
+                        </div>
+                        <div class="agricult-content-item-headline">
+                            <h4>Логистика</h4>
+                        </div>
+                        <div class="agricult-content-item-info">
+                            <p>Информация о поставщиках и потребителях, местоположения складов и центров
+                                распределения. Регулирование сроков поставки заказа, пропускной способности,
+                                затрат на перевозку. Прямая связь с заказчиками, а также выбор грузоперевозчиков
+                                онлайн.</p>
+                        </div>
+                        <div class="agricult-content-item-btn">
+                            <a href="javascript:" class="btn-kervan">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
