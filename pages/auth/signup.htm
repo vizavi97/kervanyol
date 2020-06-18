@@ -1,0 +1,87 @@
+title = "Sing Up"
+url = "/auth/signup"
+layout = "home"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[account]
+redirect = "cabinet-accounthtml"
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+==
+<?php
+function onStart() {
+	$this['pageClass']  = 'sign-register';
+}
+?>
+==
+<div class="container-lg">
+	<div class="sign-register-items">
+		<div class="sign-register-item-img">
+			<img src="{{ 'assets/dist/img/register.png'|theme }}" alt="register.png">
+		</div>
+		<div class="sign-register-item">
+			<div class="sign-register-inner">
+				<div class="sign-register-tabs">
+					<ul class="nav sign-register-nav" role="tablist">
+						<li class="sign-register-nav-item">
+							<a class="sign-register-nav-link" href="{{ 'auth/singin'|page }}">
+								Вход в Личный кабинет
+							</a>
+						</li>
+						<span class="sign-register-nav-br"></span>
+						<li class="sign-register-nav-item">
+							<a class="sign-register-nav-link active">
+								Регистрация
+							</a>
+						</li>
+					</ul>
+					<div class="tab-register">
+						<div class="tab-register-social">
+							<h3>Также Вы можете войти через:</h3>
+							<ul class="tab-register-blocks">
+								<li class="tab-register-block">
+									<a href="javascript:">
+										<img src="{{ 'assets/dist/img/google.png'|theme }}" alt="google.png">
+										Google
+									</a>
+								</li>
+								<li class="tab-register-block">
+									<a href="javascript:">
+										<img src="{{ 'assets/dist/img/facebook.png'|theme }}" alt="facebook.png">
+										facebook
+									</a>
+								</li>
+								<li class="tab-register-block">
+									<a href="javascript:">
+										<img src="{{ 'assets/dist/img/twitter.png'|theme }}" alt="twitter.png">
+										twitter
+									</a>
+								</li>
+							</ul>
+							<p>Регистрация с помощью социальных сетей занимает минимум времени.
+								Вам не нужно создавать новые пароли и запоминать их.
+								Все данные остаются конфиденциальными.</p>
+						</div>
+						
+						<div class="tab-register-br">
+							<span></span>
+							<div class="tab-register-br-text">
+								<p>или</p>
+							</div>
+						</div>
+						
+						<div class="tab-register-form">
+							{% partial account ~ '::register' %}
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
