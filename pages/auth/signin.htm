@@ -1,0 +1,91 @@
+title = "Sign In"
+url = "/auth/signin"
+layout = "home"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[account]
+redirect = "home"
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+
+[session]
+security = "guest"
+redirect = "home"
+==
+<?php
+function onStart() {
+	$this['pageClass']  = 'sign-register';
+}
+?>
+==
+<div class="container-lg">
+	<div class="sign-register-items">
+		<div class="sign-register-item-img">
+			<img src="{{ 'assets/dist/img/register.png'|theme }}" alt="register.png">
+		</div>
+		
+		<div class="sign-register-item">
+			<div class="sign-register-inner">
+				<div class="sign-register-tabs">
+					<ul class="nav sign-register-nav" role="tablist">
+						<li class="sign-register-nav-item">
+							<a class="sign-register-nav-link active" href="{{'auth/signin'|page}}">
+								Вход в Личный кабинет
+							</a>
+						</li>
+						<span class="sign-register-nav-br"></span>
+						<li class="sign-register-nav-item">
+							<a class="sign-register-nav-link" href="{{ 'auth/signup'|page }}">
+								Регистрация
+							</a>
+						</li>
+					</ul>
+					<div class="tab-sign">
+						<div class="tab-sign-form">
+							{% partial account ~ '::signin' %}
+							
+							<a href="{{'auth/password-recovery'|page}}" class="tab-sign-form-help mt-3">Забыли пароль?</a>
+						</div>
+						
+						<div class="tab-register-br">
+							<span></span>
+							<div class="tab-register-br-text">
+								<p>или</p>
+							</div>
+						</div>
+						
+						<div class="tab-register-social">
+							<h3>Также Вы можете войти через:</h3>
+							<ul class="tab-register-blocks">
+								<li class="tab-register-block">
+									<a href="javascript:">
+										<img src="{{ 'assets/dist/img/google.png'|theme }}" alt="google.png">
+										Google
+									</a>
+								</li>
+								<li class="tab-register-block">
+									<a href="javascript:">
+										<img src="{{ 'assets/dist/img/facebook.png'|theme }}" alt="facebook.png">
+										facebook
+									</a>
+								</li>
+								<li class="tab-register-block">
+									<a href="javascript:">
+										<img src="{{ 'assets/dist/img/twitter.png'|theme }}" alt="twitter.png">
+										twitter
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

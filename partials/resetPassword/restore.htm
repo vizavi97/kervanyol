@@ -1,0 +1,17 @@
+[viewBag]
+==
+<p class="lead">
+    <strong>Забыли пароль?</strong> Введите адрес электронной почты, чтобы подтвердить свой аккаунт.
+</p>
+
+<form
+    data-request="{{ __SELF__ }}::onRestorePassword"
+    data-request-flash
+    data-request-update="'{{ __SELF__ }}::reset': '#partialUserResetForm'">
+    <div class="form-group">
+        <label for="userRestoreEmail">Введете почту</label>
+        <input name="email" type="email" class="input-kervan" id="userRestoreEmail" placeholder="Enter your email">
+    </div>
+
+    <button data-attach-loading type="submit" class="btn tab-register-form-btn"> Отправить </button>
+</form>
