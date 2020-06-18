@@ -2,20 +2,10 @@ import $ from "jquery";
 import 'bootstrap'
 import 'owl.carousel2/dist/owl.carousel'
 import EmojiButton from '@joeattardi/emoji-button'
-import Swiper from "swiper";
 import './inputPhone';
 import './zoomple';
 import './app';
 import categories from '../json/categories'
-
-
-const bgSwitcher = document.getElementById('bg-switcher');
-
-if (bgSwitcher) {
-  bgSwitcher.addEventListener("click", () => {
-    document.body.classList.toggle('layout')
-  })
-}
 
 $('.top-slider').owlCarousel({
   loop: true,
@@ -123,26 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
-const demoWrapper = document.getElementsByClassName('product-slider');
-
-if (demoWrapper.length > 0) {
-  var productSliderThumbs = new Swiper('.product-slider-thumbs', {
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-  });
-  var productSliderTop = new Swiper('.product-slider-top', {
-    spaceBetween: 10,
-    thumbs: {
-      swiper: productSliderThumbs
-    }
-  });
-
-}
-
 //COUNTER PRODUCT_PAGE
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -156,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
       counter.value = counterValue;
     });
     counterDecr.addEventListener('click', () => {
-      if (counter.value > 0) {
+      if (counter.value > 1) {
         counterValue--;
         counter.value = counterValue;
       }
