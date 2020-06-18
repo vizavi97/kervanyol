@@ -134,7 +134,7 @@
       flex-direction: column;
       text-align: left;
       flex-grow: 1;
-      padding: rem(32) rem(24) rem(60) rem(32);
+      padding: rem(32) rem(25) rem(60);
       box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
       background-color: #ffffff;
 
@@ -179,6 +179,7 @@
 
         &-close {
           margin-left: auto;
+
           a {
             color: #ff8d1c;
             font-size: 3rem;
@@ -576,6 +577,48 @@
           font-size: rem(13);
           font-style: italic;
           color: #000000;
+        }
+      }
+    }
+  }
+
+  &-sticker-form {
+    margin-top: 15px;
+
+    &-company {
+      padding: rem(21) rem(14);
+      margin-bottom: 1.5rem;
+      box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
+      background-color: #ffffff;
+
+      &-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e1e6ee;
+
+        h5 {
+          color: #000000;
+          font-size: 1rem;
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+      }
+
+      &-select {
+        padding: rem(24) 0;
+      }
+
+      .btn-kervan {
+        width: 100%;
+        background: transparent;
+        border: 1px solid #FF6F55;
+        color: #FF6F55;
+
+        &:hover {
+          background: #FF6F55;
+          color: #FFFFFF;
         }
       }
     }
@@ -1899,13 +1942,15 @@
     .cabinet-data-container {
       margin-bottom: rem(16);
     }
+
     &-container {
       @include row-flex();
 
-      .allStores-item{
+      .allStores-item {
         @include size(6);
         @include size-sm(12);
       }
+
       &-block {
         @include col();
         @include size(6);
@@ -1927,10 +1972,12 @@
         }
       }
     }
+
     .product-item {
       @include size(4);
       @include size-sm(6);
-      &-name{
+
+      &-name {
         display: flex;
         justify-content: space-between;
       }
@@ -2836,6 +2883,71 @@
     }
   }
 
+  &-register {
+    &-export {
+      margin-left: 0;
+
+      label {
+        font-size: rem(12);
+        line-height: rem(15);
+        color: #c1c7cf;
+      }
+    }
+
+    &-farmer {
+      .btn-kervan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 42px;
+        max-width: rem(290);
+        width: 100%;
+        cursor: pointer;
+        margin-left: rem(7.5);
+
+        i {
+          padding-left: rem(16);
+        }
+      }
+
+      .cabinet-declaration-form-inputs,
+      .cabinet-register-container-form-inputs {
+        width: 50%;
+        flex-grow: inherit;
+
+        label {
+          width: 100%;
+        }
+      }
+
+      .remove-switcher,
+      .add-switcher {
+        margin-left: rem(7);
+        padding: 0;
+      }
+      .main-certificates{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .addFile-inner{
+        width: 161px;
+        height: 161px;
+      }
+      &-area{
+        position: relative;
+        &-span{
+          position: absolute;
+          right: 5%;
+          bottom: 5%;
+          color: #000000 !important;
+          sup{
+            top: rem(-8);
+          }
+        }
+      }
+    }
+  }
+
   @include lg-block() {
     &-nav {
       width: auto;
@@ -2874,6 +2986,9 @@
       top: 0;
       padding: 0;
       margin-bottom: rem(8);
+      &-logout{
+        padding: 1rem;
+      }
     }
     &-register {
       &-container {
@@ -3024,6 +3139,11 @@
         }
       }
     }
+    &-sticker{
+      max-width: 100%;
+      width: 100%;
+      margin-left: 0;
+    }
   }
   @include xs-block() {
     &-register {
@@ -3058,6 +3178,16 @@
               max-width: 100%;
             }
           }
+        }
+      }
+      &-farmer{
+        flex-wrap: wrap;
+        .cabinet-declaration-form-inputs{
+          width: 100%;
+        }
+        .btn-kervan{
+          margin: rem(15) 0;
+          max-width: 100%;
         }
       }
     }
