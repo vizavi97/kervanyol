@@ -14,6 +14,7 @@
     "bootstrap": "^4.5.0",
     "drift-zoom": "^1.4.0",
     "easyzoom": "^2.5.3",
+    "expose-loader": "^0.7.5",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "jquery.magnify": "^1.5.1",

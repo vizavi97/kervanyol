@@ -1,0 +1,50 @@
+[viewBag]
+==
+<h4>Зарегистрируйтесь с помощью номера телефона или Эл.почты</h4>
+
+{% if canRegister %}
+<form data-request="onRegister" data-request-flash>
+	
+	<div class="form-row">
+		<div class="col-md-6 mb-4 ">
+			<label for="registerName">Имя</label>
+			<input type="text"  class="input-kervan" id="registerName" name="name" required>
+		</div>
+		
+		<div class="col-md-6 mb-4">
+			<label for="registerSurname">Фамилия</label>
+			<input type="text" class="input-kervan" id="registerSurname" name="surname" required>
+		</div>
+	</div>
+	
+	<div class="form-row">
+		<div class="col-md-12 mb-4">
+			<label for="registerEmail">Введите адрес эл.почты</label>
+			<input type="text" class="input-kervan" id="registerEmail" name="email" required>
+		</div>
+	</div>
+	
+	<div class="form-row tab-register-form-password">
+		<div class="col-md-6 mb-4">
+			<label for="registerPassword">Создайте пароль</label>
+			<input type="password" class="input-kervan password-input" id="registerPassword" name="password" required>
+		</div>
+		
+		<div class="col-md-6 mb-4">
+			<label for="registerPasswordConfirm">Повторите пароль</label>
+			<input type="password" class="input-kervan password-input" id="registerPasswordConfirm" name="password_confirmation" required>
+			       
+			<a href="javascript:" class="password-control">
+				<i class="far fa-eye"></i>
+			</a>
+		</div>
+	</div>
+	<button data-attach-loading class="btn tab-register-form-btn mt-2" type="submit">
+		Зарегистрироваться
+	</button>
+</form>
+{% else %}
+	<div class="container">
+		<div class="alert alert-danger"> Форма регистрации временно отключена! </div>
+	</div>
+{% endif %}

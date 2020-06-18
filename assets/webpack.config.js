@@ -92,7 +92,19 @@ const config = {
         include: path.resolve(__dirname, "src/html/includes"),
         use: ["raw-loader"],
       },
+      {
+        test: require.resolve('jquery'),
+        use: [{
+          loader: 'expose-loader',
+          options: 'jQuery'
+        },{
+          loader: 'expose-loader',
+          options: '$'
+        }
+        ]
+      }
     ],
+
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -132,3 +144,4 @@ module.exports = (env, argv) => {
   }
   return config;
 };
+

@@ -1,6 +1,9 @@
 description = "Layout of marketplace"
 
 [CategoryList]
+
+[session]
+security = "all"
 ==
 <!DOCTYPE html>
 <html lang="ru">
@@ -27,5 +30,8 @@ description = "Layout of marketplace"
     
 	    <script src="https://kit.fontawesome.com/43236b6dfa.js" crossorigin="anonymous"></script>
 	    <script src="{{'assets/dist/js/bundle.js' | theme }}"></script>
+	    
+	    {% framework extras %}
+	    {% scripts %}
   </body>
 </html>

@@ -603,6 +603,24 @@ header {
       font-size: 2rem;
       color: #000711;
     }
+    
+    &-login {
+      a {
+        text-decoration: none;
+        &:hover {
+          span {
+            text-decoration: underline;
+
+          }
+        }
+        span {
+          font-weight: 600;
+          font-size: rem(14);
+          color: #FF6F55;
+          opacity: 1;
+        }
+      }
+    }
 
   }
 

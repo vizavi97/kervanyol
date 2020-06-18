@@ -1,3 +1,5 @@
+[viewBag]
+==
 <div class="header">
 	<div class="container">
 		<div class="header-container">
@@ -88,9 +90,18 @@
 					</div>
 					<div class="nav-elements">
 						<div class="nav-element">
-							<a href="/catalog.html" class="nav-element-profile">
-								<img src="{{'assets/dist/img/user-avatar.png' | theme}}" alt="user"/>
-							</a>
+							{% if user %}
+								<a href="{{ 'cabinet/accounthtml'|page }}" class="nav-element-profile">
+									<img src="{{'assets/dist/img/user-avatar.png' | theme}}" alt="user"/>
+								</a>
+							{% else %}
+								<div class="nav-element-login">
+									<a href="{{ 'auth/singin'|page }}">
+										<span>Войти</span>
+										<img src="{{'assets/dist/img/login-24px.svg' | theme}}" alt="login"/>
+									</a>
+								</div>
+							{% endif %}
 						</div>
 						<div class="nav-element">
 							<a href="/catalog.html" class="nav-element-favourite">
