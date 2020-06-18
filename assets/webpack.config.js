@@ -123,6 +123,7 @@ const config = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
     }),
+
   ].concat(htmlPlugins),
 };
 
