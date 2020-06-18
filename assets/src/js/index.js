@@ -6,9 +6,10 @@ import './inputPhone';
 import './zoomple';
 import './app';
 import categories from '../json/categories'
+
 //JQuery
 window.jQuery = $;
-window.$ = $
+window.$ = $;
 
 
 $('.top-slider').owlCarousel({
