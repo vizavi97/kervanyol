@@ -7,8 +7,10 @@ import './zoomple';
 import './app';
 import categories from '../json/categories'
 
-window.jQuery = $;
 window.$ = $;
+window.jQuery = $;
+jQuery = $;
+
 
 
 $('.top-slider').owlCarousel({

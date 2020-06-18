@@ -92,7 +92,19 @@ const config = {
         include: path.resolve(__dirname, "src/html/includes"),
         use: ["raw-loader"],
       },
+      {
+        test: require.resolve('jquery'),
+        use: [{
+          loader: 'expose-loader',
+          options: 'jQuery'
+        },{
+          loader: 'expose-loader',
+          options: '$'
+        }
+        ]
+      }
     ],
+
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -120,7 +132,8 @@ const config = {
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
-      jQuery: 'jquery'
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
     }),
   ].concat(htmlPlugins),
 };
@@ -131,3 +144,4 @@ module.exports = (env, argv) => {
   }
   return config;
 };
+
