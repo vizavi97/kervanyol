@@ -1,10 +1,10 @@
 .sign-register {
+  padding: rem(25) 0 rem(88);
   background-color: #f9fafc;
 
   &-items {
     display: flex;
     justify-content: space-between;
-    padding: rem(25) 0 rem(88);
   }
 
   &-item {
@@ -83,7 +83,7 @@
       &.active {
         color: #222227;
         position: relative;
-        font-weight: 600;
+        font-weight: 500;
         text-decoration: none;
 
         &:after {
@@ -99,14 +99,6 @@
         }
       }
     }
-  }
-
-  &-input {
-    width: 100%;
-    padding-bottom: 2rem;
-  }
-  .btn-kervan {
-    padding: .5625rem 1.5rem;
   }
 
   @include lg-block() {
@@ -180,10 +172,7 @@
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.24px;
-      border: 1px solid #99999929;
-      border-radius: 4px;
-      transition: all.3s ease;
-      box-shadow: 0 3px 15px #e9eef7;
+      box-shadow: 0 16px 50px #e9eef7;
 
       &:hover {
         box-shadow: none;
@@ -274,8 +263,19 @@
       }
     }
 
-    .btn-kervan {
-      padding: .5625rem 1.5rem;
+    &-btn {
+      height: 48px;
+      width: 257px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 3px 20px rgba(255, 111, 85, 0.3);
+      background-color: #ff6f55;
+      color: #ffffff;
+      font-family: "Montserrat";
+      font-size: rem(14);
+      font-weight: 600;
+      border-radius: rem(24);
 
       &:hover, &:focus {
         color: #ffffff;
@@ -299,7 +299,6 @@
 
   input {
     width: 100%;
-    max-width: none;
 
     &:focus {
       color: #000000;
@@ -308,7 +307,7 @@
   }
 
   &-form {
-    padding-bottom: 1.5rem;
+    padding-bottom: rem(35);
 
     &-checkbox {
       display: flex;
@@ -318,7 +317,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        user-select: none;
       }
 
       .custom-control-label:after,
@@ -341,14 +339,12 @@
         &:after {
           position: absolute;
           content: "";
-          left: -20px;
-          top: 6px;
-          width: 8px;
-          height: 8px;
-          background-color: #fe6f55;
+          left: rem(-19.5);
+          width: rem(7);
+          height: rem(7);
+          background-color: #000000;
           background-image: none !important;
           border-radius: 50%;
-
         }
       }
 
@@ -370,16 +366,11 @@
         color: #FF6F55;
       }
     }
-
-    .btn-kervan {
-      margin-top: .75rem;
-      padding: rem(9) 1.5rem;
-    }
   }
 }
 
 .rec-password {
-  padding-top: rem(34);
+  padding: rem(35) 0 rem(15);
 
   h3 {
     font-family: "Montserrat";

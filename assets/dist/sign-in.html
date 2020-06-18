@@ -673,7 +673,7 @@
       </div>
     </header>
     <main class="content sign-register">
-      <div class="container-lg sign-register">
+      <div class="container-lg">
         <div class="sign-register-items">
           <div class="sign-register-item-img"><img src="img/register.png" alt="register.png" /></div>
           <div class="sign-register-item">
@@ -692,21 +692,15 @@
                   <div class="tab-sign-form">
                     <form>
                       <div class="form-row">
-                        <div class="sign-register-input">
+                        <div class="col-md-6 mb-4">
                           <label for="validatSing01">Введите логин</label>
-                          <input class="input-kervan" id="validatSing01" placeholder="username@m.com" required />
+                          <input class="input-kervan" id="validatSing01" required />
                         </div>
                       </div>
                       <div class="form-row tab-sign-form-password">
-                        <div class="sign-register-input">
+                        <div class="col-md-6 mb-4">
                           <label for="validatSing02">Пароль</label>
-                          <input
-                            type="password"
-                            class="input-kervan"
-                            id="validatSing02"
-                            placeholder="Password"
-                            required
-                          />
+                          <input type="password" class="input-kervan" id="validatSing02" required />
                         </div>
                       </div>
                       <div class="custom-control custom-radio tab-sign-form-checkbox">
@@ -718,7 +712,7 @@
                         />
                         <label class="custom-control-label" for="customControlValidation2">Запомнить пароль</label>
                       </div>
-                      <button class="btn-kervan" type="submit">Вход</button>
+                      <button class="btn tab-register-form-btn mt-2" type="submit">Вход</button>
                     </form>
                     <a href="javascript:" class="tab-sign-form-help mt-3">Забыли пароль?</a>
                   </div>
