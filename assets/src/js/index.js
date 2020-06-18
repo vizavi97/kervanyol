@@ -6,6 +6,9 @@ import './inputPhone';
 import './zoomple';
 import './app';
 import categories from '../json/categories'
+//JQuery
+window.jQuery = $;
+window.$ = $;
 
 $('.top-slider').owlCarousel({
   loop: true,
@@ -272,5 +275,3 @@ $(document).on("mouseenter",'.nav-allCategories-link',function(){
   })
 });
 
-//JQuery
-window.$ = window.jQuery
