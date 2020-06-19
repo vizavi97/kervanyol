@@ -599,6 +599,10 @@ header {
       background-color: #ff4f33;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     &-profile {
       img {
         border: 1px solid #b2b2b2;
@@ -1096,7 +1100,6 @@ footer {
 
     h6 {
       color: #ffffff;
-      font-family: "SF Pro Display";
       font-size: 18px;
       font-weight: 400;
       margin-bottom: 0;
