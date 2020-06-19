@@ -1,0 +1,86 @@
+title = "Register 1"
+url = "/exim/register/:steep?1"
+layout = "exim"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+==
+<div class="container-lg">
+    <div class="content-container pt-4">
+        <div class="breadcrumbs">
+            {% partial "global/breadcrumbs" %}
+        </div>
+        
+        <div class="cabinet">
+            <div class="cabinet-nav">
+                {% partial "exim/exim-cabinet-nav" %}
+            </div>
+            
+            <div class="cabinet-container">
+                <div class="cabinet-register">
+                    
+                    <div class="cabinet-register-container">
+                        {% partial 'exim/register-1' %}
+                    </div>
+                    
+                    <div class="cabinet-register-stages">
+                        <div class="cabinet-register-stages-headline">
+                            <h5>Этапы заполнения</h5>
+                        </div>
+                        <ul class="cabinet-register-stages-items">
+                            <li class="cabinet-register-stages-item done">
+                                <h6>Основные данные</h6>
+                                <p>Укажите сведения о желаемом товаре</p>
+                            </li>
+                            <li class="cabinet-register-stages-item">
+                                <h6>Контактные данные</h6>
+                                <p>Заполните данные поля для возможности связаться с Вами</p>
+                            </li>
+                            <li class="cabinet-register-stages-item">
+                                <h6>Сведения о руководителе</h6>
+                                <p>Данные о руководителе остаются конфедициальными</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered container" role="document">
+        <div class="modal-content cabinet-modal">
+            <div class="cabinet-modal-img"><img src="{{'assets/dist/img/cabinet/operator.png' | theme}}" alt="icon" /></div>
+            <div class="cabinet-modal-info">
+                <div class="cabinet-modal-info-headline">
+                    <h6>Процесс заполнения формы завершен!</h6>
+                </div>
+                <div class="cabinet-modal-info-warning">
+                    <div class="cabinet-modal-info-warning-img"><img src="{{'assets/dist/img/cabinet/success.png' | theme}}" alt="" /></div>
+                    <div class="cabinet-modal-info-warning-text">
+                        <p><strong>Статус: "Успешно"</strong></p>
+                    </div>
+                    <div class="cabinet-modal-info-warning-close">
+                        <a href="javascript:" onclick="this.parentElement.parentElement.remove()">&times;</a>
+                    </div>
+                </div>
+                <div class="cabinet-modal-info-text">
+                    <p>Ваши данные переданы на обработку нашим сотрудникам. Это займёт некоторое время.</p>
+                    <p>
+                        По окончании процесса рассмотрения, на указанный Вами номер телефона придёт
+                        <strong>СМС-оповещение.</strong>
+                    </p>
+                    <b>Благодарим Вас за содействие!</b>
+                </div>
+                <div class="cabinet-modal-info-button"><a href="javascript:" class="btn btn-kervan">Продолжить</a></div>
+            </div>
+        </div>
+    </div>
+</div>
