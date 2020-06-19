@@ -1,0 +1,60 @@
+title = "Stores"
+url = "/stores"
+layout = "home"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[StoreList]
+pageNumber = "{{ :page }}"
+storePage = "store/detail"
+storesPerPage = 20
+==
+<?php
+function onStart() {
+	
+	$this['pageClass'] = 'allStores';
+}
+?>
+==
+<div class="container">
+    <div class="content-container">
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs-items">
+                <li class="breadcrumbs-item active"><a href="/">Главная</a></li>
+                <li class="breadcrumbs-item"><a href="javascript:">Все категории</a></li>
+                <li class="breadcrumbs-item"><a href="javascript:">Верхняя одежда</a></li>
+                <li class="breadcrumbs-item"><a href="javascript:">Головные уборы спецназначения</a></li>
+                <li class="breadcrumbs-item"><a href="javascript:">Air Jordan XXXIV</a></li>
+            </ul>
+        </div>
+        <div class="allStores-headline">
+            <h3>Все магазины</h3>
+            <p>3460 магазинов</p>
+        </div>
+        
+        <div class="allStores-items">
+        	
+            {% for i in 1..20 %}
+            	{% partial 'market/store-item' %}
+            {% endfor %}
+            
+            <div class="catalog-container-pageNavigation">
+                <ul class="catalog-container-pageNavigation-items">
+                    <li class="catalog-container-pageNavigation-item active"><a href="javascript:">1</a></li>
+                    <li class="catalog-container-pageNavigation-item"><a href="javascript:">2</a></li>
+                    <li class="catalog-container-pageNavigation-item"><a href="javascript:">3</a></li>
+                    <li class="catalog-container-pageNavigation-item"><a href="javascript:">4</a></li>
+                    <li class="catalog-container-pageNavigation-item"><a href="javascript:">5</a></li>
+                    <li class="catalog-container-pageNavigation-item"><a href="javascript:">...</a></li>
+                    <li class="catalog-container-pageNavigation-item"><a href="javascript:">10</a></li>
+                    <li class="catalog-container-pageNavigation-item">
+                        <a href="javascript:"><i class="fas fa-angle-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

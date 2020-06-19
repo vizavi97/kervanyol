@@ -1,5 +1,5 @@
-title = "cabinet-store-orders.html"
-url = "/cabinet-store-orders.html"
+title = "Store products"
+url = "/store/products"
 layout = "home"
 is_hidden = 0
 child_of = "mey_no_parent"
@@ -17,28 +17,9 @@ public function onStart() {
 <div class="container-lg">
   <div class="content-container pt-4">
     <div class="cabinet">
-      <div class="cabinet-nav pb-1">
-        <div class="cabinet-nav-headline"><h5>Личный кабинет</h5></div>
-        <ul class="cabinet-nav-items">
-          <li class="cabinet-nav-item">
-            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/conversetion.svg'|theme }}" alt="icon" /> <span>Консоль</span></a>
-          </li>
-          <li class="cabinet-nav-item">
-            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/manuscript.svg'|theme }}" alt="icon" /> <span>Мой магазин</span></a>
-          </li>
-          <li class="cabinet-nav-item">
-            <a href="javascript:" class="active"
-              ><img src="{{ 'assets/dist/img/cabinet/transaction.svg'|theme }}" alt="icon" /> <span>Мои продукты</span></a
-            >
-          </li>
-          <li class="cabinet-nav-item">
-            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/list.svg'|theme }}" alt="icon" /> <span>Заказы</span></a>
-          </li>
-          <li class="cabinet-nav-item">
-            <a href="javascript:"><img src="{{ 'assets/dist/img/cabinet/notification.svg'|theme }}" alt="icon" /> <span>Выйти</span></a>
-          </li>
-        </ul>
-      </div>
+      
+      {% partial 'account/side-navbar' %}
+      
       <div class="cabinet-container sticker">
         <div class="cabinet-data cabinet-account">
           <div class="tab-content">
@@ -962,43 +943,8 @@ public function onStart() {
           </div>
         </div>
         <div class="cabinet-profile">
-          <div class="cabinet-profile-container">
-            <div class="cabinet-profile-image">
-              <span
-                ><svg xmlns="http://www.w3.org/2000/svg" width="28" height="31" viewBox="0 0 28 31">
-                  <g>
-                    <g>
-                      <g>
-                        <path
-                          fill="none"
-                          stroke="#bccbd9"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="20"
-                          stroke-width="3"
-                          d="M26.007 29v0-3a6 6 0 0 0-6-6h-12a6 6 0 0 0-6 6v3"
-                        />
-                      </g>
-                      <g>
-                        <path
-                          fill="none"
-                          stroke="#bccbd9"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="20"
-                          stroke-width="3"
-                          d="M20.007 8a6 6 0 1 1-12 0 6 6 0 0 1 12 0z"
-                        />
-                      </g>
-                    </g>
-                  </g></svg
-              ></span>
-            </div>
-            <div class="cabinet-profile-name"><h5>Иван Иванов</h5></div>
-            <div class="cabinet-profile-email"><p>ivanka90@gmail.com</p></div>
-            <div class="cabinet-profile-number"><p>+ 998 94 123 45 67</p></div>
-            <div class="cabinet-profile-link"><a href="javascript:">Редактировать</a></div>
-          </div>
+          {% partial 'account/side-usercard' %}
+          
           <div class="cabinet-profile-sidebar">
             <h6>Управление товарами</h6>
             <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">

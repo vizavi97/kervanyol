@@ -1,0 +1,169 @@
+title = "Account chat"
+url = "/account/chat"
+layout = "home"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+==
+<?php
+public function onStart() {
+	
+	$this['pageClass'] = 'grey';
+}
+?>
+==
+<div class="container-lg">
+    <div class="content-container pt-4">
+        <div class="cabinet">
+            
+            {% partial 'account/side-navbar' %}
+            
+            <div class="cabinet-container sticker">
+                <div class="cabinet-data">
+                    <div class="cabinet-data-container">
+                        <h4>Личные сообщения</h4>
+                        <p class="my-0 text-muted">
+                            <small>В данном разделе Вы можете проверить оповещения от магазинов или наших сотрудников.</small>
+                        </p>
+                        <div class="cabinet-chat">
+                            <div class="cabinet-chat-search">
+                                <form action="javascript:">
+                                    <button type="submit"><img src="{{ 'assets/dist/img/cabinet/cabinet-chat/search.svg'|theme }}"  alt="" /></button>
+                                    <label><input type="search" placeholder="Поиск..." /></label>
+                                </form>
+                            </div>
+                            <ul class="cabinet-chat-users">
+                            	
+                            	{% for i in 1..20 %}
+                            		{% partial 'account/chat-item' %}
+                            	{% endfor %}
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cabinet-chat-conversation online hide">
+                        <div class="cabinet-chat-conversation-return">
+                            <a href="javascript:" onclick="this.parentElement.parentElement.classList.add('hide')"
+                                ><i class="fas fa-chevron-left"></i> <span>Вернуться назад</span></a
+                                >
+                        </div>
+                        <div class="cabinet-chat-conversation-profile">
+                            <div class="profile-img"><img src="{{ 'assets/dist/img/cabinet/cabinet-chat/girl-1.png'|theme }}" alt="girl" /></div>
+                            <div class="profile-info">
+                                <div class="profile-info-name">
+                                    <h6>Jennifer Fritz</h6>
+                                </div>
+                                <div class="profile-info-status">
+                                    <p>в сети</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cabinet-chat-conversation-container">
+                            <ul class="cabinet-chat-conversation-elements" id="chat-conversation">
+                                <li class="cabinet-chat-conversation-element our-conversation">
+                                    <div class="cabinet-chat-conversation-element-img">
+                                        <img src="{{ 'assets/dist/img/cabinet/cabinet-chat/girl-1.png'|theme }}" alt="girl" />
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-message">
+                                        <div class="cabinet-chat-conversation-element-message-container">
+                                            <p>Your story continues on mobile: Build and edit decks. Give and receive feedback.</p>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-time">
+                                        <p>3:15 PM</p>
+                                    </div>
+                                </li>
+                                <li class="cabinet-chat-conversation-element opponent-conversation">
+                                    <div class="cabinet-chat-conversation-element-img">
+                                        <img src="{{ 'assets/dist/img/cabinet/cabinet-chat/girl-2.svg'|theme }}"  alt="girl" />
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-message">
+                                        <div class="cabinet-chat-conversation-element-message-container">
+                                            <p>I’ve always been on the fringe of</p>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-time">
+                                        <p>3:15 PM</p>
+                                    </div>
+                                </li>
+                                <li class="cabinet-chat-conversation-element our-conversation">
+                                    <div class="cabinet-chat-conversation-element-img">
+                                        <img src="{{ 'assets/dist/img/cabinet/cabinet-chat/girl-1.png'|theme }}" alt="girl" />
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-message">
+                                        <div class="cabinet-chat-conversation-element-message-container">
+                                            <p>Your story continues on mobile: Build and edit decks. Give and receive feedback.</p>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-time">
+                                        <p>3:15 PM</p>
+                                    </div>
+                                </li>
+                                <li class="cabinet-chat-conversation-element opponent-conversation">
+                                    <div class="cabinet-chat-conversation-element-img">
+                                        <img src="{{ 'assets/dist/img/cabinet/cabinet-chat/girl-2.svg'|theme }}"  alt="girl" />
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-message">
+                                        <div class="cabinet-chat-conversation-element-message-container">
+                                            <p>I’ve always been on the fringe of</p>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-time">
+                                        <p>3:15 PM</p>
+                                    </div>
+                                </li>
+                                <li class="cabinet-chat-conversation-element our-conversation">
+                                    <div class="cabinet-chat-conversation-element-img">
+                                        <img src="{{ 'assets/dist/img/cabinet/cabinet-chat/girl-1.png'|theme }}" alt="girl" />
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-message">
+                                        <div class="cabinet-chat-conversation-element-message-container">
+                                            <p>Your story continues on mobile: Build and edit decks. Give and receive feedback.</p>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-time">
+                                        <p>3:15 PM</p>
+                                    </div>
+                                </li>
+                                <li class="cabinet-chat-conversation-element opponent-conversation">
+                                    <div class="cabinet-chat-conversation-element-img">
+                                        <img src="{{ 'assets/dist/img/cabinet/cabinet-chat/girl-2.svg'|theme }}"  alt="girl" />
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-message">
+                                        <div class="cabinet-chat-conversation-element-message-container">
+                                            <p>I’ve always been on the fringe of</p>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-chat-conversation-element-time">
+                                        <p>3:15 PM</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cabinet-chat-conversation-form">
+                            <form action="javascript:">
+                                <div class="cabinet-chat-conversation-form-input">
+                                    <textarea id="immoji" placeholder="Написать..."></textarea>
+                                    <label for="file"><input type="file" id="file" /> <i class="fas fa-paperclip"></i></label>
+                                    <button id="emoji-button"><i class="far fa-smile"></i></button>
+                                </div>
+                                <div class="cabinet-chat-conversation-form-button">
+                                    <button type="submit" class="btn btn-kervan">
+                                    Отправить <i class="far fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cabinet-profile">
+                	{% partial 'account/side-usercard' %}
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

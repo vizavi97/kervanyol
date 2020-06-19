@@ -1,0 +1,113 @@
+title = "Store info"
+url = "/store/info"
+layout = "home"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+==
+<?php
+public function onStart() {
+	
+	$this['pageClass'] = 'grey';
+}
+?>
+==
+<div class="container-lg">
+   <div class="content-container pt-4">
+      <div class="cabinet">
+         
+         {% partial 'account/side-navbar' %}
+         
+         <div class="cabinet-container sticker">
+            <div class="cabinet-store-main">
+               <div class="cabinet-data-container">
+                  <h4>Сведения о магазине</h4>
+                  <div class="cabinet-delivery"></div>
+                  <div class="cabinet-store-main-content">
+                     <a href="javascript:" class="cabinet-store-main-edit">Редактировать</a>
+                     <div class="cabinet-store-main-info">
+                        <div class="cabinet-store-main-info-headline">
+                           <p>Название:</p>
+                        </div>
+                        <div class="cabinet-store-main-info-text">
+                           <p>Star Elite</p>
+                        </div>
+                     </div>
+                     <div class="cabinet-store-main-info">
+                        <div class="cabinet-store-main-info-headline">
+                           <p>Дата открытия:</p>
+                        </div>
+                        <div class="cabinet-store-main-info-text">
+                           <p>12 июля 2010 г</p>
+                        </div>
+                     </div>
+                     <div class="cabinet-store-main-info">
+                        <div class="cabinet-store-main-info-headline">
+                           <p>Контактный телефон:</p>
+                        </div>
+                        <div class="cabinet-store-main-info-text">
+                           <p>+ 998 94 123 45 67</p>
+                        </div>
+                     </div>
+                     <div class="cabinet-store-main-info">
+                        <div class="cabinet-store-main-info-headline">
+                           <p>Адрес магазина:</p>
+                        </div>
+                        <div class="cabinet-store-main-info-text">
+                           <p>Ташкент, ул, Новикузнецкая 24 стр, 4а, N 15</p>
+                        </div>
+                     </div>
+                     <div class="cabinet-store-main-info">
+                        <div class="cabinet-store-main-info-headline">
+                           <p>Страна:</p>
+                        </div>
+                        <div class="cabinet-store-main-info-text">
+                           <p>Узбекистан</p>
+                        </div>
+                     </div>
+                     <div class="cabinet-store-main-info">
+                        <div class="cabinet-store-main-info-headline">
+                           <p>Вид производства:</p>
+                        </div>
+                        <div class="cabinet-store-main-info-text">
+                           <p>одежда</p>
+                        </div>
+                     </div>
+                     <div class="cabinet-store-main-info">
+                        <div class="cabinet-store-main-info-headline">
+                           <p>ФИ руководителя</p>
+                        </div>
+                        <div class="cabinet-store-main-info-text">
+                           <p>Иван Иванов</p>
+                        </div>
+                     </div>
+                     <div class="cabinet-store-main-info">
+                        <div class="cabinet-store-main-info-headline">
+                           <p>Эл.почта</p>
+                        </div>
+                        <div class="cabinet-store-main-info-text">
+                           <p>example@mail.ru</p>
+                        </div>
+                     </div>
+                     <div class="cabinet-store-main-info border-bottom-0 pb-4">
+                        <div class="cabinet-store-main-info-headline">
+                           <p>Телефон руководителя:</p>
+                        </div>
+                        <div class="cabinet-store-main-info-text">
+                           <p>+ 998 94 123 45 67</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="cabinet-profile">
+               {% partial 'account/side-usercard' %}
+            </div>
+            
+         </div>
+      </div>
+   </div>
+</div>
