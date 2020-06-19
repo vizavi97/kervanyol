@@ -54,6 +54,11 @@ header {
     display: flex;
     align-items: center;
 
+    .icon-map {
+      font-size: rem(18);
+      padding: 0;
+    }
+
     span {
       padding-left: .75rem;
       font-size: .875rem;
@@ -67,6 +72,12 @@ header {
 
     & > div {
       padding: 0 .25rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .icon-global {
+      font-size: rem(16);
     }
   }
 }
@@ -125,6 +136,10 @@ header {
     display: flex;
     align-items: center;
     padding-left: rem(60);
+
+    .icon-support {
+      font-size: rem(32);
+    }
 
     &-info {
       padding-left: rem(10);
@@ -599,25 +614,38 @@ header {
       padding-right: 9px;
     }
 
-    i {
+    i, span:before {
       font-size: 2rem;
       color: #000711;
     }
-    
+
     &-login {
       a {
         text-decoration: none;
+        display: flex;
+        align-items: center;
+
         &:hover {
           span {
             text-decoration: underline;
 
           }
         }
+
+        span + span{
+          padding-left: rem(12);
+        }
+
         span {
           font-weight: 600;
           font-size: rem(14);
           color: #FF6F55;
           opacity: 1;
+
+          &:before {
+            font-size: rem(18);
+            color: #FF6F55;
+          }
         }
       }
     }
@@ -876,10 +904,10 @@ header {
     &.show {
       opacity: 1;
       transform: translateY(3rem);
-      @include lg-block(){
-      transform: translateY(5.125rem);
+      @include lg-block() {
+        transform: translateY(5.125rem);
       }
-      @include md-block(){
+      @include md-block() {
         transform: translateY(8.75rem);
       }
     }
@@ -888,13 +916,13 @@ header {
       display: flex;
       align-items: stretch;
       height: 100%;
-      @include lg-block(){
+      @include lg-block() {
         max-width: calc(100% - 4rem);
       }
-      @include md-block(){
+      @include md-block() {
         max-width: calc(100% - 2rem);
       }
-      @include sm-block(){
+      @include sm-block() {
         max-width: calc(100% - 1rem);
       }
     }
@@ -911,7 +939,7 @@ header {
       -moz-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      @include sm-block(){
+      @include sm-block() {
         width: 180px;
       }
     }
@@ -958,7 +986,7 @@ header {
     &-content {
       flex: 1;
       min-height: 510px;
-      @include lg-block(){
+      @include lg-block() {
         min-height: auto;
       }
 
@@ -982,9 +1010,10 @@ header {
         display: none;
         flex-direction: column;
         flex-grow: 1;
-        @include md-block(){
-          padding:  1rem .75rem;
+        @include md-block() {
+          padding: 1rem .75rem;
         }
+
         &:first-of-type {
           display: block;
         }
@@ -1006,7 +1035,7 @@ header {
         -webkit-column-gap: 0;
         -moz-column-gap: 0;
         column-gap: 0;
-        @include lg-block(){
+        @include lg-block() {
           -webkit-column-count: 1;
           -moz-column-count: 1;
           column-count: 1;
@@ -1018,17 +1047,18 @@ header {
           page-break-inside: avoid;
           -webkit-column-break-inside: avoid;
           padding: rem(32) rem(42) 0 0;
-          @include md-block(){
+          @include md-block() {
             break-inside: unset;
             padding: 1rem 1.5rem 0 0;
           }
-          @include sm-block(){
+          @include sm-block() {
             width: auto;
           }
         }
       }
+
       &-banners {
-        @include lg-block(){
+        @include lg-block() {
           flex-direction: column-reverse;
           justify-content: center;
           align-items: center;
