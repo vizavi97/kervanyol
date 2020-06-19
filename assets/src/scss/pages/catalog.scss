@@ -424,9 +424,11 @@
       & > div {
         cursor: pointer;
         padding: 0 8px;
+        display: flex;
 
-        path {
-          fill: #bccbd9;
+        span {
+          color: #bccbd9;
+          font-size: rem(18);
         }
 
         &:last-of-type {
@@ -434,8 +436,8 @@
         }
 
         &.active {
-          path {
-            fill: #ff6f55;
+          span {
+            color: #ff6f55;
           }
         }
       }
@@ -508,6 +510,7 @@
       border-radius: 5px;
       margin-bottom: 1.5rem;
       padding: .75rem;
+
       &:hover {
         box-shadow: 0 0 1px 1px #bccbd9;
       }
@@ -613,6 +616,7 @@
 
       &-send {
         margin-bottom: 10px;
+
         span {
           color: #636363;
           font-size: 11px;
@@ -741,7 +745,8 @@
                 }
               }
             }
-            &.cost{
+
+            &.cost {
               padding-bottom: 0;
             }
           }
@@ -758,7 +763,8 @@
       &-toggler {
         padding-top: rem(15);
       }
-      &-items.line>li{
+
+      &-items.line > li {
         grid-template-columns: 2.5fr 3fr 2.25fr;
       }
     }

@@ -606,13 +606,23 @@
 
             &:first-of-type {
               &:before {
-                content: '←';
+                content: '\e90b';
+                font-family: icomoon !important;
+                font-size: rem(24);
+                font-style: normal;
+                font-weight: 400;
+                transform: rotate(90deg);
               }
             }
 
             &:last-of-type {
               &:before {
-                content: '→';
+                content: '\e90b';
+                font-family: icomoon !important;
+                font-size: rem(24);
+                font-style: normal;
+                font-weight: 400;
+                transform: rotate(-90deg);
               }
             }
           }

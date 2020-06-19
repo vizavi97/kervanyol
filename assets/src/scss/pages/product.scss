@@ -355,12 +355,15 @@
         }
       }
 
-      &-buttons {
-        display: flex;
+      &-buttons{
         flex-direction: row !important;
+      }
+      &-button {
+        display: flex;
         align-items: center;
         justify-content: space-between;
         padding-top: .25rem;
+        padding-right: rem(15);
 
         & > .buy-on-click, & > .to-basket {
           color: #ffffff;
@@ -384,6 +387,9 @@
         flex-direction: row !important;
         align-items: center;
 
+        span{
+          font-size: rem(24);
+        }
         p {
           margin-bottom: 0;
 

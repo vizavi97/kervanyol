@@ -1,7 +1,5 @@
 .companies {
-  font-family: "Montserrat";
   &-banner {
-    font-family: "Montserrat";
 
     & > div {
       background-color: #bce7f0;
@@ -204,6 +202,7 @@
         background-color: #ffffff;
         border-radius: 2rem;
         overflow: hidden;
+        position: relative;
         input {
           border: 0;
           height: 100%;
@@ -214,6 +213,8 @@
           font-weight: 400;
         }
         button {
+          position: absolute;
+          right: 0;
           width: 72px;
           height: 48px;
           border: 1px solid #ff6f55;
