@@ -1,6 +1,5 @@
 .sign-register {
   background-color: #f9fafc;
-  padding: rem(25) 0 rem(88);
 
   &-items {
     display: flex;
@@ -343,7 +342,6 @@
           position: absolute;
           content: "";
           left: -20px;
-          top: 6px;
           width: 8px;
           height: 8px;
           background-color: #fe6f55;

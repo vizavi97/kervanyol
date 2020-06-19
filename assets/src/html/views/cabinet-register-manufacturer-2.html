@@ -105,7 +105,7 @@
           <div class="cabinet-register">
             <div class="cabinet-register-container">
               <div class="cabinet-register-container-headline">
-                <h5>Регистрация Фермера</h5>
+                <h5>Регистрация Производителя</h5>
               </div>
               <div class="cabinet-register-container-text">
                 <p>Данный раздел поможет Вам заполнить анкету для продолжения мероприятий на нашем сайте.</p>
@@ -127,69 +127,70 @@
               </div>
               <div class="cabinet-register-container-form">
                 <h6>Заполните данные</h6>
-                <form action="cabinet-register-farmer-3.html">
+                <form action="index.html">
                   <div class="cabinet-register-container-form-inputs">
                     <label>
-                      <span>Область *</span>
-                      <input type="text" class="input-kervan" name="name" placeholder="_____"/>
+                      <span>Банковский счёт *</span>
+                      <input type="text" class="input-kervan" name="name" placeholder="____"/>
                     </label>
                     <label>
-                      <span>Адрес *</span>
-                      <input type="text" class="input-kervan" name="name" placeholder="_____"/>
+                      <span>ИНН *</span>
+                      <input type="text" class="input-kervan" name="name" placeholder="____"/>
                     </label>
                   </div>
                   <div class="cabinet-register-container-form-inputs">
                     <label>
-                      <span>Улица *</span>
-                      <input type="text" class="input-kervan" name="name" placeholder="_____"/>
+                      <span>ОКЭД *</span>
+                      <input type="text" class="input-kervan" name='name' placeholder="______"/>
                     </label>
                     <label>
-                      <span>Контактное лицо *</span>
-                      <input type="text" class="input-kervan" name="name" placeholder="_____"/>
+                      <span>МФО *</span>
+                      <select name="ecp">
+                        <option value="______" selected>______</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                      </select>
                     </label>
                   </div>
-                  <div class="cabinet-declaration-form-top cabinet-register-farmer">
-                    <div class="cabinet-declaration-form-inputs">
-                      <label class="cabinet-register-farmer-area">
-                        <span>Площадь *</span>
-                        <input type="text" class="input-kervan" name="name" placeholder="_____"/>
-                        <span class="cabinet-register-farmer-area-span">M<sup>2</sup></span>
-                      </label>
-                    </div>
-                    <a href="javascript:" class="btn-kervan">Указать поле на карте <i
-                        class="fas fa-map-marked"></i></a>
-                  </div>
-                  <div class="cabinet-declaration-form-top cabinet-register-farmer">
-                    <div class="cabinet-declaration-form-inputs">
-                      <label>
-                        <span>Посев*</span>
-                        <input type="text" class="input-kervan" placeholder="_____" name="product[0]"
-                               id="declaration-input" rel="0"/>
-                      </label>
-                    </div>
-                    <button type="button" id="add-switcher" class="add-switcher">
-                      <span>+</span>
-                    </button>
-                  </div>
-                  <div class="cabinet-declaration-form-wrapper" id="farmer-input-wrapper">
+                  <div class="cabinet-register-container-form-inputs">
+                    <label>
+                      <span>Номер лицензии *</span>
+                      <input type="text" class="input-kervan" name='name' placeholder="______"/>
+                    </label>
+                    <label>
+                      <span>Вид предприятия *</span>
+                      <select name="ecp">
+                        <option value="______" selected>______</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                      </select>
+                    </label>
                   </div>
                   <div class="cabinet-register-container-form-inputs">
-                    <div class="cabinet-register-farmer">
-                      <h6>Добавить фото посева</h6>
-                      <ul class="main-certificates">
-                        <li class="cabinet-register-container-form-addFile-item">
-                          <label>
-                            <div class="addFile-inner">
-                              <img src="img/data-falling/plus.png" alt="plus">
-                              <span>Загрузить</span>
-                            </div>
-                            <input type="file" rel="1" name="certificates[1]"
-                                   onchange="window.readURL(this)" data-name="certificates">
-                            <em class="hidden">замена изображения</em>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
+                    <label>
+                      <span>Вид деятельности *</span>
+                      <input type="text" class="input-kervan" name='name' placeholder="______"/>
+                    </label>
+                    <label>
+                      <span>Юридическое название *</span>
+                      <input type="text" class="input-kervan" name="name" placeholder="______"/>
+                    </label>
+                  </div>
+                  <div class="cabinet-register-container-form-inputs">
+                    <label>
+                      <span>Посев *</span>
+                      <input type="text" class="input-kervan" name='name' placeholder="______"/>
+                    </label>
+                  </div>
+                  <div class="custom-control custom-radio tab-sign-form-checkbox cabinet-register-export">
+                    <input type="checkbox" class="custom-control-input"
+                           id="customControlValidation2" name="radio-stacked">
+                    <label class="custom-control-label"
+                           for="customControlValidation2">Я Согласен Со Всеми Условиями</label>
                   </div>
                   <div class="cabinet-register-container-form-buttons justify-content-between">
                     <button type="submit" class="btn-kervan">
@@ -213,10 +214,6 @@
                     <p>Укажите базовые сведения о компании</p>
                   </li>
                   <li class="cabinet-register-stages-item done">
-                    <h6>Сведения о земельном участке</h6>
-                    <p>Укажите сведения о земельном участке</p>
-                  </li>
-                  <li class="cabinet-register-stages-item">
                     <h6>Юридическая информация</h6>
                     <p>Данные банковских счетов</p>
                   </li>
@@ -227,7 +224,7 @@
                   <div class="cabinet-sticker-form-company-header">
                     <h5>Этапы заполнения:</h5>
                   </div>
-                  <form action="cabinet-register-export.html">
+                  <form action="cabinet-register-export-2.html">
                     <div class="cabinet-sticker-form-company-select cabinet-register-container-form">
                       <label for="ecp">
                         <span>Электронная цифровая подпись</span>

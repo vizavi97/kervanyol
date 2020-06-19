@@ -1,0 +1,50 @@
+[viewBag]
+==
+<form data-request="onUpdate" data-request-flash data-request-files>
+	<ul class="cabinet-account-foto">
+        <li class="cabinet-register-container-form-addFile-item">
+            <label class="cabinet-account-foto-label">Загрузить фото профиля</label>
+            <label
+                >
+                <div
+                    class="addFile-inner"
+                    style="
+                    background: url('{{ user.avatar ? user.avatar.thumb(150, 150) : 'assets/dist/img/cabinet/profile-img.png'|theme }}') no-repeat center;
+                    background-size: cover;
+                    "
+                    ></div>
+                <input name="avatar" type="file" onchange="readURL(this)"
+                    />
+            </label>
+        </li>
+    </ul>
+    
+    <div class="cabinet-account-form">
+        <div class="cabinet-account-inputs">
+            <label>
+            	<span>Имя</span>
+            	<input name="name" type="text" class="input-kervan form-control" value="{{ user.name }}">
+            </label>
+            
+            <label>
+            	<span>Фамилия</span> 
+            	<input name="surname" type="text" class="input-kervan form-control" value="{{ user.surname }}"/>
+            </label>
+        </div>
+        
+        <div class="cabinet-account-inputs">
+            <label>
+            	<span>Изменить номер телефона</span>
+	            <input name="phone" type="text" class="input-kervan" placeholder="+998-(__) ___ - __ - __" value="{{user.phone}}"/>
+	        </label>
+	        
+	        
+            <label>
+            	<span>Изменить эл.почту</span>
+            	<input name="email" type="email" class="input-kervan" placeholder="" value="{{user.email}}"/>
+            </label>
+        </div>
+        
+        <button data-attach-loading type="submit" class="btn btn-kervan">Сохранить</button>
+    </div>
+</form>

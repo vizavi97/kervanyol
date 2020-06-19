@@ -1,5 +1,7 @@
 [viewBag]
 ==
+{% set obCategoryList = CategoryList.make().tree() %}
+
 <div class="header">
 	<div class="container">
 		<div class="header-container">
@@ -128,7 +130,17 @@
 						</label>
 					</div>
 
-					{% partial 'home/menu' %}
+					
+					
+					{% if obCategoryList.isNotEmpty() %}
+						<ul class="nav-menu-categories">
+							 {% for obCategory in obCategoryList|slice(0,6) %}
+								<li class="nav-menu-category">
+									<a href="/catalog.html">{{obCategory.name}} </a>
+								</li>
+							 {% endfor %}
+						</ul>
+					{% endif %}
 
 				</nav>
 			</div>

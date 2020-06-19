@@ -1,0 +1,20 @@
+[viewBag]
+==
+<div class="top-slider owl-carousel owl-theme">
+	
+	{% for i, slide in slider.carousel.slides %}
+		
+		<div class="top-slider-image">
+			<img src="{{'assets/dist/img/banner_1.png' | theme}}" alt=""/>
+			<div class="top-slider-wrapper container">
+				<div class="top-slider-content">
+					<h3>{{ slide.caption }}</h3>
+					<h5>{{ slide.description|raw }}</h5>
+					<a href="{{slide.url}}" class="btn btn-kervan btn-arr">Посмотреть</a>
+				</div>
+			</div>
+		</div>
+		
+	{% endfor %}
+
+</div>

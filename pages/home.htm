@@ -14,80 +14,12 @@ noPostsMessage = "Записей не найдено"
 sortOrder = "updated_at asc"
 categoryPage = "blog/detailt"
 postPage = "blog/detailt"
+
+[carousel]
+carousel = 1
 ==
 <div class="slider">
-	<div class="top-slider owl-carousel owl-theme">
-		<div class="top-slider-image">
-			<img src="{{'assets/dist/img/banner_1.png' | theme}}" alt=""/>
-			<div class="top-slider-wrapper container">
-				<div class="top-slider-content">
-					<h3>Будь на волне новых открытий</h3>
-					<h5>Огромная скидка на 1000 товаров</h5>
-					<a href="javascript:" class="btn btn-kervan btn-arr">Посмотреть товар</a>
-				</div>
-			</div>
-		</div>
-		<div class="top-slider-image">
-			<img src="{{'assets/dist/img/banner_1.png' | theme}}" alt=""/>
-			<div class="top-slider-wrapper container">
-				<div class="top-slider-content">
-					<h3>Будь на волне новых открытий</h3>
-					<h5>Огромная скидка на 1000 товаров</h5>
-					<a href="javascript:" class="btn btn-kervan btn-arr">Посмотреть товар</a>
-				</div>
-			</div>
-		</div>
-		<div class="top-slider-image">
-			<img src="{{'assets/dist/img/banner_1.png' | theme}}" alt=""/>
-			<div class="top-slider-wrapper container">
-				<div class="top-slider-content">
-					<h3>Будь на волне новых открытий</h3>
-					<h5>Огромная скидка на 1000 товаров</h5>
-					<a href="javascript:" class="btn btn-kervan btn-arr">Посмотреть товар</a>
-				</div>
-			</div>
-		</div>
-		<div class="top-slider-image">
-			<img src="{{'assets/dist/img/banner_1.png' | theme}}" alt=""/>
-			<div class="top-slider-wrapper container">
-				<div class="top-slider-content">
-					<h3>Будь на волне новых открытий</h3>
-					<h5>Огромная скидка на 1000 товаров</h5>
-					<a href="javascript:" class="btn btn-kervan btn-arr">Посмотреть товар</a>
-				</div>
-			</div>
-		</div>
-		<div class="top-slider-image">
-			<img src="{{'assets/dist/img/banner_1.png' | theme}}" alt=""/>
-			<div class="top-slider-wrapper container">
-				<div class="top-slider-content">
-					<h3>Будь на волне новых открытий</h3>
-					<h5>Огромная скидка на 1000 товаров</h5>
-					<a href="javascript:" class="btn btn-kervan btn-arr">Посмотреть товар</a>
-				</div>
-			</div>
-		</div>
-		<div class="top-slider-image">
-			<img src="{{'assets/dist/img/banner_1.png' | theme}}" alt=""/>
-			<div class="top-slider-wrapper container">
-				<div class="top-slider-content">
-					<h3>Будь на волне новых открытий</h3>
-					<h5>Огромная скидка на 1000 товаров</h5>
-					<a href="javascript:" class="btn btn-kervan btn-arr">Посмотреть товар</a>
-				</div>
-			</div>
-		</div>
-		<div class="top-slider-image">
-			<img src="{{'assets/dist/img/banner_1.png' | theme}}" alt=""/>
-			<div class="top-slider-wrapper container">
-				<div class="top-slider-content">
-					<h3>Будь на волне новых открытий</h3>
-					<h5>Огромная скидка на 1000 товаров</h5>
-					<a href="javascript:" class="btn btn-kervan btn-arr">Посмотреть товар</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	{% partial 'advertising/home-slider' slider=carousel %}
 </div>
 
 <div class="container">
@@ -117,7 +49,7 @@ postPage = "blog/detailt"
 								<div class="banners-top-item-img">
 									<img src="{{'assets/dist/img/agricultural.png' | theme}}" alt="agricultural"/>
 								</div>
-								<div class="banners-top-item-text">
+								<div class="banners-top-item-text pl-3 pl-xs-0">
 									<h5>Агронаправление</h5>
 									<p>Платформа для агро-сельхоз промышленности</p>
 								</div>
