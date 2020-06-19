@@ -94,3 +94,27 @@ if (declarationinputsWrapper) {
         declarationInputNumber++;
     });
 }
+
+// cabinet-register-farmer add form
+const farmerinputsWrapper = document.getElementById('farmer-input-wrapper');
+if (farmerinputsWrapper) {
+    const declarationCounter = document.getElementById('declaration-input');
+    let declarationInputNumber = Number(declarationCounter.getAttribute('rel')) + 1;
+    let declarationAddSwitcher = document.getElementById('add-switcher');
+    declarationAddSwitcher.addEventListener('click', () => {
+        farmerinputsWrapper.insertAdjacentHTML("afterbegin", `
+		<div class="cabinet-declaration-form-top cabinet-register-farmer">
+			<div class="cabinet-declaration-form-inputs">
+				<label>
+					<span>Посев*</span>
+					<input type="text" class="input-kervan" placeholder="_____" name="product[${declarationInputNumber}]"/>
+				</label>
+			</div>
+			<button type="button" id="remove-switcher" class="remove-switcher" onclick="this.parentElement.remove()">
+				<span>-</span>
+			</button>
+		</div>
+	  `);
+        declarationInputNumber++;
+    });
+}

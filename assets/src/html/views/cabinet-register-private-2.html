@@ -1,0 +1,253 @@
+<% var data = {title: "Личный кабинет: Регистрация компании",};%><%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="content grey">
+  <div class="container-lg">
+    <div class="content-container pt-1">
+      <div class="cabinet">
+        <div class="cabinet-nav">
+          <div class="cabinet-nav-headline">
+            <h5>Личный кабинет</h5>
+          </div>
+          <ul class="cabinet-nav-items">
+            <li class="cabinet-nav-item">
+              <a href="javascript:" class="active">
+                <img src="img/cabinet/conversetion.svg" alt="icon"/>
+                <span>Основные данные </span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:" class="disabled">
+                <img src="img/cabinet/manuscript.svg" alt="icon"/>
+                <span>История покупок</span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/transaction.svg" alt="icon"/>
+                <span>История транзакций</span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/list.svg" alt="icon"/>
+                <span>Список обязательных документов </span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/notification.svg" alt="icon"/>
+                <span>Уведомления</span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/like.svg" alt="icon"/>
+                <span>Понравившееся</span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/news.svg" alt="icon"/>
+                <span>Новости</span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/checklist.svg" alt="icon"/>
+                <span>Ассортимент</span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/deal.svg" alt="icon"/>
+                <span>Иностранные партнеры</span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/building.svg" alt="icon"/>
+                <span>Импортёры-компании РУз</span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/term.svg" alt="icon"/>
+                <span>Условия и правила </span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/feedback.svg" alt="icon"/>
+                <span>Отзывы обо мне</span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/help.svg" alt="icon"/>
+                <span>Центр поддержки</span>
+              </a>
+            </li>
+            <li class="cabinet-nav-item">
+              <a href="javascript:">
+                <img src="img/cabinet/lock.svg" alt="icon"/>
+                <span>Безопасность</span>
+              </a>
+            </li>
+          </ul>
+          <div class="cabinet-nav-logout">
+            <a href="javascript:">
+              <img src="img/cabinet/logout.svg" alt="icon"/>
+              <span>Выйти</span>
+            </a>
+          </div>
+        </div>
+        <div class="cabinet-container">
+          <div class="cabinet-register">
+            <div class="cabinet-register-container">
+              <div class="cabinet-register-container-headline">
+                <h5>Регистрация частного лица</h5>
+              </div>
+              <div class="cabinet-register-container-text">
+                <p>Данный раздел поможет Вам заполнить анкету для продолжения мероприятий на нашем сайте.</p>
+              </div>
+              <div class="cabinet-register-container-warning">
+                <div class="cabinet-register-container-warning-img">
+                  <img src="img/cabinet/warning.png" alt=""/>
+                </div>
+                <div class="cabinet-register-container-warning-text">
+                  <p><strong>Важно!</strong></p>
+                  <p>Все пункты должны быть заполнены поэтапно для возможности получения дальнейшего
+                    доступа.
+                  </p>
+                </div>
+                <div class="cabinet-register-container-warning-close">
+                  <a href="javascript:" onclick="this.parentElement.parentElement.remove()">&times;
+                  </a>
+                </div>
+              </div>
+              <div class="cabinet-register-container-form">
+                <h6>Заполните данные</h6>
+                <form action="cabinet-register-farmer-3.html">
+                  <div class="cabinet-register-container-form-inputs">
+                    <label>
+                      <span>Область *</span>
+                      <input type="text" class="input-kervan" name="name" placeholder="_____"/>
+                    </label>
+                    <label>
+                      <span>Адрес *</span>
+                      <input type="text" class="input-kervan" name="name" placeholder="_____"/>
+                    </label>
+                  </div>
+                  <div class="cabinet-register-container-form-inputs">
+                    <label>
+                      <span>Улица *</span>
+                      <input type="text" class="input-kervan" name="name" placeholder="_____"/>
+                    </label>
+                    <label>
+                      <span>Контактное лицо *</span>
+                      <input type="text" class="input-kervan" name="name" placeholder="_____"/>
+                    </label>
+                  </div>
+                  <div class="cabinet-declaration-form-top cabinet-register-farmer">
+                    <div class="cabinet-declaration-form-inputs">
+                      <label class="cabinet-register-farmer-area">
+                        <span>Площадь *</span>
+                        <input type="text" class="input-kervan" name="name" placeholder="_____"/>
+                        <span class="cabinet-register-farmer-area-span">M<sup>2</sup></span>
+                      </label>
+                    </div>
+                    <a href="javascript:" class="btn-kervan">Указать поле на карте <i
+                        class="fas fa-map-marked"></i></a>
+                  </div>
+                  <div class="cabinet-declaration-form-top cabinet-register-farmer">
+                    <div class="cabinet-declaration-form-inputs">
+                      <label>
+                        <span>Посев*</span>
+                        <input type="text" class="input-kervan" placeholder="_____" name="product[0]"
+                               id="declaration-input" rel="0"/>
+                      </label>
+                    </div>
+                    <button type="button" id="add-switcher" class="add-switcher">
+                      <span>+</span>
+                    </button>
+                  </div>
+                  <div class="cabinet-declaration-form-wrapper" id="farmer-input-wrapper">
+                  </div>
+                  <div class="cabinet-register-container-form-inputs">
+                    <div class="cabinet-register-farmer">
+                      <h6>Добавить фото посева</h6>
+                      <ul class="main-certificates">
+                        <li class="cabinet-register-container-form-addFile-item">
+                          <label>
+                            <div class="addFile-inner">
+                              <img src="img/data-falling/plus.png" alt="plus">
+                              <span>Загрузить</span>
+                            </div>
+                            <input type="file" rel="1" name="certificates[1]"
+                                   onchange="window.readURL(this)" data-name="certificates">
+                            <em class="hidden">замена изображения</em>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cabinet-register-container-form-buttons justify-content-between">
+                    <button type="submit" class="btn-kervan">
+                      Продолжить
+                    </button>
+                    <a href="javascript:" onclick="window.history.back()">
+                      Назад
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="cabinet-sticker">
+              <div class="cabinet-register-stages cabinet-register-export">
+                <div class="cabinet-register-stages-headline">
+                  <h5>Этапы заполнения</h5>
+                </div>
+                <ul class="cabinet-register-stages-items">
+                  <li class="cabinet-register-stages-item done">
+                    <h6>Основные данные</h6>
+                    <p>Укажите базовые сведения о компании</p>
+                  </li>
+                  <li class="cabinet-register-stages-item done">
+                    <h6>Юридическая информация</h6>
+                    <p>Данные банковских счетов</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="cabinet-sticker-form">
+                <div class="cabinet-sticker-form-company">
+                  <div class="cabinet-sticker-form-company-header">
+                    <h5>Этапы заполнения:</h5>
+                  </div>
+                  <form action="cabinet-register-export.html">
+                    <div class="cabinet-sticker-form-company-select cabinet-register-container-form">
+                      <label for="ecp">
+                        <span>Электронная цифровая подпись</span>
+                        <select name="ecp" id="ecp">
+                          <option value="Выберите ЭЦП" selected>Выберите ЭЦП</option>
+                          <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                          <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                          <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                          <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                        </select>
+                      </label>
+                    </div>
+                    <button type="submit" class="btn-kervan">
+                      войти
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
