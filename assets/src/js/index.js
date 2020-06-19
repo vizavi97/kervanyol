@@ -12,7 +12,6 @@ window.jQuery = $;
 jQuery = $;
 
 
-
 $('.top-slider').owlCarousel({
   loop: true,
   margin: 10,
@@ -122,14 +121,31 @@ document.addEventListener('DOMContentLoaded', () => {
 //COUNTER PRODUCT_PAGE
 
 document.addEventListener('DOMContentLoaded', () => {
-  let counter = document.getElementById('counterSum');
+  const counter = document.getElementById('counterSum');
   if (counter) {
+    const limitCount = Number(counter.getAttribute('max'));
     let counterValue = Number(counter.value);
     const counterInc = document.getElementById('counter-inc');
     const counterDecr = document.getElementById('counter-decr');
+    counter.addEventListener("input", (input) => {
+      if (input.data === '-') {
+        counter.value = 1;
+      }
+      if (Number(counter.value) > limitCount) {
+        counter.value = limitCount;
+      }
+      else if ( Number(counter.value) < 0 ) {
+        counter.value = 1;
+      }
+      else {
+        return counterValue = Number(counter.value);
+      }
+    })
     counterInc.addEventListener('click', () => {
-      counterValue++;
-      counter.value = counterValue;
+      if (counter.value < limitCount) {
+        counterValue++;
+        counter.value = counterValue;
+      }
     });
     counterDecr.addEventListener('click', () => {
       if (counter.value > 1) {
@@ -220,11 +236,10 @@ if (mainSearch) {
   mainSearch.addEventListener("focusout", () => {
     mainSearch.parentElement.parentElement.classList.remove('focused');
   });
-  mainSearch.addEventListener('input',()=> {
-    if (mainSearch.value.length > 0 ) {
+  mainSearch.addEventListener('input', () => {
+    if (mainSearch.value.length > 0) {
       mainSearch.nextElementSibling.classList.add('show');
-    }
-    else {
+    } else {
       mainSearch.nextElementSibling.classList.remove('show');
     }
   })
@@ -237,43 +252,39 @@ uploadProductFile ? uploadProductFile.addEventListener("change", (e) => {
 }) : null;
 
 
-
 const menuToggle = document.getElementById('menuToggle');
 menuToggle ? menuToggle.addEventListener('input', () => {
   const allCategories = document.getElementById('allCategories');
   if (menuToggle.checked) {
     allCategories.classList.add('show');
     document.body.classList.add('overflow');
-    document.body.addEventListener("mouseup", (e)=> {
-    if (e.target === document.body) {
-      menuToggle.checked = false
-      allCategories.classList.remove('show');
-      document.body.classList.remove('overflow')
-    }
+    document.body.addEventListener("mouseup", (e) => {
+      if (e.target === document.body) {
+        menuToggle.checked = false
+        allCategories.classList.remove('show');
+        document.body.classList.remove('overflow')
+      }
     })
-  }
-  else {
+  } else {
     allCategories.classList.remove('show');
     document.body.classList.remove('overflow')
   }
 }) : null;
 
-$(document).on("mouseenter",'.nav-allCategories-link',function(){
+$(document).on("mouseenter", '.nav-allCategories-link', function () {
   let linkRel = $(this).attr('rel');
   $(document).find('.nav-allCategories-link').each(function () {
-    if($(this).attr('rel') === linkRel) {
+    if ($(this).attr('rel') === linkRel) {
       $(this).addClass('active')
-    }
-    else {
+    } else {
       $(this).removeClass('active')
     }
   })
   $(document).find('.nav-allCategories-content-element').each(function () {
-    if($(this).attr('rel') === linkRel) {
-      $(this).css('display','flex')
-    }
-    else {
-      $(this).css('display','none')
+    if ($(this).attr('rel') === linkRel) {
+      $(this).css('display', 'flex')
+    } else {
+      $(this).css('display', 'none')
     }
   })
 });
