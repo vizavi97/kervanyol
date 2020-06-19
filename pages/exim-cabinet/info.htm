@@ -1,0 +1,92 @@
+title = "Exim profile"
+url = "/exim/account"
+layout = "exim"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+==
+<div class="container-lg">
+    <div class="content-container pt-4">
+        <div class="breadcrumbs">
+            {% partial "global/breadcrumbs" %}
+        </div>
+        
+        <div class="cabinet">
+            <div class="cabinet-nav">
+                {% partial "exim/exim-cabinet-nav" %}
+            </div>
+            
+            <div class="cabinet-container sticker">
+            
+                <div class="cabinet-data">
+                    <div class="cabinet-data-container">
+                        <div class="cabinet-data-headline">
+                            <h6>Общие данные</h6>
+                        </div>
+                        <ul class="cabinet-data-info">
+                            <li>
+                                <p>Название копании:</p>
+                                <p><strong>ООО "Рус Экспорт Вэй"</strong></p>
+                            </li>
+                            <li>
+                                <p>ОГРН:</p>
+                                <p><strong>4243592889</strong></p>
+                            </li>
+                            <li>
+                                <p>Страна:</p>
+                                <p><strong>Узбекистан</strong></p>
+                            </li>
+                            <li>
+                                <p>Генералный деректор:</p>
+                                <p><strong>Иванов Иван Иванович</strong></p>
+                            </li>
+                        </ul>
+                        <div class="cabinet-data-text">
+                            <h6>Описание</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cabinet-data-container">
+                        <div class="cabinet-data-headline">
+                            <h6>Контакты</h6>
+                        </div>
+                        <ul class="cabinet-data-info">
+                            <li>
+                                <p>Индекс:</p>
+                                <p><strong>5778231</strong></p>
+                            </li>
+                            <li>
+                                <p>Адрес:</p>
+                                <p><strong>Москва, ул, Новикузнецкая 24 стр, 4а, N 15</strong></p>
+                            </li>
+                            <li>
+                                <p>Телефон/Факс:</p>
+                                <p><strong>71 800-80-80; 71 700-70-70</strong></p>
+                            </li>
+                            <li>
+                                <p>Электронная почта:</p>
+                                <p><strong>exampleinfo@gmail.com</strong></p>
+                            </li>
+                            <li>
+                                <p>Web-сайт</p>
+                                <p><strong>www.example.com</strong></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="cabinet-sticker">
+                    {% partial 'exim/cabiner-side-company-card' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

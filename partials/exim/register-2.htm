@@ -1,0 +1,47 @@
+[viewBag]
+==
+<div class="cabinet-register-container-headline">
+    <h5>Регистрация</h5>
+</div>
+<div class="cabinet-register-container-text">
+    <p>Данный этап регистрации позволит сохранить Ваши контактные данные в базе Kervanyol.</p>
+</div>
+<div class="cabinet-register-container-warning">
+    <div class="cabinet-register-container-warning-img">
+        <img src="{{'assets/dist/img/cabinet/warning.png' | theme}}" alt="" />
+    </div>
+    <div class="cabinet-register-container-warning-text">
+        <p><strong>Важно!</strong></p>
+        <p>Все пункты должны быть заполнены поэтапно для возможности получения дальнейшего доступа.</p>
+    </div>
+    <div class="cabinet-register-container-warning-close">
+        <a href="javascript:" onclick="this.parentElement.parentElement.remove()">&times;</a>
+    </div>
+</div>
+<div class="cabinet-register-container-form">
+    <h6>Контактные данные компании</h6>
+    <form action="cabinet-register-3.html">
+        <div class="cabinet-register-container-form-inputs">
+            <label for="ogpn"
+                ><span>Регион</span> <input class="input-kervan" name="name" placeholder="____"
+                /></label>
+            <label for="Web-site"
+                ><span>Web-сайт</span>
+            <input class="input-kervan" name="name" id="Web-site" placeholder="www.kervanyol.com"
+                /></label>
+        </div>
+        <div class="cabinet-register-container-form-inputs">
+            <label for="ogpn"
+                ><span>Адрес</span> <input class="input-kervan" name="name" placeholder="______"
+                /></label>
+            <label for="ogpn"
+                ><span>Контактный телефон</span>
+            <input class="input-kervan" name="client-phone" id="ogpn" placeholder="+998(__)___-__-__"
+                /></label>
+        </div>
+        <div class="cabinet-register-container-form-buttons justify-content-between">
+            <button type="submit" class="btn-kervan">Продолжить</button>
+            <a href="javascript:" onclick="window.history.back()">Назад</a>
+        </div>
+    </form>
+</div>
