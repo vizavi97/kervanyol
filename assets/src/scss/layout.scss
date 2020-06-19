@@ -615,7 +615,7 @@ header {
     }
 
     i, span:before {
-      font-size: 2rem;
+      font-size: rem(24);
       color: #000711;
     }
 
@@ -628,7 +628,6 @@ header {
         &:hover {
           span {
             text-decoration: underline;
-
           }
         }
 

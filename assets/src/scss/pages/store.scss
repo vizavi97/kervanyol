@@ -99,6 +99,11 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        span{
+          &:before{
+            color: #a2a2a2;
+          }
+        }
       }
 
       &-category {
