@@ -16,6 +16,7 @@ description = "Все категории"
 				</li>
 			{% endfor %}
 		</ul>
+		
 		<ul class="nav-allCategories-content">
 			{% for obCategory in obCategoryList %}
 				<li class="nav-allCategories-content-element" rel="{{obCategory.slug}}">
@@ -32,30 +33,19 @@ description = "Все категории"
 										<strong>{{obChildCategory.name}}</strong>
 									</a>
 								</li>
+								
+								{% for obChildChilCategory in obChildCategory.children%}
 								<li class="nav-allCategories-content-category-item">
 									<a href="javascript:">
-										мяч
+										{{obChildChilCategory.name}}
 									</a>
 								</li>
-								<li class="nav-allCategories-content-category-item">
-									<a href="javascript:">
-										перчатки
-									</a>
-								</li>
-								<li class="nav-allCategories-content-category-item">
-									<a href="javascript:">
-										шорты
-									</a>
-								</li>
-								<li class="nav-allCategories-content-category-item">
-									<a href="javascript:">
-										футболка
-									</a>
-								</li>
+								{% endfor %} 
 
 							</ul>
 						{% endfor %} 
-						</div>
+					</div>
+					
 					<div class="nav-allCategories-content-banners row">
 						<div class="nav-allCategories-content-banners-small col-4">
 							<div>

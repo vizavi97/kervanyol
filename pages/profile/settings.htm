@@ -1,0 +1,200 @@
+title = "Profile settings"
+url = "/profile/settings"
+layout = "home"
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+==
+<?php
+public function onStart() {
+	
+	$this['pageClass'] = 'grey';
+}
+?>
+==
+<div class="container-lg">
+    <div class="content-container pt-4">
+        <div class="cabinet">
+        	
+            {% partial 'account/side-navbar' %}
+            
+            
+            <div class="cabinet-container sticker">
+                <div class="cabinet-data cabinet-account">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="cabinet-data-container">
+                                <h4>Личные данные</h4>
+                                <p class="my-0 text-muted pb-2">
+                                    <small>Данный раздел предназначен для редактирования ранее внесенных данных.</small>
+                                </p>
+                                <div class="cabinet-delivery"></div>
+                                <div class="cabinet-account">
+                     				{% partial account ~ '::update' %}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="safety" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="cabinet-data-container">
+                                <h4>Безопасность</h4>
+                                <p class="my-0 text-muted pb-2">
+                                    <small>Данный раздел поможет изменить пароль от Личного кабинета.</small>
+                                </p>
+                                <div class="cabinet-delivery cabinet-account-delivery"></div>
+                                <div class="cabinet-account">
+                                    <div class="cabinet-account-headline">
+                                        <h4>Сменить пароль</h4>
+                                        <p>После изменения данных, мы отправим Вам сообщение на электронную почту.</p>
+                                    </div>
+                                    
+                                    {% partial 'account/update-password' %}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="notice" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="cabinet-data-container">
+                                <h4>Уведомления</h4>
+                                <p class="my-0 text-muted pb-2">
+                                    <small>Выберите настройки уведомлений Вашей электронной почты.</small>
+                                </p>
+                                <div class="cabinet-delivery cabinet-account-delivery"></div>
+                                <div class="cabinet-account">
+                                    <form action="javascript:">
+                                        <div class="cabinet-account-form">
+                                            <div class="cabinet-account-switch">
+                                                <div class="cabinet-account-switch-block">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="cabinet-account-switch-block-input"
+                                                        id="customSwitch1"
+                                                        checked="checked"
+                                                        />
+                                                    <label class="cabinet-account-switch-block-label" for="customSwitch1"
+                                                        >Уведомлять меня о поступлении новых товаров</label
+                                                        >
+                                                </div>
+                                            </div>
+                                            <div class="cabinet-delivery cabinet-account-delivery"></div>
+                                            <div class="cabinet-account-switch">
+                                                <div class="cabinet-account-switch-block">
+                                                    <input type="checkbox" class="cabinet-account-switch-block-input" id="customSwitch2" />
+                                                    <label class="cabinet-account-switch-block-label" for="customSwitch2"
+                                                        >Уведомлять меня о статусе заказов</label
+                                                        >
+                                                </div>
+                                            </div>
+                                            <div class="cabinet-delivery cabinet-account-delivery"></div>
+                                            <div class="cabinet-account-switch">
+                                                <div class="cabinet-account-switch-block">
+                                                    <input type="checkbox" class="cabinet-account-switch-block-input" id="customSwitch3" />
+                                                    <label class="cabinet-account-switch-block-label" for="customSwitch3"
+                                                        >Уведомлять меня о новостях сайта Kervanyol.com</label
+                                                        >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="cabinet-data-container">
+                                <h4>Социальные сети</h4>
+                                <p class="my-0 text-muted pb-2">
+                                    <small
+                                        >В данном разделе Вы можете присоединить аккаунты социальных сетей к профилю нашего
+                                    сайта.</small
+                                        >
+                                </p>
+                                <div class="cabinet-delivery cabinet-account-delivery"></div>
+                                <div class="cabinet-account">
+                                    <div class="cabinet-account-social">
+                                        <a href="javascript:" class="cabinet-account-social-url"
+                                            ><img src="{{ 'assets/dist/img/instagram.png'|theme }}" alt="instagram" /> Присоединить</a
+                                            >
+                                    </div>
+                                    <div class="cabinet-account-social">
+                                        <a href="javascript:" class="cabinet-account-social-url"
+                                            ><img src="{{ 'assets/dist/img/facebook.png'|theme }}" alt="facebook" /> Присоединить</a
+                                            >
+                                    </div>
+                                    <div class="cabinet-account-social">
+                                        <a href="javascript:" class="cabinet-account-social-url"
+                                            ><img src="{{ 'assets/dist/img/twitter.png'|theme }}" alt="twitter" /> Присоединить</a
+                                            >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cabinet-profile">
+                    {% partial 'account/side-usercard' %}
+                    
+                    <div class="cabinet-profile-sidebar">
+                        <h6>Мой профиль</h6>
+                        <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link active"
+                                    id="home-tab"
+                                    data-toggle="tab"
+                                    href="#home"
+                                    role="tab"
+                                    aria-controls="home"
+                                    aria-selected="true"
+                                    >Личные данные</a
+                                    >
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link"
+                                    id="safety-tab"
+                                    data-toggle="tab"
+                                    href="#safety"
+                                    role="tab"
+                                    aria-controls="safety"
+                                    aria-selected="false"
+                                    >Безопасность</a
+                                    >
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link"
+                                    id="notice-tab"
+                                    data-toggle="tab"
+                                    href="#notice"
+                                    role="tab"
+                                    aria-controls="notice"
+                                    aria-selected="false"
+                                    >Уведомления</a
+                                    >
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link"
+                                    id="social-tab"
+                                    data-toggle="tab"
+                                    href="#social"
+                                    role="tab"
+                                    aria-controls="social"
+                                    aria-selected="false"
+                                    >Социальные сети</a
+                                    >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

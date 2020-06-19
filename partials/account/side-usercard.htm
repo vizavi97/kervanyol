@@ -1,0 +1,53 @@
+[viewBag]
+==
+<div class="cabinet-profile-container">
+    <div class="cabinet-profile-image">
+        <span>
+        	{% if user.avatar %}
+        		<img src="{{user.avatar.thumb(150, 150)}}" />
+        	{% else %}
+	            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="31" viewBox="0 0 28 31">
+	                <g>
+	                    <g>
+	                        <g>
+	                            <path
+	                                fill="none"
+	                                stroke="#bccbd9"
+	                                stroke-linecap="round"
+	                                stroke-linejoin="round"
+	                                stroke-miterlimit="20"
+	                                stroke-width="3"
+	                                d="M26.007 29v0-3a6 6 0 0 0-6-6h-12a6 6 0 0 0-6 6v3"
+	                                />
+	                        </g>
+	                        <g>
+	                            <path
+	                                fill="none"
+	                                stroke="#bccbd9"
+	                                stroke-linecap="round"
+	                                stroke-linejoin="round"
+	                                stroke-miterlimit="20"
+	                                stroke-width="3"
+	                                d="M20.007 8a6 6 0 1 1-12 0 6 6 0 0 1 12 0z"
+	                                />
+	                        </g>
+	                    </g>
+	                </g>
+	            </svg>
+	        {% endif %}
+        </span>
+    </div>
+    <div class="cabinet-profile-name">
+        <h5> {{user.name}} {{user.surname}} </h5>
+    </div>
+    <div class="cabinet-profile-email">
+        <p> {{ user.email }} </p>
+    </div>
+    <div class="cabinet-profile-number">
+        <p> {{ user.phone }} </p>
+    </div>
+    
+    <div class="cabinet-profile-link">
+    	<a href="{{'profile/settings'|page}}">Редактировать</a>
+    </div>
+</div>
