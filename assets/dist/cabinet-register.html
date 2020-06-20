@@ -58,66 +58,89 @@
               <ul class="cabinet-nav-items">
                 <li class="cabinet-nav-item">
                   <a href="javascript:" class="active"
-                    ><img src="img/cabinet/conversetion.svg" alt="icon" /> <span>Основные данные</span></a
+                    ><span class="icon-written"></span>
+                    <p>Основные данные</p></a
                   >
                 </li>
                 <li class="cabinet-nav-item">
                   <a href="javascript:" class="disabled"
-                    ><img src="img/cabinet/manuscript.svg" alt="icon" /> <span>История покупок</span></a
+                    ><span class="icon-independence"></span>
+                    <p>История покупок</p></a
                   >
                 </li>
                 <li class="cabinet-nav-item">
                   <a href="javascript:"
-                    ><img src="img/cabinet/transaction.svg" alt="icon" /> <span>История транзакций</span></a
+                    ><span class="icon-transaction"></span>
+                    <p>История транзакций</p></a
                   >
                 </li>
                 <li class="cabinet-nav-item">
                   <a href="javascript:"
-                    ><img src="img/cabinet/list.svg" alt="icon" /> <span>Список обязательных документов</span></a
+                    ><span class="icon-list"></span>
+                    <p>Список обязательных документов</p></a
                   >
                 </li>
                 <li class="cabinet-nav-item">
                   <a href="javascript:"
-                    ><img src="img/cabinet/notification.svg" alt="icon" /> <span>Уведомления</span></a
-                  >
-                </li>
-                <li class="cabinet-nav-item">
-                  <a href="javascript:"><img src="img/cabinet/like.svg" alt="icon" /> <span>Понравившееся</span></a>
-                </li>
-                <li class="cabinet-nav-item">
-                  <a href="javascript:"><img src="img/cabinet/news.svg" alt="icon" /> <span>Новости</span></a>
-                </li>
-                <li class="cabinet-nav-item">
-                  <a href="javascript:"><img src="img/cabinet/checklist.svg" alt="icon" /> <span>Ассортимент</span></a>
-                </li>
-                <li class="cabinet-nav-item">
-                  <a href="javascript:"
-                    ><img src="img/cabinet/deal.svg" alt="icon" /> <span>Иностранные партнеры</span></a
+                    ><span class="icon-notification"></span>
+                    <p>Уведомления</p></a
                   >
                 </li>
                 <li class="cabinet-nav-item">
                   <a href="javascript:"
-                    ><img src="img/cabinet/building.svg" alt="icon" /> <span>Импортёры-компании РУз</span></a
+                    ><span class="icon-like"></span>
+                    <p>Понравившееся</p></a
                   >
-                </li>
-                <li class="cabinet-nav-item">
-                  <a href="javascript:"><img src="img/cabinet/term.svg" alt="icon" /> <span>Условия и правила</span></a>
                 </li>
                 <li class="cabinet-nav-item">
                   <a href="javascript:"
-                    ><img src="img/cabinet/feedback.svg" alt="icon" /> <span>Отзывы обо мне</span></a
+                    ><span class="icon-news"></span>
+                    <p>Новости</p></a
                   >
                 </li>
                 <li class="cabinet-nav-item">
-                  <a href="javascript:"><img src="img/cabinet/help.svg" alt="icon" /> <span>Центр поддержки</span></a>
+                  <a href="javascript:"
+                    ><span class="icon-checklist"></span>
+                    <p>Ассортимент</p></a
+                  >
                 </li>
                 <li class="cabinet-nav-item">
-                  <a href="javascript:"><img src="img/cabinet/lock.svg" alt="icon" /> <span>Безопасность</span></a>
+                  <a href="javascript:"
+                    ><span class="icon-deal"></span>
+                    <p>Иностранные партнеры</p></a
+                  >
+                </li>
+                <li class="cabinet-nav-item">
+                  <a href="javascript:"
+                    ><span class="icon-building"></span>
+                    <p>Импортёры-компании РУз</p></a
+                  >
+                </li>
+                <li class="cabinet-nav-item">
+                  <a href="javascript:"
+                    ><span class="icon-term"></span>
+                    <p>Условия и правила</p></a
+                  >
+                </li>
+                <li class="cabinet-nav-item">
+                  <a href="javascript:"
+                    ><span class="icon-feedback"></span>
+                    <p>Отзывы обо мне</p></a
+                  >
+                </li>
+                <li class="cabinet-nav-item">
+                  <a href="javascript:"
+                    ><span class="icon-settings"></span>
+                    <p>Настройки</p></a
+                  >
+                </li>
+                <li class="cabinet-nav-item">
+                  <a href="javascript:"
+                    ><span class="icon-sign-out"></span>
+                    <p>Выйти</p></a
+                  >
                 </li>
               </ul>
-              <div class="cabinet-nav-logout">
-                <a href="javascript:"><img src="img/cabinet/logout.svg" alt="icon" /> <span>Выйти</span></a>
-              </div>
             </div>
             <div class="cabinet-container">
               <div class="cabinet-register">
@@ -185,11 +208,9 @@
                                   type="file"
                                   rel="1"
                                   name="certificates[1]"
-                                  onchange="window.readURL(this)"
+                                  onchange="window.loadPhotoURL(this)"
                                   data-name="certificates"
-                                />
-                                <em class="hidden">замена изображения</em></label
-                              >
+                              /></label>
                             </li>
                           </ul>
                           <p>Максимальный</p>
@@ -207,11 +228,9 @@
                                   type="file"
                                   rel="0"
                                   name="additional[0]"
-                                  onchange="window.readURL(this)"
+                                  onchange="window.loadPhotoURL(this)"
                                   data-name="additional"
-                                />
-                                <em class="hidden">замена изображения</em></label
-                              >
+                              /></label>
                             </li>
                           </ul>
                         </div>
