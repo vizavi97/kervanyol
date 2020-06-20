@@ -892,9 +892,9 @@ header {
   }
 
   &-allCategories {
-    width: 100vw;
+    width: 100%;
     position: absolute;
-    top: 8.25rem;
+    top: 132px;
     left: 0;
     content: '';
     background: white;
@@ -903,10 +903,11 @@ header {
     transition: all .2s linear;
     transform: translateY(-45rem);
     border-top: 2px solid rgba(0, 0, 0, .06);
+    box-sizing: border-box;
 
     &.show {
       opacity: 1;
-      transform: translateY(3rem);
+      transform: translateY(48px);
       @include lg-block() {
         transform: translateY(5.125rem);
       }
