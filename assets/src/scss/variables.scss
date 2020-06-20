@@ -8,6 +8,16 @@ $browser-context: 16;
   @return #{$pixels/$context}rem;
 }
 
+// fonts all big
+
+@for $i from 1 through 8 {
+  @media(min-width: 1600px + ($i * 100)) {
+    html {
+      font-size: 16px + $i !important;
+    }
+  }
+}
+
 //BOOTSTRAP CUSTOM GRID CONTAINER
 
 @media (min-width: 1200px) {

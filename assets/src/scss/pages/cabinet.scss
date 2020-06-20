@@ -237,8 +237,7 @@
             }
 
             label {
-              display: flex;
-              flex-direction: column;
+              display: inline-block;
               text-align: left;
               cursor: pointer;
             }
@@ -345,10 +344,6 @@
 
             &::placeholder {
               color: #BCCBD9;
-            }
-
-            &:focus {
-              border-color: #ff6f55;
             }
           }
         }
@@ -1062,6 +1057,7 @@
             justify-content: center;
             align-items: flex-start;
             max-width: 90px;
+            width: 100%;
           }
 
           &-info {
@@ -1071,6 +1067,7 @@
               font-size: rem(14);
               font-weight: 600;
               color: #000000;
+              margin: 0;
             }
 
             p {
@@ -1080,7 +1077,7 @@
 
             a {
               font-weight: 500;
-              font-size: .75rem;
+              font-size: rem(18);
               color: #003E7C;
               text-decoration: underline;
               padding-right: .5rem;
@@ -1088,6 +1085,9 @@
               &.not-payed {
                 color: #00B71B;
               }
+            }
+            .btn-container{
+              padding-bottom: rem(10);
             }
           }
         }
@@ -2934,6 +2934,15 @@
       &-data{
         &-inputs{
 
+        }
+      }
+    }
+    &-declaration{
+      &-requests{
+        &-item{
+          &:after{
+            right: 3rem;
+          }
         }
       }
     }

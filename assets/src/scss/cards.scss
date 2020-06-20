@@ -23,9 +23,9 @@
     content: 'Sale';
     background-color: #ff2600;
     padding: .25rem .5rem;
-    border-radius: 4px;
+    border-radius: rem(4);
     color: #ffffff;
-    font-size: 10px;
+    font-size: rem(10);
     font-weight: 400;
   }
 
@@ -37,9 +37,9 @@
     content: 'New';
     background-color: #68d20b;
     padding: .25rem .5rem;
-    border-radius: 4px;
+    border-radius: rem(4);
     color: #ffffff;
-    font-size: 10px;
+    font-size: rem(10);
     font-weight: 400;
   }
 
@@ -76,7 +76,7 @@
     flex: 1;
     a {
       color: #000000;
-      font-size: 12px;
+      font-size: rem(12);
       font-weight: 500;
     }
   }
@@ -86,22 +86,22 @@
 
     a {
       color: #636363;
-      font-size: 11px;
+      font-size: rem(11);
       font-weight: 400;
     }
   }
 
   &-cost {
-    padding-bottom: 8px;
+    padding-bottom: rem(8);
 
     span {
       color: #ff6f55;
-      font-size: 13px;
+      font-size: rem(13);
       font-weight: 500;
 
       &.inactive-price {
         color: #7a7a7a;
-        font-size: 11px;
+        font-size: rem(11);
         font-weight: 300;
         text-decoration: line-through;
       }
@@ -110,12 +110,12 @@
 
   &-period {
     background-color: #ff6f55;
-    border-radius: 10px;
+    border-radius: rem(10);
     padding: .25rem .5rem;
 
     span {
       color: #ffffff;
-      font-size: 14px;
+      font-size: rem(14);
       font-weight: 400;
     }
   }
