@@ -37,7 +37,7 @@ $font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica 
 }
 
 .icon-global:before {
-  content: "\e90e";
+  content: "\e910";
 }
 .icon-deal:before {
   content: "\e900";
@@ -49,37 +49,37 @@ $font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica 
   content: "\e902";
 }
 .icon-file:before {
-  content: "\e903";
-}
-.icon-goods:before {
   content: "\e904";
 }
-.icon-son:before {
-  content: "\e905";
-}
-.icon-menu:before {
+.icon-goods:before {
   content: "\e906";
 }
-.icon-menu-block:before {
+.icon-son:before {
   content: "\e907";
 }
-.icon-menu-linear:before {
+.icon-menu:before {
   content: "\e908";
 }
-.icon-exit:before {
+.icon-menu-block:before {
   content: "\e909";
 }
-.icon-heart:before {
+.icon-menu-linear:before {
   content: "\e90a";
 }
-.icon-arrow-down:before {
+.icon-exit:before {
   content: "\e90b";
 }
-.icon-map-marked:before {
+.icon-heart:before {
   content: "\e90c";
 }
-.icon-sign-out:before {
+.icon-arrow-down:before {
   content: "\e90d";
+}
+.icon-map-marked:before {
+  content: "\e90e";
+}
+.icon-sign-out:before {
+  content: "\e90f";
 }
 .icon-settings:before {
   content: "\e911";
@@ -194,6 +194,14 @@ $font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica 
 }
 .icon-credit-card:before {
   content: "\e93a";
+}
+.icon-signs:before {
+  content: "\e905";
+  color: #dfe3eb;
+}
+.icon-written-conversation:before {
+  content: "\e903";
+  color: #dfe3eb;
 }
 
 //End Icomoon
