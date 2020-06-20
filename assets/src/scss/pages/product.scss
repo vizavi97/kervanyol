@@ -269,10 +269,9 @@
 
           & .limit-count {
             color: #9ea6b0;
-            font-family: "Montserrat";
-            font-size: 10px;
+            font-size: rem(10);
             font-weight: 400;
-            padding-left: 10px;
+            padding-left: rem(10);
           }
         }
       }
@@ -322,19 +321,21 @@
 
         &-received {
           background: url("../img/product/coupon.png") no-repeat left;
-          min-width: 231px;
-          height: 17px;
+          background-size: cover;
+          min-width: rem(231);
           color: #ffffff;
-          font-family: "Montserrat";
-          font-size: 10px;
+          font-size: rem(10);
           font-weight: 400;
-          padding: 0 17px;
+          padding: 0 rem(17);
+          margin-right: rem(17);
+        }
+        &-get{
+          display: flex;
         }
 
         a {
           color: #ff6f55;
-          font-family: "Montserrat";
-          font-size: 10px;
+          font-size: rem(10);
           font-weight: 400;
         }
       }
@@ -404,8 +405,7 @@
 
         a {
           color: #9ea6b0;
-          font-family: "Montserrat";
-          font-size: 10px;
+          font-size: rem(10);
           font-weight: 400;
         }
       }

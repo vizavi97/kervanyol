@@ -108,7 +108,7 @@
 
       &-category {
         border-radius: rem(20);
-        padding: 0 rem(20);
+        padding: 0 rem(10);
         transition: all .3s ease-in;
 
         .arrow {
@@ -158,7 +158,7 @@
 
       &-call {
         border-radius: rem(20);
-        padding-right: rem(20);
+        padding-right: rem(10);
         transition: all .3s ease-in;
         position: relative;
 
@@ -342,6 +342,18 @@
     @include size-xs(6);
   }
 
+  @include bd-block(){
+    &-nav{
+      &-menu{
+        &-category{
+          padding: 0 rem(20);
+        }
+        &-call{
+          padding-right: rem(20);
+        }
+      }
+    }
+  }
   @include sm-block(){
     &-main{
       flex-wrap: wrap;

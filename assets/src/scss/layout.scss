@@ -894,7 +894,7 @@ header {
   &-allCategories {
     width: 100%;
     position: absolute;
-    top: 132px;
+    top: auto;
     left: 0;
     content: '';
     background: white;
@@ -907,7 +907,7 @@ header {
 
     &.show {
       opacity: 1;
-      transform: translateY(48px);
+      transform: translateY(0);
       @include lg-block() {
         transform: translateY(5.125rem);
       }
@@ -1296,6 +1296,8 @@ footer {
       color: #bccbd9;
       font-size: 14px;
       font-weight: 400;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     &:first-of-type {
