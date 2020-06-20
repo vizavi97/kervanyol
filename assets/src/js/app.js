@@ -65,7 +65,7 @@ window.readURL = function readURL(input) {
     input.insertAdjacentHTML('afterend',remover);
     wrapper.insertAdjacentHTML("beforeend", htmlSection);
   }
-}
+};
 
 // cabinet-declaration add form
 const declarationinputsWrapper = document.getElementById('declaration-input-wrapper');
@@ -125,23 +125,18 @@ window.uploadCompanyFIleRegister = function (input) {
     const reader = new FileReader();
     reader.readAsText(input.files[0]);
     const fileName = input.files[0].name;
-    const htmlWrapper = document.querySelector('.cabinet-edit-data-load-wrapper');
     const wrapper = `
           <div class="cabinet-edit-data-load-complete">
             <div class="cabinet-edit-data-load-complete-img">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28"><g><g><path fill="#a1abb8" d="M13.1 9.8V2.1l7.7 7.7zM3.3 0A2.796 2.796 0 0 0 .514 2.8L.5 25.2c0 1.54 1.246 2.8 2.786 2.8H20.1c1.54 0 2.8-1.26 2.8-2.8V8.4L14.5 0z"/></g></g></svg>
-                </span>
+                <span class="icon-file1"></span>
             </div>
             <div class="cabinet-edit-data-load-complete-text">
                <h5>${fileName}</h5>
             </div>
             <a class="cabinet-edit-data-load-complete-delete" href="javascript:" onclick="this.parentElement.remove()">
-              <span>
-                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"><g><g><path fill="#a1abb8" d="M10.5 2.625H0V.875h2.625L3.5 0H7l.875.875H10.5zM.875 3.5h8.75v8.75c0 .963-.787 1.75-1.75 1.75h-5.25c-.963 0-1.75-.787-1.75-1.75zm10.5 3.5h5.25v1.75h-5.25zm0-3.5H17.5v1.75h-6.125zm0 7h3.5v1.75h-3.5z"/></g></g></svg>
-              </span>
+              <span class="icon-delete"></span>
             </a>
-          </div>`
-    htmlWrapper.innerHTML = wrapper;
+          </div>`;
+    input.parentElement.insertAdjacentHTML("beforebegin", wrapper);
   }
-}
+};

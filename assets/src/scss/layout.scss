@@ -1546,20 +1546,23 @@ footer {
     a {
       align-items: center;
       display: flex;
+      text-decoration: none;
 
       &.active {
-        svg {
-          path {
-            fill: #ff6f55;
-            stroke: #ff6f55;
-
-          }
+        i:before{
+          content: "\e90c";
+          font-family: icomoon;
+          color: #ff6f55;
+          font-size: rem(14);
         }
-
         span {
           color: black;
         }
       }
+    }
+
+    i{
+      color: #636363;
     }
 
     span {
