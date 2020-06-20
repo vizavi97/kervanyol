@@ -37,7 +37,7 @@ window.loadPhotoURL = function loadPhotoURL(input) {
 // all photo loading
 window.readURL = function readURL(input) {
   let rel = Number(input.getAttribute('rel'));
-  const nameInput = input.getAttribute('data-name');
+  const nameInput = input.getAttribute('name');
   if (input.files && input.files[0]) {
     let reader = new FileReader();
     reader.onload = function (e) {
@@ -46,7 +46,6 @@ window.readURL = function readURL(input) {
       input.nextElementSibling.classList.remove('hidden');
     };
     reader.readAsDataURL(input.files[0]);
-    document.getElementsByClassName('')
   }
   rel++;
   const wrapper = input.parentElement.parentElement.parentElement;
@@ -61,8 +60,9 @@ window.readURL = function readURL(input) {
 			   <input type="file" onchange="readURL(this)" rel="${rel}" name='${nameInput}[${rel}]'>
 			   <em class="hidden">замена изображения</em>
 			 </label>
-			 <a href="javascript:" class="remove-container" onclick="this.parentElement.remove()">&times;</a>
 			</li>`;
+    const remover = '<a href="javascript:" class="remove-container" onclick="this.parentElement.parentElement.remove()">&times;</a>'
+    input.insertAdjacentHTML('afterend',remover);
     wrapper.insertAdjacentHTML("beforeend", htmlSection);
   }
 }
