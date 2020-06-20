@@ -36,6 +36,7 @@
     margin-bottom: .75rem;
   }
   &-card{
+
     display: block;
     text-decoration: none;
     background-color: #fff;
@@ -52,6 +53,7 @@
       align-items: center;
       padding-bottom: rem(6);
       &-info{
+        padding-left: 1rem;
         a,h5 {
           color: #000000;
           font-family: "Montserrat";
@@ -94,7 +96,8 @@
       }
     }
     &-bought {
-      min-height: 100px;
+      height: 100%;
+      flex: auto;
     }
     &-items{
       display: flex;
