@@ -100,9 +100,10 @@
       display: flex;
       flex-wrap: wrap;
       margin: 0 rem(-3);
+      justify-content: center;
     }
     &-item{
-      width: calc(50% - 6px);
+      @include size(6);
       margin: rem(3);
       max-height: rem(105);
       min-height: rem(105);
