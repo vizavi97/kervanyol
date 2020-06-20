@@ -40,9 +40,10 @@
 
     &-item {
       padding-bottom: 1.25rem;
+
       .icon-deal,
       .icon-email,
-      .icon-sign-out{
+      .icon-sign-out {
         font-size: rem(13);
       }
     }
@@ -58,9 +59,10 @@
       align-items: center;
       text-decoration: none;
 
-      span{
+      span {
         width: rem(20);
-        &:before{
+
+        &:before {
           color: #A1ABB8;
         }
       }
@@ -237,7 +239,7 @@
             }
 
             label {
-              display: inline-block;
+              display: flex;
               text-align: left;
               cursor: pointer;
             }
@@ -1086,7 +1088,8 @@
                 color: #00B71B;
               }
             }
-            .btn-container{
+
+            .btn-container {
               padding-bottom: rem(10);
             }
           }
@@ -1179,14 +1182,18 @@
       }
 
       &-number {
-        font-weight: 600;
+        padding-top: rem(24);
+
+        h6 {
+          font-size: rem(18);
+          font-weight: 600;
+        }
       }
 
       &-descs {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding-top: 1rem;
       }
 
       &-desc {
@@ -1775,6 +1782,7 @@
 
     &-form {
       padding-top: rem(60);
+
       &-deadline {
         display: flex;
         flex-direction: row;
@@ -2847,19 +2855,24 @@
           }
         }
 
+        &-img{
+          span:before{
+            color: #9EA6B0;
+          }
+        }
+
         &-delete {
           margin-left: auto;
 
-          a {
-            &:hover {
-              path {
-                fill: #ff2700;
-              }
-            }
+          span:before{
+            color: #9EA6B0;
           }
 
-          path {
-            fill: #ff6f55;
+          &:hover {
+            text-decoration: none;
+            span:before {
+              color: #ff6f55;
+            }
           }
         }
       }
@@ -2908,22 +2921,27 @@
         margin-left: rem(7);
         padding: 0;
       }
-      .main-certificates{
+
+      .main-certificates {
         display: flex;
         flex-wrap: wrap;
       }
-      .addFile-inner{
+
+      .addFile-inner {
         width: 161px;
         height: 161px;
       }
-      &-area{
+
+      &-area {
         position: relative;
-        &-span{
+
+        &-span {
           position: absolute;
           right: 5%;
           bottom: 5%;
           color: #000000 !important;
-          sup{
+
+          sup {
             top: rem(-8);
           }
         }
@@ -2931,18 +2949,18 @@
     }
   }
 
-  @include bd-block(){
-    &-edit{
-      &-data{
-        &-inputs{
+  @include bd-block() {
+    &-edit {
+      &-data {
+        &-inputs {
 
         }
       }
     }
-    &-declaration{
-      &-requests{
-        &-item{
-          &:after{
+    &-declaration {
+      &-requests {
+        &-item {
+          &:after {
             right: 3rem;
           }
         }
@@ -2987,7 +3005,8 @@
       top: 0;
       padding: 0;
       margin-bottom: rem(8);
-      &-logout{
+
+      &-logout {
         padding: 1rem;
       }
     }
@@ -3140,7 +3159,7 @@
         }
       }
     }
-    &-sticker{
+    &-sticker {
       max-width: 100%;
       width: 100%;
       margin-left: 0;
@@ -3181,12 +3200,15 @@
           }
         }
       }
-      &-farmer{
+
+      &-farmer {
         flex-wrap: wrap;
-        .cabinet-declaration-form-inputs{
+
+        .cabinet-declaration-form-inputs {
           width: 100%;
         }
-        .btn-kervan{
+
+        .btn-kervan {
           margin: rem(15) 0;
           max-width: 100%;
         }
