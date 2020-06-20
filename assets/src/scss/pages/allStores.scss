@@ -11,13 +11,11 @@
   &-headline{
     padding: rem(24) 0 rem(6);
     h3{
-      font-family: "Montserrat";
       font-size: rem(24);
       font-weight: 600;
       margin-bottom: rem(5);
     }
     p{
-      font-family: "Montserrat";
       font-size: rem(12);
       font-weight: 400;
       letter-spacing: 0.01px;
@@ -36,6 +34,7 @@
     margin-bottom: .75rem;
   }
   &-card{
+
     display: block;
     text-decoration: none;
     background-color: #fff;
@@ -52,15 +51,14 @@
       align-items: center;
       padding-bottom: rem(6);
       &-info{
+        padding-left: 1rem;
         a,h5 {
           color: #000000;
-          font-family: "Montserrat";
           font-size: rem(16);
           font-weight: 500;
           margin-bottom: rem(3);
         }
         p{
-          font-family: "Montserrat";
           font-size: rem(10);
           font-weight: 400;
           color: #9EA6B0;
@@ -76,7 +74,6 @@
           &-orders{
             padding-left: rem(5);
             span{
-              font-family: "Montserrat";
               font-size: rem(12);
               font-weight: 500;
               color: #000000;
@@ -94,7 +91,8 @@
       }
     }
     &-bought {
-      min-height: 100px;
+      height: 100%;
+      flex: auto;
     }
     &-items{
       display: flex;
