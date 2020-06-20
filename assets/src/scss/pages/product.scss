@@ -364,6 +364,7 @@
         justify-content: space-between;
         padding-top: .25rem;
         padding-right: rem(15);
+        white-space: nowrap;
 
         & > .buy-on-click, & > .to-basket {
           color: #ffffff;

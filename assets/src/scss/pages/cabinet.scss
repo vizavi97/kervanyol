@@ -40,6 +40,11 @@
 
     &-item {
       padding-bottom: 1.25rem;
+      .icon-deal,
+      .icon-email,
+      .icon-sign-out{
+        font-size: rem(13);
+      }
     }
 
     &-logout {
@@ -53,47 +58,29 @@
       align-items: center;
       text-decoration: none;
 
-      img {
-        width: 20px;
-        max-width: 20px;
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
-        transition: all .3s ease;
+      span{
+        width: rem(20);
+        &:before{
+          color: #A1ABB8;
+        }
       }
 
-      span {
-        color: black;
+      p {
         font-size: rem(14);
         font-weight: 400;
         padding-left: rem(14);
+        margin: 0;
+        color: #A1ABB8;
       }
 
       &:hover {
-        img {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -ms-filter: none;
-          -o-filter: none;
-          filter: none;
-        }
-
-        span {
+        p, span:before {
           color: #ff6f55;
         }
       }
 
       &.active {
-        img {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -ms-filter: none;
-          -o-filter: none;
-          filter: none;
-        }
-
-        span {
+        p, span:before {
           color: #ff6f55;
         }
       }
@@ -101,14 +88,8 @@
       &.disabled {
         cursor: default;
 
-        span {
+        p, span:before {
           color: #dfe3eb;
-        }
-
-        &:hover {
-          img {
-            filter: grayscale(1);
-          }
         }
       }
     }
@@ -2786,8 +2767,8 @@
 
       label {
         @include col();
-        @include size(6);
-        @include size-md(12);
+        @include size(12);
+        @include size-bd(6);
         display: flex;
         flex-direction: column;
         margin-bottom: rem(12);
@@ -2948,6 +2929,15 @@
     }
   }
 
+  @include bd-block(){
+    &-edit{
+      &-data{
+        &-inputs{
+
+        }
+      }
+    }
+  }
   @include lg-block() {
     &-nav {
       width: auto;
