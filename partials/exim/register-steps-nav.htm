@@ -1,0 +1,19 @@
+[viewBag]
+==
+<div class="cabinet-register-stages-headline">
+    <h5>Этапы заполнения</h5>
+</div>
+<ul class="cabinet-register-stages-items">
+    <li class="cabinet-register-stages-item {{ done > 0 ? 'done' }}">
+        <h6>Основные данные</h6>
+        <p>Укажите сведения о желаемом товаре</p>
+    </li>
+    <li class="cabinet-register-stages-item  {{ done > 1 ? 'done' }}">
+        <h6>Контактные данные</h6>
+        <p>Заполните данные поля для возможности связаться с Вами</p>
+    </li>
+    <li class="cabinet-register-stages-item {{ done > 2 ? 'done' }}">
+        <h6>Сведения о руководителе</h6>
+        <p>Данные о руководителе остаются конфедициальными</p>
+    </li>
+</ul>
