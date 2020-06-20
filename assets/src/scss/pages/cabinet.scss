@@ -1671,6 +1671,7 @@
           width: 196px;
           height: 201px;
           overflow: hidden;
+          box-shadow: 0px -3px 20px 1px rgba(25, 25, 25, .05);
         }
 
         &-elements {
@@ -1680,9 +1681,9 @@
           justify-content: flex-start;
           background: url("../img/cabinet/cabinet-coupons/check.png");
           background-size: cover;
-          box-shadow: 0px -3px 20px 1px rgba(25, 25, 25, .05);
           cursor: pointer;
           padding: 1.75rem 1rem;
+          height: 100;
           transform: translateY(-200px);
           transition: all 1s ease;
 
@@ -1773,6 +1774,7 @@
     }
 
     &-form {
+      padding-top: rem(60);
       &-deadline {
         display: flex;
         flex-direction: row;
@@ -2680,12 +2682,12 @@
       }
 
       &-btn {
-        border: 1px solid #ff6f55;
+        border: rem(1) solid #ff6f55;
         border-radius: rem(24);
         color: #ff6f55;
         font-size: rem(13);
         font-weight: 400;
-        line-height: 20px;
+        line-height: rem(20);
         padding: rem(10) rem(40);
         display: flex;
         align-items: center;
