@@ -8,56 +8,7 @@
 					<div class="cabinet-nav-headline">
 						<h5>Личный кабинет</h5>
 					</div>
-					<ul class="cabinet-nav-items">
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/conversetion.svg" alt="icon"/>
-								<span>Мой кабинет </span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:" class="active">
-								<img src="img/cabinet/manuscript.svg" alt="icon"/>
-								<span>Мои заказы</span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/transaction.svg" alt="icon"/>
-								<span>Сообщения</span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/list.svg" alt="icon"/>
-								<span>Мои желания </span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/notification.svg" alt="icon"/>
-								<span>Любимые магазины</span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/like.svg" alt="icon"/>
-								<span>настройки профиля</span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/news.svg" alt="icon"/>
-								<span>Новости</span>
-							</a>
-						</li>
-						<li class="cabinet-nav-item">
-							<a href="javascript:">
-								<img src="img/cabinet/logout.svg" alt="icon"/>
-								<span>Выйти</span>
-							</a>
-						</li>
-					</ul>
+					<%= _.template(require('./../includes/cabinet-nav-individ.html').default)(data) %>
 				</div>
 				<div class="cabinet-container sticker">
 					<div class="cabinet-data">
@@ -401,7 +352,7 @@
 					<div class="cabinet-profile">
 						<div class="cabinet-profile-container">
 							<div class="cabinet-profile-image">
-								<img src="img/cabinet/default-user.svg" alt=""/>
+								<img src="img/cabinet/profile.svg" alt="profile"/>
 							</div>
 							<div class="cabinet-profile-name">
 								<h5>John Doe</h5>
