@@ -1331,13 +1331,24 @@ footer {
     & > li {
       width: auto;
       display: grid;
-      grid-template-areas: "img desc cost" "img stars fav";
+      grid-template-areas: "img desc cost"
+                            "img stars fav";
       grid-template-rows: 3fr 2fr;
       grid-template-columns: 1fr 3fr 2.25fr;
       grid-gap: .5rem .625rem;
       padding: .5rem;
       margin-right: 0;
       margin-bottom: 1rem;
+
+
+      @include sm-block(){
+        grid-template-areas:"img name "
+                            "img  desc"
+                            "cost cost "
+                            "stars fav";
+        grid-template-rows: 2fr 1fr 1fr 0;
+        grid-template-columns: 2fr 3fr;
+      }
     }
 
     .product-item-img {
@@ -1376,6 +1387,9 @@ footer {
 
     .product-item-favourite {
       display: flex;
+      @include sm-block(){
+        grid-area: fav;
+      }
     }
   }
 }

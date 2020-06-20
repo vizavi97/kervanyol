@@ -24,11 +24,11 @@ function generateHtmlPlugins(templateDir) {
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
 const config = {
-  // devServer: {
-  //   host: '0.0.0.0',
-  //   port: 8080,
-  //   disableHostCheck: true
-  // },
+  devServer: {
+    host: '0.0.0.0',
+    port: 8080,
+    disableHostCheck: true
+  },
   entry: ["./src/js/index.js", "./src/scss/style.scss"],
   output: {
     filename: "./js/bundle.js",
