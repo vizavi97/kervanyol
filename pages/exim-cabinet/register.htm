@@ -8,6 +8,10 @@ remove_crumb_trail = 0
 crumb_disabled = 0
 
 [EximRegister]
+
+[session]
+security = "user"
+redirect = "auth/signin"
 ==
 <div class="container-lg">
     <div class="content-container pt-4">
@@ -23,28 +27,12 @@ crumb_disabled = 0
             <div class="cabinet-container">
                 <div class="cabinet-register">
                     
-                    <div class="cabinet-register-container">
+                    <div class="cabinet-register-container" id="registrationFormContainer">
                         {% partial 'exim/register-1' %}
                     </div>
                     
-                    <div class="cabinet-register-stages">
-                        <div class="cabinet-register-stages-headline">
-                            <h5>Этапы заполнения</h5>
-                        </div>
-                        <ul class="cabinet-register-stages-items">
-                            <li class="cabinet-register-stages-item done">
-                                <h6>Основные данные</h6>
-                                <p>Укажите сведения о желаемом товаре</p>
-                            </li>
-                            <li class="cabinet-register-stages-item">
-                                <h6>Контактные данные</h6>
-                                <p>Заполните данные поля для возможности связаться с Вами</p>
-                            </li>
-                            <li class="cabinet-register-stages-item">
-                                <h6>Сведения о руководителе</h6>
-                                <p>Данные о руководителе остаются конфедициальными</p>
-                            </li>
-                        </ul>
+                    <div class="cabinet-register-stages" id="registrationFormSteeps">
+                        {% partial 'exim/register-steps-nav' %}
                     </div>
                 </div>
             </div>

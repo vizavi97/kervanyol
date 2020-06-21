@@ -1,11 +1,16 @@
 [viewBag]
 ==
+{% set countryId = countryId|default(form_value('country_id')) %}
+{% set stateId = stateId|default(form_value('state_id')) %}
+
+
 <div class="cabinet-register-container-headline">
     <h5>Регистрация</h5>
 </div>
 <div class="cabinet-register-container-text">
-    <p>Данный этап регистрации позволит сохранить Ваши контактные данные в базе Kervanyol.</p>
+    <p>Контактные данные компании.</p>
 </div>
+
 <div class="cabinet-register-container-warning">
     <div class="cabinet-register-container-warning-img">
         <img src="{{'assets/dist/img/cabinet/warning.png' | theme}}" alt="" />
@@ -18,30 +23,55 @@
         <a href="javascript:" onclick="this.parentElement.parentElement.remove()">&times;</a>
     </div>
 </div>
+
 <div class="cabinet-register-container-form">
-    <h6>Контактные данные компании</h6>
-    <form action="cabinet-register-3.html">
+
+    <form 
+    	data-request="onRegister2" 
+    	data-request-files 
+    	data-request-flash
+    	data-request-update="
+    		'exim/register-3': '#registrationFormContainer',
+    		'exim/register-steps-nav': '#registrationFormSteeps'
+    	">
+    	
+    	<div id="partialCountryState">
+		    {% partial 'common/country-state' countryId=exim.country_id stateId=exim.state_id %}
+		</div>
+    	
         <div class="cabinet-register-container-form-inputs">
-            <label for="ogpn"
-                ><span>Регион</span> <input class="input-kervan" name="name" placeholder="____"
-                /></label>
-            <label for="Web-site"
-                ><span>Web-сайт</span>
-            <input class="input-kervan" name="name" id="Web-site" placeholder="www.kervanyol.com"
-                /></label>
+            <label>
+            	<span>Web-сайт</span>
+            	<input class="input-kervan" name="website" placeholder="www.kervanyol.com" value="{{exim.website}}"/>
+            </label>
+            
+            <label>
+            	<span>Адрес</span> 
+            	<input class="input-kervan" name="address" value="{{exim.address}}"/>
+            </label>
         </div>
+        
         <div class="cabinet-register-container-form-inputs">
-            <label for="ogpn"
-                ><span>Адрес</span> <input class="input-kervan" name="name" placeholder="______"
-                /></label>
-            <label for="ogpn"
-                ><span>Контактный телефон</span>
-            <input class="input-kervan" name="client-phone" id="ogpn" placeholder="+998(__)___-__-__"
-                /></label>
+            <label>
+            	<span>Электронная почта </span>
+            	<input class="input-kervan" name="email" value="{{exim.email}}"/>
+            </label>
+            
+            <label>
+            	<span>Контактный телефон</span>
+            	<input class="input-kervan" name="phone"  placeholder="+998(__)___-__-__" value="{{exim.phone}}"/>
+            </label>
         </div>
+        
         <div class="cabinet-register-container-form-buttons justify-content-between">
-            <button type="submit" class="btn-kervan">Продолжить</button>
-            <a href="javascript:" onclick="window.history.back()">Назад</a>
+            <button 
+            	type="submit"
+            	data-attach-loading
+            	class="btn-kervan">Продолжить</button>
+            
+            <button class="btn btn-link text-info" 
+            	data-request="onInit" 
+            	data-request-update="'exim/register-1': '#registrationFormContainer'">Назад</button>
         </div>
     </form>
 </div>

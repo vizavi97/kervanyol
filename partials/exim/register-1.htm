@@ -24,12 +24,14 @@
 </div>
 
 <div class="cabinet-register-container-form">
-    <h6>Заполните данные</h6>
     
-    <form data-request="onRegister" 
+    <form data-request="onRegister1" 
     	data-request-flash 
     	data-request-files 
-    	action="cabinet-register-2.html">
+    	data-request-update="
+    		'exim/register-2': '#registrationFormContainer',
+    		'exim/register-steps-nav': '#registrationFormSteeps'
+    	">
         
         <div class="cabinet-register-container-form-inputs">
             <label>
@@ -46,13 +48,15 @@
         <div class="cabinet-register-container-form-inputs">
             <label>
             	<span>ОГРН*</span> 
-            	<input class="input-kervan" name="ogrn_number" placeholder="_____"/>
+            	<input class="input-kervan" name="ogrn_number" value="{{exim.ogrn_number}}" placeholder="_____"/>
             </label>
             
             <label>
                 <span>Принаддежность к отраслевым союзам</span>
                 <select name="category_id">
-                    <option value="www.kervanyol.uz" selected="selected">www.kervanyol.uz</option>
+                	{% for category in eximCategories %}
+                    	<option value="{{category.id}}" {{exim.category_id == category.id ? 'selected="selected"' : ''}} >{{category.name}}</option>
+                    {% endfor %}
                 </select>
             </label>
         </div>
@@ -60,7 +64,7 @@
         <div class="cabinet-register-container-form-inputs">
             <label>
             	<span>Описание</span>
-            	<textarea name="short_description" placeholder="Краткая информация о компании..."></textarea>
+            	<textarea name="short_description" placeholder="Краткая информация о компании...">{{exim.short_description}}</textarea>
             </label>
         </div>
         

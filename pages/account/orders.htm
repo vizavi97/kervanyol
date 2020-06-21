@@ -23,11 +23,11 @@ public function onStart() {
             <div class="cabinet-container sticker">
                 <div class="cabinet-data">
                     <div class="tab-content">
-                        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="cabinet-data-container">
                                 <h4>Все заказы</h4>
                                 <p class="my-0 text-muted">
-                                    <small>В разделе «Все заказы» Вы просмотреть список ваших заказов в realtime режиме!</small>
+                                    <small>В разделе "Мои заказы" Вы можете просмотреть список своих покупок в режиме онлайн.</small>
                                 </p>
                             </div>
                             <div class="cabinet-data-container">
@@ -103,9 +103,11 @@ public function onStart() {
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="home-tab">
                             <div class="cabinet-data-container">
-                                <h4>Все заказы</h4>
+                                <h4>Мои купоны</h4>
                                 <p class="my-0 text-muted">
-                                    <small>В разделе «Все заказы» Вы просмотреть список ваших заказов в realtime режиме!</small>
+                                    <small>
+                                    	В этом разделе Вы можете проверить наличие купонов от разных магазинов. В случае неполадок, ознакомьтесь с условиями скидочных купонов.
+                                	</small>
                                 </p>
                                 <ul class="cabinet-coupons">
                                     <li class="cabinet-coupon">
@@ -365,7 +367,7 @@ public function onStart() {
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade show active" id="settings" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="home-tab">
                             <div class="cabinet-data-container">
                                 <h4>Карты и способы оплаты</h4>
                                 <p class="my-0 text-muted"><small>Укажите адреса доставки.</small></p>
@@ -461,7 +463,7 @@ public function onStart() {
                         <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <a
-                                    class="nav-link"
+                                    class="nav-link active"
                                     id="home-tab"
                                     data-toggle="tab"
                                     href="#home"
@@ -497,7 +499,7 @@ public function onStart() {
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a
-                                    class="nav-link active"
+                                    class="nav-link"
                                     id="settings-tab"
                                     data-toggle="tab"
                                     href="#settings"
