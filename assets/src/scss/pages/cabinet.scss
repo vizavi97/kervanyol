@@ -2586,13 +2586,20 @@
     &-btn {
       display: flex;
 
+      a + a{
+        padding-left: rem(30);
+      }
+
       &-edit, &-left {
         font-size: rem(11);
         font-weight: 500;
+        span{
+          display: inline-block;
+          font-size: rem(14);
+        }
       }
 
       &-edit {
-        padding-left: rem(30);
         color: #003e7c;
 
         &:hover, &:focus {
@@ -2633,15 +2640,16 @@
         justify-content: flex-end;
 
         &:hover {
-          path {
-            fill: #ff2700;
+          text-decoration: none;
+          span:before{
+            color: #ff2700;
           }
         }
 
-        path {
-          fill: #ff6f55;
+        span:before{
+          color: #ff6f55;
         }
-      }
+    }
     }
 
     &-load {
