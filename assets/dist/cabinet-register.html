@@ -9,18 +9,20 @@
   </head>
   <body class="layoust">
     <header>
-      <div class="container">
-        <div class="header-exim">
-          <a class="header-exim-back" href="/"
-            ><i aria-hidden="true" class="fas fa-chevron-left"></i> <span>Вернуться на сайт kervanyol.com</span></a
-          >
-          <div class="header-exim-other"><a href="javascript:">Помощь</a> <a href="javascript:">FAQ</a></div>
-          <div class="header-exim-call">
-            <span class="icon-support"></span>
-            <a class="header-exim-call-info" href="javascript:"
-              ><h5>( 97 ) 451 50 90</h5>
-              <p>08:00 до 18:00</p></a
+      <div class="header">
+        <div class="container">
+          <div class="header-exim">
+            <a class="header-exim-back" href="/"
+              ><i aria-hidden="true" class="fas fa-chevron-left"></i> <span>Вернуться на сайт kervanyol.com</span></a
             >
+            <div class="header-exim-other"><a href="javascript:">Помощь</a> <a href="javascript:">FAQ</a></div>
+            <div class="header-exim-call">
+              <span class="icon-support"></span>
+              <a class="header-exim-call-info" href="javascript:"
+                ><h5>( 97 ) 451 50 90</h5>
+                <p>08:00 до 18:00</p></a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -170,16 +172,17 @@
                   <div class="cabinet-register-container-form">
                     <h6>Заполните данные</h6>
                     <form action="cabinet-register-2.html">
-                      <div class="cabinet-register-container-form-inputs">
-                        <label for="Web-site"
-                          ><span>Название огранизации*</span>
-                          <input class="input-kervan" name="name" id="Web-site" placeholder="_____"
+                      <div class="form-row">
+                        <label class="col-md-6 mb-2"
+                          ><span class="pb-2 d-block">Название огранизации*</span>
+                          <input class="form-control input-kervan" placeholder="_____"
                         /></label>
-                        <label for="ogpn"
-                          ><span>Торговая марка*</span>
-                          <input class="input-kervan" name="name" id="" placeholder="_____"
+                        <label class="col-md-6 mb-2"
+                          ><span class="pb-2 d-block">Торговая марка*</span>
+                          <input class="form-control input-kervan" placeholder="_____"
                         /></label>
                       </div>
+                      <div class="cabinet-register-container-form-inputs"></div>
                       <div class="cabinet-register-container-form-inputs">
                         <label for="ogpn"
                           ><span>ОГРН*</span> <input class="input-kervan" name="name" id="ogpn" placeholder="_____"
@@ -250,7 +253,7 @@
                   <ul class="cabinet-register-stages-items">
                     <li class="cabinet-register-stages-item done">
                       <h6>Основные данные</h6>
-                      <p>Укажите базовые сведения о компании</p>
+                      <p>Укажите сведения о желаемом товаре</p>
                     </li>
                     <li class="cabinet-register-stages-item">
                       <h6>Контактные данные</h6>
