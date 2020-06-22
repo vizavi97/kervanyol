@@ -1,0 +1,87 @@
+[viewBag]
+==
+<div class="cabinet-declaration-bid-item">
+    <div class="cabinet-declaration-bid-number">
+        <h6>Товар № {{key}}</h6>
+    </div>
+    <ul class="cabinet-declaration-bid-descs">
+        <li class="cabinet-declaration-bid-desc">
+            <p>Наименование товара</p>
+            <p><strong>{{product.name}}</strong></p>
+        </li>
+        <li class="cabinet-declaration-bid-desc">
+            <p>Количество товара:</p>
+            <p><strong>{{product.quantity}}</strong></p>
+        </li>
+    </ul>
+    
+    <div class="cabinet-declaration-bid-label">
+        <label>
+            <span>Код ТНВЭД</span>
+            <input type="text" class="input-kervan" value="123549816439" disabled/>
+        </label>
+    </div>
+    
+    <ul class="cabinet-declaration-bid-descs">
+        <li class="cabinet-declaration-bid-desc">
+            <p>Наименование товара</p>
+            <p><strong>Газированная вода Bonaqua</strong></p>
+        </li>
+        
+        <li class="cabinet-declaration-bid-desc">
+            <p> Госпошлина</p>
+            <p><strong>200$ ( 12% )</strong></p>
+        </li>
+        
+        <li class="cabinet-declaration-bid-desc">
+            <p>Таможенный платеж</p>
+            <p><strong>75$ ( 8% )</strong></p>
+        </li>
+        
+        <li class="cabinet-declaration-bid-desc">
+            <p>НДС</p>
+            <p><strong>95$ ( 9.5% )</strong></p>
+        </li>
+    </ul>
+    
+    <div class="cabinet-declaration-bid-certificates">
+        <h6>Требуемые сертификаты</h6>
+        <div class="cabinet-edit-data-load">
+            <div class="cabinet-edit-data-load-wrapper"></div>
+            <div class="cabinet-store-orders-load-input">
+                <label>
+                    Выберите файл
+                </label>
+                <div class="cabinet-store-orders-load-btn">Обзор</div>
+                <input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)"/>
+            </div>
+        </div>
+        
+        <h6>Дополнительные сертификаты</h6>
+        <div class="cabinet-edit-data-load">
+            <div class="cabinet-edit-data-load-wrapper"></div>
+            <div class="cabinet-store-orders-load-input">
+                <label>
+                    Выберите файл
+                </label>
+                <div class="cabinet-store-orders-load-btn">Обзор</div>
+                <input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)"/>
+            </div>
+        </div>
+    </div>
+    
+    <ul class="cabinet-declaration-bid-descs">
+        <li class="cabinet-declaration-bid-desc">
+            <p>Цена за единицу</p>
+            <p><strong>{{product.price}}$</strong></p>
+        </li>
+        <li class="cabinet-declaration-bid-desc">
+            <p>Количество</p>
+            <p><strong>14 000 шт</strong></p>
+        </li>
+        <li class="cabinet-declaration-bid-desc">
+            <p>Ед. измерения</p>
+            <p><strong>кг</strong></p>
+        </li>
+    </ul>
+</div>

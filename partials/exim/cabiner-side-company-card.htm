@@ -4,7 +4,7 @@
     <div class="cabinet-sticker-company-header">
         <div class="cabinet-sticker-company-img">
         	{% if exim.logo %}
-        		<img src="{{ exim.logo.thumb(200, 200) }}" alt="" />
+        		<img src="{{ exim.logo.thumb(150, 150, {mode: 'crop'}) }}" alt="" />
         	{% else %}
         		<img src="{{'assets/dist/img/companies/pepsi.png' | theme}}" alt="" />
         	{% endif %}
