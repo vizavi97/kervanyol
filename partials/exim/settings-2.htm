@@ -1,0 +1,50 @@
+[viewBag]
+==
+<form 
+	data-request="onRegister2" 
+	data-request-files 
+	data-request-flash
+	data-request-update="
+		'exim/register-3': '#registrationFormContainer',
+		'exim/register-steps-nav': '#registrationFormSteeps'
+	">
+	
+	<div id="partialCountryState">
+	    {% partial 'common/country-state' countryId=exim.country_id stateId=exim.state_id %}
+	</div>
+	
+    <div class="cabinet-register-container-form-inputs">
+        <label>
+        	<span>Web-сайт</span>
+        	<input class="input-kervan" name="website" placeholder="www.kervanyol.com" value="{{exim.website}}"/>
+        </label>
+        
+        <label>
+        	<span>Адрес</span> 
+        	<input class="input-kervan" name="address" value="{{exim.address}}"/>
+        </label>
+    </div>
+    
+    <div class="cabinet-register-container-form-inputs">
+        <label>
+        	<span>Электронная почта </span>
+        	<input class="input-kervan" name="email" value="{{exim.email}}"/>
+        </label>
+        
+        <label>
+        	<span>Контактный телефон</span>
+        	<input class="input-kervan" name="phone"  placeholder="+998(__)___-__-__" value="{{exim.phone}}"/>
+        </label>
+    </div>
+    
+    <div class="cabinet-register-container-form-buttons justify-content-between">
+        <button 
+        	type="submit"
+        	data-attach-loading
+        	class="btn-kervan">Продолжить</button>
+        
+        <button class="btn btn-link text-info" 
+        	data-request="onInit" 
+        	data-request-update="'exim/register-1': '#registrationFormContainer'">Назад</button>
+    </div>
+</form>

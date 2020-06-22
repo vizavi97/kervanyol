@@ -1,0 +1,33 @@
+[viewBag]
+==
+<div class="cabinet-nav pb-1">
+    <div class="cabinet-nav-headline">
+        <h5>Личный кабинет</h5>
+    </div>
+	<ul class="cabinet-nav-items">
+  <li class="cabinet-nav-item">
+    <a href="{{ 'market-store/info'|page }}" class="{{ this.page.id == "market-store-info" ? "active" }}">
+      <span class="icon-store"></span>
+      <p>Мой магазин</p>
+    </a>
+  </li>
+  <li class="cabinet-nav-item">
+    <a href="{{'market-store/products'|page}}" class="{{ this.page.id == "market-store-products" ? "active" }}">
+      <span class="icon-goods"></span>
+      <p>Мои продукты</p>
+    </a>
+  </li>
+  <li class="cabinet-nav-item">
+    <a href="{{'market-store/orders'|page}}" class="{{ this.page.id == "market-store-orders" ? "active" }}">
+      <span class="icon-tshirt"></span>
+      <p>Заказы</p>
+    </a>
+  </li>
+  <li class="cabinet-nav-item">
+    <a data-request="onLogout" data-request-data="redirect: '/'">
+      <span class="icon-sign-out"></span>
+      <p>Выйти</p>
+    </a>
+  </li>
+</ul>
+</div>

@@ -1,153 +1,155 @@
 <% var data = {title: "Личный кабинет",};%><%= _.template(require('./../includes/headerExim.html').default)(data) %>
 
 <main class="content grey">
-    <div class="container-lg">
-        <div class="content-container pt-4">
-            <div class="breadcrumbs">
-                <ul class="breadcrumbs-items">
-                    <li class="breadcrumbs-item active">
-                        <a href="/">
-                            Главная
-                        </a>
-                    </li>
-                    <li class="breadcrumbs-item">
-                        <a href="javascript:">
-                            Документация
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="cabinet">
-                <div class="cabinet-nav">
-                    <div class="cabinet-nav-headline">
-                        <h5>Личный кабинет</h5>
-                    </div>
-                    <%= _.template(require('./../includes/cabinet-nav-exim.html').default)(data) %>
-                </div>
-                <div class="cabinet-container">
-                    <div class="cabinet-register">
-                        <div class="cabinet-register-container">
-                            <div class="cabinet-register-container-headline">
-                                <h5>Регистрация</h5>
-                            </div>
-                            <div class="cabinet-register-container-text">
-                                <p>Данный раздел позволит Вам пройти этап регистрации на нашем сайте.</p>
-                            </div>
-                            <div class="cabinet-register-container-warning">
-                                <div class="cabinet-register-container-warning-img">
-                                    <img src="img/cabinet/warning.png" alt=""/>
-                                </div>
-                                <div class="cabinet-register-container-warning-text">
-                                    <p><strong>Важно!</strong></p>
-                                    <p>Все пункты должны быть заполнены поэтапно для возможности получения
-                                        доступа.</p>
-                                </div>
-                                <div class="cabinet-register-container-warning-close">
-                                    <a href="javascript:"
-                                       onclick="this.parentElement.parentElement.remove()">&times;</a>
-                                </div>
-                            </div>
-                            <div class="cabinet-register-container-form">
-                                <h6>Заполните данные</h6>
-                                <form action="cabinet-register-2.html">
-                                    <div class="cabinet-register-container-form-inputs">
-                                        <label for="Web-site">
-                                            <span>Название огранизации*</span>
-                                            <input type="text" class="input-kervan" name="name" id="Web-site" placeholder="_____"/>
-                                        </label>
-                                        <label for="ogpn">
-                                            <span>Торговая марка*</span>
-                                            <input type="text" class="input-kervan" name="name" id="" placeholder="_____"/>
-                                        </label>
-                                    </div>
-                                    <div class="cabinet-register-container-form-inputs">
-                                        <label for="ogpn">
-                                            <span>ОГРН*</span>
-                                            <input type="text" class="input-kervan" name="name" id="ogpn" placeholder="_____"/>
-                                        </label>
-                                        <label for="boss">
-                                            <span>Принаддежность к отраслевым союзам</span>
-                                            <select name="boss" id="boss">
-                                                <option value="www.kervanyol.uz" selected>www.kervanyol.uz</option>
-                                                <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                                                <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                                                <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                                                <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="cabinet-register-container-form-inputs">
-                                        <label for="ogpn">
-                                            <span>Описание</span>
-                                            <textarea name="filling-textarea"
-                                                      placeholder="Краткая информация о компании..."></textarea>
-                                        </label>
-                                    </div>
-                                    <div class="cabinet-register-container-form-inputs cabinet-register-container-form-upload">
-                                        <div class="cabinet-register-container-form-input">
-                                            <h6>Логотип компании</h6>
-                                            <ul class="main-certificates">
-                                                <li class="cabinet-register-container-form-addFile-item">
-                                                    <label>
-                                                        <div class="addFile-inner">
-                                                            <img src="img/data-falling/plus.png" alt="plus">
-                                                            <span>Загрузить</span>
-                                                        </div>
-                                                        <input type="file" rel="1" name="certificates[1]"
-                                                               onchange="window.loadPhotoURL(this)" data-name="certificates">
-                                                    </label>
-                                                </li>
-                                            </ul>
-                                            <p>Максимальный</p>
-                                            <p>размер фото 110x110</p>
-                                        </div>
-                                        <div class="cabinet-register-container-form-input">
-                                            <h6>Свидетельство о регистрации</h6>
-                                            <ul class="additional-certificates">
-                                                <li class="cabinet-register-container-form-addFile-item">
-                                                    <label>
-                                                        <div class="addFile-inner">
-                                                            <img src="img/data-falling/plus.png" alt="plus">
-                                                            <span>Загрузить</span>
-                                                        </div>
-                                                        <input type="file" rel="0" name="additional[0]"
-                                                               onchange="window.loadPhotoURL(this)" data-name="additional">
-                                                    </label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn-kervan">
-                                        Продолжить
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="cabinet-register-stages">
-                            <div class="cabinet-register-stages-headline">
-                                <h5>Этапы заполнения</h5>
-                            </div>
-                            <ul class="cabinet-register-stages-items">
-                                <li class="cabinet-register-stages-item done">
-                                    <h6>Основные данные</h6>
-                                    <p>Укажите базовые сведения о компании</p>
-                                </li>
-                                <li class="cabinet-register-stages-item">
-                                    <h6>Контактные данные</h6>
-                                    <p>Заполните данные поля для возможности связаться с Вами</p>
-                                </li>
-                                <li class="cabinet-register-stages-item">
-                                    <h6>Сведения о руководителе</h6>
-                                    <p>Данные о руководителе остаются конфедициальными</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="container-lg">
+    <div class="content-container pt-4">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs-items">
+          <li class="breadcrumbs-item active">
+            <a href="/">
+              Главная
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a href="javascript:">
+              Документация
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cabinet">
+        <div class="cabinet-nav">
+          <div class="cabinet-nav-headline">
+            <h5>Личный кабинет</h5>
+          </div>
+          <%= _.template(require('./../includes/cabinet-nav-exim.html').default)(data) %>
         </div>
+        <div class="cabinet-container">
+          <div class="cabinet-register">
+            <div class="cabinet-register-container">
+              <div class="cabinet-register-container-headline">
+                <h5>Регистрация</h5>
+              </div>
+              <div class="cabinet-register-container-text">
+                <p>Данный раздел позволит Вам пройти этап регистрации на нашем сайте.</p>
+              </div>
+              <div class="cabinet-register-container-warning">
+                <div class="cabinet-register-container-warning-img">
+                  <img src="img/cabinet/warning.png" alt=""/>
+                </div>
+                <div class="cabinet-register-container-warning-text">
+                  <p><strong>Важно!</strong></p>
+                  <p>Все пункты должны быть заполнены поэтапно для возможности получения
+                    доступа.</p>
+                </div>
+                <div class="cabinet-register-container-warning-close">
+                  <a href="javascript:"
+                     onclick="this.parentElement.parentElement.remove()">&times;</a>
+                </div>
+              </div>
+              <div class="cabinet-register-container-form">
+                <h6>Заполните данные</h6>
+                <form action="cabinet-register-2.html">
+                  <div class="form-row">
+                    <label class="col-md-6 mb-2">
+                      <span class="pb-2 d-block">Название огранизации*</span>
+                      <input type="text" class="form-control input-kervan" placeholder="_____"/>
+                    </label>
+                    <label class="col-md-6 mb-2">
+                      <span class="pb-2 d-block">Торговая марка*</span>
+                      <input type="text" class="form-control input-kervan" placeholder="_____"/>
+                    </label>
+                  </div>
+                  <div class="cabinet-register-container-form-inputs">
+                  </div>
+                  <div class="cabinet-register-container-form-inputs">
+                    <label for="ogpn">
+                      <span>ОГРН*</span>
+                      <input type="text" class="input-kervan" name="name" id="ogpn" placeholder="_____"/>
+                    </label>
+                    <label for="boss">
+                      <span>Принаддежность к отраслевым союзам</span>
+                      <select name="boss" id="boss">
+                        <option value="www.kervanyol.uz" selected>www.kervanyol.uz</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+
+                      </select>
+                    </label>
+                  </div>
+                  <div class="cabinet-register-container-form-inputs">
+                    <label for="ogpn">
+                      <span>Описание</span>
+                      <textarea name="filling-textarea"
+                                placeholder="Краткая информация о компании..."></textarea>
+                    </label>
+                  </div>
+                  <div class="cabinet-register-container-form-inputs cabinet-register-container-form-upload">
+                    <div class="cabinet-register-container-form-input">
+                      <h6>Логотип компании</h6>
+                      <ul class="main-certificates">
+                        <li class="cabinet-register-container-form-addFile-item">
+                          <label>
+                            <div class="addFile-inner">
+                              <img src="img/data-falling/plus.png" alt="plus">
+                              <span>Загрузить</span>
+                            </div>
+                            <input type="file" rel="1" name="certificates[1]"
+                                   onchange="window.loadPhotoURL(this)" data-name="certificates">
+                          </label>
+                        </li>
+                      </ul>
+                      <p>Максимальный</p>
+                      <p>размер фото 110x110</p>
+                    </div>
+                    <div class="cabinet-register-container-form-input">
+                      <h6>Свидетельство о регистрации</h6>
+                      <ul class="additional-certificates">
+                        <li class="cabinet-register-container-form-addFile-item">
+                          <label>
+                            <div class="addFile-inner">
+                              <img src="img/data-falling/plus.png" alt="plus">
+                              <span>Загрузить</span>
+                            </div>
+                            <input type="file" rel="0" name="additional[0]"
+                                   onchange="window.loadPhotoURL(this)" data-name="additional">
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn-kervan">
+                    Продолжить
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="cabinet-register-stages">
+              <div class="cabinet-register-stages-headline">
+                <h5>Этапы заполнения</h5>
+              </div>
+              <ul class="cabinet-register-stages-items">
+                <li class="cabinet-register-stages-item done">
+                  <h6>Основные данные</h6>
+                  <p>Укажите сведения о желаемом товаре</p>
+                </li>
+                <li class="cabinet-register-stages-item">
+                  <h6>Контактные данные</h6>
+                  <p>Заполните данные поля для возможности связаться с Вами</p>
+                </li>
+                <li class="cabinet-register-stages-item">
+                  <h6>Сведения о руководителе</h6>
+                  <p>Данные о руководителе остаются конфедициальными</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </main>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
