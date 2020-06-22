@@ -59,85 +59,6 @@ h2 {
   cursor: pointer;
 }
 
-.btn-kervan {
-  min-width: 10rem;
-  background-color: #ff6f55;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 300;
-  padding: .75rem 1.5rem;
-  border-radius: 500rem;
-  text-decoration: none;
-  transition: all .3s ease;
-  text-align: center;
-
-  &:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0;
-  }
-
-  &:hover {
-    box-shadow: 0px 3px 20px #FF6F554D;
-    color: white;
-    text-decoration: none;
-
-    .btn-arr {
-      opacity: 0;
-    }
-  }
-
-  &.btn-arr {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-right: 3rem;
-
-    &:after {
-      position: absolute;
-      display: block;
-      content: '';
-      right: 1.5rem;
-      width: 9px;
-      height: 14px;
-      background: url("../img/btn-arr.png") no-repeat right;
-      background-size: cover;
-    }
-  }
-
-  &.without-bg {
-    border: 1px solid #ff6f55;
-    background: transparent;
-    color: #ff6f55;
-
-    &:hover {
-      color: #ff6f55;
-      border: 1px solid inherit;
-    }
-
-    &-arr {
-      position: relative;
-      display: flex;
-      align-items: center;
-      padding-right: 3rem;
-
-      &:after {
-        position: absolute;
-        display: block;
-        content: '';
-        right: 1.5rem;
-        width: 9px;
-        height: 14px;
-        background: url("../img/right-arr-red.png") no-repeat right;
-        background-size: cover;
-      }
-    }
-  }
-
-  &.longer {
-    padding: .5rem 4rem;
-  }
-}
-
 .input-kervan {
   max-width: 100%;
   height: 2.625rem;
@@ -246,9 +167,14 @@ h2 {
 }
 
 .form-row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
   span {
     display: block;
     padding-bottom: rem(8);
+    color: #7D8B9D;
+    font-size: .75rem;
+    font-weight: 500;
   }
 }
 

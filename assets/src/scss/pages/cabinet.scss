@@ -1678,7 +1678,7 @@
           position: absolute;
           top: 10px;
           width: 196px;
-          height: 201px;
+          //height: 201px;
           overflow: hidden;
           box-shadow: 0px -3px 20px 1px rgba(25, 25, 25, .05);
         }
@@ -1797,13 +1797,11 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-          width: 181px;
-          height: 2.625rem;
           border: 1px solid #D3D9DE;
           border-radius: 500rem;
           overflow: hidden;
           opacity: 1;
-          margin-right: 1.5rem;
+          width: 100%;
 
           input {
             max-width: 50%;
@@ -1852,9 +1850,9 @@
     label {
       width: 50%;
 
-      &:first-of-type {
-        margin-right: 1rem;
-      }
+      //&:first-of-type {
+      //  margin-right: 1rem;
+      //}
 
       input {
         width: 100%;
