@@ -122,21 +122,25 @@ if (farmerinputsWrapper) {
 
 window.uploadCompanyFIleRegister = function (input) {
   if (input.files && input.files[0]) {
-    const reader = new FileReader();
-    reader.readAsText(input.files[0]);
-    const fileName = input.files[0].name;
-    const wrapper = `
+    console.log(input.files);
+    const inputFiles = input.files;
+    const collection = [...inputFiles].map( file =>{
+      return (
+        `
           <div class="cabinet-edit-data-load-complete">
             <div class="cabinet-edit-data-load-complete-img">
                 <span class="icon-file1"></span>
             </div>
             <div class="cabinet-edit-data-load-complete-text">
-               <h5>${fileName}</h5>
+               <h5>${file.name}</h5>
             </div>
             <a class="cabinet-edit-data-load-complete-delete" href="javascript:" onclick="this.parentElement.remove()">
               <span class="icon-delete"></span>
             </a>
-          </div>`;
-    input.parentElement.insertAdjacentHTML("beforebegin", wrapper);
+          </div>`
+      )
+    }).join('');
+    input.parentElement.insertAdjacentHTML("beforebegin", collection);
   }
+  console.log(input.file);
 };

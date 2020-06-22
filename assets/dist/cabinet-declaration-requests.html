@@ -65,6 +65,12 @@
                 <li class="cabinet-nav-item">
                   <a href="javascript:" class="disabled"
                     ><span class="icon-independence"></span>
+                    <p>Декларация</p></a
+                  >
+                </li>
+                <li class="cabinet-nav-item">
+                  <a href="javascript:" class="disabled"
+                    ><span class="icon-independence"></span>
                     <p>История покупок</p></a
                   >
                 </li>
@@ -144,222 +150,204 @@
             </div>
             <div class="cabinet-container sticker">
               <div class="cabinet-data">
-                <form action="javascript:" class="cabinet-data-form">
-                  <div class="cabinet-data-container">
-                    <div class="cabinet-declaration-bid">
-                      <div class="cabinet-declaration-bid-return">
-                        <a href="./cabinet-declaration.html"
-                          ><i class="fas fa-chevron-left"></i> <span>Вернуться к списку</span></a
+                <form action="javascript:" class="cabinet-data-form" enctype="multipart/form-data">
+                  <div class="cabinet-declaration-bid">
+                    <div class="cabinet-declaration-bid-return">
+                      <a href="./cabinet-declaration.html"
+                        ><i class="fas fa-chevron-left"></i> <span>Вернуться к списку</span></a
+                      >
+                    </div>
+                    <div class="cabinet-declaration-bid-headline"><h5>Заявка на импорт товара</h5></div>
+                    <div class="cabinet-declaration-bid-item">
+                      <div class="cabinet-declaration-bid-number"><h6>Товар № 1</h6></div>
+                      <ul class="cabinet-declaration-bid-descs">
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Наименование товара</p>
+                          <p><strong>Газированная вода Bonaqua</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Количество товара:</p>
+                          <p><strong>14 000</strong></p>
+                        </li>
+                      </ul>
+                      <div class="cabinet-declaration-bid-label">
+                        <label
+                          ><span>Код ТНВЭД</span> <input class="input-kervan" value="123549816439" disabled="disabled"
+                        /></label>
+                      </div>
+                      <ul class="cabinet-declaration-bid-descs">
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Наименование товара</p>
+                          <p><strong>Газированная вода Bonaqua</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Госпошлина</p>
+                          <p><strong>200$ ( 12% )</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Таможенный платеж</p>
+                          <p><strong>75$ ( 8% )</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>НДС</p>
+                          <p><strong>95$ ( 9.5% )</strong></p>
+                        </li>
+                      </ul>
+                      <div class="cabinet-declaration-bid-certificates">
+                        <h6>Требуемые сертификаты</h6>
+                        <div class="cabinet-edit-data-load">
+                          <div class="cabinet-edit-data-load-wrapper"></div>
+                          <div class="cabinet-store-orders-load-input">
+                            <label>Выберите файл</label>
+                            <div class="cabinet-store-orders-load-btn">Обзор</div>
+                            <input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)" />
+                          </div>
+                        </div>
+                        <h6>Дополнительные сертификаты</h6>
+                        <div class="cabinet-edit-data-load">
+                          <div class="cabinet-edit-data-load-wrapper"></div>
+                          <div class="cabinet-store-orders-load-input">
+                            <label>Выберите файл</label>
+                            <div class="cabinet-store-orders-load-btn">Обзор</div>
+                            <input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)" />
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="cabinet-declaration-bid-descs">
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Цена за единицу</p>
+                          <p><strong>12$</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Количество</p>
+                          <p><strong>14 000 шт</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Ед. измерения</p>
+                          <p><strong>кг</strong></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="cabinet-declaration-bid-item">
+                      <div class="cabinet-declaration-bid-number"><h6>Товар № 1</h6></div>
+                      <ul class="cabinet-declaration-bid-descs">
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Наименование товара</p>
+                          <p><strong>Газированная вода Bonaqua</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Количество товара:</p>
+                          <p><strong>14 000</strong></p>
+                        </li>
+                      </ul>
+                      <div class="cabinet-declaration-bid-label">
+                        <label
+                          ><span>Код ТНВЭД</span> <input class="input-kervan" value="123549816439" disabled="disabled"
+                        /></label>
+                      </div>
+                      <ul class="cabinet-declaration-bid-descs">
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Наименование товара</p>
+                          <p><strong>Газированная вода Bonaqua</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Госпошлина</p>
+                          <p><strong>200$ ( 12% )</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Таможенный платеж</p>
+                          <p><strong>75$ ( 8% )</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>НДС</p>
+                          <p><strong>95$ ( 9.5% )</strong></p>
+                        </li>
+                      </ul>
+                      <div class="cabinet-declaration-bid-certificates">
+                        <h6>Требуемые сертификаты</h6>
+                        <div class="cabinet-edit-data-load">
+                          <div class="cabinet-edit-data-load-wrapper"></div>
+                          <div class="cabinet-store-orders-load-input">
+                            <label>Выберите файл</label>
+                            <div class="cabinet-store-orders-load-btn">Обзор</div>
+                            <input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)" />
+                          </div>
+                        </div>
+                        <h6>Дополнительные сертификаты</h6>
+                        <div class="cabinet-edit-data-load">
+                          <div class="cabinet-edit-data-load-wrapper"></div>
+                          <div class="cabinet-store-orders-load-input">
+                            <label>Выберите файл</label>
+                            <div class="cabinet-store-orders-load-btn">Обзор</div>
+                            <input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)" />
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="cabinet-declaration-bid-descs">
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Цена за единицу</p>
+                          <p><strong>12$</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Количество</p>
+                          <p><strong>14 000 шт</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Ед. измерения</p>
+                          <p><strong>кг</strong></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="cabinet-declaration-bid-item inputs">
+                      <ul class="cabinet-declaration-bid-descs">
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Условия доставки</p>
+                          <p><strong>CIP</strong></p>
+                        </li>
+                        <li class="cabinet-declaration-bid-desc">
+                          <p>Грузополучатель</p>
+                          <p><strong>ООО СТРОЙ ГРОУП</strong></p>
+                        </li>
+                      </ul>
+                      <div class="cabinet-inputs">
+                        <label
+                          ><span>Руководитель организации</span>
+                          <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
+                        /></label>
+                        <label
+                          ><span>Руководитель организации</span>
+                          <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
+                        /></label>
+                      </div>
+                      <div class="cabinet-inputs">
+                        <label
+                          ><span>Руководитель организации</span>
+                          <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
+                        /></label>
+                        <label
+                          ><span>Руководитель организации</span>
+                          <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
+                        /></label>
+                      </div>
+                      <div class="cabinet-inputs">
+                        <label
+                          ><span>Руководитель организации</span>
+                          <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
+                        /></label>
+                        <label
+                          ><span>Руководитель организации</span>
+                          <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
+                        /></label>
+                      </div>
+                      <div class="cabinet-declaration-bid-select">
+                        <h6>Общая сумма: 5000</h6>
+                        <select name="rates" id="rates"
+                          ><option value="USD">USD</option
+                          ><option value="RUB">RUB</option
+                          ><option value="UZB">UZB</option></select
                         >
                       </div>
-                      <div class="cabinet-declaration-bid-headline"><h5>Заявка на импорт товара</h5></div>
-                      <div class="cabinet-declaration-bid-item">
-                        <div class="cabinet-declaration-bid-number"><h6>Товар № 1</h6></div>
-                        <ul class="cabinet-declaration-bid-descs">
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Наименование товара</p>
-                            <p><strong>Газированная вода Bonaqua</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Количество товара:</p>
-                            <p><strong>14 000</strong></p>
-                          </li>
-                        </ul>
-                        <div class="cabinet-declaration-bid-label">
-                          <label
-                            ><span>Код ТНВЭД</span>
-                            <input class="input-kervan" value="123549816439" disabled="disabled"
-                          /></label>
-                        </div>
-                        <ul class="cabinet-declaration-bid-descs">
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Наименование товара</p>
-                            <p><strong>Газированная вода Bonaqua</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Госпошлина</p>
-                            <p><strong>200$ ( 12% )</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Таможенный платеж</p>
-                            <p><strong>75$ ( 8% )</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>НДС</p>
-                            <p><strong>95$ ( 9.5% )</strong></p>
-                          </li>
-                        </ul>
-                        <div class="cabinet-declaration-bid-certificates">
-                          <h6>Требуемые сертификаты</h6>
-                          <div class="cabinet-edit-data-load">
-                            <div class="cabinet-edit-data-load-wrapper"></div>
-                            <div class="cabinet-store-orders-load-input">
-                              <label>Выберите файл</label>
-                              <div class="cabinet-store-orders-load-btn">Обзор</div>
-                              <input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)" />
-                            </div>
-                          </div>
-                          <h6>Дополнительные сертификаты</h6>
-                          <div class="cabinet-edit-data-load">
-                            <div class="cabinet-edit-data-load-wrapper"></div>
-                            <div class="cabinet-store-orders-load-input">
-                              <label>Выберите файл</label>
-                              <div class="cabinet-store-orders-load-btn">Обзор</div>
-                              <input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)" />
-                            </div>
-                          </div>
-                        </div>
-                        <ul class="cabinet-declaration-bid-descs">
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Цена за единицу</p>
-                            <p><strong>12$</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Количество</p>
-                            <p><strong>14 000 шт</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Ед. измерения</p>
-                            <p><strong>кг</strong></p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cabinet-data-container">
-                    <div class="cabinet-declaration-bid">
-                      <div class="cabinet-declaration-bid-return">
-                        <a href="./cabinet-declaration.html"
-                          ><i class="fas fa-chevron-left"></i> <span>Вернуться к списку</span></a
-                        >
-                      </div>
-                      <div class="cabinet-declaration-bid-headline"><h5>Заявка на импорт товара</h5></div>
-                      <div class="cabinet-declaration-bid-item">
-                        <div class="cabinet-declaration-bid-number"><h6>Товар № 1</h6></div>
-                        <ul class="cabinet-declaration-bid-descs">
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Наименование товара</p>
-                            <p><strong>Газированная вода Bonaqua</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Количество товара:</p>
-                            <p><strong>14 000</strong></p>
-                          </li>
-                        </ul>
-                        <div class="cabinet-declaration-bid-label">
-                          <label
-                            ><span>Код ТНВЭД</span>
-                            <input class="input-kervan" value="123549816439" disabled="disabled"
-                          /></label>
-                        </div>
-                        <ul class="cabinet-declaration-bid-descs">
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Наименование товара</p>
-                            <p><strong>Газированная вода Bonaqua</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Госпошлина</p>
-                            <p><strong>200$ ( 12% )</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Таможенный платеж</p>
-                            <p><strong>75$ ( 8% )</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>НДС</p>
-                            <p><strong>95$ ( 9.5% )</strong></p>
-                          </li>
-                        </ul>
-                        <div class="cabinet-declaration-bid-certificates">
-                          <h6>Требуемые сертификаты</h6>
-                          <div class="cabinet-edit-data-load">
-                            <div class="cabinet-edit-data-load-wrapper"></div>
-                            <div class="cabinet-store-orders-load-input">
-                              <label>Выберите файл</label>
-                              <div class="cabinet-store-orders-load-btn">Обзор</div>
-                              <input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)" />
-                            </div>
-                          </div>
-                          <h6>Дополнительные сертификаты</h6>
-                          <div class="cabinet-edit-data-load">
-                            <div class="cabinet-edit-data-load-wrapper"></div>
-                            <div class="cabinet-store-orders-load-input">
-                              <label>Выберите файл</label>
-                              <div class="cabinet-store-orders-load-btn">Обзор</div>
-                              <input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)" />
-                            </div>
-                          </div>
-                        </div>
-                        <ul class="cabinet-declaration-bid-descs">
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Цена за единицу</p>
-                            <p><strong>12$</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Количество</p>
-                            <p><strong>14 000 шт</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Ед. измерения</p>
-                            <p><strong>кг</strong></p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cabinet-data-container last">
-                    <div class="cabinet-declaration-bid">
-                      <div class="cabinet-declaration-bid-item">
-                        <ul class="cabinet-declaration-bid-descs">
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Условия доставки</p>
-                            <p><strong>CIP</strong></p>
-                          </li>
-                          <li class="cabinet-declaration-bid-desc">
-                            <p>Грузополучатель</p>
-                            <p><strong>ООО СТРОЙ ГРОУП</strong></p>
-                          </li>
-                        </ul>
-                        <div class="cabinet-inputs">
-                          <label
-                            ><span>Руководитель организации</span>
-                            <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
-                          /></label>
-                          <label
-                            ><span>Руководитель организации</span>
-                            <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
-                          /></label>
-                        </div>
-                        <div class="cabinet-inputs">
-                          <label
-                            ><span>Руководитель организации</span>
-                            <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
-                          /></label>
-                          <label
-                            ><span>Руководитель организации</span>
-                            <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
-                          /></label>
-                        </div>
-                        <div class="cabinet-inputs">
-                          <label
-                            ><span>Руководитель организации</span>
-                            <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
-                          /></label>
-                          <label
-                            ><span>Руководитель организации</span>
-                            <input class="input-kervan" name="name" placeholder="www.kervanyol.uz"
-                          /></label>
-                        </div>
-                        <div class="cabinet-declaration-bid-select">
-                          <h6>Общая сумма: 5000</h6>
-                          <select name="rates" id="rates"
-                            ><option value="USD">USD</option
-                            ><option value="RUB">RUB</option
-                            ><option value="UZB">UZB</option></select
-                          >
-                        </div>
-                        <button type="submit" class="btn-kervan">Продолжить</button>
-                      </div>
+                      <button type="submit" class="btn-kervan">Продолжить</button>
                     </div>
                   </div>
                 </form>
