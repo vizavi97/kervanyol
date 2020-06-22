@@ -47,6 +47,7 @@ h2 {
   font-weight: 400;
   text-transform: uppercase;
 }
+
 #bg-switcher {
   position: fixed;
   top: 3rem;
@@ -57,6 +58,7 @@ h2 {
   z-index: 10;
   cursor: pointer;
 }
+
 .btn-kervan {
   min-width: 10rem;
   background-color: #ff6f55;
@@ -66,25 +68,30 @@ h2 {
   padding: .75rem 1.5rem;
   border-radius: 500rem;
   text-decoration: none;
-  transition: all.3s ease;
+  transition: all .3s ease;
   text-align: center;
+
   &:focus {
     outline: 0;
     box-shadow: 0 0 0 0;
   }
+
   &:hover {
     box-shadow: 0px 3px 20px #FF6F554D;
     color: white;
     text-decoration: none;
+
     .btn-arr {
       opacity: 0;
     }
   }
+
   &.btn-arr {
     position: relative;
     display: flex;
     align-items: center;
     padding-right: 3rem;
+
     &:after {
       position: absolute;
       display: block;
@@ -96,19 +103,23 @@ h2 {
       background-size: cover;
     }
   }
+
   &.without-bg {
     border: 1px solid #ff6f55;
     background: transparent;
     color: #ff6f55;
+
     &:hover {
       color: #ff6f55;
       border: 1px solid inherit;
     }
+
     &-arr {
       position: relative;
       display: flex;
       align-items: center;
       padding-right: 3rem;
+
       &:after {
         position: absolute;
         display: block;
@@ -121,10 +132,12 @@ h2 {
       }
     }
   }
+
   &.longer {
     padding: .5rem 4rem;
   }
 }
+
 .input-kervan {
   max-width: 100%;
   height: 2.625rem;
@@ -134,30 +147,166 @@ h2 {
   color: #000;
   font-weight: 500;
   text-indent: 1rem;
+
   &:focus {
     color: #495057;
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
   }
+
   &:disabled {
     background: #fafafa;
   }
 }
+
+.btn-kervan {
+  min-width: 10rem;
+  background-color: #ff6f55;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  padding: .75rem 1.5rem;
+  border-radius: 500rem;
+  text-decoration: none;
+  transition: all .3s ease;
+  text-align: center;
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+  }
+
+  &:hover {
+    box-shadow: 0px 3px 20px #FF6F554D;
+    color: white;
+    text-decoration: none;
+
+    .btn-arr {
+      opacity: 0;
+    }
+  }
+
+  &.btn-arr {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      right: 1.5rem;
+      width: 9px;
+      height: 14px;
+      background: url("../img/btn-arr.png") no-repeat right;
+      background-size: cover;
+    }
+  }
+
+  &.without-bg {
+    border: 1px solid #ff6f55;
+    background: transparent;
+    color: #ff6f55;
+
+    &:hover {
+      color: #ff6f55;
+      border: 1px solid inherit;
+    }
+
+    &-arr {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-right: 3rem;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        right: 1.5rem;
+        width: 9px;
+        height: 14px;
+        background: url("../img/right-arr-red.png") no-repeat right;
+        background-size: cover;
+      }
+    }
+  }
+
+  &.longer {
+    padding: .5rem 4rem;
+  }
+}
+
+.form-row > .col, .form-row > [class*="col-"] {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.form-row {
+  span {
+    display: block;
+    padding-bottom: rem(8);
+  }
+}
+
+.form-control {
+  max-width: 100%;
+  width: 100%;
+  height: 2.625rem;
+  border: 1px solid #d3d9de;
+  background-color: #fff;
+  border-radius: 25rem;
+  color: #000;
+  font-weight: 500;
+  padding: rem(6) rem(20);
+
+  &:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+  }
+
+  &:disabled {
+    background: #fafafa;
+  }
+}
+
+select.form-control {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../img/arrow-down.png");
+  background-repeat: no-repeat, repeat;
+  background-position: right 1rem top 50%, 0 0;
+  cursor: pointer;
+}
+
+textarea.form-control {
+  border-radius: rem(16);
+  min-height: rem(80);
+}
+
 .vertical-line {
   width: 100%;
   margin: .75rem 0;
   background: #e2e2e2;
   height: 1px;
 }
+
 .favourite-btn {
   font-size: 20px;
   color: black;
+
   &.active {
     color: #ff6f55;
   }
 }
+
 //STARS
 .star-rating__stars {
   position: relative;
@@ -167,47 +316,58 @@ h2 {
   background-size: 16px 15px;
 
 }
+
 .star-rating__label {
   position: absolute;
   height: 100%;
-  background-size: 16px 15px!important;
+  background-size: 16px 15px !important;
   cursor: pointer;
 }
+
 .star-rating__input {
   margin: 0;
   position: absolute;
-  height: 1px; width: 1px;
+  height: 1px;
+  width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
 .star-rating__stars .star-rating__label:nth-of-type(1) {
   z-index: 5;
   width: 20%;
 }
+
 .star-rating__stars .star-rating__label:nth-of-type(2) {
   z-index: 4;
   width: 40%;
 }
+
 .star-rating__stars .star-rating__label:nth-of-type(3) {
   z-index: 3;
   width: 60%;
 }
+
 .star-rating__stars .star-rating__label:nth-of-type(4) {
   z-index: 2;
   width: 80%;
 }
+
 .star-rating__stars .star-rating__label:nth-of-type(5) {
   z-index: 1;
   width: 100%;
 }
+
 .star-rating__input:checked + .star-rating__label,
 .star-rating__input:focus + .star-rating__label,
 .star-rating__label:hover {
   background: url("../img/star-checked.png");
 }
+
 .star-rating__label:hover ~ .star-rating__label {
   background: url("../img/star-not-checked.png");
 }
+
 .star-rating__input:focus ~ .star-rating__focus {
   position: absolute;
   top: -.25em;
@@ -216,6 +376,7 @@ h2 {
   left: -.25em;
   outline: none;
 }
+
 //END_STARS
 
 
@@ -253,7 +414,8 @@ img {
 
 a {
   text-decoration: none;
-  &:hover{
+
+  &:hover {
     color: #000000;
   }
 }
@@ -268,12 +430,12 @@ ul {
   margin: 0;
 }
 
-input[type=number]{
+input[type=number] {
   -moz-appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
+input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
