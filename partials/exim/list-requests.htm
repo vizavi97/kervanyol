@@ -1,0 +1,51 @@
+[viewBag]
+==
+<ul class="cabinet-declaration-requests-items">
+	
+	{% for request in requests %}
+	<li class="cabinet-declaration-requests-item">
+		<div class="cabinet-declaration-requests-item-top">
+			<div class="cabinet-declaration-requests-item-top-img">
+				<img src="{{'assets/dist/img/cabinet/cabinet-declaration/pc.png' | theme}}" alt="pc"/>
+			</div>
+			
+			<div class="cabinet-declaration-requests-item-top-info">
+				<h6>Газированная вода Bonaqua</h6>
+				<p>Заявка №{{request.id}} </p>
+				
+				<div class="btn-container">
+					<a href="{{request.url}}">Подробнее</a>
+				</div>
+			</div>
+		</div>
+		
+		<ul class="cabinet-declaration-requests-item-descs">
+			<li class="cabinet-declaration-requests-item-desc">
+				<p>Количество:</p>
+				<p><b>14 000</b></p>
+			</li>
+			<li class="cabinet-declaration-requests-item-desc">
+				<p>Дата прибытия:</p>
+				<p><b>20.05.2020</b></p>
+			</li>
+			<li class="cabinet-declaration-requests-item-desc">
+				<p>Тип доставки:</p>
+				<p><b> {{request.delivery_type}} </b></p>
+			</li>
+			<li class="cabinet-declaration-requests-item-desc">
+				<p>Страна-отправитель:</p>
+				<p><b> {{request.country.name}} </b></p>
+			</li>
+			<li class="cabinet-declaration-requests-item-desc">
+				<p>Цена:</p>
+				<p><b>230 000 000 000 UZS</b></p>
+			</li>
+			<li class="cabinet-declaration-requests-item-desc">
+				<p>Компания-отправитель:</p>
+				<p><b>{{request.sender_company}}</b></p>
+			</li>
+		</ul>
+	</li>
+	{% endfor %}
+	
+</ul>

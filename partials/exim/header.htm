@@ -19,6 +19,7 @@
         </div>
     </div>
 </div>
+
 <div class="nav-exim">
     <div class="container">
         <div class="nav-exim-container">
@@ -44,7 +45,11 @@
                 </ul>
             </nav>
             <div class="nav-exim-btn">
-                <a href="/sign-register.html">Войти в систему</a>
+            	{% if user.exim %}
+                	<a href=" {{'exim-cabinet/settings'|page}} ">Личный кабинет</a>
+                {% else %}
+                	<a href=" {{'exim-cabinet/register'|page}} ">Войти в систему</a>
+                {% endif %}
             </div>
         </div>
     </div>
