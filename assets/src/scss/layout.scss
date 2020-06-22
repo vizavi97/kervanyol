@@ -355,6 +355,7 @@ header {
         a {
           display: block;
           padding: 1rem;
+          white-space: nowrap;
 
           &:hover, .sl-nav li ul li a.active {
             color: #146c78;
@@ -370,7 +371,7 @@ header {
         right: -15px;
         display: block;
         background: #fff;
-        width: 150px;
+        min-width: 150px;
         padding-top: 0px;
         z-index: 1;
         border-radius: 5px;
