@@ -322,6 +322,8 @@
   @include bd-block() {
     &-top {
       &-item {
+        height: 100%;
+
         &-text {
           padding-left: 0;
         }
@@ -842,7 +844,7 @@
 
   @include lg-block() {
     .owl-dots {
-      left: 10%;
+      left: 20%;
     }
     &-item {
       &-img {
@@ -1171,6 +1173,73 @@
     }
     &-info, &-form {
       width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .popular-products {
+    .owl-dots {
+      left: 20%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .banners {
+    &-middle {
+      a {
+        flex-wrap: wrap;
+
+        &:before {
+          width: 100%;
+        }
+
+        &:after {
+          right: 0;
+        }
+
+        span {
+          padding: 0;
+        }
+      }
+    }
+
+    &-bottom {
+      &-right {
+        &-item {
+          margin-top: 1.75rem;
+        }
+      }
+    }
+  }
+  .popular {
+    &-stores {
+      &-item {
+        &:after {
+          opacity: 0;
+        }
+      }
+    }
+    &-products{
+      &-headline{
+        &-container{
+          opacity: 0;
+        }
+      }
+      .owl-dots{
+        left: 5%;
+        justify-content: left;
+      }
+      &-category{
+        padding: 0;
+        height: 100%;
+      }
+      &-banner{
+        padding: 0;
+        border-radius: 0;
+      }
     }
   }
 }

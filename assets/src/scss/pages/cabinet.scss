@@ -339,13 +339,12 @@
             color: #000000;
             font-size: rem(12);
             font-weight: 500;
-            text-indent: 1.5rem;
+            padding: rem(12) 1.5rem;
             border: 1px solid #D3D9DE;
             background-color: #ffffff;
             resize: none;
-            height: 80px;
+            min-height: 80px;
             border-radius: 1rem;
-            padding-top: rem(12);
 
             &::placeholder {
               color: #BCCBD9;
@@ -527,7 +526,7 @@
       }
 
       &-img {
-        width: 68px;
+        min-width: rem(68);
         height: 55px;
 
         img {
