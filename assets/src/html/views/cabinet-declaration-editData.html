@@ -33,65 +33,63 @@
 									<div class="cabinet-edit-data">
 										<h2>Основные данные</h2>
 										<form action="javascript:">
-											<div class="cabinet-edit-data-form">
-												<div class="cabinet-edit-data-inputs">
-													<label>
-														<span>Название огранизации*</span>
-														<input type="text" class="input-kervan" placeholder="" class="form-control" value="ООО 'Кока Кола Эйбиси Евразия'"/>
-													</label>
-													<label>
-														<span>Торговая марка*</span>
-														<input type="text" class="input-kervan" placeholder="" value="Coca Cola"/>
-													</label>
-												</div>
-												<div class="cabinet-edit-data-inputs align-items-end">
-													<label>
-														<span>ОГРН*</span>
-														<input type="text" class="input-kervan" placeholder="" value=" 4666788454"/>
-													</label>
-													<label>
-														<span>Принаддежность к отраслевым союзам</span>
-														<select name="boss" id="boss">
-															<option value="www.kervanyol.uz" selected>www.kervanyol.uz
-															</option>
-															<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-															<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-															<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-															<option value="www.kervanyol.uz">www.kervanyol.uz</option>
-														</select>
-													</label>
-												</div>
-												<div class="cabinet-edit-data-inputs cabinet-edit-data-textarea">
-													<label>
-														<span>Описание</span>
-														<textarea placeholder="Краткая информация о компании..."></textarea>
-													</label>
-												</div>
-												<ul class="cabinet-account-foto">
-													<li class="cabinet-register-container-form-addFile-item">
-														<h3 class="cabinet-account-foto-label">
-															Логотип компании
-														</h3>
-														<label>
-															<div class="addFile-inner" style="background: url('../../img/companies/cola.png') no-repeat center; background-size: cover"></div>
-															<input type="file" onchange="window.loadPhotoURL(this)">
-														</label>
-														<p>Максимальный <br/> размер фото 110x110</p>
-													</li>
-												</ul>
-												<div class="cabinet-edit-data-load">
-													<h3>Свидетельство о регистрации</h3>
-													<div class="cabinet-edit-data-load-wrapper"></div>
-													<div class="cabinet-store-orders-load-input">
-														<label for="uploadProductFile" id="uploadProductFileLabel">
-															Выберите файл
-														</label>
-														<div class="cabinet-store-orders-load-btn">Обзор</div>
-														<input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)" id="uploadProductFile"/>
-													</div>
-												</div>
-												<a href="javascript:" class="btn btn-kervan">Сохранить</a>
+											<div class="form-row">
+												<label class="col-lg-6 col-12 mb-3">
+													<span>Название огранизации *</span>
+													<input type="text" class="form-control" placeholder="ООО 'Кока Кола Эйбиси Евразия"/>
+												</label>
+												<label class="col-lg-6 col-12 mb-3">
+													<span>Торговая марка  *</span>
+													<input type="text" class="form-control" placeholder="Coca Cola"/>
+												</label>
 											</div>
+											<div class="form-row">
+												<label class="col-lg-6 col-12 mb-3">
+													<span>ОГРН *</span>
+													<input type="text" class="form-control" placeholder="4666788454"/>
+												</label>
+												<label class="col-lg-6 col-12 mb-3">
+													<span>Принаддежность к отраслевым союзам</span>
+													<select class="form-control">
+														<option value="www.kervanyol.uz" selected>www.kervanyol.uz
+														</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+													</select>
+												</label>
+											</div>
+											<div class="form-row">
+												<label class="col-12 mb-3">
+													<span>Описание</span>
+													<textarea class="form-control" placeholder="Краткая информация о компании..."></textarea>
+												</label>
+											</div>
+											<ul class="cabinet-account-foto">
+												<li class="cabinet-register-container-form-addFile-item">
+													<h3 class="cabinet-account-foto-label">
+														Логотип компании
+													</h3>
+													<label>
+														<div class="addFile-inner" style="background: url('../../img/companies/cola.png') no-repeat center; background-size: cover"></div>
+														<input type="file" onchange="window.loadPhotoURL(this)">
+													</label>
+													<p>Максимальный <br/> размер фото 110x110</p>
+												</li>
+											</ul>
+											<div class="cabinet-edit-data-load">
+												<h3>Свидетельство о регистрации</h3>
+												<div class="cabinet-edit-data-load-wrapper"></div>
+												<div class="cabinet-store-orders-load-input">
+													<label for="uploadProductFile" id="uploadProductFileLabel">
+														Выберите файл
+													</label>
+													<div class="cabinet-store-orders-load-btn">Обзор</div>
+													<input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)" id="uploadProductFile"/>
+												</div>
+											</div>
+											<a href="javascript:" class="btn btn-kervan">Сохранить</a>
 										</form>
 									</div>
 								</div>
@@ -102,29 +100,34 @@
 									<div class="cabinet-edit-data">
 										<h2>Контактные данные</h2>
 										<form action="javascript:">
-											<div class="cabinet-edit-data-form">
-												<div class="cabinet-edit-data-inputs">
-													<label>
-														<span>Название огранизации*</span>
-														<input type="text" class="input-kervan" placeholder="" class="form-control" value="ООО 'Кока Кола Эйбиси Евразия'"/>
-													</label>
-													<label>
-														<span>Торговая марка*</span>
-														<input type="text" class="input-kervan" placeholder="" value="Coca Cola"/>
-													</label>
-												</div>
-												<div class="cabinet-edit-data-inputs">
-													<label>
-														<span>ОГРН*</span>
-														<input type="text" class="input-kervan" placeholder="" value=" 4666788454"/>
-													</label>
-													<label>
-														<span>Принаддежность к отраслевым союзам</span>
-														<input type="text" class="input-kervan" placeholder="" value="Coca Cola"/>
-													</label>
-												</div>
-												<a href="javascript:" class="btn btn-kervan">Сохранить</a>
+											<div class="form-row">
+												<label class="col-lg-6 col-12 mb-3">
+													<span>Название огранизации *</span>
+													<input type="text" class="form-control" placeholder="ООО 'Кока Кола Эйбиси Евразия"/>
+												</label>
+												<label class="col-lg-6 col-12 mb-3">
+													<span>Торговая марка  *</span>
+													<input type="text" class="form-control" placeholder="Coca Cola"/>
+												</label>
 											</div>
+											<div class="form-row">
+												<label class="col-lg-6 col-12 mb-3">
+													<span>ОГРН *</span>
+													<input type="text" class="form-control" placeholder="4666788454"/>
+												</label>
+												<label class="col-lg-6 col-12 mb-3">
+													<span>Принаддежность к отраслевым союзам</span>
+													<select class="form-control">
+														<option value="www.kervanyol.uz" selected>www.kervanyol.uz
+														</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+													</select>
+												</label>
+											</div>
+											<a href="javascript:" class="btn btn-kervan">Сохранить</a>
 										</form>
 									</div>
 								</div>
@@ -135,29 +138,34 @@
 									<div class="cabinet-edit-data">
 										<h2>Сведения о руководителе</h2>
 										<form action="javascript:">
-											<div class="cabinet-edit-data-form">
-												<div class="cabinet-edit-data-inputs">
-													<label>
-														<span>Название огранизации*</span>
-														<input type="text" class="input-kervan" placeholder="" class="form-control" value="ООО 'Кока Кола Эйбиси Евразия'"/>
-													</label>
-													<label>
-														<span>Торговая марка*</span>
-														<input type="text" class="input-kervan" placeholder="" value="Coca Cola"/>
-													</label>
-												</div>
-												<div class="cabinet-edit-data-inputs">
-													<label>
-														<span>ОГРН*</span>
-														<input type="text" class="input-kervan" placeholder="" value=" 4666788454"/>
-													</label>
-													<label>
-														<span>Принаддежность к отраслевым союзам</span>
-														<input type="text" class="input-kervan" placeholder="" value="Coca Cola"/>
-													</label>
-												</div>
-												<a href="javascript:" class="btn btn-kervan">Сохранить</a>
+											<div class="form-row">
+												<label class="col-lg-6 col-12 mb-3">
+													<span>Название огранизации *</span>
+													<input type="text" class="form-control" placeholder="ООО 'Кока Кола Эйбиси Евразия"/>
+												</label>
+												<label class="col-lg-6 col-12 mb-3">
+													<span>Торговая марка  *</span>
+													<input type="text" class="form-control" placeholder="Coca Cola"/>
+												</label>
 											</div>
+											<div class="form-row">
+												<label class="col-lg-6 col-12 mb-3">
+													<span>ОГРН *</span>
+													<input type="text" class="form-control" placeholder="4666788454"/>
+												</label>
+												<label class="col-lg-6 col-12 mb-3">
+													<span>Принаддежность к отраслевым союзам</span>
+													<select class="form-control">
+														<option value="www.kervanyol.uz" selected>www.kervanyol.uz
+														</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+														<option value="www.kervanyol.uz">www.kervanyol.uz</option>
+													</select>
+												</label>
+											</div>
+											<a href="javascript:" class="btn btn-kervan">Сохранить</a>
 										</form>
 									</div>
 								</div>

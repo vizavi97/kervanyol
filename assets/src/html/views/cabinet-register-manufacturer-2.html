@@ -37,62 +37,50 @@
               <div class="cabinet-register-container-form">
                 <h6>Заполните данные</h6>
                 <form action="index.html">
-                  <div class="cabinet-register-container-form-inputs">
-                    <label>
+                  <div class="form-row">
+                    <label class="col-lg-6 col-12 mb-3">
                       <span>Банковский счёт *</span>
-                      <input type="text" class="input-kervan" name="name" placeholder="____"/>
+                      <input type="text" class="form-control" placeholder="_____"/>
                     </label>
-                    <label>
+                    <label class="col-lg-6 col-12 mb-3">
                       <span>ИНН *</span>
-                      <input type="text" class="input-kervan" name="name" placeholder="____"/>
+                      <input type="text" class="form-control" placeholder="_____"/>
                     </label>
                   </div>
-                  <div class="cabinet-register-container-form-inputs">
-                    <label>
+                  <div class="form-row">
+                    <label class="col-lg-6 col-12 mb-3">
                       <span>ОКЭД *</span>
-                      <input type="text" class="input-kervan" name='name' placeholder="______"/>
+                      <input type="text" class="form-control" placeholder="_____"/>
                     </label>
-                    <label>
+                    <label class="col-lg-6 col-12 mb-3">
                       <span>МФО *</span>
-                      <select name="ecp">
-                        <option value="______" selected>______</option>
-                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                      </select>
+                      <input type="text" class="form-control" placeholder="_____"/>
                     </label>
                   </div>
-                  <div class="cabinet-register-container-form-inputs">
-                    <label>
+                  <div class="form-row">
+                    <label class="col-lg-6 col-12 mb-3">
                       <span>Номер лицензии *</span>
-                      <input type="text" class="input-kervan" name='name' placeholder="______"/>
+                      <input type="text" class="form-control" placeholder="_____"/>
                     </label>
-                    <label>
+                    <label class="col-lg-6 col-12 mb-3">
                       <span>Вид предприятия *</span>
-                      <select name="ecp">
-                        <option value="______" selected>______</option>
-                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                        <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                      </select>
+                      <input type="text" class="form-control" placeholder="_____"/>
                     </label>
                   </div>
-                  <div class="cabinet-register-container-form-inputs">
-                    <label>
+                  <div class="form-row">
+                    <label class="col-lg-6 col-12 mb-3">
                       <span>Вид деятельности *</span>
-                      <input type="text" class="input-kervan" name='name' placeholder="______"/>
+                      <input type="text" class="form-control" placeholder="_____"/>
                     </label>
-                    <label>
+                    <label class="col-lg-6 col-12 mb-3">
                       <span>Юридическое название *</span>
-                      <input type="text" class="input-kervan" name="name" placeholder="______"/>
+                      <input type="text" class="form-control" placeholder="_____"/>
                     </label>
                   </div>
-                  <div class="cabinet-register-container-form-inputs">
-                    <label>
+                  <div class="form-row">
+                    <label class="col-12 mb-3">
                       <span>Посев *</span>
-                      <input type="text" class="input-kervan" name='name' placeholder="______"/>
+                      <input type="text" class="form-control" placeholder="_____"/>
                     </label>
                   </div>
                   <div class="custom-control custom-radio tab-sign-form-checkbox cabinet-register-export">
@@ -134,17 +122,19 @@
                     <h5>Этапы заполнения:</h5>
                   </div>
                   <form action="cabinet-register-export-2.html">
-                    <div class="cabinet-sticker-form-company-select cabinet-register-container-form">
-                      <label for="ecp">
-                        <span>Электронная цифровая подпись</span>
-                        <select name="ecp" id="ecp">
-                          <option value="Выберите ЭЦП" selected>Выберите ЭЦП</option>
-                          <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                          <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                          <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                          <option value="www.kervanyol.uz">www.kervanyol.uz</option>
-                        </select>
-                      </label>
+                    <div class="cabinet-sticker-form-company-select">
+                      <div class="form-row">
+                        <label class="col-12">
+                          <span>Электронная цифровая подпись</span>
+                          <select class="form-control">
+                            <option value="Выберите ЭЦП" selected>Выберите ЭЦП</option>
+                            <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                            <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                            <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                            <option value="www.kervanyol.uz">www.kervanyol.uz</option>
+                          </select>
+                        </label>
+                      </div>
                     </div>
                     <button type="submit" class="btn-kervan">
                       войти

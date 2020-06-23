@@ -1152,13 +1152,16 @@
   }
 
   input {
-    width: 100%;
+    width: 94%;
     height: 100%;
     border: 0;
     text-indent: 2rem;
     font-size: 16px;
     font-weight: 400;
     color: #afafaf;
+    &:hover, &:focus{
+      box-shadow: none;
+    }
   }
 
   button {
