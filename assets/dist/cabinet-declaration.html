@@ -342,17 +342,17 @@
                         <div class="cabinet-declaration">
                           <form action="javascript:" class="cabinet-declaration-form">
                             <div class="cabinet-declaration-form-top">
-                              <div class="cabinet-declaration-form-inputs">
-                                <label
+                              <div class="form-row">
+                                <label class="col-lg-6 col-12"
                                   ><span>Наименование товара</span>
                                   <input
-                                    class="input-kervan"
+                                    class="form-control"
                                     placeholder="Наименование товара"
                                     name="product[0]"
                                     id="declaration-input"
                                     rel="0"
                                 /></label>
-                                <label
+                                <label class="col-lg-6 col-12"
                                   ><span>Количество товара</span>
                                   <input class="input-kervan" placeholder="шт" name="count[0]"
                                 /></label>
@@ -361,30 +361,30 @@
                             </div>
                             <div class="cabinet-declaration-form-wrapper" id="declaration-input-wrapper"></div>
                             <div class="cabinet-declaration-form-condition">
-                              <div class="cabinet-declaration-form-inputs">
-                                <label
+                              <div class="form-row">
+                                <label class="col-lg-6 col-12 mb-3"
                                   ><span>Выберите условие доставки</span>
-                                  <select name="places" id="places"
-                                    ><option value="до дома" selected="selected">Стандарт</option
-                                    ><option value="Samarkand">Экспрес</option></select
+                                  <select class="form-control"
+                                    ><option value="Стандарт" selected="selected">Стандарт</option
+                                    ><option value="Экспрес">Экспрес</option></select
                                   ></label
                                 >
-                                <label
-                                  ><span>Грузополучатель</span> <input class="input-kervan" placeholder="ФИО"
+                                <label class="col-lg-6 col-12 mb-3"
+                                  ><span>Грузополучатель</span> <input class="form-control" placeholder="_____"
                                 /></label>
                               </div>
-                              <div class="cabinet-declaration-form-inputs">
-                                <label
-                                  ><span>Адрес</span> <input class="input-kervan" placeholder="адрес" name="count[0]"
+                              <div class="form-row">
+                                <label class="col-lg-6 col-12 mb-3"
+                                  ><span>Адрес</span> <input class="form-control" placeholder="адрес" name="count[0]"
                                 /></label>
-                                <label
+                                <label class="col-lg-6 col-12 mb-3"
                                   ><span>Условие оплаты</span>
-                                  <select name="place" id="place"
-                                    ><option value="до дома" selected="selected">Click</option
-                                    ><option value="Samarkand">PayMe</option
-                                    ><option value="Samarkand">UzCard</option
-                                    ><option value="Samarkand">Visa</option
-                                    ><option value="Samarkand">MasterCard</option></select
+                                  <select class="form-control"
+                                    ><option selected="selected">Click</option
+                                    ><option>PayMe</option
+                                    ><option>UzCard</option
+                                    ><option>Visa</option
+                                    ><option>MasterCard</option></select
                                   ></label
                                 >
                               </div>
