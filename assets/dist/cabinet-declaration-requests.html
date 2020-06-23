@@ -152,7 +152,7 @@
             </div>
             <div class="cabinet-container sticker">
               <div class="cabinet-data">
-                <form action="javascript:" class="cabinet-data-form" enctype="multipart/form-data">
+                <form action="javascript:" method="post" class="cabinet-data-form" enctype="multipart/form-data">
                   <div class="cabinet-declaration-bid">
                     <div class="cabinet-declaration-bid-return">
                       <a href="./cabinet-declaration.html"
@@ -202,7 +202,12 @@
                           <div class="cabinet-store-orders-load-input">
                             <label>Выберите файл</label>
                             <div class="cabinet-store-orders-load-btn">Обзор</div>
-                            <input type="file" name="upload" onchange="uploadCompanyFIleRegister(this)" />
+                            <input
+                              type="file"
+                              name="upload"
+                              multiple="multiple"
+                              onchange="uploadCompanyFIleRegister(this)"
+                            />
                           </div>
                         </div>
                         <h6>Дополнительные сертификаты</h6>

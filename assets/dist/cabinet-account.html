@@ -748,32 +748,29 @@
                           </li>
                         </ul>
                         <form action="javascript:">
-                          <div class="cabinet-account-form">
-                            <div class="cabinet-account-inputs">
-                              <label
-                                ><span>Имя</span>
-                                <input class="input-kervan" placeholder="" class="form-control" value="Иван"
-                              /></label>
-                              <label
-                                ><span>Фамилия</span> <input class="input-kervan" placeholder="" value="Иванов"
-                              /></label>
-                            </div>
-                            <div class="cabinet-account-inputs">
-                              <label
-                                ><span>Изменить номер телефона</span>
-                                <input
-                                  class="input-kervan"
-                                  name="client-phone"
-                                  placeholder="+998-(__) ___ - __ - __"
-                                  value=" 94 123 45 67"
-                              /></label>
-                              <label
-                                ><span>Изменить эл.почту</span>
-                                <input class="input-kervan" placeholder="" value="ivanka90@gmail.com"
-                              /></label>
-                            </div>
-                            <a href="javascript:" class="btn btn-kervan">Сохранить</a>
+                          <div class="form-row">
+                            <label class="col-lg-6 col-12 mb-3"
+                              ><span>Имя</span> <input class="form-control" placeholder="Имя" value="Имя"
+                            /></label>
+                            <label class="col-lg-6 col-12 mb-3"
+                              ><span>Фамилия:</span> <input class="form-control" placeholder="Фамилия" value="Фамилия"
+                            /></label>
                           </div>
+                          <div class="form-row">
+                            <label class="col-lg-6 col-12 mb-3"
+                              ><span>Изменить номер телефона</span>
+                              <input
+                                class="form-control"
+                                name="client-phone"
+                                placeholder="+998-(__) ___ - __ - __"
+                                value=" 94 123 45 67"
+                            /></label>
+                            <label class="col-lg-6 col-12 mb-3"
+                              ><span>Изменить эл.почту:</span>
+                              <input class="form-control" placeholder="" value="ivanka90@gmail.com"
+                            /></label>
+                          </div>
+                          <a href="javascript:" class="btn btn-kervan">Сохранить</a>
                         </form>
                       </div>
                     </div>
@@ -792,21 +789,34 @@
                         </div>
                         <form action="javascript:">
                           <div class="cabinet-account-form">
-                            <div class="cabinet-account-inputs">
-                              <label
+                            <div class="form-row">
+                              <label class="col-lg-6 col-12 mb-3"
                                 ><span>Текущий пароль</span>
-                                <input type="password" class="input-kervan" placeholder="" value="123456789a"
+                                <input
+                                  type="password"
+                                  class="form-control password-input"
+                                  placeholder="Password"
+                                  required
                               /></label>
                             </div>
-                            <div class="cabinet-account-inputs">
-                              <label
+                            <div class="form-row tab-register-form-password">
+                              <label class="col-lg-6 col-12 mb-3"
                                 ><span>Новый пароль</span>
-                                <input type="password" class="input-kervan" placeholder="" value="123456789a"
+                                <input
+                                  type="password"
+                                  class="form-control password-input"
+                                  placeholder="Password"
+                                  required
                               /></label>
-                              <label
+                              <label class="col-lg-6 col-12 mb-3"
                                 ><span>Повторите пароль</span>
-                                <input type="password" class="input-kervan" placeholder="" value="123456789a"
-                              /></label>
+                                <input
+                                  type="password"
+                                  class="form-control password-input"
+                                  placeholder="Password"
+                                  required />
+                                <a href="javascript:" class="password-control"><i class="far fa-eye"></i></a
+                              ></label>
                             </div>
                             <a href="javascript:" class="btn btn-kervan">Сохранить</a>
                           </div>

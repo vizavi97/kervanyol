@@ -5,6 +5,7 @@ import EmojiButton from '@joeattardi/emoji-button'
 import './inputPhone';
 import './zoomple';
 import './app';
+import './fileUploader'
 import categories from '../json/categories'
 
 window.$ = $;

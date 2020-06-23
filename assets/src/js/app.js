@@ -121,10 +121,13 @@ if (farmerinputsWrapper) {
 
 
 window.uploadCompanyFIleRegister = function (input) {
-  if (input.files && input.files[0]) {
-    console.log(input.files);
+  if (input.files) {
     const inputFiles = input.files;
-    const collection = [...inputFiles].map( file =>{
+    const collection = [...inputFiles].map( file => {
+     window.removeFileIntoInput = function() {
+        inputFiles.value = '';
+        Array.from(document.querySelectorAll('.cabinet-edit-data-load-complete')).forEach(elem => elem.remove())
+      }
       return (
         `
           <div class="cabinet-edit-data-load-complete">
@@ -137,10 +140,9 @@ window.uploadCompanyFIleRegister = function (input) {
             <a class="cabinet-edit-data-load-complete-delete" href="javascript:" onclick="this.parentElement.remove()">
               <span class="icon-delete"></span>
             </a>
-          </div>`
-      )
+          </div>
+        ` )
     }).join('');
     input.parentElement.insertAdjacentHTML("beforebegin", collection);
   }
-  console.log(input.file);
 };
