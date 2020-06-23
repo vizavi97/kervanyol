@@ -4,10 +4,10 @@
   align-items: flex-start;
   padding-top: 1.5rem;
   padding-bottom: 5rem;
+  @include row-flex();
 
   &-nav {
-    min-width: 272px;
-    width: 272px;
+    width: 25%;
     box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
     background-color: #ffffff;
     border-radius: 15px;
@@ -15,7 +15,8 @@
     flex-direction: column;
     text-align: left;
     padding-bottom: 2.375rem;
-
+    @include col();
+    @include size(3);
     @include size-bd(2);
     @include bd-block {
       max-width: none;
@@ -98,25 +99,25 @@
   }
 
   &-container {
-    padding-left: 15px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    flex-grow: 1;
+    width: 75%;
+    flex-wrap: nowrap;
   }
 
   &-register {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
     align-items: flex-start;
 
     &-container {
+      @include col();
+      @include size(8);
       display: flex;
       flex-direction: column;
       text-align: left;
-      flex-grow: 1;
       padding: rem(32) rem(25) rem(60);
       box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
       background-color: #ffffff;
@@ -398,9 +399,9 @@
     }
 
     &-stages {
-      width: 100%;
-      max-width: 272px;
-      margin-left: 15px;
+      @include col();
+      @include size(4);
+      @include size-bd(3);
       box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
       background-color: #ffffff;
 
@@ -501,9 +502,8 @@
   }
 
   &-sticker {
-    min-width: 272px;
-    max-width: 272px;
-    margin-left: 15px;
+    @include col();
+    @include size(4);
 
     &-company {
       padding: rem(21) rem(14);
@@ -561,6 +561,9 @@
         }
       }
     }
+    & > .cabinet-register-stages {
+      width: 100%;
+    }
   }
 
   &-sticker-form {
@@ -606,8 +609,9 @@
   }
 
   &-data {
+    @include size(8);
+    @include col();
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
     position: relative;
     overflow: hidden;
@@ -1444,9 +1448,8 @@
   }
 
   &-profile {
-    min-width: 272px;
-    max-width: 272px;
-    margin-left: 15px;
+    @include col();
+    @include size(4);
     @include size-bd(3);
     @include bd-block {
       max-width: none;
@@ -1944,18 +1947,28 @@
   }
 
   &-stores {
-    width: 100%;
+
+    @include size(8);
+    @include col();
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
     .cabinet-data-container {
       margin-bottom: rem(16);
     }
 
     &-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
       @include row-flex();
 
       .allStores-item {
+        @include col();
         @include size(6);
-        @include size-sm(12);
+        @include size-sm(12)
       }
 
       &-block {
@@ -2505,7 +2518,8 @@
   }
 
   &-store-main {
-    width: 100%;
+    @include size(8);
+    @include col();
 
     h4 {
       margin: 0;
@@ -2873,6 +2887,7 @@
             font-size: rem(12);
             font-weight: 600;
             margin: 0;
+            word-break: break-word;
           }
 
           p {

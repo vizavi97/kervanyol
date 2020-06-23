@@ -711,55 +711,29 @@
                     <h4>Зарегистрируйтесь с помощью номера телефона или Эл.почты</h4>
                     <form>
                       <div class="form-row">
-                        <div class="col-md-6 mb-4">
-                          <label for="validationDefault01">Фамилия</label>
-                          <input
-                            class="input-kervan"
-                            id="validationDefault01"
-                            name="quantity"
-                            placeholder="Фамилия"
-                            required
-                          />
-                        </div>
-                        <div class="col-md-6 mb-4">
-                          <label for="validationDefault02">Имя</label>
-                          <input
-                            class="input-kervan"
-                            id="validationDefault02"
-                            name="quantity"
-                            placeholder="Имя"
-                            required
-                          />
-                        </div>
+                        <label class="col-lg-6 col-12 mb-3"
+                          ><span>Имя</span> <input class="form-control" placeholder="Имя" required
+                        /></label>
+                        <label class="col-lg-6 col-12 mb-3"
+                          ><span>Фамилия:</span> <input class="form-control" placeholder="Фамилия" required
+                        /></label>
                       </div>
                       <div class="form-row">
-                        <div class="col-md-12 mb-4">
-                          <label for="validationDefault03">Введите адрес эл.почты</label>
-                          <input class="input-kervan" id="validationDefault03" placeholder="mail@m.com" required />
-                        </div>
+                        <label class="col-12 mb-3"
+                          ><span>Введите адрес эл.почты</span>
+                          <input class="form-control" placeholder="mail@m.com" required
+                        /></label>
                       </div>
                       <div class="form-row tab-register-form-password">
-                        <div class="col-md-6 mb-4">
-                          <label for="password-input">Создайте пароль</label>
-                          <input
-                            type="password"
-                            class="input-kervan password-input"
-                            id="password-input"
-                            placeholder="Password"
-                            required
-                          />
-                        </div>
-                        <div class="col-md-6 mb-4">
-                          <label for="validationDefault05">Повторите пароль</label>
-                          <input
-                            type="password"
-                            class="input-kervan password-input"
-                            id="validationDefault05"
-                            placeholder="Password"
-                            required
-                          />
-                          <a href="javascript:" class="password-control"><i class="far fa-eye"></i></a>
-                        </div>
+                        <label class="col-lg-6 col-12 mb-3"
+                          ><span>Создайте пароль</span>
+                          <input type="password" class="form-control password-input" placeholder="Password" required
+                        /></label>
+                        <label class="col-lg-6 col-12 mb-3"
+                          ><span>Повторите пароль</span>
+                          <input type="password" class="form-control password-input" placeholder="Password" required />
+                          <a href="javascript:" class="password-control"><i class="far fa-eye"></i></a
+                        ></label>
                       </div>
                       <button class="btn-kervan" type="submit">Зарегистрироваться</button>
                     </form>
