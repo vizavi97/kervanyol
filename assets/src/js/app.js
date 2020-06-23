@@ -76,14 +76,14 @@ if (declarationinputsWrapper) {
   declarationAddSwitcher.addEventListener('click', () => {
     declarationinputsWrapper.insertAdjacentHTML("afterbegin", `
 		<div class="cabinet-declaration-form-top">
-			<div class="cabinet-declaration-form-inputs">
-				<label>
+			<div class="form-row">
+				<label class="col-lg-6 col-12">
 					<span>Наименование товара</span>
-					<input type="text" class="input-kervan" placeholder="Наименование товара" name="product[${declarationInputNumber}]"/>
+					<input type="text" class="form-control" placeholder="Наименование товара" name="product[${declarationInputNumber}]"/>
 				</label>
-				<label>
+				<label class="col-lg-6 col-12">
 					<span>Количество товара</span>
-					<input type="text" class="input-kervan" placeholder="шт" name="count[${declarationInputNumber}]"/>
+					<input type="text" class="form-control" placeholder="шт" name="count[${declarationInputNumber}]"/>
 				</label>
 			</div>
 			<button type="button" id="remove-switcher" class="remove-switcher" onclick="this.parentElement.remove()">
@@ -104,10 +104,10 @@ if (farmerinputsWrapper) {
   declarationAddSwitcher.addEventListener('click', () => {
     farmerinputsWrapper.insertAdjacentHTML("afterbegin", `
 		<div class="cabinet-declaration-form-top cabinet-register-farmer">
-			<div class="cabinet-declaration-form-inputs">
-				<label>
-					<span>Посев*</span>
-					<input type="text" class="input-kervan" placeholder="_____" name="product[${declarationInputNumber}]"/>
+			<div class="form-row">
+				<label class="col-12">
+					<span>Посев *</span>
+					<input type="text" class="form-control" placeholder="_____" name="product[${declarationInputNumber}]"/>
 				</label>
 			</div>
 			<button type="button" id="remove-switcher" class="remove-switcher" onclick="this.parentElement.remove()">

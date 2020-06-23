@@ -365,13 +365,12 @@
         align-items: center;
         padding: 20px 10px;
 
-        .btn {
+        .btn-kervan {
           color: #ffffff;
           font-size: 14px;
           font-weight: 500;
           @include bd-block(){
             min-width: auto;
-            padding: .75rem 1rem;
           }
         }
 
@@ -379,7 +378,7 @@
           color: #ff6f55;
           font-size: 14px;
           font-weight: 500;
-          margin-left: 20px;
+          margin-left: auto;
           background-color: transparent;
         }
       }

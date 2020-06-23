@@ -17,10 +17,6 @@
     padding-bottom: 2.375rem;
     @include col();
     @include size(3);
-    @include size-bd(2);
-    @include bd-block {
-      max-width: none;
-    }
 
     &-headline {
       background-color: #dec8f3;
@@ -515,6 +511,7 @@
         color: #9ea6b0;
         font-size: rem(14);
         font-weight: 400;
+        word-break: break-word;
       }
 
       &-header {
@@ -526,7 +523,8 @@
       }
 
       &-img {
-        min-width: rem(68);
+        max-width: rem(68);
+        width: 100%;
         height: 55px;
 
         img {
@@ -609,6 +607,7 @@
 
   &-data {
     @include size(8);
+    @include size-xs(12);
     @include col();
     display: flex;
     flex-direction: column;
@@ -927,17 +926,15 @@
 
       &-top {
         display: flex;
-        flex-direction: row;
         align-items: flex-end;
-        padding-bottom: 1.75rem;
-        border-bottom: 1px solid #F9FAFC;
+        padding-bottom: rem(16);
 
-        & > .cabinet-declaration-form-inputs {
-          padding-right: .5rem;
-          flex-grow: 1;
+        .form-row {
+          width: 100%;
         }
 
         .add-switcher {
+          margin-left: rem(15);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -961,6 +958,7 @@
         }
 
         .remove-switcher {
+          margin-left: rem(15);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -1002,10 +1000,6 @@
       flex-direction: column;
       padding-top: .25rem;
       margin-bottom: 0;
-
-      &:first-of-type {
-        margin-right: 0.5rem;
-      }
 
       span {
         color: #7d8b9d;
@@ -1170,6 +1164,7 @@
       &-return {
         background: #fff;
         padding: 1.75rem 2rem;
+
         a {
           font-size: rem(14);
           font-weight: 500;
@@ -1184,6 +1179,7 @@
       &-headline {
         padding: 0 2rem;
         background: #fff;
+
         h5 {
           font-size: 1.5rem;
           font-weight: 500;
@@ -1727,7 +1723,7 @@
             font-size: rem(22);
             color: #FF6F55;
             padding-top: 1rem;
-            @include bd-block(){
+            @include bd-block() {
               font-size: rem(18);
               padding-top: .5rem;
             }
@@ -1850,6 +1846,7 @@
         padding: .5rem 2.5rem;
         font-weight: 600;
       }
+
       &-cardNumber {
         width: calc(50% - 1rem);
       }
@@ -2317,7 +2314,8 @@
       }
 
       &-form {
-        padding:  1rem 0;
+        padding: 1rem 0;
+
         &-input {
           display: flex;
           flex-direction: row;
@@ -2608,14 +2606,15 @@
     &-btn {
       display: flex;
 
-      a + a{
+      a + a {
         padding-left: rem(30);
       }
 
       &-edit, &-left {
         font-size: rem(11);
         font-weight: 500;
-        span{
+
+        span {
           display: inline-block;
           font-size: rem(14);
         }
@@ -2663,15 +2662,16 @@
 
         &:hover {
           text-decoration: none;
-          span:before{
+
+          span:before {
             color: #ff2700;
           }
         }
 
-        span:before{
+        span:before {
           color: #ff6f55;
         }
-    }
+      }
     }
 
     &-load {
@@ -2896,8 +2896,8 @@
           }
         }
 
-        &-img{
-          span:before{
+        &-img {
+          span:before {
             color: #9EA6B0;
           }
         }
@@ -2905,12 +2905,13 @@
         &-delete {
           margin-left: auto;
 
-          span:before{
+          span:before {
             color: #9EA6B0;
           }
 
           &:hover {
             text-decoration: none;
+
             span:before {
               color: #ff6f55;
             }
@@ -2923,6 +2924,7 @@
   &-register {
     &-export {
       margin-left: 0;
+      border-top-right-radius: 15px;
 
       label {
         font-size: rem(12);
@@ -2933,14 +2935,8 @@
 
     &-farmer {
       .btn-kervan {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 42px;
         max-width: rem(290);
         width: 100%;
-        cursor: pointer;
-        margin-left: rem(7.5);
 
         i {
           padding-left: rem(16);
@@ -2959,8 +2955,14 @@
 
       .remove-switcher,
       .add-switcher {
-        margin-left: rem(7);
+        margin-left: rem(20);
         padding: 0;
+      }
+      .form-row{
+        width: 50%;
+        label{
+          padding-right: 0;
+        }
       }
 
       .main-certificates {
@@ -2978,7 +2980,7 @@
 
         &-span {
           position: absolute;
-          right: 5%;
+          right: 10%;
           bottom: 5%;
           color: #000000 !important;
 
@@ -3009,17 +3011,25 @@
     }
   }
   @include lg-block() {
+    flex-wrap: nowrap;
+    &-container{
+      width: 100%;
+    }
     &-nav {
       width: auto;
       min-width: auto;
-
+      margin-bottom: rem(8);
       &-headline {
         display: none;
       }
 
       a {
-        span {
+        p {
           display: none;
+        }
+        span{
+          display: flex;
+          justify-content: center;
         }
       }
 
@@ -3028,9 +3038,19 @@
       }
 
       &-item {
+        &:last-of-type{
+          padding: 0;
+        }
         a {
           justify-content: center;
         }
+      }
+    }
+    &-nav, &-profile{
+      position: sticky;
+      top: 0;
+       &-sidebar {
+        margin-bottom: rem(8);
       }
     }
     &-data {
@@ -3042,11 +3062,6 @@
   }
   @include md-block() {
     &-nav {
-      position: sticky;
-      top: 0;
-      padding: 0;
-      margin-bottom: rem(8);
-
       &-logout {
         padding: 1rem;
       }
@@ -3084,14 +3099,6 @@
 
       &-info {
         padding: 0;
-      }
-    }
-    &-profile {
-      position: sticky;
-      top: 0;
-
-      &-sidebar {
-        margin-bottom: rem(8);
       }
     }
   }

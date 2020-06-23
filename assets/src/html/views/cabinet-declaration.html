@@ -206,12 +206,12 @@
 										<div class="cabinet-declaration">
 											<form action="javascript:" class="cabinet-declaration-form">
 												<div class="cabinet-declaration-form-top">
-													<div class="cabinet-declaration-form-inputs">
-														<label>
+													<div class="form-row">
+														<label class="col-lg-6 col-12">
 															<span>Наименование товара</span>
-															<input type="text" class="input-kervan" placeholder="Наименование товара" name="product[0]" id="declaration-input" rel="0"/>
+															<input type="text" class="form-control" placeholder="Наименование товара" name="product[0]" id="declaration-input" rel="0"/>
 														</label>
-														<label>
+														<label class="col-lg-6 col-12">
 															<span>Количество товара</span>
 															<input type="text" class="input-kervan" placeholder="шт" name="count[0]"/>
 														</label>
@@ -223,32 +223,32 @@
 												<div class="cabinet-declaration-form-wrapper" id="declaration-input-wrapper">
 												</div>
 												<div class="cabinet-declaration-form-condition">
-													<div class="cabinet-declaration-form-inputs">
-														<label>
+													<div class="form-row">
+														<label class="col-lg-6 col-12 mb-3">
 															<span>Выберите условие доставки</span>
-															<select name="places" id="places">
-																<option value="до дома" selected>Стандарт</option>
-																<option value="Samarkand">Экспрес</option>
+															<select class="form-control">
+																<option value="Стандарт" selected>Стандарт</option>
+																<option value="Экспрес">Экспрес</option>
 															</select>
 														</label>
-														<label>
+														<label class="col-lg-6 col-12 mb-3">
 															<span>Грузополучатель</span>
-															<input type="text" class="input-kervan" placeholder="ФИО"/>
+															<input type="text" class="form-control" placeholder="_____"/>
 														</label>
 													</div>
-													<div class="cabinet-declaration-form-inputs">
-														<label>
+													<div class="form-row">
+														<label class="col-lg-6 col-12 mb-3">
 															<span>Адрес</span>
-															<input type="text" class="input-kervan" placeholder="адрес" name="count[0]"/>
+															<input type="text" class="form-control" placeholder="адрес" name="count[0]"/>
 														</label>
-														<label>
+														<label class="col-lg-6 col-12 mb-3">
 															<span>Условие оплаты</span>
-															<select name="place" id="place">
-																<option value="до дома" selected>Click</option>
-																<option value="Samarkand">PayMe</option>
-																<option value="Samarkand">UzCard</option>
-																<option value="Samarkand">Visa</option>
-																<option value="Samarkand">MasterCard</option>
+															<select class="form-control">
+																<option selected>Click</option>
+																<option>PayMe</option>
+																<option>UzCard</option>
+																<option>Visa</option>
+																<option>MasterCard</option>
 															</select>
 														</label>
 													</div>
