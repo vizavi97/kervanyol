@@ -104,10 +104,10 @@ if (farmerinputsWrapper) {
   declarationAddSwitcher.addEventListener('click', () => {
     farmerinputsWrapper.insertAdjacentHTML("afterbegin", `
 		<div class="cabinet-declaration-form-top cabinet-register-farmer">
-			<div class="cabinet-declaration-form-inputs">
-				<label>
-					<span>Посев*</span>
-					<input type="text" class="input-kervan" placeholder="_____" name="product[${declarationInputNumber}]"/>
+			<div class="form-row">
+				<label class="col-12">
+					<span>Посев *</span>
+					<input type="text" class="form-control" placeholder="_____" name="product[${declarationInputNumber}]"/>
 				</label>
 			</div>
 			<button type="button" id="remove-switcher" class="remove-switcher" onclick="this.parentElement.remove()">

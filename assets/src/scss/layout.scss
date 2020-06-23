@@ -910,12 +910,6 @@ header {
     &.show {
       opacity: 1;
       transform: translateY(0);
-      @include lg-block() {
-        transform: translateY(5.125rem);
-      }
-      @include md-block() {
-        transform: translateY(8.75rem);
-      }
     }
 
     &-container {

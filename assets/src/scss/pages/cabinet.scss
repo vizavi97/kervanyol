@@ -17,10 +17,6 @@
     padding-bottom: 2.375rem;
     @include col();
     @include size(3);
-    @include size-bd(2);
-    @include bd-block {
-      max-width: none;
-    }
 
     &-headline {
       background-color: #dec8f3;
@@ -610,6 +606,7 @@
 
   &-data {
     @include size(8);
+    @include size-xs(12);
     @include col();
     display: flex;
     flex-direction: column;
@@ -2926,6 +2923,7 @@
   &-register {
     &-export {
       margin-left: 0;
+      border-top-right-radius: 15px;
 
       label {
         font-size: rem(12);
@@ -2956,8 +2954,14 @@
 
       .remove-switcher,
       .add-switcher {
-        margin-left: rem(7);
+        margin-left: rem(20);
         padding: 0;
+      }
+      .form-row{
+        width: 50%;
+        label{
+          padding-right: 0;
+        }
       }
 
       .main-certificates {
@@ -2975,7 +2979,7 @@
 
         &-span {
           position: absolute;
-          right: 5%;
+          right: 10%;
           bottom: 5%;
           color: #000000 !important;
 
@@ -3006,17 +3010,25 @@
     }
   }
   @include lg-block() {
+    flex-wrap: nowrap;
+    &-container{
+      width: 100%;
+    }
     &-nav {
       width: auto;
       min-width: auto;
-
+      margin-bottom: rem(8);
       &-headline {
         display: none;
       }
 
       a {
-        span {
+        p {
           display: none;
+        }
+        span{
+          display: flex;
+          justify-content: center;
         }
       }
 
@@ -3025,9 +3037,19 @@
       }
 
       &-item {
+        &:last-of-type{
+          padding: 0;
+        }
         a {
           justify-content: center;
         }
+      }
+    }
+    &-nav, &-profile{
+      position: sticky;
+      top: 0;
+       &-sidebar {
+        margin-bottom: rem(8);
       }
     }
     &-data {
@@ -3039,11 +3061,6 @@
   }
   @include md-block() {
     &-nav {
-      position: sticky;
-      top: 0;
-      padding: 0;
-      margin-bottom: rem(8);
-
       &-logout {
         padding: 1rem;
       }
@@ -3081,14 +3098,6 @@
 
       &-info {
         padding: 0;
-      }
-    }
-    &-profile {
-      position: sticky;
-      top: 0;
-
-      &-sidebar {
-        margin-bottom: rem(8);
       }
     }
   }
