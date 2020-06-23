@@ -59,6 +59,7 @@ $('.popular-products-categories').owlCarousel({
   margin: 10,
   nav: true,
   dots: true,
+  dotsData: true,
   autoplay: false,
   navText: [" ", " "],
   autoplayTimeout: 10000,
@@ -87,15 +88,7 @@ $('.exim-call-content-left').owlCarousel({
     }
   }
 });
-const popularProductsWrapper = document.getElementById('popularProductsWrapper');
-if (popularProductsWrapper) {
-  const popularProductsDots = popularProductsWrapper.querySelector('.owl-dots');
-  document.addEventListener('DOMContentLoaded', () => {
-    popularProductsDots.innerHTML = categories.map((elem, index) =>
-      `<div class="owl-dot${index == 0 ? ' active' : ''}">${elem.name}</div>`
-    ).join('')
-  })
-}
+
 // CATALOG-TOGGLER
 document.addEventListener('DOMContentLoaded', () => {
   const cubeToggler = document.querySelector('.catalog-container-toggler-cube');
