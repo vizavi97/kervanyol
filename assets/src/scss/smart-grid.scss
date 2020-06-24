@@ -5,6 +5,7 @@ $break_xs: 540px;
 $break_sm: 768px;
 $break_md: 960px;
 $break_lg: 1140px;
+$break_xl: 1440px;
 $break_bd: 1600px;
 
 $offset: 15px;
@@ -13,6 +14,7 @@ $offset_xs: 15px;
 $offset_sm: $offset;
 $offset_md: $offset;
 $offset_lg: $offset;
+$offset_xl: $offset;
 $offset_bd: $offset;
 
 $offset_one_side: ($offset / 2);
@@ -127,6 +129,10 @@ $fields_xs: 15px;
 @mixin size-bd($n) {
   $val: 100% / $columns * $n;
   @include bd(width, #{calc(#{$val} - #{$offset_lg})});
+}
+@mixin size-xl($n) {
+  $val: 100% / $columns * $n;
+  @include xl(width, #{calc(#{$val} - #{$offset_xl})});
 }
 
 @mixin shift($n) {
@@ -343,8 +349,18 @@ $fields_xs: 15px;
   }
 }
 
+@mixin xl($name, $value) {
+  @media screen and (min-width: $break_xl) {
+    #{$name}: $value;
+  }
+}
 @mixin bd-block() {
   @media screen and (min-width: $break_bd) {
+    @content;
+  }
+}
+@mixin xl-block() {
+  @media screen and (min-width: $break_xl) {
     @content;
   }
 }
