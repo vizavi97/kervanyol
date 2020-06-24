@@ -397,7 +397,6 @@
     &-stages {
       @include col();
       @include size(4);
-      @include size-bd(3);
       box-shadow: 0 16px 50px rgba(233, 238, 247, 0.5);
       background-color: #ffffff;
 
@@ -1448,10 +1447,6 @@
   &-profile {
     @include col();
     @include size(4);
-    @include size-bd(3);
-    @include bd-block {
-      max-width: none;
-    }
 
     &-container {
       display: flex;
