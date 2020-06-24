@@ -8,11 +8,6 @@ $('.password-control').click(function () {
   }
   return false;
 });
-$('[name=quantity]').bind("change keyup input click", function () {
-  if (this.value.match(/[^а-яА-Яa-zA-Z\s]/g)) {
-    this.value = this.value.replace(/[^а-яА-Яa-zA-Z\s]/g, '');
-  }
-});
 $(document).ready(function () {
   $(".exim-btn-items").on("click", "a", function (event) {
     event.preventDefault();
@@ -62,7 +57,7 @@ window.readURL = function readURL(input) {
 			 </label>
 			</li>`;
     const remover = '<a href="javascript:" class="remove-container" onclick="this.parentElement.parentElement.remove()">&times;</a>'
-    input.insertAdjacentHTML('afterend',remover);
+    input.insertAdjacentHTML('afterend', remover);
     wrapper.insertAdjacentHTML("beforeend", htmlSection);
   }
 };
@@ -83,7 +78,7 @@ if (declarationinputsWrapper) {
 				</label>
 				<label class="col-lg-6 col-12">
 					<span>Количество товара</span>
-					<input type="text" class="form-control" placeholder="шт" name="count[${declarationInputNumber}][quantity]"/>
+					<input type="text" class="form-control form-control-number" placeholder="шт" name="count[${declarationInputNumber}][quantity]"/>
 				</label>
 			</div>
 			<button type="button" id="remove-switcher" class="remove-switcher" onclick="this.parentElement.remove()">
@@ -91,6 +86,10 @@ if (declarationinputsWrapper) {
 			</button>
 		</div>
 	  `);
+    document.querySelector('.form-control-number') ?
+    document.querySelectorAll('.form-control-number').forEach(function (el) {
+      new Cleave(el, {numeral: true});
+    }) : null;
     declarationInputNumber++;
   });
 }
@@ -123,8 +122,8 @@ if (farmerinputsWrapper) {
 window.uploadCompanyFIleRegister = function (input) {
   if (input.files) {
     const inputFiles = input.files;
-    const collection = [...inputFiles].map( file => {
-     window.removeFileIntoInput = function() {
+    const collection = [...inputFiles].map(file => {
+      window.removeFileIntoInput = function () {
         inputFiles.value = '';
         Array.from(document.querySelectorAll('.cabinet-edit-data-load-complete')).forEach(elem => elem.remove())
       }
@@ -141,7 +140,7 @@ window.uploadCompanyFIleRegister = function (input) {
               <span class="icon-delete"></span>
             </a>
           </div>
-        ` )
+        `)
     }).join('');
     input.parentElement.insertAdjacentHTML("beforebegin", collection);
   }

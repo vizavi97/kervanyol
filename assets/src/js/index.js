@@ -2,6 +2,8 @@ import $ from "jquery";
 import 'bootstrap'
 import 'owl.carousel2/dist/owl.carousel'
 import EmojiButton from '@joeattardi/emoji-button'
+import Cleave from 'cleave.js';
+import './masks'
 import './inputPhone';
 import './zoomple';
 import './app';
