@@ -1,249 +1,249 @@
 <% var data = {title: "Личный кабинет: Аккаунт",};%><%= _.template(require('./../includes/header.html').default)(data) %>
 
 <main class="content grey">
-  <div class="container-lg">
-    <div class="content-container pt-4">
-      <div class="cabinet">
-        <div class="cabinet-nav pb-1">
-          <div class="cabinet-nav-headline">
-            <h5>Личный кабинет</h5>
-          </div>
-          <%= _.template(require('./../includes/cabinet-nav-individ.html').default)(data) %>
-        </div>
-        <div class="cabinet-container sticker">
-          <div class="cabinet-data cabinet-account">
-            <div class="tab-content">
-              <div class="tab-pane  fade  show active" id="home" role="tabpanel"
-                   aria-labelledby="home-tab">
-                <div class="cabinet-data-container">
-                  <h4>Личные данные</h4>
-                  <p class="my-0 text-muted pb-2">
-                    <small>Данный раздел предназначен для редактирования
-                      ранее внесенных данных.</small>
-                  </p>
-                  <div class="cabinet-delivery">
-                  </div>
-                  <div class="cabinet-account">
-                    <ul class="cabinet-account-foto">
-                      <li class="cabinet-register-container-form-addFile-item">
-                        <label class="cabinet-account-foto-label">
-                          Загрузить фото профиля</label>
-                        <label>
-                          <div class="addFile-inner"
-                               style="background: url('../../img/cabinet/profile-img.png') no-repeat center; background-size: cover"></div>
-                          <input type="file" onchange="window.loadPhotoURL(this)">
-                        </label>
-                      </li>
-                    </ul>
-                    <form action="javascript:">
-                      <div class="form-row">
-                        <label class="col-lg-6 col-12 mb-3">
-                          <span>Имя</span>
-                          <input type="text" class="form-control" placeholder="Имя" value="Имя"/>
-                        </label>
-                        <label class="col-lg-6 col-12 mb-3">
-                          <span>Фамилия:</span>
-                          <input type="text" class="form-control" placeholder="Фамилия" value="Фамилия"/>
-                        </label>
-                      </div>
-                      <div class="form-row">
-                        <label class="col-lg-6 col-12 mb-3">
-                          <span>Изменить номер телефона</span>
-                          <input type="text" class="form-control" name="client-phone"
-                                 placeholder="+998-(__) ___ - __ - __"
-                                 value=" 94 123 45 67"/>
-                        </label>
-                        <label class="col-lg-6 col-12 mb-3">
-                          <span>Изменить эл.почту:</span>
-                          <input type="text" class="form-control" placeholder="" value="ivanka90@gmail.com"/>
-                        </label>
-                      </div>
-                      <a href="javascript:" class="btn btn-kervan">Сохранить</a>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane  fade" id="safety" role="tabpanel"
-                   aria-labelledby="home-tab">
-                <div class="cabinet-data-container">
-                  <h4>Безопасность</h4>
-                  <p class="my-0 text-muted pb-2">
-                    <small>Данный раздел поможет изменить пароль от Личного кабинета.</small>
-                  </p>
-                  <div class="cabinet-delivery cabinet-account-delivery">
-                  </div>
-                  <div class="cabinet-account">
-                    <div class="cabinet-account-headline">
-                      <h4>Сменить пароль</h4>
-                      <p>После изменения данных, мы отправим Вам сообщение на электронную
-                        почту.</p>
-                    </div>
-                    <form action="javascript:">
-                      <div class="cabinet-account-form">
-                        <div class="form-row">
-                          <label class="col-lg-6 col-12 mb-3">
-                            <span>Текущий пароль</span>
-                            <input type="password"
-                                   class="form-control password-input"
-                                   placeholder="Password"
-                                   required>
-                          </label>
-                        </div>
-                        <div class="form-row tab-register-form-password">
-                          <label class="col-lg-6 col-12 mb-3">
-                            <span>Новый пароль</span>
-                            <input type="password"
-                                   class="form-control password-input"
-                                   placeholder="Password"
-                                   required>
-                          </label>
-                          <label class="col-lg-6 col-12 mb-3">
-                            <span>Повторите пароль</span>
-                            <input type="password"
-                                   class="form-control password-input"
-                                   placeholder="Password"
-                                   required>
-                            <a href="javascript:" class="password-control">
-                              <i class="far fa-eye"></i>
-                            </a>
-                          </label>
-                        </div>
-                        <a href="javascript:" class="btn btn-kervan">Сохранить</a>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane  fade" id="notice" role="tabpanel"
-                   aria-labelledby="home-tab">
-                <div class="cabinet-data-container">
-                  <h4>Уведомления</h4>
-                  <p class="my-0 text-muted pb-2">
-                    <small>Выберите настройки уведомлений Вашей электронной почты.</small>
-                  </p>
-                  <div class="cabinet-delivery cabinet-account-delivery"></div>
-                  <div class="cabinet-account">
-                    <form action="javascript:">
-                      <div class="cabinet-account-form">
-                        <div class="cabinet-account-switch">
-                          <div class="cabinet-account-switch-block">
-                            <input type="checkbox" class="cabinet-account-switch-block-input"
-                                   id="customSwitch1" checked>
-                            <label class="cabinet-account-switch-block-label" for="customSwitch1">
-                              Уведомлять меня о поступлении новых товаров
-                            </label>
-                          </div>
-                        </div>
-                        <div class="cabinet-delivery cabinet-account-delivery"></div>
-                        <div class="cabinet-account-switch">
-                          <div class="cabinet-account-switch-block">
-                            <input type="checkbox" class="cabinet-account-switch-block-input"
-                                   id="customSwitch2">
-                            <label class="cabinet-account-switch-block-label" for="customSwitch2">
-                              Уведомлять меня о статусе заказов
-                            </label>
-                          </div>
-                        </div>
-                        <div class="cabinet-delivery cabinet-account-delivery"></div>
-                        <div class="cabinet-account-switch">
-                          <div class="cabinet-account-switch-block">
-                            <input type="checkbox" class="cabinet-account-switch-block-input"
-                                   id="customSwitch3">
-                            <label class="cabinet-account-switch-block-label" for="customSwitch3">
-                              Уведомлять меня о новостях сайта Kervanyol.com
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane  fade" id="social" role="tabpanel"
-                   aria-labelledby="home-tab">
-                <div class="cabinet-data-container">
-                  <h4>Социальные сети</h4>
-                  <p class="my-0 text-muted pb-2">
-                    <small>В данном разделе Вы можете присоединить аккаунты социальных сетей
-                      к профилю нашего сайта.</small>
-                  </p>
-                  <div class="cabinet-delivery cabinet-account-delivery"></div>
-                  <div class="cabinet-account">
-                    <div class="cabinet-account-social">
-                      <a href="javascript:" class="cabinet-account-social-url">
-                        <img src="img/instagram.png" alt="instagram"/>
-                        Присоединить
-                      </a>
-                    </div>
-                    <div class="cabinet-account-social">
-                      <a href="javascript:" class="cabinet-account-social-url">
-                        <img src="img/facebook.png" alt="facebook"/>
-                        Присоединить
-                      </a>
-                    </div>
-                    <div class="cabinet-account-social">
-                      <a href="javascript:" class="cabinet-account-social-url">
-                        <img src="img/twitter.png" alt="twitter"/>
-                        Присоединить
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cabinet-profile">
-            <div class="cabinet-profile-container">
-              <div class="cabinet-profile-image">
-                <img src="img/cabinet/profile.svg" alt="profile"/>
-              </div>
-              <div class="cabinet-profile-name">
-                <h5>Иван Иванов</h5>
-              </div>
-              <div class="cabinet-profile-email">
-                <p>ivanka90@gmail.com</p>
-              </div>
-              <div class="cabinet-profile-number">
-                <p>+ 998 94 123 45 67</p>
-              </div>
-              <div class="cabinet-profile-link">
-                <a href="javascript:">Редактировать</a>
-              </div>
-            </div>
-            <div class="cabinet-profile-sidebar">
-              <h6>Мой профиль</h6>
-              <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                     aria-controls="home" aria-selected="true">
-                    Личные данные
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="safety-tab" data-toggle="tab" href="#safety" role="tab"
-                     aria-controls="safety" aria-selected="false">
-                    Безопасность
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="notice-tab" data-toggle="tab" href="#notice" role="tab"
-                     aria-controls="notice" aria-selected="false">
-                    Уведомления
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="social-tab" data-toggle="tab" href="#social"
-                     role="tab" aria-controls="social" aria-selected="false">
-                    Социальные сети
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="container-lg">
+		<div class="content-container pt-4">
+			<div class="cabinet">
+				<div class="cabinet-nav pb-1">
+					<div class="cabinet-nav-headline">
+						<h5>Личный кабинет</h5>
+					</div>
+					<%= _.template(require('./../includes/cabinet-nav-individ.html').default)(data) %>
+				</div>
+				<div class="cabinet-container sticker">
+					<div class="cabinet-data cabinet-account">
+						<div class="tab-content">
+							<div class="tab-pane  fade  show active" id="home" role="tabpanel"
+							aria-labelledby="home-tab">
+							<div class="cabinet-data-container">
+								<h4>Личные данные</h4>
+								<p class="my-0 text-muted pb-2">
+									<small>Данный раздел предназначен для редактирования
+										ранее внесенных данных.</small>
+									</p>
+									<div class="cabinet-delivery">
+									</div>
+									<div class="cabinet-account">
+										<ul class="cabinet-account-foto">
+											<li class="cabinet-register-container-form-addFile-item">
+												<label class="cabinet-account-foto-label">
+													Загрузить фото профиля</label>
+													<label>
+														<div class="addFile-inner"
+														style="background: url('../../img/cabinet/profile-img.png') no-repeat center; background-size: cover"></div>
+														<input type="file" onchange="window.loadPhotoURL(this)">
+													</label>
+												</li>
+											</ul>
+											<form action="javascript:">
+												<div class="form-row">
+													<label class="col-lg-6 col-12 mb-3">
+														<span>Имя</span>
+														<input type="text" class="form-control" placeholder="Имя" value="Имя"/>
+													</label>
+													<label class="col-lg-6 col-12 mb-3">
+														<span>Фамилия:</span>
+														<input type="text" class="form-control" placeholder="Фамилия" value="Фамилия"/>
+													</label>
+												</div>
+												<div class="form-row">
+													<label class="col-lg-6 col-12 mb-3">
+														<span>Изменить номер телефона</span>
+														<input type="text" class="form-control" name="client-phone"
+														placeholder="+998-(__) ___ - __ - __"
+														value=" 94 123 45 67"/>
+													</label>
+													<label class="col-lg-6 col-12 mb-3">
+														<span>Изменить эл.почту:</span>
+														<input type="text" class="form-control" placeholder="" value="ivanka90@gmail.com"/>
+													</label>
+												</div>
+												<a href="javascript:" class="btn btn-kervan">Сохранить</a>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane  fade" id="safety" role="tabpanel"
+								aria-labelledby="home-tab">
+								<div class="cabinet-data-container">
+									<h4>Безопасность</h4>
+									<p class="my-0 text-muted pb-2">
+										<small>Данный раздел поможет изменить пароль от Личного кабинета.</small>
+									</p>
+									<div class="cabinet-delivery cabinet-account-delivery">
+									</div>
+									<div class="cabinet-account">
+										<div class="cabinet-account-headline">
+											<h4>Сменить пароль</h4>
+											<p>После изменения данных, мы отправим Вам сообщение на электронную
+												почту.</p>
+											</div>
+											<form action="javascript:">
+												<div class="cabinet-account-form">
+													<div class="form-row">
+														<label class="col-lg-6 col-12 mb-3">
+															<span>Текущий пароль</span>
+															<input type="password"
+															class="form-control password-input"
+															placeholder="Password"
+															required>
+														</label>
+													</div>
+													<div class="form-row tab-register-form-password">
+														<label class="col-lg-6 col-12 mb-3">
+															<span>Новый пароль</span>
+															<input type="password"
+															class="form-control password-input"
+															placeholder="Password"
+															required>
+														</label>
+														<label class="col-lg-6 col-12 mb-3">
+															<span>Повторите пароль</span>
+															<input type="password"
+															class="form-control password-input"
+															placeholder="Password"
+															required>
+															<a href="javascript:" class="password-control">
+																<i class="far fa-eye"></i>
+															</a>
+														</label>
+													</div>
+													<a href="javascript:" class="btn btn-kervan">Сохранить</a>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane  fade" id="notice" role="tabpanel"
+								aria-labelledby="home-tab">
+								<div class="cabinet-data-container">
+									<h4>Уведомления</h4>
+									<p class="my-0 text-muted pb-2">
+										<small>Выберите настройки уведомлений Вашей электронной почты.</small>
+									</p>
+									<div class="cabinet-delivery cabinet-account-delivery"></div>
+									<div class="cabinet-account">
+										<form action="javascript:">
+											<div class="cabinet-account-form">
+												<div class="cabinet-account-switch">
+													<div class="cabinet-account-switch-block">
+														<input type="checkbox" class="cabinet-account-switch-block-input"
+														id="customSwitch1" checked>
+														<label class="cabinet-account-switch-block-label" for="customSwitch1">
+															Уведомлять меня о поступлении новых товаров
+														</label>
+													</div>
+												</div>
+												<div class="cabinet-delivery cabinet-account-delivery"></div>
+												<div class="cabinet-account-switch">
+													<div class="cabinet-account-switch-block">
+														<input type="checkbox" class="cabinet-account-switch-block-input"
+														id="customSwitch2">
+														<label class="cabinet-account-switch-block-label" for="customSwitch2">
+															Уведомлять меня о статусе заказов
+														</label>
+													</div>
+												</div>
+												<div class="cabinet-delivery cabinet-account-delivery"></div>
+												<div class="cabinet-account-switch">
+													<div class="cabinet-account-switch-block">
+														<input type="checkbox" class="cabinet-account-switch-block-input"
+														id="customSwitch3">
+														<label class="cabinet-account-switch-block-label" for="customSwitch3">
+															Уведомлять меня о новостях сайта Kervanyol.com
+														</label>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane  fade" id="social" role="tabpanel"
+							aria-labelledby="home-tab">
+							<div class="cabinet-data-container">
+								<h4>Социальные сети</h4>
+								<p class="my-0 text-muted pb-2">
+									<small>В данном разделе Вы можете присоединить аккаунты социальных сетей
+										к профилю нашего сайта.</small>
+									</p>
+									<div class="cabinet-delivery cabinet-account-delivery"></div>
+									<div class="cabinet-account">
+										<div class="cabinet-account-social">
+											<a href="javascript:" class="cabinet-account-social-url">
+												<img src="img/instagram.png" alt="instagram"/>
+												Присоединить
+											</a>
+										</div>
+										<div class="cabinet-account-social">
+											<a href="javascript:" class="cabinet-account-social-url">
+												<img src="img/facebook.png" alt="facebook"/>
+												Присоединить
+											</a>
+										</div>
+										<div class="cabinet-account-social">
+											<a href="javascript:" class="cabinet-account-social-url">
+												<img src="img/twitter.png" alt="twitter"/>
+												Присоединить
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cabinet-profile">
+						<div class="cabinet-profile-container">
+							<div class="cabinet-profile-image">
+								<img src="img/cabinet/profile.svg" alt="profile"/>
+							</div>
+							<div class="cabinet-profile-name">
+								<h5>Иван Иванов</h5>
+							</div>
+							<div class="cabinet-profile-email">
+								<p>ivanka90@gmail.com</p>
+							</div>
+							<div class="cabinet-profile-number">
+								<p>+ 998 94 123 45 67</p>
+							</div>
+							<div class="cabinet-profile-link">
+								<a href="javascript:">Редактировать</a>
+							</div>
+						</div>
+						<div class="cabinet-profile-sidebar">
+							<h6>Мой профиль</h6>
+							<ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+									aria-controls="home" aria-selected="true">
+									Личные данные
+								</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="safety-tab" data-toggle="tab" href="#safety" role="tab"
+								aria-controls="safety" aria-selected="false">
+								Безопасность
+							</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="notice-tab" data-toggle="tab" href="#notice" role="tab"
+							aria-controls="notice" aria-selected="false">
+							Уведомления
+						</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="social-tab" data-toggle="tab" href="#social"
+						role="tab" aria-controls="social" aria-selected="false">
+						Социальные сети
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
 </main>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
