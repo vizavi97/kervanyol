@@ -2,17 +2,15 @@
 @import "~bootstrap/scss/bootstrap";
 @import "smart-grid";
 @import '~owl.carousel2/dist/assets/owl.carousel.css';
-@import "~swiper/css/swiper.min.css";
-@import "~easyzoom/css/easyzoom.css";
 @import "~rm-emoji-picker/dist/emojipicker.css";
 @import "variables";
 @import "fonts";
+// Zoomple
+@import "zoomple";
 //LAYOUT
 @import "layout";
 //KEYFRAMES
 @import "keyframes";
-// Zoomple
-@import "zoomple";
 //PAGES
 @import "./pages/main_page";
 @import "./pages/categories";

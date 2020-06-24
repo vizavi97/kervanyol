@@ -74,7 +74,7 @@
                   </form>
                 </div>
                 <div class="nav-elements">
-                  <div class="nav-element">
+                  <div class="nav-element" id="dropdownMenuButton" data-display="static" data-toggle="dropdown">
                     <a href="/catalog.html" class="nav-element-profile"><img src="img/user-avatar.png" alt="user" /></a>
                   </div>
                   <div class="nav-element">
@@ -88,6 +88,71 @@
                       ><span class="icon-basket"></span>
                       <div class="information-rectangle"><span>12</span></div></a
                     >
+                  </div>
+                  <div
+                    class="dropdown-menu dropdown-menu-right header-profile-dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <div class="header-profile-dropdown-menu-url">
+                      <a href="javascript:"><img src="img/user-url.png" alt="user-url" /></a>
+                    </div>
+                    <div class="header-profile-dropdown-menu-block">
+                      <div class="header-profile-dropdown-menu-logo">
+                        <img src="img/cabinet/profile-img.png" alt="profile-img" />
+                      </div>
+                      <div class="header-profile-dropdown-menu-name">
+                        <h4><a href="javascript:">Иван Иванов</a></h4>
+                        <p><a href="javascript:">ivanka90@gmail.com</a></p>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="header-profile-dropdown-menu-nav sidebar-nav">
+                      <ul class="sidebar-nav-items">
+                        <li class="sidebar-nav-item">
+                          <a href="javascript:"
+                            ><span class="icon-user"></span>
+                            <p>Мой кабинет</p></a
+                          >
+                        </li>
+                        <li class="sidebar-nav-item">
+                          <a href="javascript:"
+                            ><span class="icon-bag"></span>
+                            <p>Все заказы</p></a
+                          >
+                        </li>
+                        <li class="sidebar-nav-item">
+                          <a href="javascript:"
+                            ><span class="icon-email"></span>
+                            <p>Сообщения</p>
+                            <span class="message">3</span></a
+                          >
+                        </li>
+                        <li class="sidebar-nav-item">
+                          <a href="javascript:" class="disabled"
+                            ><span class="icon-manuscript"></span>
+                            <p>Мои желания</p></a
+                          >
+                        </li>
+                        <li class="sidebar-nav-item">
+                          <a href="javascript:"
+                            ><span class="icon-heart"></span>
+                            <p>Любимые магазины</p></a
+                          >
+                        </li>
+                        <li class="sidebar-nav-item">
+                          <a href="javascript:"
+                            ><span class="icon-settings"></span>
+                            <p>настройки профиля</p></a
+                          >
+                        </li>
+                        <li class="sidebar-nav-item">
+                          <a href="javascript:"
+                            ><span class="icon-sign-out"></span>
+                            <p>Выйти</p></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1326,7 +1391,7 @@
             </div>
             <div class="popular-products-container" id="popularProductsWrapper">
               <ul class="popular-products-categories owl-carousel owl-theme">
-                <li class="popular-products-category" data-dot="1">
+                <li class="popular-products-category" data-dot="первая категория">
                   <div class="popular-products-banner absolute col-3">
                     <img src="img/popular-products-banner.png" alt="img" />
                   </div>
@@ -1469,7 +1534,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="popular-products-category" data-dot="2">
+                <li class="popular-products-category" data-dot="вторая категория">
                   <div class="popular-products-banner absolute col-3">
                     <img src="img/popular-products-banner.png" alt="img" />
                   </div>
@@ -1612,7 +1677,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="popular-products-category" data-dot="3">
+                <li class="popular-products-category" data-dot="третья категория">
                   <div class="popular-products-banner absolute col-3">
                     <img src="img/popular-products-banner.png" alt="img" />
                   </div>
@@ -1755,7 +1820,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="popular-products-category" data-dot="4">
+                <li class="popular-products-category" data-dot="четвертая категория">
                   <div class="popular-products-banner absolute col-3">
                     <img src="img/popular-products-banner.png" alt="img" />
                   </div>
@@ -1898,7 +1963,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="popular-products-category" data-dot="5">
+                <li class="popular-products-category" data-dot="пятая категория">
                   <div class="popular-products-banner absolute col-3">
                     <img src="img/popular-products-banner.png" alt="img" />
                   </div>
@@ -2041,7 +2106,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="popular-products-category" data-dot="adasdas">
+                <li class="popular-products-category" data-dot="шестая категория">
                   <div class="popular-products-banner absolute col-3">
                     <img src="img/popular-products-banner.png" alt="img" />
                   </div>

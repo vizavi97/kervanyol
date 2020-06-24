@@ -641,13 +641,15 @@
   .owl-dots {
     position: absolute;
     top: -44px;
-    left: 0;
+    left: 17rem;
     right: 0;
     height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    width: calc(100% - 24rem);
+    text-align: center;
   }
 
   .owl-dot {
@@ -1246,6 +1248,7 @@
       .owl-dots{
         left: 5%;
         justify-content: left;
+        width: calc(100% - 10rem);
       }
       &-category{
         padding: 0;
