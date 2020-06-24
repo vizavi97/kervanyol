@@ -20,31 +20,26 @@
     </ul>
     
     <div class="cabinet-account-form">
-        <div class="cabinet-account-inputs">
-            <label>
-            	<span>Имя</span>
-            	<input name="name" type="text" class="input-kervan form-control" value="{{ user.name }}">
+        <div class="form-row">
+            <label class="col-lg-6 col-12 mb-3">
+              <span>Имя</span>
+            	<input name="name" type="text" class="form-control" value="{{ user.name }}">
             </label>
-            
-            <label>
-            	<span>Фамилия</span> 
-            	<input name="surname" type="text" class="input-kervan form-control" value="{{ user.surname }}"/>
+            <label class="col-lg-6 col-12 mb-3">
+              <span>Фамилия:</span>
+            	<input name="surname" type="text" class="form-control" value="{{ user.surname }}"/>
             </label>
-        </div>
-        
-        <div class="cabinet-account-inputs">
-            <label>
-            	<span>Изменить номер телефона</span>
-	            <input name="phone" type="text" class="input-kervan" placeholder="+998-(__) ___ - __ - __" value="{{user.phone}}"/>
-	        </label>
-	        
-	        
-            <label>
-            	<span>Изменить эл.почту</span>
-            	<input name="email" type="email" class="input-kervan" placeholder="" value="{{user.email}}"/>
+          </div>
+        <div class="form-row">
+            <label class="col-lg-6 col-12 mb-3">
+              <span>Изменить номер телефона</span>
+  			  <input name="phone" type="text" class="form-control" placeholder="+998-(__) ___ - __ - __" value="{{user.phone}}"/>
             </label>
-        </div>
-        
+            <label class="col-lg-6 col-12 mb-3">
+              <span>Изменить эл.почту:</span>
+				<input name="email" type="email" class="form-control" placeholder="" value="{{user.email}}"/>
+            </label>
+          </div>
         <button data-attach-loading type="submit" class="btn btn-kervan">Сохранить</button>
     </div>
 </form>

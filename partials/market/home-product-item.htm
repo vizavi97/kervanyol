@@ -1,0 +1,38 @@
+[viewBag]
+==
+{% set offer = product.offer.first() %}
+
+<li class="card">
+	<div class="card-img">
+		<a href="{{product.url}}">
+			<img src="{{ product.preview_image.thumb(200, 200, {mode: 'crop'}) }}" alt="{{product.name}}" title="{{product.name}}"/>
+		</a>
+	</div>
+	
+	<div class="card-name">
+		<a href="{{product.url}}"> {{product.name}} </a>
+	</div>
+	
+	<div class="card-brand">
+		{% if product.store %}
+			<a href="{{product.store.url}}"> {{product.store.name}} </a>
+		{% else %}
+			<a href="{{product.brand.url}}"> {{product.brand.name}} </a>
+		{% endif %}
+	</div>
+	
+	<div class="card-rating">
+		<ul class="stars">
+			{% for i in 1..5 %}
+				<li class="star {{product.rating >= i ? 'active'}}">
+					<i class="fas fa-star" aria-hidden="true"></i>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+	
+	<div class="card-cost"> 
+		<span> {{ offer ? offer.price : 0 }} UZS </span>
+	</div>
+	
+</li>

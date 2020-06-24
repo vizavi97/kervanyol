@@ -1,0 +1,39 @@
+[viewBag]
+==
+<li class="popular-stores-item col-12 col-lg-4 d-block d-sm-none d-lg-block">
+	<div class="popular-stores-item-top">
+		
+		<div class="popular-stores-item-top-image">
+			<a href="{{store.url}}" class="p-0">
+				<img src="{{ store.logo.thumb(250, 150, {mode: 'crop'}) }}" alt="{{store.name}}" title="{{store.name}}"/>
+			</a>
+		</div>
+		
+		<div class="popular-stores-item-top-info">
+			<h5> <a href="{{store.url}}">{{store.name}}</a> </h5>
+			<div class="popular-stores-item-top-info-stars">
+				
+				<ul class="stars">
+					{% set rating = random(1, 5) %}
+					{% for i in 1..5 %}
+						<li class="star  {{ rating >= i ? 'active' }} "><i class="fas fa-star" aria-hidden="true"></i></li>
+					{% endfor %}
+				</ul>
+				<strong>{{rating}}</strong>
+			</div>
+			
+			<p>Отзывы: <strong> {{rating}} </strong></p>
+			<a href="{{store.url}}" class="btn btn-kervan without-bg">В магазин</a>
+		</div>
+	</div>
+	
+	<ul class="popular-stores-item-images">
+		{% for storeProduct in store.products().limit(3).get() %}
+			<li class="popular-stores-item-image">
+				<a href="{{ storeProduct.url }}"> 
+					<img src="{{ storeProduct.preview_image.thumb(100, 100, {mode: 'crop'}) }}" alt="1"/> 
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</li>

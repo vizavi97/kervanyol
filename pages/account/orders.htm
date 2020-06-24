@@ -331,38 +331,39 @@ public function onStart() {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="cabinet-payment-form">
-                                            <h4>ОПЛАТА КАРТОЙ</h4>
-                                            <div class="cabinet-payment-form-cardNumber cabinet-data-inputs">
-                                                <label
-                                                    ><span>Номер карты</span> <input class="input-kervan" placeholder="___ ___ ___ ___"
-                                                    /></label>
-                                            </div>
-                                            <div class="cabinet-payment-form-deadline cabinet-data-inputs">
-                                                <label
-                                                    >
-                                                    <span>Срок действия:</span>
-                                                    <div>
-                                                        <input class="input-kervan" placeholder="MM" />
-                                                        <input class="input-kervan" placeholder="YY" />
-                                                    </div
-                                                        >
-                                                </label>
-                                                <label><span>Код CVV|CVC:</span> <input class="input-kervan" placeholder="___" /></label>
-                                            </div>
-                                            <div class="cabinet-payment-form-name cabinet-data-inputs">
-                                                <label
-                                                    >
-                                                    <span>Имя владельца карты:</span>
-                                                    <div>
-                                                        <input class="input-kervan" placeholder="Имя" />
-                                                        <input class="input-kervan" placeholder="Фамилия" />
-                                                    </div
-                                                        >
-                                                </label>
-                                            </div>
-                                            <a href="javascript:" class="btn btn-kervan">оплатить</a>
-                                        </div>
+										<div class="cabinet-payment-form">
+											<h4>ОПЛАТА КАРТОЙ</h4>
+											<div class="form-row">
+										      <label class="col-lg-6 col-12 mb-3">
+										        <span>Номер карты</span>
+										        <input type="text" class="form-control" placeholder="____ ____ ____ ____">
+										      </label>
+										    </div>
+											<div class="form-row cabinet-payment-form-deadline">
+										      <label class="col-md-3 col-12 mb-3">
+										        <span> Срок действия:</span>
+										        <div>
+										          <input type="text" class="input-kervan" placeholder="MM">
+										          <input type="text" class="input-kervan rounded-0" placeholder="YY">
+										        </div>
+										      </label>
+										      <label class="col-lg-3 col-12 mb-3">
+										        <span>Код CVV|CVC:</span>
+										        <input type="text" class="form-control" placeholder="___">
+										      </label>
+										    </div>
+											<div class="form-row">
+										 	<label class="col-lg-6 col-12 mb-3">
+										        <span>Имя владельца карты:</span>
+										        <input type="text" class="form-control" placeholder="Имя">
+										      </label>
+											<label class="col-lg-6 col-12 mb-3">
+										        <span>Фамилия владельца карты:</span>
+										        <input type="text" class="form-control" placeholder="Фамилия">
+										      </label>
+										    </div>
+											<a href="javascript:" class="btn btn-kervan">Оплатить</a>
+										</div>
                                     </form>
                                 </div>
                             </div>
@@ -372,72 +373,64 @@ public function onStart() {
                                 <h4>Карты и способы оплаты</h4>
                                 <p class="my-0 text-muted"><small>Укажите адреса доставки.</small></p>
                                 <div class="cabinet-delivery">
-                                    <form action="javascript:">
-                                        <div class="cabinet-delivery-form">
-                                            <div class="cabinet-delivery-form-name cabinet-data-inputs">
-                                                <label
-                                                    ><span>Имя получателя</span> <input class="input-kervan" placeholder="___ ___ ___ ___"
-                                                    /></label>
-                                                <label
-                                                    >
-                                                    <span>Страна/Регион</span>
-                                                    <select name="sss"
-                                                        >
-                                                        <option value="uzb" selected="selected">uzb</option
-                                                            >
-                                                        <option value="rus">rus</option
-                                                            >
-                                                        <option value="usa">usa</option>
-                                                    </select
-                                                        >
-                                                </label
-                                                    >
-                                            </div>
-                                            <div class="cabinet-delivery-form-address cabinet-data-inputs">
-                                                <label
-                                                    ><span>Улица, дом, квартира:</span> <input class="input-kervan" placeholder="MM"
-                                                    /></label>
-                                            </div>
-                                            <div class="cabinet-delivery-form-name cabinet-data-inputs">
-                                                <label
-                                                    >
-                                                    <span>Край/Область/Регион:</span>
-                                                    <select name="sss"
-                                                        >
-                                                        <option value="uzb">uzb</option
-                                                            >
-                                                        <option value="rus" selected="selected">rus</option
-                                                            >
-                                                        <option value="usa">usa</option>
-                                                    </select
-                                                        >
-                                                </label
-                                                    >
-                                                <label
-                                                    ><span>Город:</span> <input class="input-kervan" placeholder="___ ___ ___ ___"
-                                                    /></label>
-                                            </div>
-                                            <div class="cabinet-delivery-form-name cabinet-data-inputs">
-                                                <label
-                                                    ><span>Почтовый индекс:</span>
-                                                <input class="input-kervan" placeholder="___ ___ ___ ___"
-                                                    /></label>
-                                                <label
-                                                    ><span>Номер телефона</span>
-                                                <input class="input-kervan" name="client-phone" placeholder="+998-(__) ___ - __ - __"
-                                                    /></label>
-                                            </div>
-                                            <div class="cabinet-delivery-form-checkbox">
-                                                <input type="checkbox" id="box" />
-                                                <label for="box"><span>В моём адресе нет почтового кода.</span></label>
-                                            </div>
-                                            <div class="cabinet-delivery-form-checkbox">
-                                                <input type="checkbox" id="remember" />
-                                                <label for="remember"><span>Запомнить данные</span></label>
-                                            </div>
-                                            <a href="javascript:" class="btn btn-kervan">оплатить</a>
-                                        </div>
-                                    </form>
+					                <form action="javascript:">
+					                  <div class="form-row">
+					                    <label class="col-lg-6 col-12 mb-3">
+					                      <span>Имя получателя</span>
+					                      <input type="text" class="form-control" placeholder="_____"/>
+					                    </label>
+					                    <label class="col-lg-6 col-12 mb-3">
+					                      <span>Страна/Регион</span>
+					                      <select class="form-control">
+					                        <option value="uzb" selected>uzb</option>
+					                        <option value="rus">rus</option>
+					                        <option value="usa">usa</option>
+					                      </select>
+					                    </label>
+					                  </div>
+					                  <div class="form-row">
+					                    <label class="col-md-12 mb-3">
+					                      <span>Улица, дом, квартира:</span>
+					                      <input type="text" class="form-control" placeholder="_____"/>
+					                    </label>
+					                  </div>
+					                  <div class="form-row">
+					                    <label class="col-lg-6 col-12 mb-3">
+					                      <span>Край/Область/Регион:</span>
+					                      <input type="text" class="form-control" placeholder="_____"/>
+					                    </label>
+					                    <label class="col-lg-6 col-12 mb-3">
+					                      <span>Город:</span>
+					                      <input type="text" class="form-control" placeholder="___ ___ ___ ___"/>
+					                    </label>
+					                  </div>
+					                  <div class="form-row">
+					                    <label class="col-lg-6 col-12 mb-3">
+					                      <span>Почтовый индекс:</span>
+					                      <input type="text" class="form-control" placeholder="_____"/>
+					                    </label>
+					                    <label class="col-lg-6 col-12 mb-3">
+					                      <span>Номер телефона</span>
+					                      <input type="text" class="form-control" name="client-phone"
+					                             placeholder="+998-(__) ___ - __ - __"/>
+					                    </label>
+					                  </div>
+					                  <div class="cabinet-delivery-form-checkbox">
+					                    <input type="checkbox" id="box"/>
+					                    <label for="box">
+					                      <span>В моём адресе нет почтового кода.</span>
+					                    </label>
+					
+					                  </div>
+					                  <div class="cabinet-delivery-form-checkbox">
+					                    <input type="checkbox" id="remember"/>
+					
+					                    <label for="remember">
+					                      <span>Запомнить данные</span>
+					                    </label>
+					                  </div>
+					                  <a href="javascript:" class="btn btn-kervan">Сохранить</a>
+					                </form>
                                 </div>
                             </div>
                         </div>

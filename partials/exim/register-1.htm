@@ -32,42 +32,36 @@
     		'exim/register-2': '#registrationFormContainer',
     		'exim/register-steps-nav': '#registrationFormSteeps'
     	">
-        
-        <div class="cabinet-register-container-form-inputs">
-            <label>
-            	<span>Название огранизации*</span>
-            	<input class="input-kervan" name="name" value="{{exim.name}}" placeholder="_____" />
+        <div class="form-row">
+            <label class="col-lg-6 col-12 mb-3">
+              <span>Название огранизации*</span>
+            	<input class="form-control" name="name" value="{{exim.name}}" placeholder="_____" />
             </label>
-            
-            <label>
-            	<span>Торговая марка*</span>
-            	<input class="input-kervan" name="brand_name" value="{{exim.brand_name}}" placeholder="_____"/>
+            <label class="col-lg-6 col-12 mb-3">
+              <span>Торговая марка*</span>
+            	<input class="form-control" name="brand_name" value="{{exim.brand_name}}" placeholder="_____"/>
             </label>
+		</div>
+        <div class="form-row">
+            <label class="col-lg-6 col-12 mb-3">
+              <span>ОГРН*</span>
+        	<input class="form-control" name="ogrn_number" value="{{exim.ogrn_number}}" placeholder="_____"/>
+            </label>
+            <label class="col-lg-6 col-12 mb-3">
+              <span>Принаддежность к отраслевым союзам</span>
+	            <select name="category_id">
+	            	{% for category in eximCategories %}
+	                	<option value="{{category.id}}" {{exim.category_id == category.id ? 'selected="selected"' : ''}} >{{category.name}}</option>
+	                {% endfor %}
+	            </select>
+            </label>
+		</div>
+		<div class="form-row">
+            <label class="col-md-12 mb-3">
+				<span>Описание</span>
+            	<textarea  class="form-control" name="short_description" placeholder="Краткая информация о компании...">{{exim.short_description}}</textarea>
+	        </label>
         </div>
-        
-        <div class="cabinet-register-container-form-inputs">
-            <label>
-            	<span>ОГРН*</span> 
-            	<input class="input-kervan" name="ogrn_number" value="{{exim.ogrn_number}}" placeholder="_____"/>
-            </label>
-            
-            <label>
-                <span>Принаддежность к отраслевым союзам</span>
-                <select name="category_id">
-                	{% for category in eximCategories %}
-                    	<option value="{{category.id}}" {{exim.category_id == category.id ? 'selected="selected"' : ''}} >{{category.name}}</option>
-                    {% endfor %}
-                </select>
-            </label>
-        </div>
-        
-        <div class="cabinet-register-container-form-inputs">
-            <label>
-            	<span>Описание</span>
-            	<textarea name="short_description" placeholder="Краткая информация о компании...">{{exim.short_description}}</textarea>
-            </label>
-        </div>
-        
         <div class="cabinet-register-container-form-inputs cabinet-register-container-form-upload">
             <div class="cabinet-register-container-form-input">
                 <h6>Логотип компании</h6>

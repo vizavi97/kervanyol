@@ -1,4 +1,6 @@
 [viewBag]
+
+[MainMenu]
 ==
 {% set obCategoryList = CategoryList.make().tree() %}
 
@@ -149,5 +151,5 @@
 
 
 <div class="nav-allCategories" id="allCategories">
-	{% partial 'home/menu-all-categories' %}
+	{% component 'MainMenu' %}
 </div>

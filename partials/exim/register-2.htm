@@ -39,29 +39,26 @@
 		    {% partial 'common/country-state' countryId=exim.country_id stateId=exim.state_id %}
 		</div>
     	
-        <div class="cabinet-register-container-form-inputs">
-            <label>
-            	<span>Web-сайт</span>
-            	<input class="input-kervan" name="website" placeholder="www.kervanyol.com" value="{{exim.website}}"/>
+        <div class="form-row">
+    	    <label class="col-lg-6 col-12 mb-3">
+        		<span>Web-сайт</span>
+        		<input class="form-control" name="website" placeholder="www.kervanyol.com" value="{{exim.website}}"/>
             </label>
-            
-            <label>
-            	<span>Адрес</span> 
-            	<input class="input-kervan" name="address" value="{{exim.address}}"/>
+    	    <label class="col-lg-6 col-12 mb-3">
+        		<span>Web-сайт</span>
+            	<input class="form-control" name="address" value="{{exim.address}}"/>
             </label>
-        </div>
-        
-        <div class="cabinet-register-container-form-inputs">
-            <label>
+		</div>
+        <div class="form-row">
+    	    <label class="col-lg-6 col-12 mb-3">
             	<span>Электронная почта </span>
-            	<input class="input-kervan" name="email" value="{{exim.email}}"/>
+            	<input class="form-control" name="email" value="{{exim.email}}"/>
             </label>
-            
-            <label>
-            	<span>Контактный телефон</span>
-            	<input class="input-kervan" name="phone"  placeholder="+998(__)___-__-__" value="{{exim.phone}}"/>
+    	    <label class="col-lg-6 col-12 mb-3">
+    			<span>Контактный телефон</span>
+            	<input class="form-control" name="phone"  placeholder="+998(__)___-__-__" value="{{exim.phone}}"/>
             </label>
-        </div>
+		</div>
         
         <div class="cabinet-register-container-form-buttons justify-content-between">
             <button 

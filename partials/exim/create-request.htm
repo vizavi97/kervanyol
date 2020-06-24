@@ -8,12 +8,14 @@
 	class="cabinet-declaration-form">
 	
 	<div class="cabinet-declaration-form-top">
-		<div class="cabinet-declaration-form-inputs">
-			<label><span>Наименование товара</span>
-				<input class="input-kervan" placeholder="Наименование товара" name="products[0][name]" id="declaration-input" rel="0"/>
-			</label>
-			<label><span>Количество товара</span>
-				<input class="input-kervan" placeholder="шт" name="products[0][quantity]"/>
+		<div class="form-row">
+			<label class="col-lg-6 col-12">
+				<span>Наименование товара</span>
+				<input class="form-control" placeholder="Наименование товара" name="products[0][name]" id="declaration-input" rel="0"/>
+				</label>
+			<label class="col-lg-6 col-12">
+				<span>Количество товара</span>
+				<input class="form-control" placeholder="шт" name="products[0][quantity]"/>
 			</label>
 		</div>
 		
@@ -25,29 +27,29 @@
 	<div class="cabinet-declaration-form-wrapper" id="declaration-input-wrapper"></div>
 	
 	<div class="cabinet-declaration-form-condition">
-		<div class="cabinet-declaration-form-inputs">
-			<label>
+		<div class="form-row">
+			<label class="col-lg-6 col-12 mb-3">
 				<span>Выберите условие доставки</span>
-				<select name="delivery_type">
+				<select name="delivery_type" class="form-control">
 					<option value="standart" selected="selected">Стандарт</option>
 				</select>
 			</label>
 			
-			<label>
+			<label class="col-lg-6 col-12 mb-3">
 				<span>Грузополучатель</span>
-				<input name="consignee" class="input-kervan" placeholder="ФИО"/>
+				<input name="consignee" class="form-control" placeholder="ФИО"/>
 			</label>
 		</div>
 		
-		<div class="cabinet-declaration-form-inputs">
-			<label>
+		<div class="form-row">
+			<label class="col-lg-6 col-12 mb-3">
 				<span>Адрес</span>
-				<input name="address" class="input-kervan" placeholder="адрес"/>
+				<input name="address" class="form-control" placeholder="адрес"/>
 			</label>
 			
-			<label>
+			<label class="col-lg-6 col-12 mb-3">
 				<span>Условие оплаты</span> 
-				<select name="payment_type">
+				<select name="payment_type" class="form-control">
 					<option value="payme" selected="selected">Payme</option>
 					<option value="visa" selected="selected">Visa</option>
 				</select>
