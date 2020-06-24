@@ -188,6 +188,9 @@ h2 {
   &:disabled {
     background: #fafafa;
   }
+  @include lg-block(){
+    text-indent: 0;
+  }
 }
 .form-control{
   height: 2.625rem;
