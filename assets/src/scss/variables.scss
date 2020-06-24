@@ -139,8 +139,9 @@ h2 {
   }
 }
 
-.btn-yellow{
+.btn-yellow {
   background-color: #feb627;
+
   &:hover {
     box-shadow: 0px 3px 20px rgba(254, 182, 39, 0.3);
     color: white;
@@ -155,9 +156,11 @@ h2 {
 .form-row {
   margin-left: -7.5px;
   margin-right: -7.5px;
-  label{
+
+  label {
     margin-bottom: 0;
   }
+
   span {
     display: block;
     padding-bottom: rem(8);
@@ -189,13 +192,16 @@ h2 {
     background: #fafafa;
   }
 }
-.form-control{
+
+.form-control {
   height: 2.625rem;
 }
-.form-control-sm{
+
+.form-control-sm {
   height: rem(32);
 }
-.form-control-lg{
+
+.form-control-lg {
   height: rem(50);
 }
 
@@ -233,6 +239,70 @@ textarea.form-control {
     color: #ff6f55;
   }
 }
+
+// sidebar nav
+
+.sidebar-nav {
+  &-items {
+    padding: 2rem 1rem 0 1.5rem;
+    user-select: none;
+  }
+
+  &-item {
+    padding-bottom: 1.25rem;
+
+    .icon-deal,
+    .icon-email,
+    .icon-sign-out {
+      font-size: rem(13);
+    }
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+
+      span {
+        width: rem(20);
+
+        &:before {
+          color: #A1ABB8;
+        }
+      }
+
+      p {
+        font-size: rem(14);
+        font-weight: 400;
+        padding-left: rem(14);
+        margin: 0;
+        color: #A1ABB8;
+      }
+
+      &:hover {
+        p, span:before {
+          color: #ff6f55;
+        }
+      }
+
+      &.active {
+        p, span:before {
+          color: #ff6f55;
+        }
+      }
+
+      &.disabled {
+        cursor: default;
+
+        p, span:before {
+          color: #dfe3eb;
+        }
+      }
+    }
+  }
+}
+
+//End sidebar nav
 
 //STARS
 .star-rating__stars {
