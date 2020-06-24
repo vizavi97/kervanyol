@@ -24,7 +24,7 @@
           <button type="submit" class="btn-kervan">Применить</button>
           <a href="javascript:" class="btn-kervan">Сохранить </a
           ><button type="button" class="btn btn-link" onclick="window.location.reload();">Сбросить</button>
-          <a href="javascript:" class="btn-kervan btn-warning">Добавить в корзину</a>
+          <a href="javascript:" class="btn-kervan btn-yellow">Добавить в корзину</a>
           <hr />
           <button type="button" class="btn btn-primary">Главный</button>
           <button type="button" class="btn btn-secondary">Вторичный</button>
@@ -35,52 +35,39 @@
           <button type="button" class="btn btn-light">Светлый</button>
           <button type="button" class="btn btn-dark">Темный</button>
           <button type="button" class="btn btn-link">Линк</button>
-          <h2 class="pt-2">group button</h2>
-          <div class="product-card-info-prop kit">
+          <h2 class="pt-4">group button</h2>
+          <div class="product-card-info-prop kit" role="group" aria-label="Basic example">
             <h6>Комплект:</h6>
             <ul>
-              <li>
-                <a href="javascript:" onclick="this.classList.toggle('selected')" class="selected"
-                  ><span>iPhone 6 16GB</span></a
-                >
-              </li>
-              <li>
-                <a href="javascript:" onclick="this.classList.toggle('selected')"><span>iPhone 6 32GB</span></a>
-              </li>
-              <li>
-                <a href="javascript:" onclick="this.classList.toggle('selected')"><span>iPhone 6 64GB</span></a>
-              </li>
+              <li><button type="button" class="btn btn-secondary">iPhone 6 16GB</button></li>
+              <li><button type="button" class="btn btn-secondary">iPhone 6 32GB</button></li>
+              <li><button type="button" class="btn btn-secondary">iPhone 6 64GB</button></li>
             </ul>
-          </div>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Left</button>
-            <button type="button" class="btn btn-secondary">Middle</button>
-            <button type="button" class="btn btn-secondary">Right</button>
           </div>
         </div>
         <div class="pt-4">
           <h2>Forms</h2>
           <form>
             <div class="form-row">
-              <label class="col-md-6 mb-4"
+              <label class="col-lg-6 col-12 col-12 mb-4"
                 ><span>Название огранизации*</span> <input class="form-control" placeholder="_____"
               /></label>
-              <label class="col-md-6 mb-4"
+              <label class="col-lg-6 col-12 mb-4"
                 ><span>Название огранизации*</span> <input class="form-control" placeholder="_____"
               /></label>
             </div>
             <div class="form-row">
-              <label class="col-md-6 mb-4"
+              <label class="col-lg-6 col-12 mb-4"
                 ><span>Создайте пароль</span>
                 <input type="password" class="form-control" placeholder="Password" required
               /></label>
-              <label class="col-md-6 mb-4"
+              <label class="col-lg-6 col-12 mb-4"
                 ><span>Повторите пароль</span>
                 <input type="password" class="form-control" placeholder="Password" required
               /></label>
             </div>
             <div class="form-row">
-              <label class="col-md-6 mb-4"
+              <label class="col-lg-6 col-12 mb-4"
                 ><span>Создайте пароль</span>
                 <select class="form-control"
                   ><option value="www.kervanyol.uz" selected="selected">www.kervanyol.uz</option
@@ -90,7 +77,7 @@
                   ><option value="www.kervanyol.uz">www.kervanyol.uz</option></select
                 ></label
               >
-              <label class="col-md-6 mb-4"
+              <label class="col-lg-6 col-12 mb-4"
                 ><span>Повторите пароль</span>
                 <select class="form-control"
                   ><option value="www.kervanyol.uz" selected="selected">www.kervanyol.uz</option
@@ -102,11 +89,11 @@
               >
             </div>
             <div class="form-row">
-              <label class="col-md-6 mb-4"
+              <label class="col-lg-6 col-12 mb-4"
                 ><span>Описание</span>
                 <textarea class="form-control" placeholder="Краткая информация о компании..."></textarea>
               </label>
-              <label class="col-md-6 mb-4"
+              <label class="col-lg-6 col-12 mb-4"
                 ><span>Описание</span>
                 <textarea class="form-control" placeholder="Краткая информация о компании..."></textarea>
               </label>

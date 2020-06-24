@@ -79,11 +79,11 @@ if (declarationinputsWrapper) {
 			<div class="form-row">
 				<label class="col-lg-6 col-12">
 					<span>Наименование товара</span>
-					<input type="text" class="form-control" placeholder="Наименование товара" name="product[${declarationInputNumber}]"/>
+					<input type="text" class="form-control" placeholder="Наименование товара" name="products[${declarationInputNumber}][name]"/>
 				</label>
 				<label class="col-lg-6 col-12">
 					<span>Количество товара</span>
-					<input type="text" class="form-control" placeholder="шт" name="count[${declarationInputNumber}]"/>
+					<input type="text" class="form-control" placeholder="шт" name="count[${declarationInputNumber}][quantity]"/>
 				</label>
 			</div>
 			<button type="button" id="remove-switcher" class="remove-switcher" onclick="this.parentElement.remove()">
